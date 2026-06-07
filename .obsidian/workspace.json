@@ -181,6 +181,12 @@
   },
   "active": "cde5d5ae6920f7d6",
   "lastOpenFiles": [
+    "40_Knowledge/References/GSO-SLAM.md",
+    "40_Knowledge/Concepts/EM-VO-GS-Coupling.md",
+    "40_Knowledge/Methods/Certified-EM-Coupling.md",
+    "40_Knowledge/Methods/GSO-SLAM-Architecture.md",
+    "40_Knowledge/Concepts/Frontend-Gaussian-Initialization.md",
+    "40_Knowledge/References/GSO-SLAM.pdf",
     "40_Knowledge/Methods/UP-SLAM-Architecture.md",
     "40_Knowledge/Concepts/Probabilistic-Anchor-Update.md",
     "40_Knowledge/References/UP-SLAM.md",
@@ -205,17 +211,11 @@
     "60_WorkingStyle/INDEX.md",
     "90_Archive/INDEX.md",
     "00_Inbox/INDEX.md",
-    "20_Areas/INDEX.md",
-    "30_Daily/INDEX.md",
-    "40_Knowledge/Concepts/Structured-GS-for-SLAM.md",
-    "40_Knowledge/Methods/Frequency-Pyramid-Growth.md",
-    "40_Knowledge/Methods/AfME-Appearance-Embedding.md",
     "40_Knowledge/References/SEGS-SLAM.pdf",
     "40_Knowledge/References/CUT3R.pdf",
     "40_Knowledge/References/GPS-SLAM.pdf",
     "40_Knowledge/References/SLAM3R.pdf",
     "40_Knowledge/References/MG-SLAM.pdf",
-    "40_Knowledge/References/GS-SDF.pdf",
-    "40_Knowledge/References/VPGS-SLAM.pdf"
+    "40_Knowledge/References/GS-SDF.pdf"
   ]
 }

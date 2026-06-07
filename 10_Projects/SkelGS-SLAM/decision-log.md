@@ -1226,3 +1226,41 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/UP-SLAM]]
+
+---
+
+## 2026-06-07 — GSO-SLAM 分析结论
+
+### 背景
+完整阅读了 GSO-SLAM (IEEE RA-L 2026)。评估其 DSO + 2DGS EM bidirectional coupling + GS init from VO 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**GSO-SLAM 的定位：DSO + 2DGS under EM coupling。最值借鉴：EM bidirectional VO-GS coupling、Gaussian shape init from VO gradients/associations、2DGS surface-aware map。不是 DPVO temporal backbone / geometry certification framework / global correction system。**
+
+#### 最值借鉴
+1. **EM coupling: VO depth ↔ GS depth 双向** — 安全版本需加强 gate
+2. **Gaussian 初始化不只是 center** — 从 frontend gradients/associations 估计 shape
+3. **2DGS 更适合 surface-aware mapping**
+4. **无额外深度预测网络** — 纯 DSO+2DGS
+
+#### 不适合照搬
+- DSO as sole frontend (motion blur/noise/exposure)
+- Semi-dense only coverage (textureless 不足)
+- GS depth feedback without certification
+
+### 30 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–29 | various | various | references |
+| **30** | **GSO-SLAM** | **DSO+2DGS EM coupling** | **bidirectional coupling / GS init** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GSO-SLAM]]

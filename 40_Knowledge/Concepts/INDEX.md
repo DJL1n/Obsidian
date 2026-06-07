@@ -70,5 +70,7 @@
 - [[Static-Dynamic-Side-Channel]]
 - [[Probabilistic-Anchor-Update]]
 - [[Multi-Modal-Uncertainty]]
+- [[EM-VO-GS-Coupling]]
+- [[Frontend-Gaussian-Initialization]]
 
 > 概念笔记是知识的原子单元。
