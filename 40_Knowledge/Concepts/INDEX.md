@@ -52,5 +52,7 @@
 - [[Monocular-GS-SLAM-Pipeline]]
 - [[Submap-Geometry-Unit]]
 - [[2D-3D-Fusion-Tracking]]
+- [[SDF-Geometry-Teacher]]
+- [[Shape-Regularization]]
 
 > 概念笔记是知识的原子单元。

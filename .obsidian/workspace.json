@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Shape-Regularization.md",
+    "40_Knowledge/Methods/NSDF-to-GS-Initialization.md",
+    "40_Knowledge/Methods/Certified-Geometry-Field.md",
+    "40_Knowledge/Concepts/SDF-Geometry-Teacher.md",
+    "40_Knowledge/References/GS-SDF.md",
+    "40_Knowledge/References/GS-SDF.pdf",
     "40_Knowledge/Methods/Large-Scale-GS-SLAM-Architecture.md",
     "40_Knowledge/Methods/Submap-Fusion-Distillation.md",
     "40_Knowledge/Concepts/Submap-Geometry-Unit.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Anchor-Level-Context-Model.md",
     "40_Knowledge/References/ContextGS.pdf",
     "40_Knowledge/Methods/Pointmap-to-Geometry.md",
-    "40_Knowledge/Concepts/Pointmap-Regression.md",
-    "40_Knowledge/Methods/DUSt3R-Global-Alignment.md",
-    "40_Knowledge/References/DUSt3R.md",
-    "40_Knowledge/Concepts/Uncalibrated-Dense-Reconstruction.md",
     "40_Knowledge/References/DUSt3R.pdf",
-    "40_Knowledge/Methods/Anchor-Octree-for-SLAM.md",
     "40_Knowledge/References/OG-Mapping.pdf",
     "40_Knowledge/References/Spann3R.pdf",
     "40_Knowledge/References/MonoGS.pdf",
-    "40_Knowledge/References/MASt3R.pdf",
-    "40_Knowledge/References/SplaTAM.pdf"
+    "40_Knowledge/References/MASt3R.pdf"
   ]
 }

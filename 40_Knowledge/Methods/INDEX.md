@@ -45,5 +45,7 @@
 - [[Predicted-Depth-GS-Supervision]]
 - [[Large-Scale-GS-SLAM-Architecture]]
 - [[Submap-Fusion-Distillation]]
+- [[NSDF-to-GS-Initialization]]
+- [[Certified-Geometry-Field]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

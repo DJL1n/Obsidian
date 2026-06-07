@@ -885,3 +885,40 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/VPGS-SLAM]]
+
+---
+
+## 2026-06-07 — GS-SDF 分析结论
+
+### 背景
+完整阅读了 GS-SDF (arXiv 2025)。评估其 LiDAR→NSDF→GS init+shape reg 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**GS-SDF 的定位：LiDAR-visual reconstruction/rendering。最值借鉴：外部连续几何场监督 GS + shape regularization > center regularization + 先锁 geometry 再学 appearance + 初始化设计精细。但依赖 LiDAR/posed images，非 monocular SLAM frontend。**
+
+#### 最值借鉴
+1. **GS 几何需要外部连续几何场监督** — render-derived 不够
+2. **Shape regularization > center regularization** — ChildGS 应约束整个 tangent plane
+3. **初始化比后期正则更重要** — birth 时就要有 normal/tangent/scale
+4. **先锁 geometry 再训练 appearance** — 防止 early photo loss 拉坏几何
+5. **Sky/background 单独建模**
+
+#### LiDAR → CertifiedGeometryField
+你的 monocular 版应构造 CertifiedGeometryField / CertifiedAnchorField 作为 weak geometry teacher，ChildGS 只在这个场约束内生长。
+
+### 21 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–20 | various | various | references |
+| **21** | **GS-SDF** | **LiDAR→NSDF→GS init+shape reg** | **geometry teacher / shape reg** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GS-SDF]]
