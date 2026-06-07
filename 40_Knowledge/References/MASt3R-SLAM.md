@@ -266,3 +266,19 @@ MASt3R-SLAM 的最大价值：证明 MASt3R two-view pointmap prior 可以被系
 - 强 two-view geometric prior SLAM: **MASt3R-SLAM**
 - 强 temporal optimisation signal VO/SLAM: **DROID/DPVO**
 - anchor/packet coherence 方向：吸收 MASt3R-SLAM 的 ray-consistency 和 canonical fusion，但 temporal trust/lifecycle/uncertainty 更可能来自 DPVO/DROID-style signals
+
+---
+
+## Related extracted notes
+
+### Concepts
+- [[Ray-Camera-Model]] — ray 作为隐式相机模型
+- [[Canonical-Pointmap-Fusion]] — 多视角 pointmap 加权融合
+- [[Ray-Residual]] — 用方向误差代替 3D 深度误差
+
+### Methods
+- [[Iterative-Projective-Pointmap-Matching]] — 高效 ray-based 匹配算法
+- [[Sim3-Pose-Representation]] — 显式处理 scale 的 pose 表示
+
+### Project
+- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: MASt3R-SLAM 分析结论]]
