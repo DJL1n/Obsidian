@@ -60,5 +60,7 @@
 - [[L2W-Global-Registration]]
 - [[Residual-GS-Layer]]
 - [[Geometry-First-GS-Pipeline]]
+- [[Persistent-State-Pointmap]]
+- [[Certified-Geometry-Memory]]
 
 > 概念笔记是知识的原子单元。

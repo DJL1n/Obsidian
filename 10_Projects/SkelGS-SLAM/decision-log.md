@@ -1039,3 +1039,41 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GPS-SLAM]]
+
+---
+
+## 2026-06-07 — CUT3R 分析结论
+
+### 背景
+完整阅读了 CUT3R (CVPR 2025 Oral)。评估其 persistent state + continuous pointmap 对 SkelGS-SLAM 的价值。
+
+### 关键判断
+
+**CUT3R 的定位：persistent recurrent stateful pointmap predictor。最值借鉴：persistent state → CertifiedGeometryMemory、unseen inference → hypothesis only、continous dense proposal。但不能替代 DPVO temporal backbone / provide anchor lifecycle / serve as GS birth truth。**
+
+#### 最值借鉴
+1. **Persistent state → 你的 CertifiedGeometryMemory**
+2. **Unseen inference → Hypothesis, not Certified**
+3. **Continuous dense geometry witness → CandidatePacket**
+4. **Failure detector: DPVO stable + CUT3R inconsistent → risk**
+
+#### 不建议照搬
+- CUT3R → DPVO replacement（你之前 PSNR 13.93 说明直接当 GS input 危险）
+- CUT3R → direct GS birth
+- Latent state → un-auditable anchor memory
+
+### 25 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–24 | various | various | references |
+| **25** | **CUT3R** | **persistent state pointmap** | **continuous stateful proposal / memory reference** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/CUT3R]]
