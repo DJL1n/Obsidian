@@ -1115,3 +1115,40 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/SEGS-SLAM]]
+
+---
+
+## 2026-06-07 — HI-SLAM2 分析结论
+
+### 背景
+完整阅读了 HI-SLAM2 (IEEE T-RO 2025)。评估其 dense SLAM + JDSA + PGBA + 3DGS + deformation 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry + 3DGS + global correction"的完整系统。最值借鉴：JDSA spatially varying scale alignment、Gaussian deformation after pose update、normal prior GS supervision、层级优化（local BA→PGBA→full BA→joint refine）。不是 certification framework — aligned estimated depth 仍不等于 certified geometry。你的升级空间：multi-evidence certified geometry → Gaussian。**
+
+#### 最值借鉴
+1. **JDSA grid-scale alignment** → 你的 multi-evidence Certified Scale Alignment
+2. **Gaussian map deformation** → CoVersionedGeometryPacket
+3. **Normal prior → GS geometry**
+4. **层级优化结构完整**
+
+#### 升级空间
+- HI-SLAM2: aligned estimated depth → Gaussian
+- 你: multi-source certified geometry → Gaussian
+
+### 27 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–26 | various | various | references |
+| **27** | **HI-SLAM2** | **mono dense + priors + 3DGS** | **最重要系统参考 / JDSA / deformation** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/HI-SLAM2]]

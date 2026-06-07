@@ -64,5 +64,7 @@
 - [[Certified-Geometry-Memory]]
 - [[Structured-GS-for-SLAM]]
 - [[Appearance-Geometry-Decoupling]]
+- [[JDSA-Scale-Alignment]]
+- [[Gaussian-Map-Deformation]]
 
 > 概念笔记是知识的原子单元。

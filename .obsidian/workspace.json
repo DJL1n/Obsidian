@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "021ad5a2fd9f62e3",
+        "id": "5ff1e675b65cc618",
         "type": "tabs",
         "children": [
           {
-            "id": "066b4938ef286647",
+            "id": "cde5d5ae6920f7d6",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -179,8 +179,22 @@
       "bases:新建数据库": false
     }
   },
-  "active": "066b4938ef286647",
+  "active": "cde5d5ae6920f7d6",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/HI-SLAM2-Architecture.md",
+    "40_Knowledge/Concepts/JDSA-Scale-Alignment.md",
+    "40_Knowledge/Concepts/Gaussian-Map-Deformation.md",
+    "40_Knowledge/References/HI-SLAM2.md",
+    "40_Knowledge/Methods/Certified-JDSA.md",
+    "40_Knowledge/References/HI-SLAM2.pdf",
+    "40_Knowledge/Concepts/INDEX.md",
+    "10_Projects/SkelGS-SLAM/decision-log.md",
+    "50_Writing/INDEX.md",
+    "60_WorkingStyle/INDEX.md",
+    "90_Archive/INDEX.md",
+    "00_Inbox/INDEX.md",
+    "20_Areas/INDEX.md",
+    "30_Daily/INDEX.md",
     "40_Knowledge/Concepts/Structured-GS-for-SLAM.md",
     "40_Knowledge/Methods/Frequency-Pyramid-Growth.md",
     "40_Knowledge/Methods/AfME-Appearance-Embedding.md",
@@ -196,26 +210,12 @@
     "40_Knowledge/Concepts/Geometry-First-GS-Pipeline.md",
     "40_Knowledge/References/GPS-SLAM.md",
     "40_Knowledge/Concepts/Residual-GS-Layer.md",
-    "40_Knowledge/Methods/GPS-SLAM-Architecture.md",
-    "40_Knowledge/Methods/Certified-GS-Residual.md",
     "40_Knowledge/References/GPS-SLAM.pdf",
-    "40_Knowledge/References/SLAM3R.md",
-    "40_Knowledge/Concepts/I2P-Local-Reconstruction.md",
-    "40_Knowledge/Methods/Retrieval-Guided-Registration.md",
-    "40_Knowledge/Methods/SLAM3R-Architecture.md",
-    "40_Knowledge/Concepts/L2W-Global-Registration.md",
     "40_Knowledge/References/SLAM3R.pdf",
-    "40_Knowledge/References/MG-SLAM.md",
-    "40_Knowledge/Methods/Observed-vs-Hypothesized-Geometry.md",
-    "40_Knowledge/Concepts/Structure-Guided-GS-Completion.md",
-    "40_Knowledge/Methods/MG-SLAM-Line-Tracking.md",
-    "40_Knowledge/Concepts/Manhattan-Structure-Prior.md",
     "40_Knowledge/References/MG-SLAM.pdf",
-    "40_Knowledge/Concepts/Shape-Regularization.md",
     "40_Knowledge/References/GS-SDF.pdf",
     "40_Knowledge/References/VPGS-SLAM.pdf",
     "40_Knowledge/References/MGS-SLAM.pdf",
-    "40_Knowledge/References/GS-SLAM.pdf",
-    "40_Knowledge/References/ContextGS.pdf"
+    "40_Knowledge/References/GS-SLAM.pdf"
   ]
 }

@@ -57,5 +57,7 @@
 - [[Recurrent-Dense-Proposal]]
 - [[AfME-Appearance-Embedding]]
 - [[Frequency-Pyramid-Growth]]
+- [[HI-SLAM2-Architecture]]
+- [[Certified-JDSA]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。
