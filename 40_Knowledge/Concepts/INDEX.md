@@ -24,5 +24,7 @@
 - [[TSDF-Direct-Supervision]]
 - [[Sparse-Learned-Matcher]]
 - [[Adaptive-Computation-Graph]]
+- [[Anchor-Scaffold-Representation]]
+- [[View-Adaptive-Rendering]]
 
 > 概念笔记是知识的原子单元。

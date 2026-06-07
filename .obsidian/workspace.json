@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0d7c2acb67ea82db",
+        "id": "021ad5a2fd9f62e3",
         "type": "tabs",
         "children": [
           {
-            "id": "67cc45686010dc43",
+            "id": "066b4938ef286647",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -179,8 +179,16 @@
       "bases:新建数据库": false
     }
   },
-  "active": "67cc45686010dc43",
+  "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/ChildGS-Local-Derivation.md",
+    "40_Knowledge/Concepts/Anchor-Scaffold-Representation.md",
+    "40_Knowledge/Methods/Anchor-Growing-Pruning.md",
+    "40_Knowledge/Concepts/View-Adaptive-Rendering.md",
+    "40_Knowledge/References/Scaffold-GS.md",
+    "40_Knowledge/References/Scaffold-GS.pdf",
+    "00_Inbox/INDEX.md",
+    "00_Inbox/hermes-test.md",
     "40_Knowledge/References/LightGlue.pdf",
     "40_Knowledge/References/LightGlue.md",
     "40_Knowledge/Methods/Matchability-Assignment.md",
@@ -204,12 +212,6 @@
     "40_Knowledge/Methods/DROID-Training-Gauge.md",
     "40_Knowledge/References/MASt3R-SLAM.md",
     "40_Knowledge/References/DROID-SLAM.md",
-    "40_Knowledge/References/INDEX.md",
-    "40_Knowledge/Methods/DROID-Frontend-Backend.md",
-    "40_Knowledge/Concepts/Recurrent-Correction-Update.md",
-    "40_Knowledge/Concepts/Correlation-Volume.md",
-    "40_Knowledge/Concepts/Dense-Bundle-Adjustment.md",
-    "40_Knowledge/Methods/Iterative-Projective-Pointmap-Matching.md",
-    "40_Knowledge/Concepts/Ray-Residual.md"
+    "40_Knowledge/References/INDEX.md"
   ]
 }

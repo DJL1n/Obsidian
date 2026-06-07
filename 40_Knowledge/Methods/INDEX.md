@@ -17,5 +17,7 @@
 - [[Geometry-Appearance-Decoupling]]
 - [[Matchability-Assignment]]
 - [[LightGlue-SLAM-Integration]]
+- [[Anchor-Growing-Pruning]]
+- [[ChildGS-Local-Derivation]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

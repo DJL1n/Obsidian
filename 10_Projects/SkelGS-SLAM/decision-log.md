@@ -262,3 +262,60 @@ S3LAM 的核心思路：raw points/anchors → semantic-instance cluster → pri
 
 ### 相关笔记
 - [[40_Knowledge/References/LightGlue]]
+
+---
+
+## 2026-06-07 — Scaffold-GS 论文分析结论
+
+### 背景
+完整阅读并整理了 Scaffold-GS (CVPR 2024 Highlight) 论文，评估其 anchor-structured Gaussian 表示对 SkelGS-SLAM 的 GS backend / ChildGS 方向的启发。
+
+### 关键判断
+
+**Scaffold-GS 的定位：不是 SLAM frontend 的答案，是"结构化 GS backend"的重要参考。对 SkelGS-SLAM 的价值在于 ChildGS / anchor-conditioned Gaussian birth，而非 pose tracking 或 geometry packet certification。**
+
+#### 最值得采用的机制
+1. **Anchor-conditioned Gaussian birth** — certified anchor → local offsets → spawn child Gaussians，而非 depth pixel → directly birth Gaussian
+2. **ChildGS 形式** — parent anchor (position, normal, feature, scale, support) → child Gaussians (offset in local tangent frame, anisotropic scale, opacity, SH)
+3. **View-adaptive appearance allowed, view-adaptive geometry dangerous** — geometry slow-changing multi-view consistent
+4. **Growing/pruning gate 需 evidence-gated** — temporal + geometric + render gradient
+
+#### 与你的 anchor skeleton 的根本区别
+
+| | Scaffold-GS anchor | 你的 geometric anchor |
+|---|---|---|
+| 目标 | rendering organization | geometry certification |
+| 生长依据 | rendering gradient | track survival + residual + consistency |
+| 剪枝依据 | opacity contribution | geometry support + observation count |
+
+#### 不建议照搬的
+- SfM voxel 初始化（你的 anchor 应来自 tracking signal）
+- 纯 rendering gradient growing
+- View-adaptive geometry（可能掩盖真实几何错误）
+
+### 七篇论文完整定位
+
+| 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|---|---|
+| **DROID/DPVO** | temporal optimization | tracking / temporal anchor support |
+| **MASt3R-SLAM** | dense two-view geometry | robust geometry proposal |
+| **S3LAM** | semantic cluster + structure | structural grouping |
+| **ESLAM** | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
+| **LightGlue** | fast sparse matching | pair verification / loop / reloc |
+| **Scaffold-GS** | structured GS backend | anchor-conditioned GS birth / ChildGS |
+
+### 后续方向（更新）
+- DROID/DPVO 主时间骨架
+- MASt3R 宽基线几何来源
+- S3LAM-like 语义结构分组
+- ESLAM-like free-space gating
+- LightGlue side verification
+- **Scaffold-GS-like anchor-conditioned ChildGS**
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/Scaffold-GS]]
