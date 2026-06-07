@@ -683,3 +683,49 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/OG-Mapping]]
+
+---
+
+## 2026-06-07 — DUSt3R 分析结论
+
+### 背景
+完整阅读了 DUSt3R (CVPR 2024) 论文 — MASt3R/Spann3R 的底层 foundation model。评估其 pairwise pointmap regression 对 SkelGS-SLAM 的定位。
+
+### 关键判断
+
+**DUSt3R 的定位：foundational pairwise dense 3D prior。对 GS-SLAM 来说只能是强 geometry proposal，不能是最终 geometry truth；必须经过 temporal/scale/normal/free-space/global consistency 认证才能进入 CertifiedGeometryPacket。**
+
+#### 最适合作为
+- Dense two-view geometry candidate
+- Depth candidate / point cloud candidate
+- Wide-baseline edge proposal
+- DPVO drift 的外部对照
+- Anchor candidate 的 pairwise support
+
+#### 不适合
+- 高频 tracking / 长窗口 trajectory / 直接 GS input
+
+#### 三层模型关系
+| 模型 | DUSt3R | MASt3R | Spann3R |
+|---|---|---|---|
+| 核心 | pointmap prior | + matching head | + spatial memory |
+| 匹配精度 | 低 | 高 | 中 |
+| 全局坐标 | pairwise | pairwise | global (memory) |
+| 对你价值 | geometry proposal | matching witness | memory abstraction |
+
+### 16 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | **DPVO** | temporal tracking | **main temporal backbone** |
+| **2** | **DUSt3R** | **pairwise dense 3D foundation prior** | **foundational geometry proposal** |
+| 3 | MASt3R | DUSt3R + matching | wide-baseline witness |
+| 4–16 | others | various | references |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/DUSt3R]]

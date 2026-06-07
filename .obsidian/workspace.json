@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Pointmap-to-Geometry.md",
+    "40_Knowledge/Concepts/Pointmap-Regression.md",
+    "40_Knowledge/Methods/DUSt3R-Global-Alignment.md",
+    "40_Knowledge/References/DUSt3R.md",
+    "40_Knowledge/Concepts/Uncalibrated-Dense-Reconstruction.md",
+    "40_Knowledge/References/DUSt3R.pdf",
     "40_Knowledge/Methods/Anchor-Octree-for-SLAM.md",
     "40_Knowledge/Concepts/Progressive-LOD-Growth.md",
     "40_Knowledge/Concepts/Octree-Anchor-Hierarchy.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Two-View-Pointmap-Prior.md",
     "40_Knowledge/References/MASt3R.pdf",
     "40_Knowledge/Methods/Silhouette-Gated-Tracking.md",
-    "40_Knowledge/References/SplaTAM.md",
-    "40_Knowledge/Methods/RGB-D-Densification-Mask.md",
-    "40_Knowledge/Concepts/Silhouette-Map-Coverage.md",
-    "40_Knowledge/Concepts/Isotropic-GS-SLAM.md",
     "40_Knowledge/References/SplaTAM.pdf",
-    "40_Knowledge/Methods/Global-Correction-Mapping.md",
     "40_Knowledge/References/GO-SLAM.pdf",
     "40_Knowledge/References/Gaussian-SLAM.pdf",
     "40_Knowledge/References/DPVO.pdf",
-    "40_Knowledge/References/Scaffold-GS.pdf",
-    "40_Knowledge/References/LightGlue.pdf"
+    "40_Knowledge/References/Scaffold-GS.pdf"
   ]
 }

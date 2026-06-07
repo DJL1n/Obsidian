@@ -42,5 +42,7 @@
 - [[Dense-Sparse-Memory]]
 - [[Octree-Anchor-Hierarchy]]
 - [[Progressive-LOD-Growth]]
+- [[Pointmap-Regression]]
+- [[Uncalibrated-Dense-Reconstruction]]
 
 > 概念笔记是知识的原子单元。
