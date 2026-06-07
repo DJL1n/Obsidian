@@ -62,5 +62,7 @@
 - [[Geometry-First-GS-Pipeline]]
 - [[Persistent-State-Pointmap]]
 - [[Certified-Geometry-Memory]]
+- [[Structured-GS-for-SLAM]]
+- [[Appearance-Geometry-Decoupling]]
 
 > 概念笔记是知识的原子单元。

@@ -36,6 +36,7 @@
 - [[decision-log|SLAM3R 分析]] (2026-06-07)
 - [[decision-log|GPS-SLAM 分析]] (2026-06-07)
 - [[decision-log|CUT3R 分析]] (2026-06-07)
+- [[decision-log|SEGS-SLAM 分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Structured-GS-for-SLAM.md",
+    "40_Knowledge/Methods/Frequency-Pyramid-Growth.md",
+    "40_Knowledge/Methods/AfME-Appearance-Embedding.md",
+    "40_Knowledge/References/SEGS-SLAM.md",
+    "40_Knowledge/Concepts/Appearance-Geometry-Decoupling.md",
+    "40_Knowledge/References/SEGS-SLAM.pdf",
     "40_Knowledge/Methods/CUT3R-Architecture.md",
     "40_Knowledge/Methods/Recurrent-Dense-Proposal.md",
     "40_Knowledge/Concepts/Certified-Geometry-Memory.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Manhattan-Structure-Prior.md",
     "40_Knowledge/References/MG-SLAM.pdf",
     "40_Knowledge/Concepts/Shape-Regularization.md",
-    "40_Knowledge/Methods/NSDF-to-GS-Initialization.md",
-    "40_Knowledge/Methods/Certified-Geometry-Field.md",
-    "40_Knowledge/Concepts/SDF-Geometry-Teacher.md",
-    "40_Knowledge/References/GS-SDF.md",
     "40_Knowledge/References/GS-SDF.pdf",
-    "40_Knowledge/Methods/Large-Scale-GS-SLAM-Architecture.md",
     "40_Knowledge/References/VPGS-SLAM.pdf",
     "40_Knowledge/References/MGS-SLAM.pdf",
     "40_Knowledge/References/GS-SLAM.pdf",
-    "40_Knowledge/References/ContextGS.pdf",
-    "40_Knowledge/References/DUSt3R.pdf"
+    "40_Knowledge/References/ContextGS.pdf"
   ]
 }

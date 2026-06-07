@@ -1077,3 +1077,41 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/CUT3R]]
+
+---
+
+## 2026-06-07 — SEGS-SLAM 分析结论
+
+### 背景
+完整阅读了 SEGS-SLAM (ICCV 2025)。评估其 structured GS + AfME + frequency pyramid 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**SEGS-SLAM 的定位：structured GS + appearance embedding backend。最值借鉴：structured GS for SLAM、AfME appearance-geometry decoupling、frequency pyramid controlled growth。但不是几何认证框架 / high-rate temporal frontend / DPVO alternative。**
+
+#### 最值借鉴
+1. **Structured GS → ChildGS 应是 anchor-conditioned**
+2. **AfME → appearance variation 单独建模，减少 RGB loss 对几何污染**
+3. **Frequency pyramid → CertifiedAnchor LOD pyramid**
+4. **Appearance embedding 边界：可解释 color/view 差异，不可认证几何**
+
+#### 不建议照搬
+- Structured GS 替代 geometry certification
+- AfME 提升 PSNR → 认为 geometry 更好
+- SEGS-SLAM 替代 DPVO/DROID
+
+### 26 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–25 | various | various | references |
+| **26** | **SEGS-SLAM** | **structured GS + AfME** | **ChildGS / appearance decoupling / frequency growth** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/SEGS-SLAM]]

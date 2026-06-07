@@ -55,5 +55,7 @@
 - [[Certified-GS-Residual]]
 - [[CUT3R-Architecture]]
 - [[Recurrent-Dense-Proposal]]
+- [[AfME-Appearance-Embedding]]
+- [[Frequency-Pyramid-Growth]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。
