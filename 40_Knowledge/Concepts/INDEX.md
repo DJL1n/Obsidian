@@ -68,5 +68,7 @@
 - [[Gaussian-Map-Deformation]]
 - [[Uncertainty-Dynamic-Filtering]]
 - [[Static-Dynamic-Side-Channel]]
+- [[Probabilistic-Anchor-Update]]
+- [[Multi-Modal-Uncertainty]]
 
 > 概念笔记是知识的原子单元。

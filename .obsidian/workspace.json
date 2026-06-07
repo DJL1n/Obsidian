@@ -181,6 +181,12 @@
   },
   "active": "cde5d5ae6920f7d6",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/UP-SLAM-Architecture.md",
+    "40_Knowledge/Concepts/Probabilistic-Anchor-Update.md",
+    "40_Knowledge/References/UP-SLAM.md",
+    "40_Knowledge/Methods/Certified-Probabilistic-Anchor.md",
+    "40_Knowledge/Concepts/Multi-Modal-Uncertainty.md",
+    "40_Knowledge/References/UP-SLAM.pdf",
     "40_Knowledge/Concepts/Uncertainty-Dynamic-Filtering.md",
     "40_Knowledge/Methods/WildGS-SLAM-Architecture.md",
     "40_Knowledge/Methods/Certified-Dynamic-Gate.md",
@@ -204,18 +210,12 @@
     "40_Knowledge/Concepts/Structured-GS-for-SLAM.md",
     "40_Knowledge/Methods/Frequency-Pyramid-Growth.md",
     "40_Knowledge/Methods/AfME-Appearance-Embedding.md",
-    "40_Knowledge/References/SEGS-SLAM.md",
-    "40_Knowledge/Concepts/Appearance-Geometry-Decoupling.md",
     "40_Knowledge/References/SEGS-SLAM.pdf",
-    "40_Knowledge/Methods/CUT3R-Architecture.md",
-    "40_Knowledge/Methods/Recurrent-Dense-Proposal.md",
-    "40_Knowledge/Concepts/Certified-Geometry-Memory.md",
     "40_Knowledge/References/CUT3R.pdf",
     "40_Knowledge/References/GPS-SLAM.pdf",
     "40_Knowledge/References/SLAM3R.pdf",
     "40_Knowledge/References/MG-SLAM.pdf",
     "40_Knowledge/References/GS-SDF.pdf",
-    "40_Knowledge/References/VPGS-SLAM.pdf",
-    "40_Knowledge/References/MGS-SLAM.pdf"
+    "40_Knowledge/References/VPGS-SLAM.pdf"
   ]
 }

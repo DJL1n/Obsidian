@@ -1188,3 +1188,41 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/WildGS-SLAM]]
+
+---
+
+## 2026-06-07 — UP-SLAM 分析结论
+
+### 背景
+完整阅读了 UP-SLAM (ICRA 2026)。评估其 probabilistic octree anchor + training-free uncertainty + DINO feature map + parallel tracking-mapping 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**UP-SLAM 的定位：RGB-D dynamic GS-SLAM。最值借鉴：probabilistic anchor update（Bayesian）、multi-modal uncertainty、DINO feature distillation、tracking/mapping 解耦。但不是 monocular / DPVO/DROID temporal backbone / geometry certification framework。**
+
+#### 最值借鉴
+1. **ProbabilisticAnchor → 你的 CertifiedAnchor 概率更新形式**
+2. **概率更新替代硬阈值 — 你的 monocular 系统更应避免手工 depth conf 阈值**
+3. **DINO feature distillation → anchor 可扩展语义通道**
+4. **tracking/mapping 解耦 → 支持 no-writeback**
+5. **Training-free estimator → early uncertainty gate**
+
+#### 不够
+- RGB-D / ORB-SLAM3 / YOLOv8-seg 部分依赖 — 不能直接搬到 mono
+- ProbabilisticAnchor motion prob ≠ CertifiedAnchor geometry cert
+
+### 29 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–28 | various | various | references |
+| **29** | **UP-SLAM** | **RGB-D dynamic GS-SLAM** | **probabilistic anchor / multi-modal uncertainty** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/UP-SLAM]]
