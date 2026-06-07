@@ -18,6 +18,7 @@
 - [[decision-log|ESLAM 论文分析]] (2026-06-07)
 - [[decision-log|LightGlue 论文分析]] (2026-06-07)
 - [[decision-log|Scaffold-GS 论文分析]] (2026-06-07)
+- [[decision-log|DPVO 论文分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

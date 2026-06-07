@@ -26,5 +26,7 @@
 - [[Adaptive-Computation-Graph]]
 - [[Anchor-Scaffold-Representation]]
 - [[View-Adaptive-Rendering]]
+- [[Patch-Graph-VO]]
+- [[Patch-Lifecycle]]
 
 > 概念笔记是知识的原子单元。

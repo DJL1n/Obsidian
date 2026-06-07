@@ -319,3 +319,58 @@ S3LAM 的核心思路：raw points/anchors → semantic-instance cluster → pri
 
 ### 相关笔记
 - [[40_Knowledge/References/Scaffold-GS]]
+
+---
+
+## 2026-06-07 — DPVO 论文分析结论
+
+### 背景
+完整阅读并整理了 DPVO (NeurIPS 2023) 论文，评估其作为 SkelGS-SLAM anchor temporal backbone 的价值。
+
+### 关键判断
+
+**DPVO 的定位：最合适的 anchor temporal trust backbone。比 DROID 更轻（60-120 FPS, 29-57% memory）、比 MASt3R 更适合高频 tracking、比 LightGlue 提供完整 lifecycle。**
+
+#### 最值得采用的机制
+1. **Patch lifecycle** — source frame, connected frames, revision δ, confidence Σ, depth update, BA residual, survival time
+2. **Patch graph** — 局部 temporal edges + graph-based aggregation
+3. **Differentiable BA** — pose + patch inverse depth 联合优化，提供 residual/depth update signal
+4. **Shadow diagnostics 路径** — 先只记录不写回，验证 AnchorScore 再做 admission
+
+#### 合理流程
+```
+DPVO patch → anchor candidate
+DPVO evidence + depth/normal + multi-view + free-space gate → certified anchor
+certified anchor → child Gaussian birth
+```
+
+#### 不建议的用法
+- DPVO patch depth → 直接 birth Gaussian（无 geometry certification）
+
+### 八篇论文完整定位
+
+| 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|---|---|
+| **DPVO** | sparse patch recurrent VO | **temporal tracking + anchor trust backbone** |
+| DROID-SLAM | dense recurrent pose-depth | richer but heavier temporal signal |
+| MASt3R-SLAM | dense two-view geometry | robust geometry proposal |
+| S3LAM | semantic cluster + structure | structural grouping |
+| ESLAM | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
+| LightGlue | fast sparse matching | pair verification / loop / reloc |
+| Scaffold-GS | structured GS backend | anchor-conditioned GS birth / ChildGS |
+
+### 后续方向（更新）
+- **DPVO 作为主时间骨架** — patch lifecycle → anchor maturity
+- MASt3R 宽基线几何来源
+- S3LAM-like 语义结构分组
+- ESLAM-like free-space gating
+- LightGlue side verification
+- Scaffold-GS-like anchor-conditioned ChildGS
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/DPVO]]
