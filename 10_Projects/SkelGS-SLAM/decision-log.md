@@ -104,3 +104,67 @@ DROID-SLAM 每条 graph edge 提供的大量信号：
 
 ### 相关笔记
 - [[40_Knowledge/References/DROID-SLAM]]
+
+---
+
+## 2026-06-07 — S3LAM 论文分析结论
+
+### 背景
+完整阅读并整理了 S3LAM (arXiv 2021) 论文，评估其 semantic cluster + structure prior 对 anchor group 方向的启发。
+
+### 关键判断
+
+**S3LAM 的定位：不适合作为主 tracking/depth-pose frontend，适合作为 anchor group / structure prior / semantic support layer 的参考。**
+
+#### 最值得吸收的机制
+S3LAM 的核心思路：raw points/anchors → semantic-instance cluster → primitive hypothesis → support/inlier validation → soft structural factor → map/pose/GS birth confidence。
+
+#### 对 anchor 方向的具体启发
+
+**1. Cluster 比单点更可靠**
+- single anchor: evidence weak，易受局部噪声/动态/深度错误影响
+- anchor cluster: shared support，可拟合 primitive，可判断结构稳定性
+- anchor 不一定只按像素/patch 独立成熟，可以有 anchor group / structural family
+
+**2. Admission 应该是语义+几何双门控**
+- segmentation pass + temporal visibility + depth consistency + normal consistency + primitive fit + inlier threshold
+- 与 CertifiedGeometryPacket 思路契合
+
+**3. 结构先验应该 soft（no-writeback）**
+- plane prior 作为 candidate factor / confidence factor，只影响 admission/weighting/certification
+- 不改 depth/pose/Gaussian
+
+**4. Primitive abstraction 可扩展**
+- S3LAM 只用了 plane，可扩展到：line/edge, quadric/ellipsoid, cuboid, local tangent patch
+- 对 GS 最实用的是 local tangent plane / surfel primitive
+
+#### DROID + S3LAM 互补
+
+| DROID/DPVO | S3LAM-like structure |
+|---|---|
+| temporal evidence | semantic/structural grouping |
+| BA residual/confidence | cluster-level support |
+| depth update magnitude | primitive fit + inlier ratio |
+| covisibility stability | maturity score |
+
+### 研究架构定位更新
+- **DROID/DPVO**: 时序优化骨架和 trust signal
+- **MASt3R**: 强 two-view / loop geometry proposal
+- **S3LAM-like**: semantic cluster + structural anchor group
+- **Depth-normal predictor**: metric-like dense geometry prior
+- **CertifiedGeometryPacket / Anchor skeleton**: admission + consistency gate
+- **GS**: consume only stable structured anchors
+
+### 后续方向（更新）
+- DROID/DPVO 作为主时间骨架
+- Structured Anchor Group 设计（group id, primitive, maturity score）
+- 语义/结构双门控 admission pipeline
+- 最终 GS geometry 必须经过 certification
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/S3LAM]]

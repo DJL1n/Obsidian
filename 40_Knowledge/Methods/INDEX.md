@@ -11,5 +11,7 @@
 - [[Sim3-Pose-Representation]]
 - [[DROID-Frontend-Backend]]
 - [[DROID-Training-Gauge]]
+- [[Panoptic-SLAM-Fusion]]
+- [[Structured-Anchor-Group]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

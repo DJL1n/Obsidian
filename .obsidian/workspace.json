@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6086d58f0d2d7de4",
+        "id": "3842f8d2a7888d80",
         "type": "tabs",
         "children": [
           {
-            "id": "b8dd7af0506c7bdc",
+            "id": "5ac59b3cf0ebaf2b",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -179,11 +179,18 @@
       "bases:新建数据库": false
     }
   },
-  "active": "c25fd25a2c93fede",
+  "active": "5ac59b3cf0ebaf2b",
   "lastOpenFiles": [
-    "40_Knowledge/References/DROID-SLAM.md",
-    "40_Knowledge/Methods/DROID-Frontend-Backend.md",
+    "40_Knowledge/References/S3LAM.md",
+    "40_Knowledge/Concepts/Semantic-Cluster-Structure-Prior.md",
+    "40_Knowledge/Concepts/Point-Plane-Regularizer.md",
+    "40_Knowledge/Methods/Structured-Anchor-Group.md",
+    "40_Knowledge/Methods/Panoptic-SLAM-Fusion.md",
     "40_Knowledge/Methods/DROID-Training-Gauge.md",
+    "40_Knowledge/References/MASt3R-SLAM.md",
+    "40_Knowledge/References/DROID-SLAM.md",
+    "40_Knowledge/References/INDEX.md",
+    "40_Knowledge/Methods/DROID-Frontend-Backend.md",
     "40_Knowledge/Concepts/Recurrent-Correction-Update.md",
     "40_Knowledge/Concepts/Correlation-Volume.md",
     "40_Knowledge/Concepts/Dense-Bundle-Adjustment.md",
@@ -192,7 +199,6 @@
     "40_Knowledge/Concepts/Ray-Camera-Model.md",
     "40_Knowledge/Methods/Sim3-Pose-Representation.md",
     "40_Knowledge/Concepts/Canonical-Pointmap-Fusion.md",
-    "40_Knowledge/References/MASt3R-SLAM.md",
     "00_Inbox/hermes-test.md",
     "README.md"
   ]
