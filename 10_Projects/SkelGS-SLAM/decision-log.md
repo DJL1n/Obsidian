@@ -729,3 +729,42 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/DUSt3R]]
+
+---
+
+## 2026-06-07 — ContextGS 分析结论
+
+### 背景
+完整阅读了 ContextGS (NeurIPS 2024) 论文。评估其 anchor-level autoregressive context compression 对 SkelGS-SLAM frozen submap / anchor memory 的启发。
+
+### 关键判断
+
+**ContextGS 的定位：frozen/mature anchor-GS map compression reference。最值得借鉴的是 hierarchical anchor partition + autoregressive context model + rate-distortion trade-off。不是 SLAM frontend / geometry certification / online mapping。**
+
+#### 最值得借鉴
+1. **Anchor memory 需要压缩和层级化** — active → mature → frozen/context-coded
+2. **Anchor 之间可以互相预测** — context model 用于 compression + consistency prior
+3. **Frozen submap → ContextGS-style compressed anchors**
+4. **Rate-distortion trade-off for GS maps**
+
+#### 不建议照搬
+- 作为 SLAM frontend / tracking optimizer / geometry certifier
+
+### 17 篇论文完整定位
+
+| # | 系统 | 定位 |
+|---|------|------|
+| 1 | **DPVO** | temporal backbone |
+| 2–3 | **DUSt3R / MASt3R** | geometry proposal |
+| 4–6 | Spann3R / MASt3R-SLAM / DROID | memory / system / temporal |
+| 7–10 | S3LAM / ESLAM / LightGlue / GO-SLAM | structure / surface / verify / correct |
+| 11–16 | Scaffold-GS / GS-SLAMs / OG-Mapping / MonoGS / SplaTAM | GS backend variants |
+| **17** | **ContextGS** | **anchor-level context compression / frozen map** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/ContextGS]]

@@ -44,5 +44,7 @@
 - [[Progressive-LOD-Growth]]
 - [[Pointmap-Regression]]
 - [[Uncalibrated-Dense-Reconstruction]]
+- [[Anchor-Level-Context-Model]]
+- [[Hierarchical-Anchor-Partition]]
 
 > 概念笔记是知识的原子单元。

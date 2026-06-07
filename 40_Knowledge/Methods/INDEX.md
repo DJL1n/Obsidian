@@ -37,5 +37,7 @@
 - [[Anchor-Octree-for-SLAM]]
 - [[DUSt3R-Global-Alignment]]
 - [[Pointmap-to-Geometry]]
+- [[Anchor-Compression-for-SLAM]]
+- [[Rate-Distortion-GS]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

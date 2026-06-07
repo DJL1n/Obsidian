@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/References/ContextGS.md",
+    "40_Knowledge/Methods/Anchor-Compression-for-SLAM.md",
+    "40_Knowledge/Methods/Rate-Distortion-GS.md",
+    "40_Knowledge/Concepts/Hierarchical-Anchor-Partition.md",
+    "40_Knowledge/Concepts/Anchor-Level-Context-Model.md",
+    "40_Knowledge/References/ContextGS.pdf",
     "40_Knowledge/Methods/Pointmap-to-Geometry.md",
     "40_Knowledge/Concepts/Pointmap-Regression.md",
     "40_Knowledge/Methods/DUSt3R-Global-Alignment.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/GS-Tracking-Representation.md",
     "40_Knowledge/References/MonoGS.pdf",
     "40_Knowledge/Methods/Fast-Reciprocal-Matching.md",
-    "40_Knowledge/References/MASt3R.md",
-    "40_Knowledge/Concepts/3D-Grounded-Matching.md",
-    "40_Knowledge/Methods/Coarse-to-Fine-Dense-Matching.md",
-    "40_Knowledge/Concepts/Two-View-Pointmap-Prior.md",
     "40_Knowledge/References/MASt3R.pdf",
-    "40_Knowledge/Methods/Silhouette-Gated-Tracking.md",
     "40_Knowledge/References/SplaTAM.pdf",
     "40_Knowledge/References/GO-SLAM.pdf",
     "40_Knowledge/References/Gaussian-SLAM.pdf",
-    "40_Knowledge/References/DPVO.pdf",
-    "40_Knowledge/References/Scaffold-GS.pdf"
+    "40_Knowledge/References/DPVO.pdf"
   ]
 }
