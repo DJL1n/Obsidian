@@ -808,3 +808,40 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GS-SLAM]]
+
+---
+
+## 2026-06-07 — MGS-SLAM 分析结论
+
+### 背景
+完整阅读了 MGS-SLAM (IEEE RA-L 2024)。评估其 DPVO + MVS depth + GS mapping + SDAR 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。最值借鉴：DPVO GS 分工 + SDAR scale closure + depth smooth loss。但还不够安全 — SDAR 是统计校正，你需要的是 CertifiedGeometryPacket / CertifiedAnchor。**
+
+#### 最值借鉴
+1. **DPVO frontend + GS backend 分工** — 支持你的路线
+2. **SDAR: sparse-dense scale closure** — 你 scale coherence 的参考
+3. **Depth smooth loss** — predicted depth 不能硬吃
+4. **Tracking vs mapping keyframe 分离**
+
+#### 需加强
+- SDAR → multi-factor certified alignment
+- GS feedback → gated weak evidence only
+
+### 19 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **主 backbone** |
+| 2 | DUSt3R→MASt3R | geometry proposal | wide-baseline witness |
+| **19** | **MGS-SLAM** | **monocular DPVO+MVS+GS** | **最接近你路线的参考系统** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MGS-SLAM]]

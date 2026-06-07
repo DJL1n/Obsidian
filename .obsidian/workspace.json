@@ -181,6 +181,11 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Predicted-Depth-GS-Supervision.md",
+    "40_Knowledge/References/MGS-SLAM.md",
+    "40_Knowledge/Methods/SDAR-Mechanism.md",
+    "40_Knowledge/Concepts/Sparse-Dense-Scale-Alignment.md",
+    "40_Knowledge/References/MGS-SLAM.pdf",
     "40_Knowledge/Methods/VideoBuffer-to-GS-Feedback.md",
     "40_Knowledge/Concepts/Coarse-to-Fine-GS-Tracking.md",
     "40_Knowledge/Concepts/Adaptive-Gaussian-Expansion.md",
@@ -207,15 +212,10 @@
     "40_Knowledge/References/OG-Mapping.pdf",
     "40_Knowledge/Methods/Spann3R-Memory-Architecture.md",
     "40_Knowledge/Concepts/Dense-Sparse-Memory.md",
-    "40_Knowledge/Methods/Spatial-Memory-for-Anchor.md",
-    "40_Knowledge/Concepts/Spatial-Memory-Reconstruction.md",
-    "40_Knowledge/References/Spann3R.md",
     "40_Knowledge/References/Spann3R.pdf",
-    "40_Knowledge/Methods/MonoGS-Monocular-Insertion.md",
     "40_Knowledge/References/MonoGS.pdf",
     "40_Knowledge/References/MASt3R.pdf",
     "40_Knowledge/References/SplaTAM.pdf",
-    "40_Knowledge/References/GO-SLAM.pdf",
-    "40_Knowledge/References/Gaussian-SLAM.pdf"
+    "40_Knowledge/References/GO-SLAM.pdf"
   ]
 }

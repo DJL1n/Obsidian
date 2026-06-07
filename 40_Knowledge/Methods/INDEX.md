@@ -41,5 +41,7 @@
 - [[Rate-Distortion-GS]]
 - [[GS-SLAM-RGBD-Pipeline]]
 - [[VideoBuffer-to-GS-Feedback]]
+- [[SDAR-Mechanism]]
+- [[Predicted-Depth-GS-Supervision]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

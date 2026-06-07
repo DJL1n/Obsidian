@@ -48,5 +48,7 @@
 - [[Hierarchical-Anchor-Partition]]
 - [[Adaptive-Gaussian-Expansion]]
 - [[Coarse-to-Fine-GS-Tracking]]
+- [[Sparse-Dense-Scale-Alignment]]
+- [[Monocular-GS-SLAM-Pipeline]]
 
 > 概念笔记是知识的原子单元。
