@@ -28,5 +28,7 @@
 - [[View-Adaptive-Rendering]]
 - [[Patch-Graph-VO]]
 - [[Patch-Lifecycle]]
+- [[Submap-Gaussian-Organization]]
+- [[GS-Birth-Gate]]
 
 > 概念笔记是知识的原子单元。

@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/References/Gaussian-SLAM.md",
+    "40_Knowledge/Concepts/GS-Birth-Gate.md",
+    "40_Knowledge/Methods/Online-GS-Seeding-Strategy.md",
+    "40_Knowledge/Methods/Render-and-Optimize-Tracking.md",
+    "40_Knowledge/Concepts/Submap-Gaussian-Organization.md",
+    "40_Knowledge/References/Gaussian-SLAM.pdf",
     "40_Knowledge/References/DPVO.md",
     "40_Knowledge/Methods/Patch-Temporal-Optimization.md",
     "40_Knowledge/Methods/DPVO-Temporal-Frontend.md",
@@ -206,13 +212,8 @@
     "40_Knowledge/References/ESLAM.md",
     "40_Knowledge/Concepts/TSDF-Direct-Supervision.md",
     "40_Knowledge/Methods/Geometry-Appearance-Decoupling.md",
-    "40_Knowledge/Concepts/Tri-Plane-Feature.md",
-    "40_Knowledge/References/S3LAM.md",
     "40_Knowledge/References/S3LAM.pdf",
     "40_Knowledge/References/DROID-SLAM.pdf",
-    "40_Knowledge/References/MASt3R-SLAM.pdf",
-    "40_Knowledge/Concepts/Semantic-Cluster-Structure-Prior.md",
-    "40_Knowledge/Concepts/Point-Plane-Regularizer.md",
-    "40_Knowledge/Methods/Structured-Anchor-Group.md"
+    "40_Knowledge/References/MASt3R-SLAM.pdf"
   ]
 }

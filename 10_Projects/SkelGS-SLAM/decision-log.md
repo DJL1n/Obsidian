@@ -374,3 +374,44 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/DPVO]]
+
+---
+
+## 2026-06-07 — Gaussian-SLAM 论文分析结论
+
+### 背景
+完整阅读并整理了 Gaussian-SLAM (ECCV 2024) 论文，评估其 GS mapping / online seeding / submap optimization 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**Gaussian-SLAM 的定位：RGB-D 条件下把 3DGS 做进 dense SLAM 的重要系统。最有用的是 Gaussian birth gate、submap optimization、alpha-masked tracking。不能替代 DPVO/DROID，不能直接解决 monocular geometry packet 认证。**
+
+#### 最值得借鉴
+1. **Controlled Gaussian seeding** — alpha mask + NN check，不照搬 gradient split/clone
+2. **Alpha mask for tracking feedback** — 避免坏 map 污染 pose
+3. **Sub-map active optimization** — 只优化当前活跃区域
+
+#### 不建议照搬
+- RGB-D point cloud → seed Gaussian（你的系统无真实 depth）
+- Render-and-optimize tracking（DPVO/DROID 更适合 monocular）
+
+### 九篇论文完整定位
+
+| 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|---|---|
+| **DPVO** | sparse patch recurrent VO | **temporal tracking + anchor trust backbone** |
+| DROID-SLAM | dense recurrent pose-depth | richer but heavier temporal signal |
+| MASt3R-SLAM | dense two-view geometry | robust geometry proposal |
+| S3LAM | semantic cluster + structure | structural grouping |
+| ESLAM | RGB-D TSDF implicit | surface-band / free-space regularization |
+| LightGlue | fast sparse matching | pair verification / loop / reloc |
+| Scaffold-GS | structured GS backend | anchor-conditioned GS birth / ChildGS |
+| **Gaussian-SLAM** | **RGB-D online GS SLAM** | **birth gate / submap / alpha-mask tracking** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/Gaussian-SLAM]]
