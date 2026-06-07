@@ -21,6 +21,7 @@
 - [[decision-log|DPVO 论文分析]] (2026-06-07)
 - [[decision-log|Gaussian-SLAM 论文分析]] (2026-06-07)
 - [[decision-log|GO-SLAM 论文分析]] (2026-06-07)
+- [[decision-log|SplaTAM 论文分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

@@ -459,3 +459,48 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GO-SLAM]]
+
+---
+
+## 2026-06-07 — SplaTAM 论文分析结论
+
+### 背景
+完整阅读并整理了 SplaTAM (CVPR 2024) 论文，评估其 silhouette-gated tracking / GS densification / isotropic GS-SLAM 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**SplaTAM 的定位：GS backend / silhouette-gated tracking / densification reference。不是 monocular frontend / temporal optimizer / geometry certifier。**
+
+#### 最值得借鉴
+1. **Silhouette mask 作为 GS feedback 安全门** — only map-covered regions participate in tracking
+2. **Densification mask → monocular Gaussian birth gate** — alpha low + certified geometry → birth
+3. **RGB-only render quality ≠ geometry good** — PSNR 高 ≠ depth/geometry 可靠
+4. **Map update 选 overlap keyframes**
+
+#### 不建议照搬
+- RGB-D depth → Gaussian seeding（无真实 depth）
+- Isotropic Gaussian（monocular GS 可能需要 anisotropy）
+- No loop closure / global BA
+
+### 十一篇论文完整定位
+
+| 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|---|---|
+| **DPVO** | sparse patch recurrent VO | temporal tracking + anchor trust backbone |
+| DROID-SLAM | dense recurrent pose-depth | richer but heavier temporal signal |
+| MASt3R-SLAM | dense two-view geometry | robust geometry proposal |
+| S3LAM | semantic cluster + structure | structural grouping |
+| ESLAM | RGB-D TSDF implicit | surface-band / free-space regularization |
+| LightGlue | fast sparse matching | pair verification / loop / reloc |
+| Scaffold-GS | structured GS backend | anchor-conditioned GS birth / ChildGS |
+| Gaussian-SLAM | RGB-D online GS SLAM | birth gate / submap / alpha-mask |
+| GO-SLAM | online global learned LC/BA | global geometry correction + versioned mapping |
+| **SplaTAM** | **RGB-D GS SLAM** | **silhouette gate / densification / isotropic GS** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/SplaTAM]]
