@@ -181,6 +181,12 @@
   },
   "active": "67cc45686010dc43",
   "lastOpenFiles": [
+    "40_Knowledge/References/LightGlue.pdf",
+    "40_Knowledge/References/LightGlue.md",
+    "40_Knowledge/Methods/Matchability-Assignment.md",
+    "40_Knowledge/Concepts/Sparse-Learned-Matcher.md",
+    "40_Knowledge/Methods/LightGlue-SLAM-Integration.md",
+    "40_Knowledge/Concepts/Adaptive-Computation-Graph.md",
     "40_Knowledge/References/ESLAM.pdf",
     "40_Knowledge/Methods/Free-Space-Surface-Band-Gating.md",
     "40_Knowledge/References/ESLAM.md",
@@ -204,11 +210,6 @@
     "40_Knowledge/Concepts/Correlation-Volume.md",
     "40_Knowledge/Concepts/Dense-Bundle-Adjustment.md",
     "40_Knowledge/Methods/Iterative-Projective-Pointmap-Matching.md",
-    "40_Knowledge/Concepts/Ray-Residual.md",
-    "40_Knowledge/Concepts/Ray-Camera-Model.md",
-    "40_Knowledge/Methods/Sim3-Pose-Representation.md",
-    "40_Knowledge/Concepts/Canonical-Pointmap-Fusion.md",
-    "00_Inbox/hermes-test.md",
-    "README.md"
+    "40_Knowledge/Concepts/Ray-Residual.md"
   ]
 }

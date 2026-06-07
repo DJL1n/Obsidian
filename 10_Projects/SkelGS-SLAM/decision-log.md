@@ -213,3 +213,52 @@ S3LAM 的核心思路：raw points/anchors → semantic-instance cluster → pri
 
 ### 相关笔记
 - [[40_Knowledge/References/ESLAM]]
+
+---
+
+## 2026-06-07 — LightGlue 论文分析结论
+
+### 背景
+完整阅读并整理了 LightGlue (ICCV 2023) 论文，评估其 sparse feature matching 在 SkelGS-SLAM 中的定位。
+
+### 关键判断
+
+**LightGlue 的定位：不是 SLAM backbone，而是强、快、适合工程集成的 sparse matching module。最适合放在 loop closure verification / relocalization / keyframe-pair validation / anchor sparse support evidence。**
+
+#### 适合的用法
+1. Keyframe-pair edge validation: LightGlue + RANSAC
+2. Loop closure: retrieval → LightGlue verify → pose graph edge
+3. Anchor maturity: 多视角下附近稳定 LightGlue inliers 计数
+4. Submap overlap: sparse feature overlap 作为 cheap pre-check
+5. Relocalization: current frame → map keyframes → LightGlue → PnP
+
+#### 不建议的用法
+- 不作为 monocular depth estimator
+- 不作为 temporal tracker
+- 不作为 BA optimizer
+- 不作为 GS geometry certifier
+
+### 六篇论文完整定位
+
+| 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|---|---|
+| **DROID/DPVO** | temporal optimization | tracking / temporal anchor support |
+| **MASt3R-SLAM** | dense two-view geometry | robust geometry proposal |
+| **S3LAM** | semantic cluster + structure | structural grouping |
+| **ESLAM** | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
+| **LightGlue** | fast sparse matching | pair verification / loop / reloc |
+
+### 后续方向（更新）
+- DROID/DPVO 主时间骨架
+- MASt3R 宽基线几何来源
+- S3LAM-like 语义结构分组
+- ESLAM-like free-space gating
+- LightGlue 作为 side verification 模块
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/LightGlue]]

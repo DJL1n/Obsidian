@@ -22,5 +22,7 @@
 - [[Point-Plane-Regularizer]]
 - [[Tri-Plane-Feature]]
 - [[TSDF-Direct-Supervision]]
+- [[Sparse-Learned-Matcher]]
+- [[Adaptive-Computation-Graph]]
 
 > 概念笔记是知识的原子单元。
