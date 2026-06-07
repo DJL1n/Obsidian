@@ -30,5 +30,7 @@
 - [[Patch-Lifecycle]]
 - [[Submap-Gaussian-Organization]]
 - [[GS-Birth-Gate]]
+- [[Online-Global-Pose-Graph]]
+- [[Versioned-Geometry-Update]]
 
 > 概念笔记是知识的原子单元。

@@ -415,3 +415,47 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/Gaussian-SLAM]]
+
+---
+
+## 2026-06-07 — GO-SLAM 论文分析结论
+
+### 背景
+完整阅读并整理了 GO-SLAM (ICCV 2023) 论文，评估其 online loop closure / full BA / global geometry correction 对 SkelGS-SLAM 的价值。
+
+### 关键判断
+
+**GO-SLAM 的定位：global geometry correction architecture reference。最值得借鉴的是 online loop closure + full BA + versioned mapping refresh，这是 DPVO 短窗口和 GS backend 之间缺失的"全局几何一致性中层"。**
+
+#### 最值得借鉴
+1. **Online global keyframe graph correction** — DPVO 短窗口 drift 需 loop + global BA 补
+2. **Mapping 对 pose/depth 更新敏感** — CoVersionedGeometryPacket 的系统级理由
+3. **Keyframe selection for refresh** — latest + unoptimized + pose-diff top 10 + stratified
+4. **SDF/free-space loss → GS birth gate**
+
+#### 不建议照搬
+- DROID dense frontend（太贵，DPVO 更轻）
+- Implicit SDF map（GS 需要 explicit Gaussian）
+- Mapping 直接信任 BA 输出（仍需 certification）
+
+### 十篇论文完整定位
+
+| 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|---|---|
+| **DPVO** | sparse patch recurrent VO | temporal tracking + anchor trust backbone |
+| DROID-SLAM | dense recurrent pose-depth | richer but heavier temporal signal |
+| MASt3R-SLAM | dense two-view geometry | robust geometry proposal |
+| S3LAM | semantic cluster + structure | structural grouping |
+| ESLAM | RGB-D TSDF implicit | surface-band / free-space regularization |
+| LightGlue | fast sparse matching | pair verification / loop / reloc |
+| Scaffold-GS | structured GS backend | anchor-conditioned GS birth / ChildGS |
+| Gaussian-SLAM | RGB-D online GS SLAM | birth gate / submap / alpha-mask |
+| **GO-SLAM** | **online global learned LC/BA** | **global geometry correction + versioned mapping** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GO-SLAM]]
