@@ -1,6 +1,7 @@
 # S3LAM: Structured Scene SLAM
 
 > arXiv 2021 (v1 Sep 2021, v2 Mar 2022). 论文整理笔记。
+> 📄 [[S3LAM.pdf|PDF 原文]] (1.2 MB)
 > 作者：Mathieu Gonzalez, Eric Marchand, Amine Kacete, Jérôme Royan.
 
 ## 0. 一句话结论

@@ -1,6 +1,7 @@
 # DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D
 
 > NeurIPS 2021. 论文整理笔记。
+> 📄 [[DROID-SLAM.pdf|PDF 原文]] (10 MB)
 
 ## 0. 一句话结论
 

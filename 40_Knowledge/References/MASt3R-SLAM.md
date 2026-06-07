@@ -1,6 +1,7 @@
 # MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors
 
 > CVPR 2025. 论文整理笔记。
+> 📄 [[MASt3R-SLAM.pdf|PDF 原文]] (2.4 MB)
 
 ## 0. 一句话结论
 
