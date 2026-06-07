@@ -66,5 +66,7 @@
 - [[Appearance-Geometry-Decoupling]]
 - [[JDSA-Scale-Alignment]]
 - [[Gaussian-Map-Deformation]]
+- [[Uncertainty-Dynamic-Filtering]]
+- [[Static-Dynamic-Side-Channel]]
 
 > 概念笔记是知识的原子单元。

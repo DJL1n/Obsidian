@@ -59,5 +59,7 @@
 - [[Frequency-Pyramid-Growth]]
 - [[HI-SLAM2-Architecture]]
 - [[Certified-JDSA]]
+- [[WildGS-SLAM-Architecture]]
+- [[Certified-Dynamic-Gate]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

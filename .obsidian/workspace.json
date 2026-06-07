@@ -181,6 +181,12 @@
   },
   "active": "cde5d5ae6920f7d6",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Uncertainty-Dynamic-Filtering.md",
+    "40_Knowledge/Methods/WildGS-SLAM-Architecture.md",
+    "40_Knowledge/Methods/Certified-Dynamic-Gate.md",
+    "40_Knowledge/References/WildGS-SLAM.md",
+    "40_Knowledge/Concepts/Static-Dynamic-Side-Channel.md",
+    "40_Knowledge/References/WildGS-SLAM.pdf",
     "40_Knowledge/Methods/HI-SLAM2-Architecture.md",
     "40_Knowledge/Concepts/JDSA-Scale-Alignment.md",
     "40_Knowledge/Concepts/Gaussian-Map-Deformation.md",
@@ -204,18 +210,12 @@
     "40_Knowledge/Methods/CUT3R-Architecture.md",
     "40_Knowledge/Methods/Recurrent-Dense-Proposal.md",
     "40_Knowledge/Concepts/Certified-Geometry-Memory.md",
-    "40_Knowledge/Concepts/Persistent-State-Pointmap.md",
-    "40_Knowledge/References/CUT3R.md",
     "40_Knowledge/References/CUT3R.pdf",
-    "40_Knowledge/Concepts/Geometry-First-GS-Pipeline.md",
-    "40_Knowledge/References/GPS-SLAM.md",
-    "40_Knowledge/Concepts/Residual-GS-Layer.md",
     "40_Knowledge/References/GPS-SLAM.pdf",
     "40_Knowledge/References/SLAM3R.pdf",
     "40_Knowledge/References/MG-SLAM.pdf",
     "40_Knowledge/References/GS-SDF.pdf",
     "40_Knowledge/References/VPGS-SLAM.pdf",
-    "40_Knowledge/References/MGS-SLAM.pdf",
-    "40_Knowledge/References/GS-SLAM.pdf"
+    "40_Knowledge/References/MGS-SLAM.pdf"
   ]
 }

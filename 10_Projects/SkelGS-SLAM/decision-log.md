@@ -1152,3 +1152,39 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/HI-SLAM2]]
+
+---
+
+## 2026-06-07 — WildGS-SLAM 分析结论
+
+### 背景
+完整阅读了 WildGS-SLAM (CVPR 2025)。评估其 DINOv2 uncertainty + DROID + GS + dynamic filtering 对 SkelGS-SLAM 的价值。
+
+### 关键判断
+
+**WildGS-SLAM 的定位：dynamic-scene monocular GS-SLAM via uncertainty awareness。最值借鉴：DINOv2-based per-sequence uncertainty（无语义类别）、uncertainty 同时用于 DBA + GS mapping、predicted depth as stabilizer not truth。不是 geometry certification — uncertainty 是 reliability weight，不是 strict dynamic/static label。**
+
+#### 最值借鉴
+1. **Uncertainty → CandidatePacket dynamic risk gate**
+2. **Dynamic 区域不入 CertifiedAnchor**
+3. **Predicted depth = early stabilizer, final multiview > monocular prior**
+4. **GS feedback 和 uncertainty 独立优化**
+
+#### 升级空间
+- WildGS uncertainty alone not enough → 融合 temporal + multi-view + free-space + normal + anchor survival + loop
+
+### 28 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–27 | various | various | references |
+| **28** | **WildGS-SLAM** | **mono dynamic GS-SLAM** | **uncertainty / dynamic removal** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/WildGS-SLAM]]

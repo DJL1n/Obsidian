@@ -38,6 +38,7 @@
 - [[decision-log|CUT3R 分析]] (2026-06-07)
 - [[decision-log|SEGS-SLAM 分析]] (2026-06-07)
 - [[decision-log|HI-SLAM2 分析]] (2026-06-07)
+- [[decision-log|WildGS-SLAM 分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]
