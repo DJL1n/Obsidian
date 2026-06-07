@@ -22,6 +22,7 @@
 - [[decision-log|Gaussian-SLAM 论文分析]] (2026-06-07)
 - [[decision-log|GO-SLAM 论文分析]] (2026-06-07)
 - [[decision-log|SplaTAM 论文分析]] (2026-06-07)
+- [[decision-log|MASt3R (base model) 分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

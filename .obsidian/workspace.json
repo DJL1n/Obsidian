@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Fast-Reciprocal-Matching.md",
+    "40_Knowledge/References/MASt3R.md",
+    "40_Knowledge/Concepts/3D-Grounded-Matching.md",
+    "40_Knowledge/Methods/Coarse-to-Fine-Dense-Matching.md",
+    "40_Knowledge/Concepts/Two-View-Pointmap-Prior.md",
+    "40_Knowledge/References/MASt3R.pdf",
     "40_Knowledge/Methods/Silhouette-Gated-Tracking.md",
     "40_Knowledge/References/SplaTAM.md",
     "40_Knowledge/Methods/RGB-D-Densification-Mask.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Patch-Graph-VO.md",
     "40_Knowledge/References/DPVO.pdf",
     "40_Knowledge/Methods/ChildGS-Local-Derivation.md",
-    "40_Knowledge/Concepts/Anchor-Scaffold-Representation.md",
-    "40_Knowledge/Methods/Anchor-Growing-Pruning.md",
-    "40_Knowledge/Concepts/View-Adaptive-Rendering.md",
-    "40_Knowledge/References/Scaffold-GS.md",
     "40_Knowledge/References/Scaffold-GS.pdf",
-    "00_Inbox/INDEX.md",
     "40_Knowledge/References/LightGlue.pdf",
     "40_Knowledge/References/ESLAM.pdf",
     "40_Knowledge/References/S3LAM.pdf",
-    "40_Knowledge/References/DROID-SLAM.pdf",
-    "40_Knowledge/References/MASt3R-SLAM.pdf"
+    "40_Knowledge/References/DROID-SLAM.pdf"
   ]
 }

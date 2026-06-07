@@ -504,3 +504,56 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/SplaTAM]]
+
+---
+
+## 2026-06-07 — MASt3R (base model) 分析结论
+
+### 背景
+完整阅读了 MASt3R (ECCV 2024) 论文 — 这是 MASt3R-SLAM 底层的 two-view model。评估其 wide-baseline pairwise geometry 对 SkelGS-SLAM 的定位。
+
+### 关键判断
+
+**MASt3R 的定位：strong pairwise 3D geometry proposal source。应作为 wide-baseline geometric witness，与 DPVO temporal witness、depth-normal surface witness 一起进入 CertifiedGeometryPacket，而非单独成为 GS 前端的最终底座。**
+
+#### 最适合作为
+- Keyframe pair geometry proposal
+- Loop candidate verification
+- Submap overlap verification
+- Local dense depth/pointmap candidate
+
+#### 不适合作为
+- High-rate frame-to-frame tracker
+- Direct GS birth source
+- Long-window trajectory source
+
+#### 定位对比
+| MASt3R | vs LightGlue | vs DROID/DPVO |
+|---|---|---|
+| dense 3D-grounded | sparse 2D | temporal optimizer |
+| wide-baseline 强 | 快、轻 | temporal signal |
+| geometry proposal | loop/reloc | tracking backbone |
+
+### 12 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | **DPVO** | temporal tracking | **main temporal backbone** |
+| 2 | **MASt3R** | pairwise 3D geometry proposal | **wide-baseline geometric witness** |
+| 3 | MASt3R-SLAM | monocular dense SLAM | system reference |
+| 4 | DROID-SLAM | dense recurrent pose-depth | richer temporal signal |
+| 5 | S3LAM | semantic cluster + structure | structural grouping |
+| 6 | ESLAM | RGB-D TSDF implicit | surface-band / free-space |
+| 7 | LightGlue | fast sparse matching | pair verification / loop |
+| 8 | Scaffold-GS | structured GS backend | anchor-conditioned ChildGS |
+| 9 | Gaussian-SLAM | RGB-D online GS SLAM | birth gate / submap |
+| 10 | GO-SLAM | online global LC/BA | global correction + versioning |
+| 11 | SplaTAM | RGB-D GS SLAM | silhouette gate / densification |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MASt3R]]
