@@ -40,5 +40,7 @@
 - [[Gaussian-Covisibility]]
 - [[Spatial-Memory-Reconstruction]]
 - [[Dense-Sparse-Memory]]
+- [[Octree-Anchor-Hierarchy]]
+- [[Progressive-LOD-Growth]]
 
 > 概念笔记是知识的原子单元。

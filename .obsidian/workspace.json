@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Anchor-Octree-for-SLAM.md",
+    "40_Knowledge/Concepts/Progressive-LOD-Growth.md",
+    "40_Knowledge/Concepts/Octree-Anchor-Hierarchy.md",
+    "40_Knowledge/References/OG-Mapping.md",
+    "40_Knowledge/Methods/Dynamic-Keyframe-Window.md",
+    "40_Knowledge/References/OG-Mapping.pdf",
     "40_Knowledge/Methods/Spann3R-Memory-Architecture.md",
     "40_Knowledge/Concepts/Dense-Sparse-Memory.md",
     "40_Knowledge/Methods/Spatial-Memory-for-Anchor.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Isotropic-GS-SLAM.md",
     "40_Knowledge/References/SplaTAM.pdf",
     "40_Knowledge/Methods/Global-Correction-Mapping.md",
-    "40_Knowledge/Concepts/Versioned-Geometry-Update.md",
-    "40_Knowledge/References/GO-SLAM.md",
-    "40_Knowledge/Methods/GO-SLAM-Architecture.md",
-    "40_Knowledge/Concepts/Online-Global-Pose-Graph.md",
     "40_Knowledge/References/GO-SLAM.pdf",
-    "40_Knowledge/References/Gaussian-SLAM.md",
     "40_Knowledge/References/Gaussian-SLAM.pdf",
     "40_Knowledge/References/DPVO.pdf",
     "40_Knowledge/References/Scaffold-GS.pdf",
-    "40_Knowledge/References/LightGlue.pdf",
-    "40_Knowledge/References/ESLAM.pdf"
+    "40_Knowledge/References/LightGlue.pdf"
   ]
 }

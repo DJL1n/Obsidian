@@ -643,3 +643,43 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/Spann3R]]
+
+---
+
+## 2026-06-07 — OG-Mapping 分析结论
+
+### 背景
+完整阅读了 OG-Mapping (arXiv 2024) 论文。评估其 octree-structured anchor hierarchy / progressive LOD / dynamic window 对 SkelGS-SLAM 的价值。
+
+### 关键判断
+
+**OG-Mapping 的定位：GS backend / structured anchor growth reference。最值得借鉴的是 octree-organized anchor hierarchy + progressive LOD + dynamic packet window。不是 tracking frontend / monocular solution。**
+
+#### 最值得借鉴
+1. **Octree anchor hierarchy** — flat anchor list → 多尺度 spatial index
+2. **Progressive LOD growth** — level-aware, coarse → fine
+3. **Dynamic keyframe window → dynamic packet window**
+4. **支持"先认证，再 birth" — 降低对 noisy depth 的直接依赖**
+
+#### 不建议照搬
+- RGB-D depth 直接建 octree
+- GT/external pose assumption
+- 只做 mapping 不处理 tracking drift
+
+### 15 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | **DPVO** | temporal tracking | **main temporal backbone** |
+| 2 | MASt3R | pairwise 3D geometry | wide-baseline witness |
+| 3 | Spann3R | spatial memory recon. | memory abstraction |
+| 4–12 | others | various | references |
+| **15** | **OG-Mapping** | **octree-structured GS mapping** | **anchor octree / LOD growth / dynamic window** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/OG-Mapping]]
