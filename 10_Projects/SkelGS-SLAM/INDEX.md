@@ -32,6 +32,7 @@
 - [[decision-log|MGS-SLAM 分析]] (2026-06-07)
 - [[decision-log|VPGS-SLAM 分析]] (2026-06-07)
 - [[decision-log|GS-SDF 分析]] (2026-06-07)
+- [[decision-log|MG-SLAM 分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

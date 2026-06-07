@@ -47,5 +47,7 @@
 - [[Submap-Fusion-Distillation]]
 - [[NSDF-to-GS-Initialization]]
 - [[Certified-Geometry-Field]]
+- [[MG-SLAM-Line-Tracking]]
+- [[Observed-vs-Hypothesized-Geometry]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

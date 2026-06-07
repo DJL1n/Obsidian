@@ -922,3 +922,43 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GS-SDF]]
+
+---
+
+## 2026-06-07 — MG-SLAM 分析结论
+
+### 背景
+完整阅读了 MG-SLAM (arXiv 2025)。评估其 Manhattan World + line/plane structure prior 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**MG-SLAM 的定位：RGB-D GS + Manhattan structure。最值借鉴：结构先验从"辅助语义"升级为"Gaussian birth 条件"、线段定义 anchor group boundary、补全必须标记为 hypothesized。但依赖 RGB-D / Manhattan 假设 / 非 monocular。**
+
+#### 最值借鉴
+1. **结构先验 → Gaussian birth 条件** — CertifiedAnchorGroup + structure → ChildGS
+2. **线段作为 anchor group boundary** — 补充 DPVO/MASt3R 不擅长的结构边界
+3. **Observed vs Hypothesized geometry 分层** — 前者可强约束 pose，后者仅 rendering
+4. **Manhattan 应是 weak prior** — evidence-gated
+5. **支持 anchor group > isolated anchor**
+
+#### 不建议照搬
+- RGB-D backprojection
+- Manhattan completion as truth
+- PointNet++ color interp
+- Hypothesized Gaussians → strong tracking
+
+### 22 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–21 | various | various | references |
+| **22** | **MG-SLAM** | **RGB-D GS + Manhattan structure** | **line/plane completion / structure prior** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MG-SLAM]]

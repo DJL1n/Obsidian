@@ -54,5 +54,7 @@
 - [[2D-3D-Fusion-Tracking]]
 - [[SDF-Geometry-Teacher]]
 - [[Shape-Regularization]]
+- [[Manhattan-Structure-Prior]]
+- [[Structure-Guided-GS-Completion]]
 
 > 概念笔记是知识的原子单元。
