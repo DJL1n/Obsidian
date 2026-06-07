@@ -56,5 +56,7 @@
 - [[Shape-Regularization]]
 - [[Manhattan-Structure-Prior]]
 - [[Structure-Guided-GS-Completion]]
+- [[I2P-Local-Reconstruction]]
+- [[L2W-Global-Registration]]
 
 > 概念笔记是知识的原子单元。

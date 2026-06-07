@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/References/SLAM3R.md",
+    "40_Knowledge/Concepts/I2P-Local-Reconstruction.md",
+    "40_Knowledge/Methods/Retrieval-Guided-Registration.md",
+    "40_Knowledge/Methods/SLAM3R-Architecture.md",
+    "40_Knowledge/Concepts/L2W-Global-Registration.md",
+    "40_Knowledge/References/SLAM3R.pdf",
     "40_Knowledge/References/MG-SLAM.md",
     "40_Knowledge/Methods/Observed-vs-Hypothesized-Geometry.md",
     "40_Knowledge/Concepts/Structure-Guided-GS-Completion.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Sparse-Dense-Scale-Alignment.md",
     "40_Knowledge/References/MGS-SLAM.pdf",
     "40_Knowledge/Methods/VideoBuffer-to-GS-Feedback.md",
-    "40_Knowledge/Concepts/Coarse-to-Fine-GS-Tracking.md",
-    "40_Knowledge/Concepts/Adaptive-Gaussian-Expansion.md",
-    "40_Knowledge/Methods/GS-SLAM-RGBD-Pipeline.md",
-    "40_Knowledge/References/GS-SLAM.md",
     "40_Knowledge/References/GS-SLAM.pdf",
-    "40_Knowledge/References/ContextGS.md",
     "40_Knowledge/References/ContextGS.pdf",
     "40_Knowledge/References/DUSt3R.pdf",
     "40_Knowledge/References/OG-Mapping.pdf",
-    "40_Knowledge/References/Spann3R.pdf",
-    "40_Knowledge/References/MonoGS.pdf"
+    "40_Knowledge/References/Spann3R.pdf"
   ]
 }

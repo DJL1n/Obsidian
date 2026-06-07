@@ -962,3 +962,41 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MG-SLAM]]
+
+---
+
+## 2026-06-07 — SLAM3R 分析结论
+
+### 背景
+完整阅读了 SLAM3R (CVPR 2025 Highlight)。评估其 I2P + L2W + retrieval-based dense reconstruction 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**SLAM3R 的定位：RGB-only real-time dense reconstruction。最值借鉴：multi-frame I2P local geometry packet、learned L2W global registration、retrieval-based reference selection。但不是 GS-SLAM / DPVO temporal backbone / explicit BA system。proposal ≠ certificate。**
+
+#### 最值借鉴
+1. **I2P multi-frame local window → candidate packet**
+2. **L2W local→global registration → CoVersionedGeometryPacket**
+3. **Retrieval-based reference selection → historical anchor/packet retrieval**
+4. **支持"proposal ≠ certificate"判断**
+
+#### 不建议照搬
+- No explicit BA / graph correction as main system
+- Replace DPVO temporal backbone
+- SLAM3R pointmap → direct GS birth
+
+### 23 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–22 | various | various | references |
+| **23** | **SLAM3R** | **RGB-only dense recon.** | **dense proposal / learned reg / retrieval** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/SLAM3R]]
