@@ -557,3 +557,50 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MASt3R]]
+
+---
+
+## 2026-06-07 — MonoGS 分析结论
+
+### 背景
+完整阅读了 Gaussian Splatting SLAM / MonoGS (CVPR 2024)。评估其 monocular-first 3DGS SLAM 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**MonoGS 的定位：3DGS map-centric SLAM reference / GS tracking convergence / covisibility / regularisation reference。不是 temporal frontend / geometry certifier。**
+
+#### 最值得借鉴
+1. **GS map 作为 tracking 表示的收敛盆大** — GS feedback 不是完全不可用
+2. **Gaussian covisibility → submap/keyframe overlap**
+3. **Isotropic regularisation 是 GS 几何安全底线**
+4. **暴露了"先 birth 后 prune"的风险 — 你的改进空间正在这里**
+
+#### 不建议照搬
+- Monocular rendered depth insertion（太危险）
+- 无 loop closure 的纯 local mapping
+- 无 temporal 前端的 render-and-optimise tracking
+
+### 13 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | **DPVO** | temporal tracking | **main temporal backbone** |
+| 2 | **MASt3R** | pairwise 3D geometry proposal | wide-baseline witness |
+| 3 | MASt3R-SLAM | monocular dense SLAM | system reference |
+| 4 | DROID-SLAM | dense recurrent pose-depth | richer temporal signal |
+| 5 | S3LAM | semantic cluster + structure | structural grouping |
+| 6 | ESLAM | RGB-D TSDF implicit | surface-band / free-space |
+| 7 | LightGlue | fast sparse matching | pair verification / loop |
+| 8 | Scaffold-GS | structured GS backend | anchor-conditioned ChildGS |
+| 9 | Gaussian-SLAM | RGB-D online GS SLAM | birth gate / submap |
+| 10 | GO-SLAM | online global LC/BA | global correction + versioning |
+| 11 | SplaTAM | RGB-D GS SLAM | silhouette gate / densification |
+| 12 | **MonoGS** | **monocular-first 3DGS SLAM** | **GS tracking / covisibility / regularisation** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MonoGS]]

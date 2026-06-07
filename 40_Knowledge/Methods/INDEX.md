@@ -29,5 +29,7 @@
 - [[RGB-D-Densification-Mask]]
 - [[Fast-Reciprocal-Matching]]
 - [[Coarse-to-Fine-Dense-Matching]]
+- [[Isotropic-Regularization]]
+- [[MonoGS-Monocular-Insertion]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

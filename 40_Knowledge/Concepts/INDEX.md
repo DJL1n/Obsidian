@@ -36,5 +36,7 @@
 - [[Isotropic-GS-SLAM]]
 - [[3D-Grounded-Matching]]
 - [[Two-View-Pointmap-Prior]]
+- [[GS-Tracking-Representation]]
+- [[Gaussian-Covisibility]]
 
 > 概念笔记是知识的原子单元。

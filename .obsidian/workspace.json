@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/MonoGS-Monocular-Insertion.md",
+    "40_Knowledge/References/MonoGS.md",
+    "40_Knowledge/Methods/Isotropic-Regularization.md",
+    "40_Knowledge/Concepts/Gaussian-Covisibility.md",
+    "40_Knowledge/Concepts/GS-Tracking-Representation.md",
+    "40_Knowledge/References/MonoGS.pdf",
     "40_Knowledge/Methods/Fast-Reciprocal-Matching.md",
     "40_Knowledge/References/MASt3R.md",
     "40_Knowledge/Concepts/3D-Grounded-Matching.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Submap-Gaussian-Organization.md",
     "40_Knowledge/References/Gaussian-SLAM.pdf",
     "40_Knowledge/References/DPVO.md",
-    "40_Knowledge/Methods/Patch-Temporal-Optimization.md",
-    "40_Knowledge/Methods/DPVO-Temporal-Frontend.md",
-    "40_Knowledge/Concepts/Patch-Lifecycle.md",
-    "40_Knowledge/Concepts/Patch-Graph-VO.md",
     "40_Knowledge/References/DPVO.pdf",
-    "40_Knowledge/Methods/ChildGS-Local-Derivation.md",
     "40_Knowledge/References/Scaffold-GS.pdf",
     "40_Knowledge/References/LightGlue.pdf",
     "40_Knowledge/References/ESLAM.pdf",
-    "40_Knowledge/References/S3LAM.pdf",
-    "40_Knowledge/References/DROID-SLAM.pdf"
+    "40_Knowledge/References/S3LAM.pdf"
   ]
 }
