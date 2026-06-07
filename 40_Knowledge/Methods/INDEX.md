@@ -7,5 +7,9 @@
 - 模板
 - 系统配置备忘
 - 工具使用技巧
+- [[Iterative-Projective-Pointmap-Matching]]
+- [[Sim3-Pose-Representation]]
+- [[DROID-Frontend-Backend]]
+- [[DROID-Training-Gauge]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

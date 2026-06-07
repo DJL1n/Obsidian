@@ -13,6 +13,7 @@
 
 ## 关键决策 / 判断
 - [[decision-log|MASt3R-SLAM 论文分析]] (2026-06-07)
+- [[decision-log|DROID-SLAM 论文分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

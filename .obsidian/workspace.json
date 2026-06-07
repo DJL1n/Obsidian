@@ -181,6 +181,12 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "40_Knowledge/References/DROID-SLAM.md",
+    "40_Knowledge/Methods/DROID-Frontend-Backend.md",
+    "40_Knowledge/Methods/DROID-Training-Gauge.md",
+    "40_Knowledge/Concepts/Recurrent-Correction-Update.md",
+    "40_Knowledge/Concepts/Correlation-Volume.md",
+    "40_Knowledge/Concepts/Dense-Bundle-Adjustment.md",
     "40_Knowledge/Methods/Iterative-Projective-Pointmap-Matching.md",
     "40_Knowledge/Concepts/Ray-Residual.md",
     "40_Knowledge/Concepts/Ray-Camera-Model.md",

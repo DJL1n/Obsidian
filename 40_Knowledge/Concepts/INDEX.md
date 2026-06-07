@@ -12,5 +12,11 @@
 - [[Second Brain]]
 - [[PARA Method]]
 - [[Zettelkasten]]
+- [[Ray-Camera-Model]]
+- [[Canonical-Pointmap-Fusion]]
+- [[Ray-Residual]]
+- [[Dense-Bundle-Adjustment]]
+- [[Recurrent-Correction-Update]]
+- [[Correlation-Volume]]
 
 > 概念笔记是知识的原子单元。
