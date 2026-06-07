@@ -51,5 +51,7 @@
 - [[Observed-vs-Hypothesized-Geometry]]
 - [[SLAM3R-Architecture]]
 - [[Retrieval-Guided-Registration]]
+- [[GPS-SLAM-Architecture]]
+- [[Certified-GS-Residual]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

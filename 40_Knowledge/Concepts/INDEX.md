@@ -58,5 +58,7 @@
 - [[Structure-Guided-GS-Completion]]
 - [[I2P-Local-Reconstruction]]
 - [[L2W-Global-Registration]]
+- [[Residual-GS-Layer]]
+- [[Geometry-First-GS-Pipeline]]
 
 > 概念笔记是知识的原子单元。

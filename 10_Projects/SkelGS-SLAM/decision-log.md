@@ -1000,3 +1000,42 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/SLAM3R]]
+
+---
+
+## 2026-06-07 — GPS-SLAM 分析结论
+
+### 背景
+完整阅读了 GPS-SLAM / Gaussian-Plus-SDF SLAM (CVPR 2025)。评估其 SDF + residual GS 设计对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**GPS-SLAM 的定位：RGB-D ultra-fast reconstruction via SDF + residual GS。最值借鉴：GS 不一定是主几何 — 先 geometry 后 GS residual。完全支持你 "CertifiedGeometryPacket before GS" 的方向。**
+
+#### 最值借鉴
+1. **GS 不一定是主几何** — SDF geometry + GS residual appearance
+2. **Geometry-first pipeline** — 你的 CertifiedGeometryPacket 等价于 SDF
+3. **ChildGS 可重新定义为 residual GS** — 只在 certified surface 上修正 color
+4. **Depth-culling → free-space / surface-band gate**
+5. **Gaussian birth = residual error trigger on certified geometry**
+
+#### 不建议照搬
+- RGB-D SDF fusion / ICP tracking
+- Sensor depth as geometry truth
+- No monocular scale/pose-depth coherence handling
+
+### 24 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | **backbone** |
+| 2–23 | various | various | references |
+| **24** | **GPS-SLAM** | **SDF + residual GS** | **geometry-first / GS-as-residual** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GPS-SLAM]]
