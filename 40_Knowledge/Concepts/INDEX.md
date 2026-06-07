@@ -50,5 +50,7 @@
 - [[Coarse-to-Fine-GS-Tracking]]
 - [[Sparse-Dense-Scale-Alignment]]
 - [[Monocular-GS-SLAM-Pipeline]]
+- [[Submap-Geometry-Unit]]
+- [[2D-3D-Fusion-Tracking]]
 
 > 概念笔记是知识的原子单元。

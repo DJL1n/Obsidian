@@ -845,3 +845,43 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MGS-SLAM]]
+
+---
+
+## 2026-06-07 — VPGS-SLAM 分析结论
+
+### 背景
+完整阅读了 VPGS-SLAM (arXiv 2025)。评估其 large-scale submap / voxel-anchor / 2D-3D tracking / loop fusion 对 SkelGS-SLAM 的价值。
+
+### 关键判断
+
+**VPGS-SLAM 的定位：large-scale 3DGS-SLAM framework。最值借鉴的是 submap-as-geometry-unit、voxel-anchor ChildGS、evidence-adaptive tracking、loop + submap fusion。但非 monocular — 3D input来自 RGB-D/point cloud，你先要 CertifiedGeometryPacket。**  
+
+#### 最值借鉴
+1. **Submap 是 local geometry unit** — 不只是一个窗口
+2. **ChildGS 应由 voxel/anchor/LOD 控制**
+3. **Tracking evidence quality adaptive** — 不同信号动态权重
+4. **Loop 后修 pose + Gaussian submap** — CoVersionedGeometryPacket 的系统意义
+5. **Submap fusion 需 distillation** — 不只是 pose 对齐
+
+#### 不建议照搬
+- Predicted depth → VPGS 3D input
+- Voxel ICP without scale/static verification
+- Loop fuse without geometry packet versioning
+
+### 20 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | DPVO | temporal tracking | backbone |
+| 2–3 | DUSt3R→MASt3R | geometry proposal | witness |
+| 4–20 | various | various | references |
+| **20** | **VPGS-SLAM** | **large-scale 3DGS-SLAM** | **submap/anchor/2D-3D/loop fusion** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/VPGS-SLAM]]

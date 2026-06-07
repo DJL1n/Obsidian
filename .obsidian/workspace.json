@@ -181,6 +181,13 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Large-Scale-GS-SLAM-Architecture.md",
+    "40_Knowledge/Methods/Submap-Fusion-Distillation.md",
+    "40_Knowledge/Concepts/Submap-Geometry-Unit.md",
+    "40_Knowledge/References/VPGS-SLAM.md",
+    "40_Knowledge/Concepts/2D-3D-Fusion-Tracking.md",
+    "40_Knowledge/References/VPGS-SLAM.pdf",
+    "40_Knowledge/Concepts/Monocular-GS-SLAM-Pipeline.md",
     "40_Knowledge/Methods/Predicted-Depth-GS-Supervision.md",
     "40_Knowledge/References/MGS-SLAM.md",
     "40_Knowledge/Methods/SDAR-Mechanism.md",
@@ -205,17 +212,10 @@
     "40_Knowledge/Concepts/Uncalibrated-Dense-Reconstruction.md",
     "40_Knowledge/References/DUSt3R.pdf",
     "40_Knowledge/Methods/Anchor-Octree-for-SLAM.md",
-    "40_Knowledge/Concepts/Progressive-LOD-Growth.md",
-    "40_Knowledge/Concepts/Octree-Anchor-Hierarchy.md",
-    "40_Knowledge/References/OG-Mapping.md",
-    "40_Knowledge/Methods/Dynamic-Keyframe-Window.md",
     "40_Knowledge/References/OG-Mapping.pdf",
-    "40_Knowledge/Methods/Spann3R-Memory-Architecture.md",
-    "40_Knowledge/Concepts/Dense-Sparse-Memory.md",
     "40_Knowledge/References/Spann3R.pdf",
     "40_Knowledge/References/MonoGS.pdf",
     "40_Knowledge/References/MASt3R.pdf",
-    "40_Knowledge/References/SplaTAM.pdf",
-    "40_Knowledge/References/GO-SLAM.pdf"
+    "40_Knowledge/References/SplaTAM.pdf"
   ]
 }
