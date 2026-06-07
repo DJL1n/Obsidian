@@ -850,3 +850,32 @@ This vault should help the user think more clearly over time.
 
 The assistant should not merely store text.
 It should preserve the user's reasoning trajectory, separate evidence from judgment, and make future review easier.
+
+---
+
+## 13. Vault-Grounded Answering Rules
+
+When the user asks a question involving:
+
+- "我的项目"
+- "我的笔记"
+- "我之前的判断"
+- "我现在的主线"
+- "SkelGS-SLAM 当前状态"
+- "之前记录过的失败分支"
+- "我的工作风格"
+- "结合 Obsidian"
+- "按 vault 规则"
+
+the assistant must search the Obsidian vault before answering.
+
+### Required behavior
+
+1. Search relevant notes in the vault.
+2. Read the most relevant notes before forming the answer.
+3. State which note paths were used.
+4. If no relevant note is found, say clearly: "笔记中未查到相关内容。"
+5. Distinguish vault-grounded facts from new inference.
+6. Do not pretend to have checked the vault if no search/read operation was performed.
+
+For normal general-knowledge questions, the assistant does not need to search the vault unless the user explicitly asks.
