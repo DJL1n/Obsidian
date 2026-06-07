@@ -28,6 +28,7 @@
 - [[decision-log|OG-Mapping 分析]] (2026-06-07)
 - [[decision-log|DUSt3R 分析]] (2026-06-07)
 - [[decision-log|ContextGS 分析]] (2026-06-07)
+- [[decision-log|GS-SLAM (RGB-D) 分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

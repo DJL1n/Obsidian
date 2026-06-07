@@ -46,5 +46,7 @@
 - [[Uncalibrated-Dense-Reconstruction]]
 - [[Anchor-Level-Context-Model]]
 - [[Hierarchical-Anchor-Partition]]
+- [[Adaptive-Gaussian-Expansion]]
+- [[Coarse-to-Fine-GS-Tracking]]
 
 > 概念笔记是知识的原子单元。

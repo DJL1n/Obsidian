@@ -768,3 +768,43 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/ContextGS]]
+
+---
+
+## 2026-06-07 — GS-SLAM (RGB-D) 分析结论
+
+### 背景
+完整阅读了 GS-SLAM (CVPR 2024)。评估其 adaptive expansion / coarse-to-fine tracking / RGB-D pipeline 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**GS-SLAM 的定位：RGB-D 3DGS SLAM early baseline。证明 3DGS 可进入 RGB-D SLAM 主循环。最值得借鉴的是 adaptive expansion、floating Gaussian deletion、coarse-to-fine reliable Gaussian tracking。但不能直接作为 monocular 答案 — 核心安全来源是 sensor depth。**
+
+#### 最值得借鉴
+1. **Adaptive expansion: adding + deletion** → CertifiedPacket-guided expansion + anchor-level quarantine
+2. **Coarse-to-fine tracking** → GS feedback 必须只用 reliable Gaussians + gated
+3. **BA-like random keyframe** → dynamic packet window (结合 GO-SLAM/OG-Mapping)
+
+#### 不建议照搬
+- RGB-D depth-driven birth/deletion
+- Direct map-based tracking as main frontend
+- SH-heavy explicit Gaussian without compression
+
+### 18 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | **DPVO** | temporal tracking | **主 temporal backbone** |
+| 2–3 | **DUSt3R/MASt3R** | geometry proposal | wide-baseline witness |
+| 4–7 | Spann3R/MASt3R-SLAM/DROID/S3LAM | memory/system/temporal/structure |
+| 8–10 | ESLAM/LightGlue/GO-SLAM | surface/verify/correct |
+| 11–17 | Scaffold-GS → ContextGS | GS backend variants |
+| **18** | **GS-SLAM** | **RGB-D 3DGS SLAM early baseline** | **adaptive expansion / reliable GS tracking** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GS-SLAM]]

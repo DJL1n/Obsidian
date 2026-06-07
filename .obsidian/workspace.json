@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/VideoBuffer-to-GS-Feedback.md",
+    "40_Knowledge/Concepts/Coarse-to-Fine-GS-Tracking.md",
+    "40_Knowledge/Concepts/Adaptive-Gaussian-Expansion.md",
+    "40_Knowledge/Methods/GS-SLAM-RGBD-Pipeline.md",
+    "40_Knowledge/References/GS-SLAM.md",
+    "40_Knowledge/References/GS-SLAM.pdf",
     "40_Knowledge/References/ContextGS.md",
     "40_Knowledge/Methods/Anchor-Compression-for-SLAM.md",
     "40_Knowledge/Methods/Rate-Distortion-GS.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/References/Spann3R.md",
     "40_Knowledge/References/Spann3R.pdf",
     "40_Knowledge/Methods/MonoGS-Monocular-Insertion.md",
-    "40_Knowledge/References/MonoGS.md",
-    "40_Knowledge/Methods/Isotropic-Regularization.md",
-    "40_Knowledge/Concepts/Gaussian-Covisibility.md",
-    "40_Knowledge/Concepts/GS-Tracking-Representation.md",
     "40_Knowledge/References/MonoGS.pdf",
-    "40_Knowledge/Methods/Fast-Reciprocal-Matching.md",
     "40_Knowledge/References/MASt3R.pdf",
     "40_Knowledge/References/SplaTAM.pdf",
     "40_Knowledge/References/GO-SLAM.pdf",
-    "40_Knowledge/References/Gaussian-SLAM.pdf",
-    "40_Knowledge/References/DPVO.pdf"
+    "40_Knowledge/References/Gaussian-SLAM.pdf"
   ]
 }
