@@ -38,5 +38,7 @@
 - [[Two-View-Pointmap-Prior]]
 - [[GS-Tracking-Representation]]
 - [[Gaussian-Covisibility]]
+- [[Spatial-Memory-Reconstruction]]
+- [[Dense-Sparse-Memory]]
 
 > 概念笔记是知识的原子单元。

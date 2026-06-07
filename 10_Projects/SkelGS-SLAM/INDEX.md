@@ -24,6 +24,7 @@
 - [[decision-log|SplaTAM 论文分析]] (2026-06-07)
 - [[decision-log|MASt3R (base model) 分析]] (2026-06-07)
 - [[decision-log|MonoGS 分析]] (2026-06-07)
+- [[decision-log|Spann3R 分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]

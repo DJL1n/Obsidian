@@ -31,5 +31,7 @@
 - [[Coarse-to-Fine-Dense-Matching]]
 - [[Isotropic-Regularization]]
 - [[MonoGS-Monocular-Insertion]]
+- [[Spann3R-Memory-Architecture]]
+- [[Spatial-Memory-for-Anchor]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

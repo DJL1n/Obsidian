@@ -604,3 +604,42 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MonoGS]]
+
+---
+
+## 2026-06-07 — Spann3R 分析结论
+
+### 背景
+完整阅读了 Spann3R (3DV 2025) 论文。评估其 spatial memory design 对 anchor skeleton / packet memory 的启发。
+
+### 关键判断
+
+**Spann3R 的定位：learned spatial memory / global pointmap proposal reference。最值得借鉴的不是拿它做前端，而是它的内存设计：working + long-term + attention + clipping + sparsification。但缺少 BA / loop correction / GS birth certification。**
+
+#### 最值得借鉴
+1. **Spatial memory 结构** — working (dense recent) + long-term (sparse top-k) + attention query
+2. **Attention clipping** — outlier hard-reject 对应你的 certified packet gate
+3. **Memory sparsification** — 只保留长期有用 tokens
+4. **Drain 机制** — working → long-term 对应 anchor maturity promotion
+
+#### 不建议照搬
+- 无 BA / global correction
+- Direct global pointmap regression → GS（缺少 certification）
+
+### 14 篇论文完整定位
+
+| # | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
+|---|------|------|---------------------|
+| 1 | **DPVO** | temporal tracking | **main temporal backbone** |
+| 2 | **MASt3R** | pairwise 3D geometry | wide-baseline witness |
+| 3 | **Spann3R** | **learned spatial memory reconstruction** | **memory abstraction / global pointmap proposal** |
+| 4+ | MASt3R-SLAM to SplaTAM | various | references |
+| **14** | **Spann3R** | **memory / proposal** | **anchor skeleton memory design** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/Spann3R]]

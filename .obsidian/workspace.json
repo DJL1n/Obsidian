@@ -181,6 +181,12 @@
   },
   "active": "066b4938ef286647",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Spann3R-Memory-Architecture.md",
+    "40_Knowledge/Concepts/Dense-Sparse-Memory.md",
+    "40_Knowledge/Methods/Spatial-Memory-for-Anchor.md",
+    "40_Knowledge/Concepts/Spatial-Memory-Reconstruction.md",
+    "40_Knowledge/References/Spann3R.md",
+    "40_Knowledge/References/Spann3R.pdf",
     "40_Knowledge/Methods/MonoGS-Monocular-Insertion.md",
     "40_Knowledge/References/MonoGS.md",
     "40_Knowledge/Methods/Isotropic-Regularization.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Online-Global-Pose-Graph.md",
     "40_Knowledge/References/GO-SLAM.pdf",
     "40_Knowledge/References/Gaussian-SLAM.md",
-    "40_Knowledge/Concepts/GS-Birth-Gate.md",
-    "40_Knowledge/Methods/Online-GS-Seeding-Strategy.md",
-    "40_Knowledge/Methods/Render-and-Optimize-Tracking.md",
-    "40_Knowledge/Concepts/Submap-Gaussian-Organization.md",
     "40_Knowledge/References/Gaussian-SLAM.pdf",
-    "40_Knowledge/References/DPVO.md",
     "40_Knowledge/References/DPVO.pdf",
     "40_Knowledge/References/Scaffold-GS.pdf",
     "40_Knowledge/References/LightGlue.pdf",
-    "40_Knowledge/References/ESLAM.pdf",
-    "40_Knowledge/References/S3LAM.pdf"
+    "40_Knowledge/References/ESLAM.pdf"
   ]
 }
