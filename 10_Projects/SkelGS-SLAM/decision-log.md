@@ -168,3 +168,48 @@ S3LAM 的核心思路：raw points/anchors → semantic-instance cluster → pri
 
 ### 相关笔记
 - [[40_Knowledge/References/S3LAM]]
+
+---
+
+## 2026-06-07 — ESLAM 论文分析结论
+
+### 背景
+完整阅读并整理了 ESLAM (CVPR 2023 Highlight) 论文，评估其对 geometry certification / free-space gating 方向的启发。
+
+### 关键判断
+
+**ESLAM 的定位：不适合作为 monocular tracking backbone，适合作为 geometry certification / surface-band gating 的思想来源。**
+
+#### 可采用的机制
+1. **Free-space gating** — candidate depth 之前的空间应为空，可用于 GS birth gating
+2. **Surface-band check** — surface 附近 truncated band 应有 support，区分 high/low confidence
+3. **Geometry/appearance 解耦** — 不要让 color/render loss 支配 geometry birth
+4. **Occlusion check** — 不一致的深处不应 birth GS
+
+#### 不建议照搬的
+- ESLAM 是 RGB-D 系统，不解决 monocular scale
+- Tracking 用 Adam 优化 render loss，无 DROID-style temporal BA trace
+- 大场景 O(L²) 仍不是最终解
+
+### 对五篇论文的完整定位
+
+| 系统 | 对 SkelGS-SLAM 的价值 |
+|---|---|
+| **DROID/DPVO** | tracking / temporal anchor support |
+| **MASt3R-SLAM** | two-view robust geometry proposal |
+| **S3LAM** | semantic cluster + structural grouping |
+| **ESLAM** | surface-band / free-space / implicit geometry regularization |
+
+### 后续方向（更新）
+- DROID/DPVO 作为主时间骨架
+- MASt3R 作为宽基线几何来源
+- S3LAM-like 语义结构分组
+- ESLAM-like free-space + surface-band gating 加入 CertifiedGeometryPacket
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/ESLAM]]

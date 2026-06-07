@@ -20,5 +20,7 @@
 - [[Correlation-Volume]]
 - [[Semantic-Cluster-Structure-Prior]]
 - [[Point-Plane-Regularizer]]
+- [[Tri-Plane-Feature]]
+- [[TSDF-Direct-Supervision]]
 
 > 概念笔记是知识的原子单元。

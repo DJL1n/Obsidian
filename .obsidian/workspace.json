@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3842f8d2a7888d80",
+        "id": "0d7c2acb67ea82db",
         "type": "tabs",
         "children": [
           {
-            "id": "5ac59b3cf0ebaf2b",
+            "id": "67cc45686010dc43",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,12 +179,18 @@
       "bases:新建数据库": false
     }
   },
-  "active": "5ac59b3cf0ebaf2b",
+  "active": "67cc45686010dc43",
   "lastOpenFiles": [
+    "40_Knowledge/References/ESLAM.pdf",
+    "40_Knowledge/Methods/Free-Space-Surface-Band-Gating.md",
+    "40_Knowledge/References/ESLAM.md",
+    "40_Knowledge/Concepts/TSDF-Direct-Supervision.md",
+    "40_Knowledge/Methods/Geometry-Appearance-Decoupling.md",
+    "40_Knowledge/Concepts/Tri-Plane-Feature.md",
+    "40_Knowledge/References/S3LAM.md",
     "40_Knowledge/References/S3LAM.pdf",
     "40_Knowledge/References/DROID-SLAM.pdf",
     "40_Knowledge/References/MASt3R-SLAM.pdf",
-    "40_Knowledge/References/S3LAM.md",
     "40_Knowledge/Concepts/Semantic-Cluster-Structure-Prior.md",
     "40_Knowledge/Concepts/Point-Plane-Regularizer.md",
     "40_Knowledge/Methods/Structured-Anchor-Group.md",

@@ -13,5 +13,7 @@
 - [[DROID-Training-Gauge]]
 - [[Panoptic-SLAM-Fusion]]
 - [[Structured-Anchor-Group]]
+- [[Free-Space-Surface-Band-Gating]]
+- [[Geometry-Appearance-Decoupling]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

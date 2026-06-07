@@ -15,6 +15,7 @@
 - [[decision-log|MASt3R-SLAM 论文分析]] (2026-06-07)
 - [[decision-log|DROID-SLAM 论文分析]] (2026-06-07)
 - [[decision-log|S3LAM 论文分析]] (2026-06-07)
+- [[decision-log|ESLAM 论文分析]] (2026-06-07)
 
 ## 完成条件
 - [ ]
