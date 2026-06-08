@@ -11,10 +11,14 @@
             "id": "9d1518a52e4563fa",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "50_Diary/INDEX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "INDEX"
             }
           }
         ]
@@ -181,6 +185,7 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "20_Areas/Vibecoding.md",
     "50_Diary/INDEX.md",
     "50_Diary",
     "40_Knowledge/Methods/EAG3R-Architecture.md",
@@ -207,7 +212,6 @@
     "40_Knowledge/Methods/AnchorReliability-Admission-Gate.md",
     "40_Knowledge/Concepts/Primitive-Level-Reliability.md",
     "40_Knowledge/Concepts/Appearance-vs-Geometry-Uncertainty.md",
-    "40_Knowledge/References/VarSplat.md",
     "40_Knowledge/References/MCGS-SLAM.pdf",
     "40_Knowledge/References/MonST3R.pdf",
     "40_Knowledge/References/CoGS-SLAM-Survey.pdf",

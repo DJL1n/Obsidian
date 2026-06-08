@@ -17,3 +17,10 @@
 - 学习路线
 
 > Areas 是责任领域，不是项目。需要定期回顾但不追求"完成"。
+
+## 当前领域
+
+### Vibecoding
+- [[Vibecoding]] — AI 协作编程、vibe coding 工作流
+  - Speaker Skill — AI 语音交互、语音合成、演讲辅助
+
