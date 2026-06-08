@@ -81,5 +81,7 @@
 - [[Proxy-Depth-Packet]]
 - [[GSFusion-Architecture]]
 - [[Quadtree-Image-Budget]]
+- [[Dy3DGS-SLAM-Architecture]]
+- [[DynamicEvidencePacket]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

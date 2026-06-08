@@ -181,6 +181,12 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Multi-Evidence-Dynamic-Fusion.md",
+    "40_Knowledge/Concepts/Dynamic-Suppression-Both-Sides.md",
+    "40_Knowledge/Methods/DynamicEvidencePacket.md",
+    "40_Knowledge/References/Dy3DGS-SLAM.md",
+    "40_Knowledge/Methods/Dy3DGS-SLAM-Architecture.md",
+    "40_Knowledge/References/Dy3DGS-SLAM.pdf",
     "40_Knowledge/Methods/GSFusion-Architecture.md",
     "40_Knowledge/References/GSFusion.md",
     "40_Knowledge/Methods/Quadtree-Image-Budget.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Methods/FlashSLAM-Architecture.md",
     "40_Knowledge/References/FlashSLAM.pdf",
     "10_Projects/SkelGS-SLAM/INDEX.md",
-    "10_Projects/SkelGS-SLAM/progress-record-2026-06-08.md",
-    "40_Knowledge/Concepts/Primitive-Lifecycle-State.md",
-    "40_Knowledge/Methods/RTG-SLAM-Architecture.md",
-    "40_Knowledge/Concepts/Explicit-Birth-Event.md",
-    "40_Knowledge/Methods/Stable-Unstable-Anchor-Maturity.md",
     "40_Knowledge/References/RTG-SLAM.pdf",
     "40_Knowledge/References/DGS-SLAM.pdf",
     "40_Knowledge/References/MASt3R-SfM.pdf",
     "40_Knowledge/References/RGBDS-SLAM.pdf",
-    "40_Knowledge/References/ADD-SLAM.pdf",
-    "40_Knowledge/References/GSO-SLAM.pdf"
+    "40_Knowledge/References/ADD-SLAM.pdf"
   ]
 }

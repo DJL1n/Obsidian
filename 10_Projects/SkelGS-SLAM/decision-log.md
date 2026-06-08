@@ -1544,3 +1544,40 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GSFusion]]
+
+---
+
+## 2026-06-08 — Dy3DGS-SLAM 分析结论
+
+### 背景
+完整阅读了 Dy3DGS-SLAM (arXiv 2025-06)。评估其 flow+depth fusion mask + bilateral dynamic suppression 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**Dy3DGS-SLAM 的定位：monocular RGB dynamic GS-SLAM via optical flow + depth fusion mask。最值借鉴：multi-evidence dynamic probability→anchor dynamic evidence、dynamic suppression 应同时影响 tracking + mapping。不是 packet coherence / anchor lifecycle 的完整答案。**
+
+#### 最值借鉴
+1. **Multi-evidence dynamic fusion** — flow + depth + K-means + Bayesian
+2. **Bilateral suppression** — 动态证据同时影响 tracking loss 和 GS loss
+3. **DynamicEvidencePacket** — per-pixel/per-anchor static probability 设计
+
+#### 不建议借
+- ResNet50 supervised pose network
+- Bayesian 独立假设
+
+### 40 → 41 篇（Dynamic GS-SLAM 子线 5 篇）
+| 系统 | 定位 |
+|---|---|
+| WildGS-SLAM | mono dynamic via uncertainty |
+| ADD-SLAM | RGB-D dynamic + consistency + composite |
+| UP-SLAM | RGB-D + probabilistic octree |
+| DGS-SLAM | RGB-D + segmentation + robust mask |
+| **Dy3DGS-SLAM** | **mono RGB + flow+depth fusion** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/Dy3DGS-SLAM]]

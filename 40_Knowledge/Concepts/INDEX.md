@@ -88,5 +88,7 @@
 - [[Deformable-GS-Map]]
 - [[Geometry-Gated-GS-Birth]]
 - [[Hybrid-TSDF-GS-Map]]
+- [[Multi-Evidence-Dynamic-Fusion]]
+- [[Dynamic-Suppression-Both-Sides]]
 
 > 概念笔记是知识的原子单元。
