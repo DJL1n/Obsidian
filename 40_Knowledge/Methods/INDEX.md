@@ -93,5 +93,7 @@
 - [[Intra-Agent-Submap-Loop]]
 - [[MonST3R-Architecture]]
 - [[Dynamic-Region-as-Packet-Evidence]]
+- [[MCGS-SLAM-Architecture]]
+- [[JDSA-Scale-Alignment-for-CertifiedPacket]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

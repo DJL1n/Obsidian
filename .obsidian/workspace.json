@@ -181,6 +181,12 @@
   },
   "active": "9d1518a52e4563fa",
   "lastOpenFiles": [
+    "40_Knowledge/References/MCGS-SLAM.md",
+    "40_Knowledge/Methods/MCGS-SLAM-Architecture.md",
+    "40_Knowledge/Concepts/MCBA-Cross-View-Constraint.md",
+    "40_Knowledge/Concepts/Pose-Depth-Co-Versioning.md",
+    "40_Knowledge/Methods/JDSA-Scale-Alignment-for-CertifiedPacket.md",
+    "40_Knowledge/References/MCGS-SLAM.pdf",
     "40_Knowledge/Methods/MonST3R-Architecture.md",
     "40_Knowledge/Concepts/Geometry-First-Dynamic-Detection.md",
     "40_Knowledge/Concepts/Per-Timestep-Pointmap.md",
@@ -205,17 +211,11 @@
     "40_Knowledge/Concepts/Local-Map-Tracking.md",
     "40_Knowledge/Concepts/Surface-Aware-Depth-Rendering.md",
     "40_Knowledge/Methods/GauS-SLAM-Architecture.md",
-    "40_Knowledge/Methods/Surfel-Anchor-Bridge.md",
     "40_Knowledge/References/GauS-SLAM.pdf",
-    "40_Knowledge/References/VGGT-SLAM.md",
-    "40_Knowledge/Methods/VGGT-SLAM-Architecture.md",
-    "40_Knowledge/Concepts/Projective-Ambiguity-Awareness.md",
-    "40_Knowledge/Methods/SL4-Submap-Alignment.md",
     "40_Knowledge/References/VGGT-SLAM.pdf",
     "40_Knowledge/References/Dy3DGS-SLAM.pdf",
     "40_Knowledge/References/GSFusion.pdf",
     "40_Knowledge/References/Splat-SLAM.pdf",
-    "10_Projects/SkelGS-SLAM/pipeline",
-    "40_Knowledge/References/FlashSLAM.pdf"
+    "10_Projects/SkelGS-SLAM/pipeline"
   ]
 }

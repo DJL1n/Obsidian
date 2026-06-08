@@ -1746,3 +1746,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MonST3R]]
+
+---
+
+## 2026-06-08 — MCGS-SLAM 分析结论
+
+### 背景
+完整阅读了 MCGS-SLAM (arXiv 2025-09)。评估其 multi-camera RGB GS-SLAM (MCBA + JDSA + GS mapping) 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**MCGS-SLAM 的定位：synchronized multi-camera RGB 3DGS-SLAM via MCBA + JDSA + Gaussian mapping。最值借鉴：JDSA 独立性（depth scale alignment 不与 BA 暴力联合）、pose-depth co-versioning、Gaussian birth after refined geometry。不是 monocular / 但说明 GS-SLAM 的瓶颈仍然是进入 Gaussian 之前的 geometry packet 是否一致。**
+
+#### 最值借鉴
+1. **JDSA → scale alignment gate** — depth predictor 输出不直接 certified
+2. **Pose-depth co-versioning** — T_cw 和 depth 必须共同更新
+3. **Gaussian birth after refined geometry** — 进入 GS 前必须先通过 geometry certification
+
+#### 局限
+- 依赖 calibrated multi-camera rig / Metric3Dv2 / 非 monocular / 不解决动态
+
+### 52 → 53 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 52 | MonST3R | dynamic video geometry via per-timestep pointmap |
+| **53** | **MCGS-SLAM** | **multi-camera RGB GS-SLAM via MCBA+JDSA** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MCGS-SLAM]]

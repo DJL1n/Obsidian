@@ -100,5 +100,7 @@
 - [[Geometry-vs-Visual-Consistency]]
 - [[Per-Timestep-Pointmap]]
 - [[Geometry-First-Dynamic-Detection]]
+- [[MCBA-Cross-View-Constraint]]
+- [[Pose-Depth-Co-Versioning]]
 
 > 概念笔记是知识的原子单元。
