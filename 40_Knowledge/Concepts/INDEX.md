@@ -86,5 +86,7 @@
 - [[Alignment-Check-Before-Birth]]
 - [[Geometry-Authority-Separation]]
 - [[Deformable-GS-Map]]
+- [[Geometry-Gated-GS-Birth]]
+- [[Hybrid-TSDF-GS-Map]]
 
 > 概念笔记是知识的原子单元。

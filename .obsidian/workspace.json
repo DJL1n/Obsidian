@@ -179,8 +179,14 @@
       "bases:新建数据库": false
     }
   },
-  "active": "9d1518a52e4563fa",
+  "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/GSFusion-Architecture.md",
+    "40_Knowledge/References/GSFusion.md",
+    "40_Knowledge/Methods/Quadtree-Image-Budget.md",
+    "40_Knowledge/Concepts/Geometry-Gated-GS-Birth.md",
+    "40_Knowledge/Concepts/Hybrid-TSDF-GS-Map.md",
+    "40_Knowledge/References/GSFusion.pdf",
     "40_Knowledge/Methods/Proxy-Depth-Packet.md",
     "40_Knowledge/Methods/Splat-SLAM-Architecture.md",
     "40_Knowledge/Concepts/Deformable-GS-Map.md",
@@ -205,17 +211,11 @@
     "40_Knowledge/Methods/RTG-SLAM-Architecture.md",
     "40_Knowledge/Concepts/Explicit-Birth-Event.md",
     "40_Knowledge/Methods/Stable-Unstable-Anchor-Maturity.md",
-    "40_Knowledge/References/RTG-SLAM.md",
     "40_Knowledge/References/RTG-SLAM.pdf",
-    "40_Knowledge/Concepts/Primitive-Birth-Provenance.md",
-    "40_Knowledge/Methods/DGS-SLAM-Architecture.md",
-    "40_Knowledge/References/DGS-SLAM.md",
-    "40_Knowledge/Concepts/Dynamic-Gate-Through-Pipeline.md",
     "40_Knowledge/References/DGS-SLAM.pdf",
     "40_Knowledge/References/MASt3R-SfM.pdf",
     "40_Knowledge/References/RGBDS-SLAM.pdf",
     "40_Knowledge/References/ADD-SLAM.pdf",
-    "40_Knowledge/References/GSO-SLAM.pdf",
-    "40_Knowledge/References/UP-SLAM.pdf"
+    "40_Knowledge/References/GSO-SLAM.pdf"
   ]
 }

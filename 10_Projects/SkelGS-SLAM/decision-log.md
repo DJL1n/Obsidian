@@ -1511,3 +1511,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/Splat-SLAM]]
+
+---
+
+## 2026-06-08 — GSFusion 分析结论
+
+### 背景
+完整阅读了 GSFusion (IEEE RA-L 2024)。评估其 TSDF + 3DGS hybrid + quadtree gate 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**GSFusion 的定位：online RGB-D mapping via TSDF geometry + 3DGS appearance + quadtree-controlled GS admission。最值借鉴：geometry-gated GS birth（stable geometry carrier → controlled admission）、quadtree image-space budget allocation、TSDF voxel occupancy check。不是完整 SLAM / non mono / 不解决 tracking。**
+
+#### 最值借鉴
+1. **Geometry-gated GS birth** — 稳定几何承载 → GS admission（支持你的 direction-strategy）
+2. **Quadtree image budget** — contrast-based allocation，可替换为 anchor support / surface prior
+3. **TSDF voxel occupancy check** — 已有观测 → 拒绝 birth
+
+#### 局限
+- GT pose only / RGB-D / dynamic × / global opt 依赖
+
+### 39 → 40 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 39 | Splat-SLAM | DSPO + proxy depth + deformable 3DGS |
+| **40** | **GSFusion** | **TSDF + 3DGS hybrid + geometry-gated birth** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GSFusion]]

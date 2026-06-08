@@ -79,5 +79,7 @@
 - [[Loss-Weighted-Refinement]]
 - [[Splat-SLAM-Architecture]]
 - [[Proxy-Depth-Packet]]
+- [[GSFusion-Architecture]]
+- [[Quadtree-Image-Budget]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。
