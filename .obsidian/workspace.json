@@ -179,8 +179,10 @@
       "bases:新建数据库": false
     }
   },
-  "active": "9d1518a52e4563fa",
+  "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "50_Diary/INDEX.md",
+    "50_Diary",
     "40_Knowledge/Methods/EAG3R-Architecture.md",
     "40_Knowledge/References/EAG3R.md",
     "40_Knowledge/Methods/Event-Augmented-Geometry-Candidate.md",
@@ -206,7 +208,6 @@
     "40_Knowledge/Concepts/Primitive-Level-Reliability.md",
     "40_Knowledge/Concepts/Appearance-vs-Geometry-Uncertainty.md",
     "40_Knowledge/References/VarSplat.md",
-    "40_Knowledge/References/MCGS-SLAM.md",
     "40_Knowledge/References/MCGS-SLAM.pdf",
     "40_Knowledge/References/MonST3R.pdf",
     "40_Knowledge/References/CoGS-SLAM-Survey.pdf",
@@ -215,7 +216,6 @@
     "40_Knowledge/References/VGGT-SLAM.pdf",
     "40_Knowledge/References/Dy3DGS-SLAM.pdf",
     "40_Knowledge/References/GSFusion.pdf",
-    "40_Knowledge/References/Splat-SLAM.pdf",
-    "10_Projects/SkelGS-SLAM/pipeline"
+    "40_Knowledge/References/Splat-SLAM.pdf"
   ]
 }

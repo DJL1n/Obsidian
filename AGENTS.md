@@ -46,7 +46,7 @@ HermesBrain/
 │   ├── Concepts/       概念笔记
 │   ├── Methods/        方法论
 │   └── References/     参考资料
-├── 50_Writing/         ← 写作 / 输出
+├── 50_Diary/            ← 日记 / 个人记录
 ├── 60_WorkingStyle/    ← 工作风格 & 元认知
 ├── 90_Archive/         ← 归档
 │   ├── Inbox/          已处理收件箱
@@ -395,9 +395,9 @@ Use for paper notes, tools, repositories, documentation, or source-based summari
 
 ---
 
-### 50_Writing/
+### 50_Diary/
 
-**Purpose:** drafts, outlines, paper sections, proposal text, defense materials, and reusable writing fragments.
+**Purpose:** 日记、个人记录、日常反思。
 
 Use this folder for:
 
@@ -413,11 +413,11 @@ Use this folder for:
 **Recommended structure:**
 
 ```
-50_Writing/Thesis/
-50_Writing/Papers/
-50_Writing/Proposals/
-50_Writing/Figure-Captions/
-50_Writing/Snippets/
+50_Diary/Thesis/
+50_Diary/Papers/
+50_Diary/Proposals/
+50_Diary/Figure-Captions/
+50_Diary/Snippets/
 ```
 
 **Writing rules:**
@@ -632,7 +632,7 @@ When the user asks to learn, summarize, or consolidate a concept:
 
 When the user asks for polished text, paragraphs, outlines, paper sections, proposals, or captions:
 
-1. Save drafts under `50_Writing/`.
+1. Save drafts under `50_Diary/`.
 2. Keep a short context section.
 3. Preserve earlier versions if the revision is substantial.
 4. Do not overwrite final text unless explicitly asked.
@@ -815,7 +815,7 @@ For **perovskite / in-situ PL** notes:
 - Do not overclaim causality from PL or morphology alone.
 - Use cautious academic language.
 - Preserve experimental conditions when provided.
-- Keep writing fragments under `50_Writing/`.
+- Keep writing fragments under `50_Diary/`.
 
 ---
 
