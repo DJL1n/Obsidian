@@ -78,5 +78,7 @@
 - [[Multi-Channel-Gaussian-Attributes]]
 - [[Constrained-Pointmap]]
 - [[Anchor-Depth-Parameterization]]
+- [[Dynamic-Gate-Through-Pipeline]]
+- [[Primitive-Birth-Provenance]]
 
 > 概念笔记是知识的原子单元。

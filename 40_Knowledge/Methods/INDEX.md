@@ -71,5 +71,7 @@
 - [[Joint-Multi-Feature-GS-Optimization]]
 - [[Gradient-Based-SfM-Pipeline]]
 - [[Offline-SfM-to-Online-Anchor]]
+- [[DGS-SLAM-Architecture]]
+- [[Robust-Mask-Residual]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

@@ -1369,3 +1369,38 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MASt3R-SfM]]
+
+---
+
+## 2026-06-08 — DGS-SLAM 分析结论
+
+### 背景
+完整阅读了 DGS-SLAM (arXiv 2024)。评估其 RGB-D dynamic GS-SLAM via segmentation + robust mask + source keyframe ID 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**DGS-SLAM 的定位：RGB-D dynamic GS-SLAM with dynamic filtering through full pipeline。最值借鉴：dynamic gate before anchor/GS birth、primitive birth provenance (source keyframe ID)、robust residual mask outlier detection。不是 mono / not geometry certification / not frontend-tracking-innovation paper。**
+
+#### 最值借鉴
+1. **Dynamic gate → anchor/GS birth** — pre-GS geometry evidence，非 GS render residual
+2. **Primitive birth provenance** — anchor 记录 birth frame/packet/maturity
+3. **Robust mask 补漏** — segmentation 不完美时 residual 验证
+
+#### 局限
+- RGB-D / 外部分割依赖 / 不建模动态物体 / ~1.6 FPS
+
+### 33 → 34 篇（Dynamic GS-SLAM 子线 4 篇）
+| 系统 | 定位 |
+|---|---|
+| WildGS-SLAM | mono dynamic GS-SLAM via uncertainty |
+| ADD-SLAM/CAD-SLAM | RGB-D dynamic + consistency + composite mapping |
+| UP-SLAM | RGB-D + probabilistic octree + DINO uncertainty |
+| **DGS-SLAM** | **RGB-D + segmentation + robust mask + provenance** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/DGS-SLAM]]
