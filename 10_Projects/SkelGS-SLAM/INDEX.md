@@ -50,6 +50,7 @@
 - [[decision-log|Splat-SLAM 分析]] (2026-06-08)
 - [[decision-log|GSFusion 分析]] (2026-06-08)
 - [[decision-log|Dy3DGS-SLAM 分析]] (2026-06-08)
+- [[decision-log|VGGT-SLAM 分析]] (2026-06-08)
 
 ## 完成条件
 - [ ]

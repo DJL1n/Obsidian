@@ -181,6 +181,12 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "40_Knowledge/References/VGGT-SLAM.md",
+    "40_Knowledge/Methods/VGGT-SLAM-Architecture.md",
+    "40_Knowledge/Concepts/Projective-Ambiguity-Awareness.md",
+    "40_Knowledge/Methods/SL4-Submap-Alignment.md",
+    "40_Knowledge/Concepts/Feed-Forward-Submap.md",
+    "40_Knowledge/References/VGGT-SLAM.pdf",
     "40_Knowledge/Concepts/Multi-Evidence-Dynamic-Fusion.md",
     "40_Knowledge/Concepts/Dynamic-Suppression-Both-Sides.md",
     "40_Knowledge/Methods/DynamicEvidencePacket.md",
@@ -206,16 +212,10 @@
     "10_Projects/SkelGS-SLAM/pipeline/direction-strategy.md",
     "10_Projects/SkelGS-SLAM/pipeline",
     "40_Knowledge/Methods/Loss-Weighted-Refinement.md",
-    "40_Knowledge/Concepts/Explicit-Tracking-vs-Render-Tracking.md",
-    "40_Knowledge/Concepts/Alignment-Check-Before-Birth.md",
-    "40_Knowledge/References/FlashSLAM.md",
-    "40_Knowledge/Methods/FlashSLAM-Architecture.md",
     "40_Knowledge/References/FlashSLAM.pdf",
-    "10_Projects/SkelGS-SLAM/INDEX.md",
     "40_Knowledge/References/RTG-SLAM.pdf",
     "40_Knowledge/References/DGS-SLAM.pdf",
     "40_Knowledge/References/MASt3R-SfM.pdf",
-    "40_Knowledge/References/RGBDS-SLAM.pdf",
-    "40_Knowledge/References/ADD-SLAM.pdf"
+    "40_Knowledge/References/RGBDS-SLAM.pdf"
   ]
 }

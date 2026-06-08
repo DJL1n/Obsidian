@@ -90,5 +90,7 @@
 - [[Hybrid-TSDF-GS-Map]]
 - [[Multi-Evidence-Dynamic-Fusion]]
 - [[Dynamic-Suppression-Both-Sides]]
+- [[Projective-Ambiguity-Awareness]]
+- [[Feed-Forward-Submap]]
 
 > 概念笔记是知识的原子单元。

@@ -1581,3 +1581,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/Dy3DGS-SLAM]]
+
+---
+
+## 2026-06-08 — VGGT-SLAM 分析结论
+
+### 背景
+完整阅读了 VGGT-SLAM (NeurIPS 2025)。评估其 VGGT feed-forward submap + SL(4) factor graph 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**VGGT-SLAM 的定位：dense RGB SLAM via VGGT feed-forward submaps + SL(4) factor graph。最值借鉴：projective ambiguity awareness（foundation model 几何误差可能不止 Sim(3)）、feed-forward submap multi-frame local geometry、submap-level provenance。不是 GS backend / 不是实时 / 不处理动态 / 不适合作主前端。**
+
+#### 最值借鉴
+1. **Projective ambiguity awareness** — 你的 Sim(3) 检查可能不够
+2. **Feed-forward submap** — 不是 pairwise，是 multi-frame local geometry
+3. **Submap-level provenance** — 对应你的 CertifiedGeometryPacket: versioned local submap packet
+
+#### 不建议借
+- SL(4) 直接放入在线前端（15-DOF 太自由，会引入额外 drift）
+
+### 42 → 43 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 42 | Dy3DGS-SLAM | mono dynamic via flow+depth fusion |
+| **43** | **VGGT-SLAM** | **VGGT submap + SL(4) alignment** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/VGGT-SLAM]]

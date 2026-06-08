@@ -83,5 +83,7 @@
 - [[Quadtree-Image-Budget]]
 - [[Dy3DGS-SLAM-Architecture]]
 - [[DynamicEvidencePacket]]
+- [[VGGT-SLAM-Architecture]]
+- [[SL4-Submap-Alignment]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。
