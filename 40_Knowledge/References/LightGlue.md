@@ -1,3 +1,7 @@
+---
+tags:
+  - Feature-Matching
+---
 # LightGlue: Local Feature Matching at Light Speed
 
 > ICCV 2023. 论文整理笔记。

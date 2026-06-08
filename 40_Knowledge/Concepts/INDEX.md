@@ -72,5 +72,7 @@
 - [[Multi-Modal-Uncertainty]]
 - [[EM-VO-GS-Coupling]]
 - [[Frontend-Gaussian-Initialization]]
+- [[Consistency-Dynamic-Detection]]
+- [[Occlusion-vs-Exposure-Cue]]
 
 > 概念笔记是知识的原子单元。

@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Online
+  - Keyframe
+---
 # Gaussian-SLAM: Photo-realistic Dense SLAM with Gaussian Splatting
 
 > ECCV 2024. 论文整理笔记。

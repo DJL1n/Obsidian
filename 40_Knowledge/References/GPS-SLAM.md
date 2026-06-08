@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Hybrid-Representation
+  - Online
+---
 # GPS-SLAM: Gaussian-Plus-SDF SLAM — High-fidelity 3D Reconstruction at 150+ fps
 
 > CVPR 2025. 论文整理笔记。

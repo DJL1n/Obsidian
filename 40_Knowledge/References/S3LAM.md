@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - sparse-SLAM
+  - monocular
+  - Semantic
+  - global-optimization
+  - Loop-Closure
+---
 # S3LAM: Structured Scene SLAM
 
 > arXiv 2021 (v1 Sep 2021, v2 Mar 2022). 论文整理笔记。

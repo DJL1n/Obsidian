@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Semantic
+  - Keyframe
+---
 # MG-SLAM: Structure Gaussian Splatting SLAM with Manhattan World Hypothesis
 
 > arXiv 2025. 论文整理笔记。

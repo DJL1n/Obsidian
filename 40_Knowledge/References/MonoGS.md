@@ -1,3 +1,11 @@
+---
+tags:
+  - SLAM
+  - monocular
+  - 3DGS
+  - Online
+  - Keyframe
+---
 # Gaussian Splatting SLAM (MonoGS)
 
 > CVPR 2024. 论文整理笔记。

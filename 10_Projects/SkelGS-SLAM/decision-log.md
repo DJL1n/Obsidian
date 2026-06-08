@@ -1264,3 +1264,38 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GSO-SLAM]]
+
+---
+
+## 2026-06-08 — ADD-SLAM / CAD-SLAM 分析结论
+
+### 背景
+完整阅读了 ADD-SLAM (arXiv, v2 改名 CAD-SLAM)。评估其 consistency-based dynamic detection + dynamic-static composite mapping 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**ADD-SLAM 的定位：RGB-D dynamic GS-SLAM via consistency-based dynamic detection + MobileSAM + dynamic-static composite mapping。最值借鉴：跨时间一致性破坏作为动态证据（非语义类别）、区分新遮挡 vs 暴露背景、可落地成 pre-GS consistency oracle。不是 mono / not direct GS render residual based / not real-time frontend。**
+
+#### 最值借鉴
+1. **跨时间一致性破坏 → pre-GS consistency oracle**（DPVO/anchor, 非 GS render）
+2. **区分新遮挡 vs 暴露背景** → 锚点 admission 信号
+3. **DynamicRiskEvidence，非 Dynamic Mask 写回**
+
+#### 局限
+- RGB-D 假设 / MobileSAM 依赖 / 历史 map 质量影响 / runtime 重
+
+### 30 篇论文 → 31 篇
+
+| # | 系统 | 定位 |
+|---|------|------|
+| 1 | DPVO | temporal backbone |
+| 2–30 | various | various |
+| **31** | **ADD-SLAM/CAD-SLAM** | **consistency dynamic + composite mapping** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/ADD-SLAM]]

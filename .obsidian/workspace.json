@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5ff1e675b65cc618",
+        "id": "e00f9cc3cc55021e",
         "type": "tabs",
         "children": [
           {
-            "id": "cde5d5ae6920f7d6",
+            "id": "9d1518a52e4563fa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "20_Areas/INDEX.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "INDEX"
             }
           }
         ]
@@ -179,8 +183,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "cde5d5ae6920f7d6",
+  "active": "9d1518a52e4563fa",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Consistency-Dynamic-Detection.md",
+    "40_Knowledge/Methods/Pre-GS-Consistency-Oracle.md",
+    "40_Knowledge/Methods/Dynamic-Static-Composite-Mapping.md",
+    "40_Knowledge/Concepts/Occlusion-vs-Exposure-Cue.md",
+    "40_Knowledge/References/ADD-SLAM.md",
+    "40_Knowledge/References/ADD-SLAM.pdf",
+    "40_Knowledge/Methods/INDEX.md",
     "40_Knowledge/References/GSO-SLAM.md",
     "40_Knowledge/Concepts/EM-VO-GS-Coupling.md",
     "40_Knowledge/Methods/Certified-EM-Coupling.md",
@@ -205,17 +216,10 @@
     "40_Knowledge/References/HI-SLAM2.md",
     "40_Knowledge/Methods/Certified-JDSA.md",
     "40_Knowledge/References/HI-SLAM2.pdf",
-    "40_Knowledge/Concepts/INDEX.md",
-    "10_Projects/SkelGS-SLAM/decision-log.md",
-    "50_Writing/INDEX.md",
-    "60_WorkingStyle/INDEX.md",
-    "90_Archive/INDEX.md",
-    "00_Inbox/INDEX.md",
     "40_Knowledge/References/SEGS-SLAM.pdf",
     "40_Knowledge/References/CUT3R.pdf",
     "40_Knowledge/References/GPS-SLAM.pdf",
     "40_Knowledge/References/SLAM3R.pdf",
-    "40_Knowledge/References/MG-SLAM.pdf",
-    "40_Knowledge/References/GS-SDF.pdf"
+    "40_Knowledge/References/MG-SLAM.pdf"
   ]
 }

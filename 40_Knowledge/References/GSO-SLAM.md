@@ -1,3 +1,11 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - 3DGS
+  - Online
+---
 # GSO-SLAM: Bidirectionally Coupled Gaussian Splatting and Direct Visual Odometry
 
 > IEEE RA-L 2026. 论文整理笔记。

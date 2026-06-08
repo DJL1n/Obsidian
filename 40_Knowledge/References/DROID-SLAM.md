@@ -1,3 +1,11 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - Keyframe
+  - Loop-Closure
+---
 # DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D
 
 > NeurIPS 2021. 论文整理笔记。

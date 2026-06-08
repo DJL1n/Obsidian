@@ -1,3 +1,10 @@
+---
+tags:
+  - Foundation-Model
+  - Dense-Correspondence
+  - Point-Cloud
+  - Online
+---
 # Spann3R: 3D Reconstruction with Spatial Memory
 
 > 3DV 2025. 论文整理笔记。

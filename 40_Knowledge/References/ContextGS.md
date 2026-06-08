@@ -1,3 +1,9 @@
+---
+tags:
+  - 3DGS
+  - Anchor-Structured
+  - Compression
+---
 # ContextGS: Compact 3D Gaussian Splatting with Anchor Level Context Model
 
 > NeurIPS 2024. 论文整理笔记。

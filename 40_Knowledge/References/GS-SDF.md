@@ -1,3 +1,10 @@
+---
+tags:
+  - 3DGS
+  - Neural-Implicit
+  - Hybrid-Representation
+  - Point-Cloud
+---
 # GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction
 
 > arXiv 2025. 论文整理笔记。

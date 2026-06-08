@@ -1,3 +1,13 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Anchor-Structured
+  - Loop-Closure
+  - Keyframe
+---
 # VPGS-SLAM: Voxel-based Progressive 3D Gaussian SLAM in Large-Scale Scenes
 
 > arXiv 2025. 论文整理笔记。

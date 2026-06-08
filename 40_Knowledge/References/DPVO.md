@@ -1,3 +1,10 @@
+---
+tags:
+  - Visual-Odometry
+  - monocular
+  - Online
+  - Feature-Matching
+---
 # Deep Patch Visual Odometry (DPVO)
 
 > NeurIPS 2023. 论文整理笔记。

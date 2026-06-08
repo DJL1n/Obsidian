@@ -1,3 +1,13 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - Stereo
+  - RGB-D
+  - Loop-Closure
+  - global-optimization
+---
 # GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction
 
 > ICCV 2023. 论文整理笔记。

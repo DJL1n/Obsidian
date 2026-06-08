@@ -1,3 +1,10 @@
+---
+tags:
+  - Foundation-Model
+  - Dense-Correspondence
+  - Point-Cloud
+  - Stereo
+---
 # DUSt3R: Geometric 3D Vision Made Easy
 
 > CVPR 2024. 论文整理笔记。

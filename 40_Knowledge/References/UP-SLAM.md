@@ -1,3 +1,13 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Anchor-Structured
+  - Semantic
+  - Online
+---
 # UP-SLAM: Adaptively Structured Gaussian SLAM with Uncertainty Prediction in Dynamic Environments
 
 > ICRA 2026. 论文整理笔记。

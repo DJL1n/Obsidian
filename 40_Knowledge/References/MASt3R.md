@@ -1,3 +1,11 @@
+---
+tags:
+  - Foundation-Model
+  - Dense-Correspondence
+  - Feature-Matching
+  - Point-Cloud
+  - Stereo
+---
 # MASt3R: Grounding Image Matching in 3D
 
 > ECCV 2024. 论文整理笔记。

@@ -1,3 +1,11 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - 3DGS
+  - Online
+---
 # MGS-SLAM: Monocular Sparse Tracking and Gaussian Mapping with Depth Smooth Regularization
 
 > IEEE RA-L 2024. 论文整理笔记。

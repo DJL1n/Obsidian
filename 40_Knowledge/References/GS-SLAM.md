@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Online
+  - Keyframe
+---
 # GS-SLAM: Dense Visual SLAM with 3D Gaussian Splatting
 
 > CVPR 2024. 论文整理笔记。

@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - Foundation-Model
+  - Point-Cloud
+  - Loop-Closure
+---
 # MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors
 
 > CVPR 2025. 论文整理笔记。

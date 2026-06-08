@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - monocular
+  - Stereo
+  - RGB-D
+  - 3DGS
+  - Anchor-Structured
+---
 # SEGS-SLAM: Structure-enhanced 3D Gaussian Splatting SLAM with Appearance Embedding
 
 > ICCV 2025. 论文整理笔记。

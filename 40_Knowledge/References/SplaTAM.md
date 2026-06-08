@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Online
+  - Keyframe
+---
 # SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM
 
 > CVPR 2024. 论文整理笔记。

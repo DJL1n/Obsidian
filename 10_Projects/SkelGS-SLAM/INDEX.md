@@ -41,6 +41,7 @@
 - [[decision-log|WildGS-SLAM 分析]] (2026-06-07)
 - [[decision-log|UP-SLAM 分析]] (2026-06-07)
 - [[decision-log|GSO-SLAM 分析]] (2026-06-07)
+- [[decision-log|ADD-SLAM / CAD-SLAM 分析]] (2026-06-08)
 
 ## 完成条件
 - [ ]

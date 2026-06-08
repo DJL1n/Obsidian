@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - 3DGS
+  - Loop-Closure
+  - Keyframe
+---
 # HI-SLAM2: Geometry-Aware Gaussian SLAM for Fast Monocular Scene Reconstruction
 
 > IEEE T-RO 2025 / ICRA 2026. 论文整理笔记。

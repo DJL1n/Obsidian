@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - RGB-D
+  - Neural-Implicit
+  - Online
+  - Keyframe
+---
 # ESLAM: Efficient Dense SLAM System Based on Hybrid Representation of Signed Distance Fields
 
 > CVPR 2023 Highlight. 论文整理笔记。

@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - 3DGS
+  - Semantic
+  - Online
+---
 # WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments
 
 > CVPR 2025. 论文整理笔记。

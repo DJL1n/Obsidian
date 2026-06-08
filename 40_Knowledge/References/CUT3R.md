@@ -1,3 +1,10 @@
+---
+tags:
+  - Foundation-Model
+  - Dense-Correspondence
+  - Point-Cloud
+  - Online
+---
 # CUT3R: Continuous 3D Perception Model with Persistent State
 
 > CVPR 2025 Oral. 论文整理笔记。

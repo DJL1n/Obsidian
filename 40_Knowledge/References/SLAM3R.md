@@ -1,3 +1,12 @@
+---
+tags:
+  - SLAM
+  - dense-SLAM
+  - monocular
+  - Foundation-Model
+  - Dense-Correspondence
+  - Point-Cloud
+---
 # SLAM3R: Real-Time Dense Scene Reconstruction from Monocular RGB Videos
 
 > CVPR 2025 Highlight. 论文整理笔记。

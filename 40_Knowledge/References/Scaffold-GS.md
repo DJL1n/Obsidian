@@ -1,3 +1,8 @@
+---
+tags:
+  - 3DGS
+  - Anchor-Structured
+---
 # Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering
 
 > CVPR 2024 Highlight. 论文整理笔记。

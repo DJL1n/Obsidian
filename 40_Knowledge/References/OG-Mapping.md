@@ -1,3 +1,11 @@
+---
+tags:
+  - dense-SLAM
+  - RGB-D
+  - 3DGS
+  - Anchor-Structured
+  - Online
+---
 # OG-Mapping: Octree-based Structured 3D Gaussians for Online Dense Mapping
 
 > arXiv 2024. 论文整理笔记。
