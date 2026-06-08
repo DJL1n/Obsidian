@@ -89,5 +89,9 @@
 - [[Surfel-Anchor-Bridge]]
 - [[VGGT-Architecture]]
 - [[VGGT-as-Geometry-Candidate]]
+- [[CoGS-SLAM-Architecture]]
+- [[Intra-Agent-Submap-Loop]]
+- [[MonST3R-Architecture]]
+- [[Dynamic-Region-as-Packet-Evidence]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

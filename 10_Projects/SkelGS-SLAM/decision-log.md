@@ -1680,3 +1680,69 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/VGGT]]
+
+---
+
+## 2026-06-08 — CoGS-SLAM Survey 分析结论
+
+### 背景
+完整阅读了 CoGS-SLAM Survey (arXiv 2025-10)。评估其 multi-agent collaborative GS-SLAM 综述对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**CoGS-SLAM Survey 的定位：多机器人协同 3DGS-SLAM 综述。最值借鉴：submap-level provenance、geometry-vs-visual-consistency 区分、anchor admission = communication scheduling 单机版类比。不是新算法 / 不解决单目 tracking / 适合作为 submap/anchor/provenance 背景支撑。**
+
+#### 最值借鉴
+1. **Submap-level provenance** — 对应你的 CoVersionedGeometryPacket
+2. **Geometry ≠ visual consistency** — ChildGS/residual layer 延后合理
+3. **Anchor admission = comm scheduling** — 只让高质量 anchor 进入 mature
+
+#### 局限
+- Survey / 领域太新 / 对单机 frontend 帮助有限 / 需补 2026 新工作
+
+### 48 → 49 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 48 | VGGT | multi-view feed-forward geometry foundation model |
+| **49** | **CoGS-SLAM Survey** | **multi-agent collaborative GS-SLAM 综述** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/CoGS-SLAM-Survey]]
+
+---
+
+## 2026-06-08 — MonST3R 分析结论
+
+### 背景
+完整阅读了 MonST3R (arXiv 2025)。评估其 dynamic video geometry via per-timestep pointmap 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**MonST3R 的定位：dynamic video geometry via per-timestep pointmap (DUSt3R + dynamic fine-tune)。最值借鉴：geometry-first dynamic detection（flow consistency 定义 static region）、per-timestep pointmap 不强迫动态物体满足静态一致性。不是实时 SLAM / 不接 GS backend / 适合作为动态几何诊断工具和 anchor admission 证据来源。**
+
+#### 最值借鉴
+1. **Geometry-first dynamic detection** — optical flow ≈ camera-induced flow → static；不一致 → dynamic/anchor 不晋升
+2. **Per-timestep geometry** — 动态物体只作 per-timestep observation，不污染 persistent map
+3. **离线诊断工具** — 验证你的 DPVO/DROID 前端在动态区域是否被拉偏
+
+#### 不建议
+- 直接作为在线主前端（60 帧 ~30s + opt ~1min）
+
+### 50 → 51 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 50 | CoGS-SLAM Survey | multi-agent collaborative GS-SLAM 综述 |
+| **51** | **MonST3R** | **dynamic video geometry via per-timestep pointmap** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MonST3R]]

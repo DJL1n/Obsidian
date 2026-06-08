@@ -96,9 +96,5 @@
 - [[Local-Map-Tracking]]
 - [[Multi-View-Geometry-Packet]]
 - [[Feed-Forward-vs-Optimization]]
-- [[Submap-Level-Provenance]]
-- [[Geometry-vs-Visual-Consistency]]
-- [[Per-Timestep-Pointmap]]
-- [[Geometry-First-Dynamic-Detection]]
 
 > 概念笔记是知识的原子单元。

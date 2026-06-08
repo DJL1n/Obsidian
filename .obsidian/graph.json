@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 6062550
       }
+    },
+    {
+      "query": "path:40_Knowledge/Concepts  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
   "collapse-display": false,
@@ -32,6 +39,6 @@
   "repelStrength": 13.2586805555556,
   "linkStrength": 1,
   "linkDistance": 175,
-  "scale": 0.09577647896285287,
-  "close": false
+  "scale": 0.21260412006373727,
+  "close": true
 }
