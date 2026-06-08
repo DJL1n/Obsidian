@@ -1879,3 +1879,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/OpenMonoGS-SLAM]]
+
+---
+
+## 2026-06-09 — Flash-Mono 分析结论
+
+### 背景
+完整阅读了 Flash-Mono (ICLR 2026 Poster)。评估其 recurrent feed-forward Predict-and-Refine monocular GS-SLAM 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**Flash-Mono 的定位：Predict-and-Refine monocular GS-SLAM via recurrent feed-forward 2DGS prediction + hidden-state loop。最值借鉴：Predict-and-Refine 范式（Gaussian birth 从优化→预测+admission）、hidden state 作为 submap descriptor、2DGS surfel 替代 3D ellipsoid。不是可解释几何 BA / 但速度范式和 2DGS 选择值得吸收。**
+
+#### 最值借鉴
+1. **Predict-and-Refine** — feed-forward Gaussian candidate + light refine，可接入 admission gate
+2. **Hidden state as submap descriptor** — 非 authority，是 compressed evidence
+3. **2DGS surfel** — 比 3D ellipsoid 更适合 SLAM 几何
+
+#### 局限
+- 795.7M / 大模型 / hidden state 遗忘 / 仍需要 PGO / code 未开放
+
+### 60 → 61 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 60 | OpenMonoGS-SLAM | monocular open-set semantic GS-SLAM |
+| **61** | **Flash-Mono** | **Predict-and-Refine monocular GS-SLAM** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/Flash-Mono]]

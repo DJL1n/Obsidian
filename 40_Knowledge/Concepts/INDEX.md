@@ -108,5 +108,7 @@
 - [[Explicit-Implicit-Dynamic-Fusion]]
 - [[Compact-Semantic-Memory]]
 - [[Multi-Scale-Anchor-Admission]]
+- [[Predict-and-Refine-Gaussian]]
+- [[Hidden-State-Submap-Descriptor]]
 
 > 概念笔记是知识的原子单元。

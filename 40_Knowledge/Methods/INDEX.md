@@ -101,5 +101,7 @@
 - [[Multi-Evidence-Anchor-Admission]]
 - [[OpenMonoGS-SLAM-Architecture]]
 - [[Semantic-Backend-Regularizer]]
+- [[Flash-Mono-Architecture]]
+- [[FeedForward-Gaussian-Candidate]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。
