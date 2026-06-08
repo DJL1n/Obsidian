@@ -74,5 +74,7 @@
 - [[Frontend-Gaussian-Initialization]]
 - [[Consistency-Dynamic-Detection]]
 - [[Occlusion-vs-Exposure-Cue]]
+- [[Multi-Level-Pyramid-GS]]
+- [[Multi-Channel-Gaussian-Attributes]]
 
 > 概念笔记是知识的原子单元。

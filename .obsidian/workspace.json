@@ -185,6 +185,12 @@
   },
   "active": "9d1518a52e4563fa",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Multi-Channel-Gaussian-Attributes.md",
+    "40_Knowledge/References/RGBDS-SLAM.md",
+    "40_Knowledge/Methods/Pyramid-Anchor-Admission.md",
+    "40_Knowledge/Methods/Joint-Multi-Feature-GS-Optimization.md",
+    "40_Knowledge/Concepts/Multi-Level-Pyramid-GS.md",
+    "40_Knowledge/References/RGBDS-SLAM.pdf",
     "40_Knowledge/Concepts/Consistency-Dynamic-Detection.md",
     "40_Knowledge/Methods/Pre-GS-Consistency-Oracle.md",
     "40_Knowledge/Methods/Dynamic-Static-Composite-Mapping.md",
@@ -210,16 +216,10 @@
     "40_Knowledge/References/WildGS-SLAM.md",
     "40_Knowledge/Concepts/Static-Dynamic-Side-Channel.md",
     "40_Knowledge/References/WildGS-SLAM.pdf",
-    "40_Knowledge/Methods/HI-SLAM2-Architecture.md",
-    "40_Knowledge/Concepts/JDSA-Scale-Alignment.md",
-    "40_Knowledge/Concepts/Gaussian-Map-Deformation.md",
-    "40_Knowledge/References/HI-SLAM2.md",
-    "40_Knowledge/Methods/Certified-JDSA.md",
     "40_Knowledge/References/HI-SLAM2.pdf",
     "40_Knowledge/References/SEGS-SLAM.pdf",
     "40_Knowledge/References/CUT3R.pdf",
     "40_Knowledge/References/GPS-SLAM.pdf",
-    "40_Knowledge/References/SLAM3R.pdf",
-    "40_Knowledge/References/MG-SLAM.pdf"
+    "40_Knowledge/References/SLAM3R.pdf"
   ]
 }

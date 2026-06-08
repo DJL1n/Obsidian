@@ -1299,3 +1299,38 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/ADD-SLAM]]
+
+---
+
+## 2026-06-08 — RGBDS-SLAM 分析结论
+
+### 背景
+完整阅读了 RGBDS-SLAM (IEEE RA-L 2025)。评估其 MLP-GS + TCMF-RO + semantic 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**RGBDS-SLAM 的定位：RGB-D semantic dense SLAM via ORB-SLAM3 + multi-level pyramid GS + RGB-depth-semantic joint optimization。最值借鉴：pyramid anchor admission、multi-channel Gaussian attributes、joint loss after certification。不是 dynamic / monocular / tracking frontend innovation paper。**
+
+#### 最值借鉴
+1. **Pyramid geometry acceptance** — coarse-to-fine anchor 准入
+2. **Multi-channel Gaussian attributes** — depth/normal/confidence/maturity 作为通道
+3. **Joint loss 分阶段** — 放在已认证几何之后
+
+#### 不建议借
+- GS render loss → frontend
+- ORB-SLAM3 替代 DPVO/DROID
+- RGB-D depth 直接迁移到 monocular
+
+### 31 → 32 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 1 | DPVO | temporal backbone |
+| **32** | **RGBDS-SLAM** | **semantic pyramid GS backend** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/RGBDS-SLAM]]

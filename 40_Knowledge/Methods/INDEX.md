@@ -67,5 +67,7 @@
 - [[Certified-EM-Coupling]]
 - [[Dynamic-Static-Composite-Mapping]]
 - [[Pre-GS-Consistency-Oracle]]
+- [[Pyramid-Anchor-Admission]]
+- [[Joint-Multi-Feature-GS-Optimization]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。
