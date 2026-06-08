@@ -1477,3 +1477,37 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/FlashSLAM]]
+
+---
+
+## 2026-06-08 — Splat-SLAM 分析结论
+
+### 背景
+完整阅读了 Splat-SLAM (CVPR 2025 Workshops)。评估其 DSPO + proxy depth + deformable 3DGS 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**Splat-SLAM 的定位：RGB-only globally optimized GS-SLAM via DSPO + proxy depth + deformable 3DGS。最值借鉴：geometry authority separation (DSPO/DBA, not GS)、proxy depth = reliable multi-view + aligned monocular、Gaussian anchoring + map deformation。是目前最重要 RGB-only GS-SLAM 机制参考之一。**
+
+#### 最值借鉴
+1. **Geometry authority ≠ GS render loss** — DSPO/DBA 前端，GS 消费
+2. **Monocular depth 使用严密** — scale/shift 对齐 + high-error 才用
+3. **Gaussian anchoring + deformation** — source keyframe + pose/depth 更新后主动变形
+4. **Proxy depth → 你的 CertifiedPacket depth 逻辑**
+
+#### 局限
+- Monocular depth 上限 / ~1–4 FPS / 静态场景 / 不支持动态
+
+### 38 → 39 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 38 | FlashSLAM | explicit matching + 3D reg tracking |
+| **39** | **Splat-SLAM** | **DSPO + proxy depth + deformable 3DGS** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/Splat-SLAM]]

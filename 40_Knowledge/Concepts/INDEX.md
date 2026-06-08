@@ -84,5 +84,7 @@
 - [[Explicit-Birth-Event]]
 - [[Explicit-Tracking-vs-Render-Tracking]]
 - [[Alignment-Check-Before-Birth]]
+- [[Geometry-Authority-Separation]]
+- [[Deformable-GS-Map]]
 
 > 概念笔记是知识的原子单元。

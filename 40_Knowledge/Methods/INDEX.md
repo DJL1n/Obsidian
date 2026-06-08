@@ -77,5 +77,7 @@
 - [[Stable-Unstable-Anchor-Maturity]]
 - [[FlashSLAM-Architecture]]
 - [[Loss-Weighted-Refinement]]
+- [[Splat-SLAM-Architecture]]
+- [[Proxy-Depth-Packet]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

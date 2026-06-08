@@ -11,14 +11,10 @@
             "id": "9d1518a52e4563fa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10_Projects/SkelGS-SLAM/decision-log.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "decision-log"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -183,8 +179,20 @@
       "bases:新建数据库": false
     }
   },
-  "active": "c25fd25a2c93fede",
+  "active": "9d1518a52e4563fa",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/Proxy-Depth-Packet.md",
+    "40_Knowledge/Methods/Splat-SLAM-Architecture.md",
+    "40_Knowledge/Concepts/Deformable-GS-Map.md",
+    "40_Knowledge/Concepts/Geometry-Authority-Separation.md",
+    "40_Knowledge/References/Splat-SLAM.md",
+    "40_Knowledge/References/Splat-SLAM.pdf",
+    "10_Projects/SkelGS-SLAM/decision-log.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa6-anchor-dso-v0-final-patch.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa5-anchor-dso-v0-implementation.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa4-anchor-dso-branch.md",
+    "10_Projects/SkelGS-SLAM/pipeline/direction-strategy.md",
+    "10_Projects/SkelGS-SLAM/pipeline",
     "40_Knowledge/Methods/Loss-Weighted-Refinement.md",
     "40_Knowledge/Concepts/Explicit-Tracking-vs-Render-Tracking.md",
     "40_Knowledge/Concepts/Alignment-Check-Before-Birth.md",
@@ -203,23 +211,11 @@
     "40_Knowledge/Methods/DGS-SLAM-Architecture.md",
     "40_Knowledge/References/DGS-SLAM.md",
     "40_Knowledge/Concepts/Dynamic-Gate-Through-Pipeline.md",
-    "40_Knowledge/Methods/Robust-Mask-Residual.md",
     "40_Knowledge/References/DGS-SLAM.pdf",
-    "20_Areas/INDEX.md",
-    "40_Knowledge/References/MASt3R-SfM.md",
-    "40_Knowledge/Methods/Offline-SfM-to-Online-Anchor.md",
-    "40_Knowledge/Concepts/Constrained-Pointmap.md",
-    "40_Knowledge/Methods/Gradient-Based-SfM-Pipeline.md",
-    "40_Knowledge/Concepts/Anchor-Depth-Parameterization.md",
     "40_Knowledge/References/MASt3R-SfM.pdf",
-    "40_Knowledge/Concepts/Multi-Channel-Gaussian-Attributes.md",
-    "40_Knowledge/References/RGBDS-SLAM.md",
-    "40_Knowledge/Methods/Pyramid-Anchor-Admission.md",
     "40_Knowledge/References/RGBDS-SLAM.pdf",
     "40_Knowledge/References/ADD-SLAM.pdf",
     "40_Knowledge/References/GSO-SLAM.pdf",
-    "40_Knowledge/References/UP-SLAM.pdf",
-    "40_Knowledge/References/WildGS-SLAM.pdf",
-    "40_Knowledge/References/HI-SLAM2.pdf"
+    "40_Knowledge/References/UP-SLAM.pdf"
   ]
 }
