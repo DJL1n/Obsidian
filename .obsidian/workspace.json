@@ -181,6 +181,12 @@
   },
   "active": "9d1518a52e4563fa",
   "lastOpenFiles": [
+    "40_Knowledge/Concepts/Primitive-Lifecycle-State.md",
+    "40_Knowledge/Methods/RTG-SLAM-Architecture.md",
+    "40_Knowledge/Concepts/Explicit-Birth-Event.md",
+    "40_Knowledge/Methods/Stable-Unstable-Anchor-Maturity.md",
+    "40_Knowledge/References/RTG-SLAM.md",
+    "40_Knowledge/References/RTG-SLAM.pdf",
     "40_Knowledge/Concepts/Primitive-Birth-Provenance.md",
     "40_Knowledge/Methods/DGS-SLAM-Architecture.md",
     "40_Knowledge/References/DGS-SLAM.md",
@@ -205,17 +211,11 @@
     "40_Knowledge/Methods/Pre-GS-Consistency-Oracle.md",
     "40_Knowledge/Methods/Dynamic-Static-Composite-Mapping.md",
     "40_Knowledge/Concepts/Occlusion-vs-Exposure-Cue.md",
-    "40_Knowledge/References/ADD-SLAM.md",
     "40_Knowledge/References/ADD-SLAM.pdf",
-    "40_Knowledge/Methods/INDEX.md",
-    "40_Knowledge/References/GSO-SLAM.md",
-    "40_Knowledge/Concepts/EM-VO-GS-Coupling.md",
-    "40_Knowledge/Methods/Certified-EM-Coupling.md",
     "40_Knowledge/References/GSO-SLAM.pdf",
     "40_Knowledge/References/UP-SLAM.pdf",
     "40_Knowledge/References/WildGS-SLAM.pdf",
     "40_Knowledge/References/HI-SLAM2.pdf",
-    "40_Knowledge/References/SEGS-SLAM.pdf",
-    "40_Knowledge/References/CUT3R.pdf"
+    "40_Knowledge/References/SEGS-SLAM.pdf"
   ]
 }

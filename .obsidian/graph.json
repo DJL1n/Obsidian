@@ -13,6 +13,13 @@
         "a": 1,
         "rgb": 14048348
       }
+    },
+    {
+      "query": "path:40_Knowledge/Methods  ",
+      "color": {
+        "a": 1,
+        "rgb": 6062550
+      }
     }
   ],
   "collapse-display": false,
@@ -25,6 +32,6 @@
   "repelStrength": 13.2586805555556,
   "linkStrength": 1,
   "linkDistance": 175,
-  "scale": 0.1539001740737224,
+  "scale": 0.3178304540848244,
   "close": false
 }

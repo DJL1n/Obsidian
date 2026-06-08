@@ -1404,3 +1404,41 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/DGS-SLAM]]
+
+---
+
+## 2026-06-08 — RTG-SLAM 分析结论
+
+### 背景
+完整阅读了 RTG-SLAM (SIGGRAPH 2024)。评估其 compact GS + explicit birth + stable/unstable state + ICP 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**RTG-SLAM 的定位：RGB-D 大场景实时 Gaussian SLAM。最值借鉴：primitive lifecycle (stable/unstable)、explicit birth event (非 gradient densification)、compact opaque/transparent representation。不是 mono / dynamic / highest rendering quality / frontend backbone。**
+
+#### 最值借鉴
+1. **Stable/unstable → anchor maturity state** — 你的 anchor lifecycle 核心参考
+2. **Explicit birth event** — geometry-triggered birth，可审计可 gate
+3. **Depth rendering ≠ color rendering** — 几何和外观分开
+4. **Transparent Gaussian = residual appearance layer** — 不因颜色误差改几何
+
+#### 不建议借
+- RGB-D ICP 前端 / 假设静态 / 非 mono
+
+### 35 → 36 篇（GS Backend 子线完整）
+| 系统 | 定位 |
+|---|---|
+| Scaffold-GS | 离线 anchor GS |
+| RTG-SLAM | 大场景实时 GS |
+| GPS-SLAM | SDF+residual GS |
+| ContextGS | frozen map compression |
+| SEGS-SLAM | structured GS + AfME |
+| OG-Mapping | octree+LOD |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/RTG-SLAM]]
