@@ -1647,3 +1647,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/GauS-SLAM]]
+
+---
+
+## 2026-06-08 — VGGT (Foundation Model) 分析结论
+
+### 背景
+完整阅读了 VGGT (CVPR 2025 Best Paper)。评估其 multi-view feed-forward geometry packet 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**VGGT 的定位：multi-view feed-forward geometry foundation model。最值借鉴：multi-view geometry packet (camera+depth+pointmap+track 联合预测)、feed-forward vs optimization 的权衡认识。不是 SLAM / 不是在线系统 / 缺可审计残差。**
+
+#### 最值借鉴
+1. **Multi-view geometry packet** — 一次输出 camera/depth/pointmap/track，与你 CertifiedGeometryPacket 方向一致
+2. **最佳用法** — 离线 teacher / verifier / GS birth candidate，不作为在线前端
+3. **实验路线** — 作为 MASt3R 强对照 + pre-GS geometry coherence verifier
+
+#### 不建议
+- 直接作为实时 SLAM 前端 / 写回 VideoBuffer
+
+### 46 → 47 篇
+| 系统 | 定位 |
+|---|---|
+| VGGT | multi-view feed-forward geometry foundation model |
+| VGGT-SLAM (1.0) | VGGT submaps + SL(4) alignment |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/VGGT]]

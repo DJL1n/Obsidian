@@ -181,6 +181,12 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/VGGT-Architecture.md",
+    "40_Knowledge/Concepts/Feed-Forward-vs-Optimization.md",
+    "40_Knowledge/Methods/VGGT-as-Geometry-Candidate.md",
+    "40_Knowledge/Concepts/Multi-View-Geometry-Packet.md",
+    "40_Knowledge/References/VGGT.md",
+    "40_Knowledge/References/VGGT.pdf",
     "40_Knowledge/References/GauS-SLAM.md",
     "40_Knowledge/Concepts/Local-Map-Tracking.md",
     "40_Knowledge/Concepts/Surface-Aware-Depth-Rendering.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/Concepts/Hybrid-TSDF-GS-Map.md",
     "40_Knowledge/References/GSFusion.pdf",
     "40_Knowledge/Methods/Proxy-Depth-Packet.md",
-    "40_Knowledge/Methods/Splat-SLAM-Architecture.md",
-    "40_Knowledge/Concepts/Deformable-GS-Map.md",
-    "40_Knowledge/Concepts/Geometry-Authority-Separation.md",
-    "40_Knowledge/References/Splat-SLAM.md",
     "40_Knowledge/References/Splat-SLAM.pdf",
-    "10_Projects/SkelGS-SLAM/decision-log.md",
     "10_Projects/SkelGS-SLAM/pipeline",
     "40_Knowledge/References/FlashSLAM.pdf",
     "40_Knowledge/References/RTG-SLAM.pdf",
-    "40_Knowledge/References/DGS-SLAM.pdf",
-    "40_Knowledge/References/MASt3R-SfM.pdf"
+    "40_Knowledge/References/DGS-SLAM.pdf"
   ]
 }

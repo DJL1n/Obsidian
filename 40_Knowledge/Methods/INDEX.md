@@ -87,5 +87,7 @@
 - [[SL4-Submap-Alignment]]
 - [[GauS-SLAM-Architecture]]
 - [[Surfel-Anchor-Bridge]]
+- [[VGGT-Architecture]]
+- [[VGGT-as-Geometry-Candidate]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

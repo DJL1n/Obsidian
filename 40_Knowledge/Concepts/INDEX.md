@@ -94,5 +94,7 @@
 - [[Feed-Forward-Submap]]
 - [[Surface-Aware-Depth-Rendering]]
 - [[Local-Map-Tracking]]
+- [[Multi-View-Geometry-Packet]]
+- [[Feed-Forward-vs-Optimization]]
 
 > 概念笔记是知识的原子单元。
