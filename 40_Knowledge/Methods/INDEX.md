@@ -97,5 +97,7 @@
 - [[JDSA-Scale-Alignment-for-CertifiedPacket]]
 - [[VarSplat-Architecture]]
 - [[AnchorReliability-Admission-Gate]]
+- [[LVD-GS-Architecture]]
+- [[Multi-Evidence-Anchor-Admission]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

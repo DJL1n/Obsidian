@@ -104,5 +104,7 @@
 - [[Pose-Depth-Co-Versioning]]
 - [[Primitive-Level-Reliability]]
 - [[Appearance-vs-Geometry-Uncertainty]]
+- [[Multi-Representation-Geometry-Admission]]
+- [[Explicit-Implicit-Dynamic-Fusion]]
 
 > 概念笔记是知识的原子单元。

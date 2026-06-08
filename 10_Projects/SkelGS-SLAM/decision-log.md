@@ -1813,3 +1813,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/VarSplat]]
+
+---
+
+## 2026-06-08 — LVD-GS 分析结论
+
+### 背景
+完整阅读了 LVD-GS (ICASSP 2026)。评估其 LiDAR-Visual + Sem-Geo-DINO + explicit-implicit dynamic 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**LVD-GS 的定位：LiDAR-Visual 3DGS-SLAM for large-scale dynamic outdoor scenes via hierarchical representation collaboration + explicit-implicit dynamic modeling。最值借鉴：multi-representation geometry admission (不止 RGB+depth)、explicit-implicit dynamic fusion。不是 monocular / 不对等输入 / 但 multi-evidence consistency 可转化为你的 anchor maturity gate。**
+
+#### 最值借鉴
+1. **Multi-representation geometry admission** — geometry + semantic + DINO + uncertainty 多层证据
+2. **Explicit-implicit dynamic fusion** — 开放世界分割 + residual uncertainty
+3. **Multi-evidence anchor admission** — 你的 candidate anchor 需通过 tracking/depth/normal/DINO/flow/dynamic 多层检查
+
+#### 局限
+- LiDAR + VFM / 不对等 baseline / 系统复杂 / 不解决 monocular 核心问题
+
+### 56 → 57 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 56 | VarSplat | uncertainty-aware RGB-D GS-SLAM via per-splat variance |
+| **57** | **LVD-GS** | **LiDAR-Visual + Sem-Geo-DINO + explicit-implicit dynamic** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/LVD-GS]]
