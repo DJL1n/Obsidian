@@ -85,5 +85,7 @@
 - [[DynamicEvidencePacket]]
 - [[VGGT-SLAM-Architecture]]
 - [[SL4-Submap-Alignment]]
+- [[GauS-SLAM-Architecture]]
+- [[Surfel-Anchor-Bridge]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

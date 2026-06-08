@@ -1614,3 +1614,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/VGGT-SLAM]]
+
+---
+
+## 2026-06-08 — GauS-SLAM 分析结论
+
+### 背景
+完整阅读了 GauS-SLAM (arXiv 2025)。评估其 2D Gaussian surfel + surface-aware depth rendering + local map tracking 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**GauS-SLAM 的定位：RGB-D dense SLAM with 2D Gaussian surfels。最值借鉴：surface-aware depth rendering（Gaussian depth 几何一致性决定 tracking 质量，不只是 PSNR）、local map tracking（隔离 global map 干扰）。不是 mono / 不是实时高频 / coupled GS tracking 与你的安全边界冲突。**
+
+#### 最值借鉴
+1. **Surface-aware depth rendering** — rendered depth 必须多视角一致才能用于 tracking
+2. **Local map tracking** — 对应 bounded-lag submap / local packet window
+3. **2D surfel → SurfelAnchorBridge** — anchor → 2D surfel（不是 3D ellipsoid）
+
+#### 不建议借
+- Coupled GS tracking（和你的 no-GS-feedback 边界冲突）
+
+### 44 → 45 篇
+| 系统 | 定位 |
+|---|---|
+| GSFusion | TSDF + GS hybrid, geometry-gated birth |
+| **GauS-SLAM** | **2D surfel + surface-aware depth + local map** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/GauS-SLAM]]

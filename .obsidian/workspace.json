@@ -181,6 +181,12 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "40_Knowledge/References/GauS-SLAM.md",
+    "40_Knowledge/Concepts/Local-Map-Tracking.md",
+    "40_Knowledge/Concepts/Surface-Aware-Depth-Rendering.md",
+    "40_Knowledge/Methods/GauS-SLAM-Architecture.md",
+    "40_Knowledge/Methods/Surfel-Anchor-Bridge.md",
+    "40_Knowledge/References/GauS-SLAM.pdf",
     "40_Knowledge/References/VGGT-SLAM.md",
     "40_Knowledge/Methods/VGGT-SLAM-Architecture.md",
     "40_Knowledge/Concepts/Projective-Ambiguity-Awareness.md",
@@ -206,16 +212,10 @@
     "40_Knowledge/References/Splat-SLAM.md",
     "40_Knowledge/References/Splat-SLAM.pdf",
     "10_Projects/SkelGS-SLAM/decision-log.md",
-    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa6-anchor-dso-v0-final-patch.md",
-    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa5-anchor-dso-v0-implementation.md",
-    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa4-anchor-dso-branch.md",
-    "10_Projects/SkelGS-SLAM/pipeline/direction-strategy.md",
     "10_Projects/SkelGS-SLAM/pipeline",
-    "40_Knowledge/Methods/Loss-Weighted-Refinement.md",
     "40_Knowledge/References/FlashSLAM.pdf",
     "40_Knowledge/References/RTG-SLAM.pdf",
     "40_Knowledge/References/DGS-SLAM.pdf",
-    "40_Knowledge/References/MASt3R-SfM.pdf",
-    "40_Knowledge/References/RGBDS-SLAM.pdf"
+    "40_Knowledge/References/MASt3R-SfM.pdf"
   ]
 }

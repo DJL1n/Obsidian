@@ -92,5 +92,7 @@
 - [[Dynamic-Suppression-Both-Sides]]
 - [[Projective-Ambiguity-Awareness]]
 - [[Feed-Forward-Submap]]
+- [[Surface-Aware-Depth-Rendering]]
+- [[Local-Map-Tracking]]
 
 > 概念笔记是知识的原子单元。
