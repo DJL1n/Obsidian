@@ -106,5 +106,7 @@
 - [[Appearance-vs-Geometry-Uncertainty]]
 - [[Multi-Representation-Geometry-Admission]]
 - [[Explicit-Implicit-Dynamic-Fusion]]
+- [[Compact-Semantic-Memory]]
+- [[Multi-Scale-Anchor-Admission]]
 
 > 概念笔记是知识的原子单元。

@@ -58,6 +58,7 @@
 - [[decision-log|MCGS-SLAM 分析]] (2026-06-08)
 - [[decision-log|VarSplat 分析]] (2026-06-08)
 - [[decision-log|LVD-GS 分析]] (2026-06-08)
+- [[decision-log|OpenMonoGS-SLAM 分析]] (2026-06-08)
 
 ## 完成条件
 - [ ]

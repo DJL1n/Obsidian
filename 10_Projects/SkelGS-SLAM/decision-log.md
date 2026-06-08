@@ -1846,3 +1846,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/LVD-GS]]
+
+---
+
+## 2026-06-08 — OpenMonoGS-SLAM 分析结论
+
+### 背景
+完整阅读了 OpenMonoGS-SLAM (arXiv 2025-12)。评估其 monocular open-set semantic 3DGS-SLAM via MASt3R + SAM + CLIP + memory bank 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**OpenMonoGS-SLAM 的定位：monocular RGB-only open-set semantic 3DGS-SLAM via MASt3R-SLAM backbone + SAM multi-scale masks + CLIP memory bank。最值借鉴：compact semantic memory（low-dim feature + high-dim prototype）、multi-scale supervision → multi-level anchor admission。不是几何认证方法 / 不解决 pose-depth-scale coherence。**
+
+#### 最值借鉴
+1. **Compact semantic memory** — low-dim anchor feature + high-dim memory prototype
+2. **Multi-scale supervision → multi-level anchor admission** — coarse/mid/fine 各层不同证据门槛
+3. **Semantic backend regularizer** — 同一 anchor region 语义一致，只改 backend
+
+#### 局限
+- MASt3R-SLAM backbone（几何非创新）、VFM 重、动态弱、非实时
+
+### 58 → 59 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 58 | LVD-GS | LiDAR-Visual + Sem-Geo-DINO + explicit-implicit dynamic |
+| **59** | **OpenMonoGS-SLAM** | **monocular open-set semantic GS-SLAM** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/OpenMonoGS-SLAM]]
