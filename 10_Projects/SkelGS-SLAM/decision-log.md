@@ -1779,3 +1779,37 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/MCGS-SLAM]]
+
+---
+
+## 2026-06-08 — VarSplat 分析结论
+
+### 背景
+完整阅读了 VarSplat (arXiv 2026-03)。评估其 per-splat appearance variance + total variance law uncertainty + 三级加权对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**VarSplat 的定位：RGB-D uncertainty-aware submap 3DGS-SLAM via learned per-splat σ² + total variance law rendering。最值借鉴：primitive-level reliability state、appearance vs geometry uncertainty 分层、三级 uncertainty 使用 (tracking+loop+registration)。不是 mono / 不处理动态 / 但 reliability 作为 primitive 内建属性的设计是核心启发。**
+
+#### 最值借鉴
+1. **Primitive-level reliability** — anchor 不只是几何点，应带 uncertainty state
+2. **Appearance vs geometry uncertainty** — 两层分开，不混用
+3. **三级 uncertainty** — short/mid/long-range 都使用
+4. **AnchorReliability admission gate** — 综合评分决定 anchor maturity
+
+#### 局限
+- RGB-D / appearance variance only / 计算成本增加 / 不处理动态 / 可能从"残差垃圾桶"
+
+### 54 → 55 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 54 | MCGS-SLAM | multi-camera RGB GS-SLAM via MCBA+JDSA |
+| **55** | **VarSplat** | **uncertainty-aware RGB-D GS-SLAM via per-splat variance** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/VarSplat]]

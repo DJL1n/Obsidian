@@ -56,6 +56,7 @@
 - [[decision-log|CoGS-SLAM Survey 分析]] (2026-06-08)
 - [[decision-log|MonST3R 分析]] (2026-06-08)
 - [[decision-log|MCGS-SLAM 分析]] (2026-06-08)
+- [[decision-log|VarSplat 分析]] (2026-06-08)
 
 ## 完成条件
 - [ ]

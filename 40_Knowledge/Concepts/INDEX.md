@@ -102,5 +102,7 @@
 - [[Geometry-First-Dynamic-Detection]]
 - [[MCBA-Cross-View-Constraint]]
 - [[Pose-Depth-Co-Versioning]]
+- [[Primitive-Level-Reliability]]
+- [[Appearance-vs-Geometry-Uncertainty]]
 
 > 概念笔记是知识的原子单元。
