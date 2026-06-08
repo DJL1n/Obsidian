@@ -185,6 +185,10 @@
   },
   "active": "c25fd25a2c93fede",
   "lastOpenFiles": [
+    "20_Areas/vibecoding/Presentation-Skills.md",
+    "20_Areas/vibecoding/Speaker-Skill.md",
+    "20_Areas/vibecoding/Vibecoding-Overview.md",
+    "20_Areas/vibecoding",
     "20_Areas/Vibecoding.md",
     "50_Diary/INDEX.md",
     "50_Diary",
@@ -209,9 +213,6 @@
     "40_Knowledge/Concepts/Multi-Representation-Geometry-Admission.md",
     "40_Knowledge/Methods/LVD-GS-Architecture.md",
     "40_Knowledge/Methods/VarSplat-Architecture.md",
-    "40_Knowledge/Methods/AnchorReliability-Admission-Gate.md",
-    "40_Knowledge/Concepts/Primitive-Level-Reliability.md",
-    "40_Knowledge/Concepts/Appearance-vs-Geometry-Uncertainty.md",
     "40_Knowledge/References/MCGS-SLAM.pdf",
     "40_Knowledge/References/MonST3R.pdf",
     "40_Knowledge/References/CoGS-SLAM-Survey.pdf",
@@ -219,7 +220,6 @@
     "40_Knowledge/References/GauS-SLAM.pdf",
     "40_Knowledge/References/VGGT-SLAM.pdf",
     "40_Knowledge/References/Dy3DGS-SLAM.pdf",
-    "40_Knowledge/References/GSFusion.pdf",
-    "40_Knowledge/References/Splat-SLAM.pdf"
+    "40_Knowledge/References/GSFusion.pdf"
   ]
 }

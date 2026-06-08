@@ -21,6 +21,7 @@
 ## 当前领域
 
 ### Vibecoding
-- [[Vibecoding]] — AI 协作编程、vibe coding 工作流
-  - Speaker Skill — AI 语音交互、语音合成、演讲辅助
+- [[vibecoding/Speaker-Skill|Speaker Skill]] — 演讲技能（AI 辅助演讲稿、PPT 笔记生成）
+- [[vibecoding/Presentation-Skills|Presentation Skills]] — 演示处理技能集
+- [[vibecoding/Vibecoding-Overview|Vibecoding 概述]] — AI 协编程工作流
 
