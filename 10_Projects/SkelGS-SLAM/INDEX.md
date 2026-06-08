@@ -46,6 +46,7 @@
 - [[decision-log|MASt3R-SfM 分析]] (2026-06-08)
 - [[decision-log|DGS-SLAM 分析]] (2026-06-08)
 - [[decision-log|RTG-SLAM 分析]] (2026-06-08)
+- [[decision-log|FlashSLAM 分析]] (2026-06-08)
 
 ## 完成条件
 - [ ]

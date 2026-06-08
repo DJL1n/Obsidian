@@ -82,5 +82,7 @@
 - [[Primitive-Birth-Provenance]]
 - [[Primitive-Lifecycle-State]]
 - [[Explicit-Birth-Event]]
+- [[Explicit-Tracking-vs-Render-Tracking]]
+- [[Alignment-Check-Before-Birth]]
 
 > 概念笔记是知识的原子单元。

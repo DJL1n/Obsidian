@@ -1442,3 +1442,38 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/RTG-SLAM]]
+
+---
+
+## 2026-06-08 — FlashSLAM 分析结论
+
+### 背景
+完整阅读了 FlashSLAM (arXiv 2024)。评估其 SuperPoint+LightGlue+3D-3D SVD tracking 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**FlashSLAM 的定位：RGB-D GS-SLAM with explicit feature matching + 3D registration tracking。最值借鉴：前端 tracking authority 不应来自 GS render loss、显式匹配在大位移/稀疏 setting 下明显优于 render-only、alignment check before birth。不是 mono / dynamic / GS lifecycle innovation paper。**
+
+#### 最值借鉴
+1. **Tracking authority ≠ GS render loss** — 支持你当前不让 GS 反写前端的边界
+2. **Explicit matching > render opt for sparse/large-motion** — 稀疏 setting 数据支撑
+3. **Alignment check before birth** — 新增 primitive 必须能和已有 mature support 对齐
+4. **Loss-weighted refinement** — 优化预算按残差分配
+
+#### 不建议借
+- RGB-D 3D-3D SVD 主前端（monocular scale bias → Sim(3) 而非 SE(3)）
+- Standard 3DGS mapping（不如 RTG-SLAM lifecycle 有启发）
+
+### 37 篇完整
+| # | 系统 | 定位 |
+|---|------|------|
+| 36 | RTG-SLAM | 大场景实时 GS lifecycle |
+| **37** | **FlashSLAM** | **explicit matching + 3D reg tracking** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/FlashSLAM]]
