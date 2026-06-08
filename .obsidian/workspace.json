@@ -185,6 +185,12 @@
   },
   "active": "9d1518a52e4563fa",
   "lastOpenFiles": [
+    "40_Knowledge/References/MASt3R-SfM.md",
+    "40_Knowledge/Methods/Offline-SfM-to-Online-Anchor.md",
+    "40_Knowledge/Concepts/Constrained-Pointmap.md",
+    "40_Knowledge/Methods/Gradient-Based-SfM-Pipeline.md",
+    "40_Knowledge/Concepts/Anchor-Depth-Parameterization.md",
+    "40_Knowledge/References/MASt3R-SfM.pdf",
     "40_Knowledge/Concepts/Multi-Channel-Gaussian-Attributes.md",
     "40_Knowledge/References/RGBDS-SLAM.md",
     "40_Knowledge/Methods/Pyramid-Anchor-Admission.md",
@@ -210,16 +216,10 @@
     "40_Knowledge/Methods/Certified-Probabilistic-Anchor.md",
     "40_Knowledge/Concepts/Multi-Modal-Uncertainty.md",
     "40_Knowledge/References/UP-SLAM.pdf",
-    "40_Knowledge/Concepts/Uncertainty-Dynamic-Filtering.md",
-    "40_Knowledge/Methods/WildGS-SLAM-Architecture.md",
-    "40_Knowledge/Methods/Certified-Dynamic-Gate.md",
-    "40_Knowledge/References/WildGS-SLAM.md",
-    "40_Knowledge/Concepts/Static-Dynamic-Side-Channel.md",
     "40_Knowledge/References/WildGS-SLAM.pdf",
     "40_Knowledge/References/HI-SLAM2.pdf",
     "40_Knowledge/References/SEGS-SLAM.pdf",
     "40_Knowledge/References/CUT3R.pdf",
-    "40_Knowledge/References/GPS-SLAM.pdf",
-    "40_Knowledge/References/SLAM3R.pdf"
+    "40_Knowledge/References/GPS-SLAM.pdf"
   ]
 }

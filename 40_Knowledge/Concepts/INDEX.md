@@ -76,5 +76,7 @@
 - [[Occlusion-vs-Exposure-Cue]]
 - [[Multi-Level-Pyramid-GS]]
 - [[Multi-Channel-Gaussian-Attributes]]
+- [[Constrained-Pointmap]]
+- [[Anchor-Depth-Parameterization]]
 
 > 概念笔记是知识的原子单元。

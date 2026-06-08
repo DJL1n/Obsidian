@@ -1334,3 +1334,38 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/RGBDS-SLAM]]
+
+---
+
+## 2026-06-08 — MASt3R-SfM 分析结论
+
+### 背景
+完整阅读了 MASt3R-SfM (3DV 2025)。评估其 constrained pointmap + anchor depth + retrieval graph 对 SkelGS-SLAM 的参考价值。
+
+### 关键判断
+
+**MASt3R-SfM 的定位：offline global SfM pipeline based on MASt3R prior。最值借鉴：constrained pointmap（神经 pointmap → 受约束几何变量）、pseudo-track anchor depth（你的 anchor skeleton 参考）、retrieval scene graph（submap/loop 参考）。不是 online SLAM / dynamic / real-time frontend。**
+
+#### 最值借鉴
+1. **Constrained pointmap** — 不直接信神经 pointmap，投影到受约束变量
+2. **Anchor depth parameterization** — 像素绑定到 anchor，共享几何变量
+3. **Retrieval graph** — keyframe core + kNN edges
+
+#### 不能解决
+- Online SLAM / temporal residual / geometry certification
+
+### 32 → 33 篇（MASt3R 家族 4 篇）
+| 系统 | 定位 |
+|---|---|
+| DUSt3R | pairwise pointmap prior |
+| MASt3R | + matching head |
+| MASt3R-SfM | offline global SfM |
+| MASt3R-SLAM | online monocular dense SLAM |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/MASt3R-SfM]]

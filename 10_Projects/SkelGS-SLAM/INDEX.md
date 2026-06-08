@@ -43,6 +43,7 @@
 - [[decision-log|GSO-SLAM 分析]] (2026-06-07)
 - [[decision-log|ADD-SLAM / CAD-SLAM 分析]] (2026-06-08)
 - [[decision-log|RGBDS-SLAM 分析]] (2026-06-08)
+- [[decision-log|MASt3R-SfM 分析]] (2026-06-08)
 
 ## 完成条件
 - [ ]
