@@ -103,5 +103,7 @@
 - [[Semantic-Backend-Regularizer]]
 - [[Flash-Mono-Architecture]]
 - [[FeedForward-Gaussian-Candidate]]
+- [[EAG3R-Architecture]]
+- [[Event-Augmented-Geometry-Candidate]]
 
 > Methods 是"怎么做"的知识，Concepts 是"是什么"的知识。

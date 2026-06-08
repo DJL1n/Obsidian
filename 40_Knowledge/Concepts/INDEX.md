@@ -110,5 +110,7 @@
 - [[Multi-Scale-Anchor-Admission]]
 - [[Predict-and-Refine-Gaussian]]
 - [[Hidden-State-Submap-Descriptor]]
+- [[SNR-Aware-Reliability-Gating]]
+- [[Motion-Geometry-Coherence-Loss]]
 
 > 概念笔记是知识的原子单元。

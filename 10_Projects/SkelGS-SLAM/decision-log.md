@@ -1912,3 +1912,36 @@ certified anchor → child Gaussian birth
 
 ### 相关笔记
 - [[40_Knowledge/References/Flash-Mono]]
+
+---
+
+## 2026-06-09 — EAG3R 分析结论
+
+### 背景
+完整阅读了 EAG3R (MonST3R + event camera)。评估其 event-augmented pointmap geometry + SNR-aware fusion + event photometric consistency 对 SkelGS-SLAM 的启发。
+
+### 关键判断
+
+**EAG3R 的定位：MonST3R + event stream for low-light/dynamic pointmap geometry。最值借鉴：SNR-aware reliability gating（区域自适应观测可靠性）、motion-geometry coherence loss（运动约束作为 pose-depth 一致性认证信号）。不是 GS-SLAM / 不是在线前端 / 但可靠性建模思路可转化为 packet certification gate。**
+
+#### 最值借鉴
+1. **SNR-aware reliability gating** — 反对假设 RGB 处处可靠，对应 anchor 应有 local observation reliability
+2. **Motion-geometry coherence loss** — 独立于 RGB photometric 的一致性检查
+3. **Event-augmented geometry candidate** — 额外认证信号源
+
+#### 局限
+- 依赖 event camera / 数据稀缺 / 不是实时 / 不是 GS-SLAM
+
+### 62 → 63 篇
+| # | 系统 | 定位 |
+|---|------|------|
+| 62 | Flash-Mono | Predict-and-Refine monocular GS-SLAM |
+| **63** | **EAG3R** | **event-augmented pointmap geometry** |
+
+### 状态
+- [x] Validated
+
+---
+
+### 相关笔记
+- [[40_Knowledge/References/EAG3R]]
