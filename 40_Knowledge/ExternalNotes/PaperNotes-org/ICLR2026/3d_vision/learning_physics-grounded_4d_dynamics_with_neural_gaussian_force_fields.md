@@ -1,0 +1,129 @@
+---
+title: >-
+  [论文解读] Learning Physics-Grounded 4D Dynamics with Neural Gaussian Force Fields
+description: >-
+  [ICLR 2026][3D视觉][3D高斯溅射] 提出NGFF框架，从多视角RGB图像构建3D高斯表示并学习显式神经力场驱动物理动力学，通过ODE求解实现交互式物理真实4D视频生成，比传统高斯模拟器快两个数量级，超越Veo3和NVIDIA Cosmos。
+tags:
+  - "ICLR 2026"
+  - "3D视觉"
+  - "3D高斯溅射"
+  - "力场学习"
+  - "物理推理"
+  - "4D视频预测"
+  - "神经算子"
+---
+
+# Learning Physics-Grounded 4D Dynamics with Neural Gaussian Force Fields
+
+**会议**: ICLR 2026  
+**arXiv**: [2602.00148](https://arxiv.org/abs/2602.00148)  
+**代码**: [项目页面](https://neuralgaussianforcefield.github.io/)  
+**领域**: 3D视觉/物理仿真  
+**关键词**: 3D高斯溅射, 力场学习, 物理推理, 4D视频预测, 神经算子
+
+## 一句话总结
+提出NGFF框架，从多视角RGB图像构建3D高斯表示并学习显式神经力场驱动物理动力学，通过ODE求解实现交互式物理真实4D视频生成，比传统高斯模拟器快两个数量级，超越Veo3和NVIDIA Cosmos。
+
+## 研究背景与动机
+
+**领域现状**：视频生成模型产出视觉效果惊人但缺乏物理理解——频繁违反重力、物体永恒性等基本规律。结合3DGS和传统物理引擎的方法物理一致性好但计算代价高。
+
+**现有痛点**：(1) 粒子/网格方法需要预定义物理模型和结构化输入，泛化差；(2) MPM-based高斯方法物理高保真但计算代价不可接受；(3) 大视频模型过拟合表面视觉特征而非学习物理原理。
+
+**核心矛盾**：需要既有物理一致性（力的建模），又有计算效率（不用MPM），还能从视觉观测直接学习（不依赖结构化输入）。
+
+**切入角度**：不预定义物理模型，而是学习显式力场——用神经算子预测物体间的力，通过ODE积分模拟动力学。3D高斯提供了物体感知的表示接口。
+
+## 方法详解
+
+### 整体框架
+多视角RGB→前馈3D高斯重建(SAM2分割+DiffSplat精化)→PointNet编码物体特征→DeepONet预测力场→ODE积分模拟动力学→高斯渲染生成视频。
+
+### 关键设计
+
+1. **物体感知3D重建**:
+
+    - 功能：前馈Transformer从多视角RGB构建3D高斯，SAM2分割为独立物体
+    - 核心思路：DINOv2特征→交替注意力Transformer→预测相机位姿+高斯参数。DiffSplat补全遮挡部分。
+    - 设计动机：物理仿真需要物体级别的分解表示
+
+2. **神经高斯力场 (NGFF)**:
+
+    - 功能：用神经算子预测物体间的全局变换力和局部应力场
+    - 核心思路：全局力 $\mathbf{F}^{\text{global}}(\mathbf{z}^q(t)) = \sum_{i \in \mathcal{N}(q)} \mathbf{W}(f_\eta(\mathbf{z}^i) \odot f_\phi(\mathbf{z}^q)) + \mathbf{b}$，局部应力 $\mathbf{F}^{\text{local}} = \Phi(\mathbf{F}^{\text{latent}}, \text{CAM}, \mathbf{x}^q, \dot{\mathbf{x}}^q)$，CAM是接触区域掩码
+    - 设计动机：全局力处理刚体平移/旋转，局部力处理软体变形。关系图编码物体间接触。
+
+3. **ODE积分轨迹解码**:
+
+    - 功能：用二阶ODE求解器从力场积分得到物体轨迹
+    - 核心思路：$\mathbf{z}^q(t) = \text{ODESolve}(\mathbf{z}^q(0), \mathbf{F}, 0, t)$，$\dot{\mathbf{s}}(t) = \dot{\mathbf{s}}(0) + \int_0^t \mathbf{F}(\mathbf{z}^q(t)) dt$
+    - 设计动机：全可微的桥梁连接力场预测和动力学模拟
+
+### 损失函数 / 训练策略
+- 两阶段：(1) 前馈重建在WildRGBD上微调；(2) 动力学预测在合成MPM数据上训练
+- 动力学loss：预测vs真实高斯配置和运动轨迹的MSE
+
+## 实验关键数据
+
+### GSCollision数据集
+- 640K渲染的物理视频(~4TB)，10种日常物体（软硬皆有），涵盖下落/碰撞/旋转/滑动/容器交互
+
+### 主实验 (动力学预测)
+
+| 模型 | 空间RMSE↓ | 时间RMSE↓ | 组合RMSE↓ | 推理时间↓ |
+|------|----------|----------|----------|----------|
+| VLM-MPM | 高 | 高 | 高 | >100s |
+| Pointformer | 中 | 中 | 中 | 中 |
+| **NGFF** | **最低** | **最低** | **最低** | **~1s** |
+
+### 视频生成对比
+
+| 模型 | 物理一致性 | 视觉质量 |
+|------|----------|---------|
+| Veo3 | 差(违反物理) | 高 |
+| NVIDIA Cosmos | 差 | 高 |
+| **NGFF** | **强** | **合理** |
+
+### 关键发现
+- NGFF比MPM-based高斯模拟器快两个数量级——因为学到了力场而非逐粒子模拟
+- 在组合泛化(4-6物体，训练只有3物体)和时间泛化(超出训练长度)上表现优异
+- 显式力场建模使得交互式生成成为可能——可以施加外力改变轨迹
+- Sim-to-real迁移通过3D高斯表示的解耦接口实现
+
+## 亮点与洞察
+- **学力场而非学动力学**：不直接预测下一帧状态，而是预测力→ODE积分得到状态。这提供了更好的泛化性（力的规律比状态转移更通用）。
+- **两个数量级加速**：关键在于用神经算子一次性预测力，而非MPM那样逐粒子逐步迭代。
+- **全局+局部力场解耦**：刚体运动用全局力（平移+旋转），软体变形用局部应力。这种物理驱动的分解比端到端学习更好泛化。
+
+## 局限与展望
+- 训练数据来自合成MPM仿真——真实世界物理参数（摩擦、弹性）的多样性有限
+- SAM2分割在复杂遮挡场景可能失败
+- 目前只建模了刚体和简单软体——流体、布料等复杂材料未考虑
+- DiffSplat补全质量影响下游动力学预测
+
+## 相关工作与启发
+- **vs Veo3/Cosmos**: 大视频模型有视觉质量但无物理理解，NGFF相反——物理好视觉合理
+- **vs MPM-Gaussian**: MPM物理准确但慢两个数量级，NGFF用神经力场替代显式模拟
+- **vs GNN-based**: GNN用图神经网络学关系，NGFF用神经算子学力场——物理意义更明确
+
+## 评分
+- 新颖性: ⭐⭐⭐⭐⭐ 神经力场+3D高斯的组合原创且物理意义清晰
+- 实验充分度: ⭐⭐⭐⭐ GSCollision数据集完备，多维度泛化评估
+- 写作质量: ⭐⭐⭐⭐ 框架清晰，能力展示直观
+- 价值: ⭐⭐⭐⭐⭐ 向物理驱动的世界模型迈出重要一步
+
+<!-- RELATED:START -->
+
+<div class="related-papers" markdown="1">
+
+## 相关论文
+
+- [\[ICLR 2026\] DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics](diffwind_physics-informed_differentiable_modeling_of_wind-driven_object_dynamics.md)
+- [\[ICLR 2026\] Einstein Fields: A Neural Perspective To Computational General Relativity](einstein_fields_a_neural_perspective_to_computational_general_relativity.md)
+- [\[ICLR 2026\] Improving Long-Range Interactions in Graph Neural Simulators via Hamiltonian Dynamics](improving_long-range_interactions_in_graph_neural_simulators_via_hamiltonian_dyn.md)
+- [\[NeurIPS 2025\] MPMAvatar: Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics](../../NeurIPS2025/3d_vision/mpmavatar_learning_3d_gaussian_avatars_with_accurate_and_robust_physics-based_dy.md)
+- [\[CVPR 2026\] Dynamic Black-hole Emission Tomography with Physics-informed Neural Fields](../../CVPR2026/3d_vision/dynamic_black-hole_emission_tomography_with_physics-informed_neural_fields.md)
+
+</div>
+
+<!-- RELATED:END -->

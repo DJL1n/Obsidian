@@ -43,9 +43,20 @@ HermesBrain/
 ├── 20_Areas/           ← 领域
 ├── 30_Daily/           ← 日记 / 日志
 ├── 40_Knowledge/       ← 知识库
-│   ├── Concepts/       概念笔记
-│   ├── Methods/        方法论
-│   └── References/     参考资料
+│   ├── Concepts/        概念笔记（按主题分子文件夹）
+│   ├── Methods/         方法笔记（按主题分子文件夹）
+│   ├── References/      论文笔记（按分类分子文件夹）
+│   │   ├── 3dgs-slam/        完整 GS-SLAM 系统
+│   │   ├── slam-frontend/    SLAM 前端
+│   │   ├── dynamic-gs/       动态场景
+│   │   ├── geometry-model/   几何基础模型
+│   │   ├── mapping-reconstruction/ 建图与重建
+│   │   ├── matching-representation/ 匹配与表示
+│   │   ├── semantic/         语义方法
+│   │   ├── survey/           综述
+│   │   └── INDEX.md
+│   └── ExternalNotes/   外部知识库
+│       └── PaperNotes-org/    zhaoyang97/Paper-Notes 同步
 ├── 50_Diary/            ← 日记 / 个人记录
 ├── 60_WorkingStyle/    ← 工作风格 & 元认知
 ├── 90_Archive/         ← 归档
