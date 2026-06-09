@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e00f9cc3cc55021e",
+        "id": "02395eb952d0d302",
         "type": "tabs",
         "children": [
           {
-            "id": "9d1518a52e4563fa",
+            "id": "1f0ab3a818398384",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "50_Diary/INDEX.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "INDEX"
+              "title": "新标签页"
             }
           }
         ]
@@ -183,14 +179,24 @@
       "bases:新建数据库": false
     }
   },
-  "active": "c25fd25a2c93fede",
+  "active": "1f0ab3a818398384",
   "lastOpenFiles": [
+    "40_Knowledge/References/FlashSLAM.pdf",
+    "40_Knowledge/References/FlashSLAM.md",
+    "10_Projects/SkelGS-SLAM/QA/2026-06-08-current-pipeline-open-issues-brainstorm.md",
+    "10_Projects/SkelGS-SLAM/QA/INDEX.md",
+    "10_Projects/SkelGS-SLAM/QA",
+    "20_Areas/Vibecoding.md",
+    "10_Projects/SkelGS-SLAM/pipeline/direction-strategy.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa5-anchor-dso-v0-implementation.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa6-anchor-dso-v0-final-patch 2.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa4-anchor-dso-branch 2.md",
+    "10_Projects/SkelGS-SLAM/pipeline/eag-acg-qa5-anchor-dso-v0-implementation 2.md",
+    "50_Diary/INDEX.md",
     "20_Areas/vibecoding/Presentation-Skills.md",
     "20_Areas/vibecoding/Speaker-Skill.md",
     "20_Areas/vibecoding/Vibecoding-Overview.md",
     "20_Areas/vibecoding",
-    "20_Areas/Vibecoding.md",
-    "50_Diary/INDEX.md",
     "50_Diary",
     "40_Knowledge/Methods/EAG3R-Architecture.md",
     "40_Knowledge/References/EAG3R.md",
@@ -204,22 +210,12 @@
     "40_Knowledge/Methods/Flash-Mono-Architecture.md",
     "40_Knowledge/References/OpenMonoGS-SLAM.md",
     "40_Knowledge/Methods/OpenMonoGS-SLAM-Architecture.md",
-    "40_Knowledge/Methods/Semantic-Backend-Regularizer.md",
-    "40_Knowledge/Concepts/Multi-Scale-Anchor-Admission.md",
-    "40_Knowledge/Concepts/Compact-Semantic-Memory.md",
-    "40_Knowledge/References/LVD-GS.md",
-    "40_Knowledge/Methods/Multi-Evidence-Anchor-Admission.md",
-    "40_Knowledge/Concepts/Explicit-Implicit-Dynamic-Fusion.md",
-    "40_Knowledge/Concepts/Multi-Representation-Geometry-Admission.md",
-    "40_Knowledge/Methods/LVD-GS-Architecture.md",
-    "40_Knowledge/Methods/VarSplat-Architecture.md",
     "40_Knowledge/References/MCGS-SLAM.pdf",
     "40_Knowledge/References/MonST3R.pdf",
     "40_Knowledge/References/CoGS-SLAM-Survey.pdf",
     "40_Knowledge/References/VGGT.pdf",
     "40_Knowledge/References/GauS-SLAM.pdf",
     "40_Knowledge/References/VGGT-SLAM.pdf",
-    "40_Knowledge/References/Dy3DGS-SLAM.pdf",
-    "40_Knowledge/References/GSFusion.pdf"
+    "40_Knowledge/References/Dy3DGS-SLAM.pdf"
   ]
 }
