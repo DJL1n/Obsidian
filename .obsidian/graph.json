@@ -1,12 +1,31 @@
 {
   "collapse-filter": true,
-  "search": "",
+  "search": "-path:INDEX",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
-  "showOrphans": true,
+  "hideUnresolved": true,
+  "showOrphans": false,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"40_Knowledge/ResearchThreads\"",
+      "color": {
+        "r": 255,
+        "g": 100,
+        "b": 100,
+        "a": 0.8
+      }
+    },
+    {
+      "query": "path:\"40_Knowledge/References/Categories\"",
+      "color": {
+        "r": 100,
+        "g": 180,
+        "b": 255,
+        "a": 0.8
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
