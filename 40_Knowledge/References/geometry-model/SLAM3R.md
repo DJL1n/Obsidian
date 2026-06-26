@@ -10,11 +10,9 @@ tags:
 # SLAM3R: Real-Time Dense Scene Reconstruction from Monocular RGB Videos
 
 > CVPR 2025 Highlight. 论文整理笔记。
-> 📄 [[SLAM3R.pdf|PDF 原文]]
+> ## 0. 一句话结论
 
-## 0. 一句话结论
-
-SLAM3R 是一个 RGB-only monocular dense reconstruction / dense SLAM 系统。核心：sliding-window I2P local pointmap reconstruction + L2W learned local-to-world registration + no explicit camera parameter solving + 20+ FPS。不是 3DGS-SLAM / DPVO/DROID recurrent BA / explicit pose graph system。
+SLAM3R 是一个 RGB-only monocular dense reconstruction / dense SLAM 系统。核心：sliding-window I2P local pointmap reconstruction + L2W learned local-to-world registration + no explicit camera parameter solving + 20+ FPS。不是 3DGS-SLAM / [[slam-frontends/patch-based/DPVO]]/DROID recurrent BA / explicit pose graph system。
 
 ---
 
@@ -107,8 +105,8 @@ No canonical normalization — output scale must align with existing scene frame
 ### Replica
 | Method | Acc | Comp | FPS |
 |---|---|---|---|
-| DROID-SLAM | 5.50 | 12.29 | 20 |
-| GO-SLAM | 3.81 | 4.79 | 8 |
+| [[slam-frontends/neural-correspondence/DROID-SLAM]] | 5.50 | 12.29 | 20 |
+| [[slam-frontends/gpu-optimized/GO-SLAM]] | 3.81 | 4.79 | 8 |
 | Spann3R | 10.32 | 13.33 | 50 |
 | **SLAM3R** | **3.57** | **2.62** | **24** |
 
@@ -128,19 +126,19 @@ No canonical normalization — output scale must align with existing scene frame
 
 1. **无显式 BA / pose graph** — large-scale 仍 drift
 2. **不是 tracking-first SLAM** — 无 explicit pose tracking / loop
-3. **无 DPVO/DROID temporal residual trace** — 无 patch lifecycle / BA signal
+3. **无 [[slam-frontends/patch-based/DPVO]]/DROID temporal residual trace** — 无 patch lifecycle / BA signal
 4. **Pointmap 仍不是 GS-ready geometry** — 需 certification
-5. **不能替代 DPVO/DROID temporal backbone**
+5. **不能替代 [[slam-frontends/patch-based/DPVO]]/DROID temporal backbone**
 
 ---
 
 ## 10. 对 SkelGS-SLAM 的启发
 
 ### 强 geometry proposal source
-SLAM3R pointmaps → CandidateGeometry → compare with DPVO/MASt3R/depth-normal → coherence check。
+SLAM3R pointmaps → CandidateGeometry → compare with [[slam-frontends/patch-based/DPVO]]/MASt3R/depth-normal → coherence check。
 
-### 不能替代 DPVO temporal backbone
-SLAM3R 无 patch residual/confidence/lifecycle。主 tracking backbone 仍应是 DPVO/DROID。
+### 不能替代 [[slam-frontends/patch-based/DPVO]] temporal backbone
+SLAM3R 无 patch residual/confidence/lifecycle。主 tracking backbone 仍应是 [[slam-frontends/patch-based/DPVO]]/DROID。
 
 ### I2P window design → packet 启发
 Multi-frame local evidence → candidate packet。但 packet 还需 certification。
@@ -159,7 +157,7 @@ SLAM3R 自己承认无 BA 会 drift → proposal 不能直接当 truth。
 ## 11. 建议系统位置
 
 ```
-RGB → DPVO/DROID (temporal)
+RGB → [[slam-frontends/patch-based/DPVO]]/DROID (temporal)
      → MASt3R (pairwise witness)
      → SLAM3R (multi-frame dense proposal)
      → depth-normal predictor (metric surface)
@@ -177,9 +175,9 @@ RGB → DPVO/DROID (temporal)
 | **SLAM3R** | **RGB-only dense reconstruction** | **dense proposal / learned reg / retrieval** |
 | DUSt3R | pairwise pointmap prior | foundation |
 | Spann3R | spatial memory | memory proposal |
-| DPVO/DROID | temporal optimization | temporal backbone |
-| GO-SLAM | global correction | global consistency |
-| GS-SLAM variants | GS backend | map reference |
+| [[slam-frontends/patch-based/DPVO]]/DROID | temporal optimization | temporal backbone |
+| [[slam-frontends/gpu-optimized/GO-SLAM]] | global correction | global consistency |
+| [[gs-slam/monocular/GS-SLAM]] variants | GS backend | map reference |
 
 ---
 
@@ -194,4 +192,16 @@ RGB → DPVO/DROID (temporal)
 - [[Retrieval-Guided-Registration]] — historical reference selection for global registration
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: SLAM3R 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[geometry-priors/grounded/VGGT]]
+- [[geometry-priors/feed-forward/Spann3R]]
+- [[geometry-priors/feed-forward/CUT3R]]
+
+## 方法继承
+
+- **前作**：[[geometry-priors/feed-forward/DUSt3R]], [[geometry-priors/feed-forward/MASt3R]], [[geometry-priors/feed-forward/CUT3R]]（retrieval-guided 3D SLAM）
+- **后继**：无

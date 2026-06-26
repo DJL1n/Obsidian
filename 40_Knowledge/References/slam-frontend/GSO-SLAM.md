@@ -9,9 +9,7 @@ tags:
 # GSO-SLAM: Bidirectionally Coupled Gaussian Splatting and Direct Visual Odometry
 
 > IEEE RA-L 2026. 论文整理笔记。
-> 📄 [[GSO-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 GSO-SLAM 是一个 real-time monocular dense SLAM 系统。核心：DSO direct VO + 2DGS under EM bidirectional coupling。不是 naive "VO frontend + GS backend" — DSO semi-dense depth 约束 GS，GS rendered depth 反过来初始化 / 正则 DSO depth。不引入额外深度预测网络。
 
@@ -69,12 +67,12 @@ DSO two-frame direct image alignment → pose。Keyframe selection: FoV change /
 ### Tracking
 | Dataset | GSO-SLAM | Best mono baseline |
 |---|---|---|
-| Replica | **0.46 cm** | Photo-SLAM 1.03, MonoGS 17.03 |
-| INS Corridor | **0.64 m** | Photo-SLAM w/LC 3.12, MonoGS 9.48 |
+| Replica | **0.46 cm** | Photo-SLAM 1.03, [[gs-slam/monocular/MonoGS]] 17.03 |
+| INS Corridor | **0.64 m** | Photo-SLAM w/LC 3.12, [[gs-slam/monocular/MonoGS]] 9.48 |
 
 ### Mapping (Replica)
 PSNR **34.48**, SSIM 0.943, Depth L1 8.12 cm, **30 FPS**。
-MonoGS: 0.84 FPS, SplaTAM: 0.21 FPS。GSO-SLAM 比 MonoGS 快 36×。
+[[gs-slam/monocular/MonoGS]]: 0.84 FPS, [[gs-slam/rgbd/SplaTAM]]: 0.21 FPS。GSO-SLAM 比 [[gs-slam/monocular/MonoGS]] 快 36×。
 
 ### Joint opt ablation
 w/o: PSNR 34.10, ATE 0.688, Depth L1 9.744
@@ -114,8 +112,8 @@ GSO-SLAM 的 EM 不是 simple VO→GS。你的版本：E-step update GS only fro
 ### Semi-dense 局限支持你的 anchor skeleton
 DSO 在 textureless 区域 coverage 不足 → 你需要更广覆盖的多源 certification。
 
-### 不可替代 DPVO
-DSO 受 motion blur/noise/exposure/dynamic 影响，DPVO/DROID 更适合主 temporal backbone。
+### 不可替代 [[slam-frontends/patch-based/DPVO]]
+DSO 受 motion blur/noise/exposure/dynamic 影响，[[slam-frontends/patch-based/DPVO]]/DROID 更适合主 temporal backbone。
 
 ---
 
@@ -124,10 +122,10 @@ DSO 受 motion blur/noise/exposure/dynamic 影响，DPVO/DROID 更适合主 temp
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **GSO-SLAM** | **DSO+2DGS EM coupling** | **bidirectional coupling / GS init reference** |
-| MGS-SLAM | DPVO+MVS+GS | DPVO 路线参考 |
+| [[gs-slam/rgbd/MGS-SLAM]] | [[slam-frontends/patch-based/DPVO]]+MVS+GS | [[slam-frontends/patch-based/DPVO]] 路线参考 |
 | HI-SLAM2 | dense+priors+GS | geometry alignment |
-| MonoGS | GS map-centric | mono GS baseline |
-| GS-SDF/GPS-SLAM | geometry-first | teacher/residual |
+| [[gs-slam/monocular/MonoGS]] | GS map-centric | mono GS baseline |
+| GS-SDF/[[mapping/sdf-based/GPS-SLAM]] | geometry-first | teacher/residual |
 
 ---
 
@@ -142,4 +140,16 @@ DSO 受 motion blur/noise/exposure/dynamic 影响，DPVO/DROID 更适合主 temp
 - [[Certified-EM-Coupling]] — translating EM coupling to CertifiedGeometryPacket framework
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: GSO-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[slam-frontends/gpu-optimized/GO-SLAM]]
+- [[slam-frontends/gpu-optimized/FlashSLAM]]
+- [[slam-frontends/neural-correspondence/DROID-SLAM]]
+
+## 方法继承
+
+- **前作**：无（独立方向）（EM coupling SLAM）
+- **后继**：无

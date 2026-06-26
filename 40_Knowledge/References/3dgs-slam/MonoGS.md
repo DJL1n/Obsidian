@@ -9,9 +9,7 @@ tags:
 # Gaussian Splatting SLAM (MonoGS)
 
 > CVPR 2024. 论文整理笔记。
-> 📄 [[MonoGS.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 Gaussian Splatting SLAM (MonoGS) 是第一个基于 3DGS 的在线 monocular SLAM 系统，也支持 RGB-D/stereo。核心是把 3DGS 作为 SLAM 的唯一地图表示，同时用于 tracking、mapping、keyframe management 和 novel view synthesis。
 
@@ -122,7 +120,7 @@ Keyframes: W = W_k (current window) ∪ W_r (2 random historical keyframes)。
 - DSO: 4.72, DROID-VO: 5.14, DepthCov-VO: 5.43
 
 ### TUM RGB-D RGB-D ATE RMSE
-- MonoGS: **1.47 cm** (优于 iMAP, NICE-SLAM, ESLAM, Point-SLAM 等)
+- MonoGS: **1.47 cm** (优于 iMAP, NICE-SLAM, [[mapping/structured/ESLAM]], Point-SLAM 等)
 
 ### Replica RGB-D rendering
 - MonoGS: PSNR **38.94**, SSIM 0.968, LPIPS 0.070, FPS **769**
@@ -173,8 +171,8 @@ Keyframes: W = W_k (current window) ∪ W_r (2 random historical keyframes)。
 
 ### 合理组合
 ```
-DPVO/DROID → temporal tracking
-MASt3R → wide-baseline geometry
+[[slam-frontends/patch-based/DPVO]]/DROID → temporal tracking
+[[geometry-priors/feed-forward/MASt3R]] → wide-baseline geometry
 CertifiedGeometryPacket → certification gate
 MonoGS-like GS backend → render + covisibility + regularisation
 GS feedback → gated weak evidence only
@@ -196,4 +194,9 @@ MonoGS = 3DGS map-centric SLAM reference / GS tracking convergence / covisibilit
 - [[Isotropic-Regularization]] — isotropic regularization to prevent ray-aligned elongation
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: MonoGS 分析结论]]
+- [[SkelGS-SLAM]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/rgbd/SplaTAM]], [[DSO]]（首个 monocular GS-SLAM）
+- **后继**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/monocular/Splat-SLAM]], [[gs-slam/monocular/HI-SLAM2]]

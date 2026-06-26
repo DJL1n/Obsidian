@@ -19,5 +19,5 @@ Vanilla 3DGS 全局优化不适用于在线 SLAM：Gaussian 数量随场景增�
 
 ## Related notes
 
-- [[Gaussian-SLAM]]
+- [[gs-slam/monocular/Gaussian-SLAM]]
 - [[GS-Birth-Gate]]

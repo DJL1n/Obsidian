@@ -19,6 +19,6 @@ DUSt3R 的 pairwise local pointmap 需要多视角后处理对齐，成本高。
 
 ## Related notes
 
-- [[Spann3R]]
+- [[geometry-priors/feed-forward/Spann3R]]
 - [[Dense-Sparse-Memory]]
 - [[Spann3R-Memory-Architecture]]

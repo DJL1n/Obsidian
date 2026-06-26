@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[LVD-GS]]
+- [[gs-slam/multi-sensor/LVD-GS]]
 - [[Multi-Representation-Geometry-Admission]]
 - [[Multi-Evidence-Anchor-Admission]]

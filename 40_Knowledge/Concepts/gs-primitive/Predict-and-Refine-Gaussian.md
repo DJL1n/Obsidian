@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[Flash-Mono]]
+- [[gs-slam/monocular/Flash-Mono]]
 - [[Hidden-State-Submap-Descriptor]]
 - [[FeedForward-Gaussian-Candidate]]

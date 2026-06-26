@@ -1,9 +1,7 @@
 # GSFusion: Online RGB-D Mapping Where Gaussian Splatting Meets TSDF Fusion
 
 > IEEE RA-L 2024. 论文整理笔记。
-> 📄 [[GSFusion.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 GSFusion 是一个 online RGB-D mapping 系统。核心：TSDF 负责几何骨架 + 3D Gaussian 负责视觉外观；quadtree image segmentation 控制候选位置 + TSDF voxel check 做去重/admission gate。不是完整 SLAM（实验用 GT pose），但 Gaussian birth 由几何结构显式控制的方式非常值得借鉴。
 
@@ -60,18 +58,18 @@ Post-scan optional，对最终质量提升明显。
 ### ScanNet++
 | Method | PSNR | Mapping FPS | Model Size |
 |---|---|---|---|
-| SplaTAM | 25.22 | 0.19 | 206 MB |
-| RTG-SLAM | 18.28 | 1.29 | 112 MB |
+| [[gs-slam/rgbd/SplaTAM]] | 25.22 | 0.19 | 206 MB |
+| [[gs-slam/monocular/RTG-SLAM]] | 18.28 | 1.29 | 112 MB |
 | **GSFusion (no global)** | 24.99 | **6.14** | **29 MB** |
 | **GSFusion (global)** | **28.84** | — | — |
 
-GSFusion 比 SplaTAM 快 ~30×，比 RTG-SLAM 快 ~5×，model size 最小。
+GSFusion 比 [[gs-slam/rgbd/SplaTAM]] 快 ~30×，比 [[gs-slam/monocular/RTG-SLAM]] 快 ~5×，model size 最小。
 
 ### Replica
 | Method | PSNR | SSIM | FPS |
 |---|---|---|---|
-| SplaTAM | 32.56 | 0.930 | 0.14 |
-| RTG-SLAM | 33.38 | 0.929 | 8.34 |
+| [[gs-slam/rgbd/SplaTAM]] | 32.56 | 0.930 | 0.14 |
+| [[gs-slam/monocular/RTG-SLAM]] | 33.38 | 0.929 | 8.34 |
 | **GSFusion (global)** | **34.65** | **0.949** | **9.73** |
 
 ### Random keyframe optimization ablation
@@ -88,8 +86,8 @@ GSFusion 比 SplaTAM 快 ~30×，比 RTG-SLAM 快 ~5×，model size 最小。
 
 1. **Gaussian birth 有显式几何 gate** — quadtree + TSDF voxel check，非 gradient densification
 2. **TSDF + GS hybrid** — 两种地图各司其职
-3. **Compact** — ScanNet++ 29 MB vs SplaTAM 206 MB
-4. **高效** — 6.14 FPS，比 RTG-SLAM 快 5×
+3. **Compact** — ScanNet++ 29 MB vs [[gs-slam/rgbd/SplaTAM]] 206 MB
+4. **高效** — 6.14 FPS，比 [[gs-slam/monocular/RTG-SLAM]] 快 5×
 5. **Random keyframe anti-forgetting** — 简单有效
 
 ---
@@ -131,4 +129,11 @@ Monocular scale / pose-depth coherence / dynamic / frontend tracking。
 - [[Quadtree-Image-Budget]] — contrast-based image-space GS allocation
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: GSFusion 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[mapping/sdf-based/GPS-SLAM]]
+- [[gs-slam/structured/ContextGS]]
+- [[mapping/semantic/RGBDS-SLAM]]

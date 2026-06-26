@@ -10,9 +10,7 @@ tags:
 # WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments
 
 > CVPR 2025. 论文整理笔记。
-> 📄 [[WildGS-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 WildGS-SLAM 是一个面向动态场景的 monocular RGB Gaussian SLAM 系统。核心：DROID-style tracking + DINOv2 uncertainty MLP + Metric3D depth + uncertainty-aware DBA + uncertainty-weighted 3DGS static mapping。动态移除不依赖语义类别，通过 per-sequence uncertainty 降权动态/遮挡/不一致区域。
 
@@ -84,12 +82,12 @@ Keyframe poses 全局优化。去除 disparity regularization（multiview 足够
 ### Tracking
 | Dataset | WildGS-SLAM | Best baseline |
 |---|---|---|
-| Wild-SLAM MoCap | **0.46 cm** | DROID-SLAM 16.17, MonoGS 47.99 |
-| Bonn Dynamic | **2.31 cm** | DROID-SLAM 4.91 |
-| TUM Dynamic | **1.51 cm** | DROID-SLAM 1.62 |
+| Wild-SLAM MoCap | **0.46 cm** | [[slam-frontends/neural-correspondence/DROID-SLAM]] 16.17, [[gs-slam/monocular/MonoGS]] 47.99 |
+| Bonn Dynamic | **2.31 cm** | [[slam-frontends/neural-correspondence/DROID-SLAM]] 4.91 |
+| TUM Dynamic | **1.51 cm** | [[slam-frontends/neural-correspondence/DROID-SLAM]] 1.62 |
 
 ### Static scenes (TUM)
-ATE **1.1 cm** — 与 Splat-SLAM 持平，dynamic handling 不显著退化。
+ATE **1.1 cm** — 与 [[gs-slam/monocular/Splat-SLAM]] 持平，dynamic handling 不显著退化。
 
 ### Runtime
 Full: ~0.5 FPS；Fast: ~2 FPS。
@@ -134,7 +132,7 @@ WildGS-SLAM uncertainty > MonST3R mask > YOLOv8+SAM mask in ATE。
 
 ### ★ Uncertainty 进入 CandidatePacket 作为 dynamic risk
 WildGS-SLAM 把 uncertainty 作为 tracking/mapping 权重。你的系统可以改成：
-DPVO residual + MASt3R disagreement + depth-normal inconsistency + GS residual + DINOv2 → per-packet uncertainty / dynamic risk。
+[[slam-frontends/patch-based/DPVO]] residual + [[geometry-priors/feed-forward/MASt3R]] disagreement + depth-normal inconsistency + GS residual + DINOv2 → per-packet uncertainty / dynamic risk。
 
 ### 动态区域不入 CertifiedAnchor
 High uncertainty/high dynamic risk → no certificate, no GS birth, quarantine。
@@ -155,9 +153,9 @@ Online 有用，final global BA 应 remove disparity reg。
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **WildGS-SLAM** | **mono dynamic GS-SLAM** | **uncertainty / dynamic removal reference** |
-| MGS-SLAM | DPVO+MVS+GS | scale closure |
+| [[gs-slam/rgbd/MGS-SLAM]] | [[slam-frontends/patch-based/DPVO]]+MVS+GS | scale closure |
 | HI-SLAM2 | dense+priors+JDSA+GS | geometry alignment |
-| MonoGS/Splat-SLAM | monocular GS | static baseline |
+| [[gs-slam/monocular/MonoGS]]/[[gs-slam/monocular/Splat-SLAM]] | monocular GS | static baseline |
 
 ---
 
@@ -172,4 +170,16 @@ Online 有用，final global BA 应 remove disparity reg。
 - [[Certified-Dynamic-Gate]] — translating uncertainty to anchor admission
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: WildGS-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[gs-slam/dynamic/MonST3R]]
+- [[gs-slam/dynamic/UP-SLAM]]
+- [[gs-slam/dynamic/DGS-SLAM]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/dynamic/DGS-SLAM]]（DINOv2 动态过滤 GS-SLAM）
+- **后继**：[[gs-slam/dynamic/DGS-SLAM]], [[gs-slam/dynamic/ADD-SLAM]]

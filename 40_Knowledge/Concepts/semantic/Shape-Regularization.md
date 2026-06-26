@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[GS-SDF]]
+- [[mapping/sdf-based/GS-SDF]]
 - [[SDF-Geometry-Teacher]]
 - [[NSDF-to-GS-Initialization]]

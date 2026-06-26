@@ -16,6 +16,6 @@ ADD-SLAM 利用这个区分来做 dynamic-static separation 和背景填补。
 
 ## Related notes
 
-- [[ADD-SLAM]]
+- [[gs-slam/dynamic/ADD-SLAM]]
 - [[Consistency-Dynamic-Detection]]
 - [[Dynamic-Static-Composite-Mapping]]

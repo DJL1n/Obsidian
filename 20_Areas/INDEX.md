@@ -25,3 +25,9 @@
 - [[vibecoding/Presentation-Skills|Presentation Skills]] — 演示处理技能集
 - [[vibecoding/Vibecoding-Overview|Vibecoding 概述]] — AI 协编程工作流
 
+### 生活 🏠
+- [[生活/INDEX|生活专区]] — 待办、日程、生活事务管理
+
+### AI-Agents
+- [[Codex-vs-CC-Agent-Mechanism|Codex CLI vs Claude Code 底层 Agent 机制对比]] — 两种工具的架构差异、工具调用管道、状态管理、并发模型对比
+

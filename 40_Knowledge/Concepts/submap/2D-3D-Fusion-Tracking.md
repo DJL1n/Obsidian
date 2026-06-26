@@ -16,6 +16,6 @@
 
 ## Related notes
 
-- [[VPGS-SLAM]]
+- [[slam-frontends/large-scale/VPGS-SLAM]]
 - [[Submap-Geometry-Unit]]
 - [[Large-Scale-GS-SLAM-Architecture]]

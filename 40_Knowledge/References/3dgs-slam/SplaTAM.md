@@ -10,9 +10,7 @@ tags:
 # SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM
 
 > CVPR 2024. 论文整理笔记。
-> 📄 [[SplaTAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 SplaTAM 是一个 RGB-D dense SLAM 系统，核心是直接把 3D Gaussian Splatting 当作地图表示，用可微 Gaussian rasterization 同时做 camera tracking 和 map optimization。不是单目 SLAM，不是 learned VO 前端。
 
@@ -80,7 +78,7 @@ Densification mask：
 1. Silhouette low: S(p) < 0.5（map 没覆盖）
 2. Depth 前方有新几何: D_GT(p) < D_render(p) 且 depth error > λ median（λ=50）
 
-与 Gaussian-SLAM 区别：SplaTAM 基于 silhouette/depth mask，更直接；Gaussian-SLAM 更强调 alpha + NN sparsity。
+与 [[gs-slam/monocular/Gaussian-SLAM]] 区别：SplaTAM 基于 silhouette/depth mask，更直接；[[gs-slam/monocular/Gaussian-SLAM]] 更强调 alpha + NN sparsity。
 
 ---
 
@@ -106,7 +104,7 @@ Replica/Room0:
 ## 10. 实验表现
 
 ### Tracking ATE RMSE
-| Dataset | SplaTAM | Point-SLAM | ESLAM |
+| Dataset | SplaTAM | Point-SLAM | [[mapping/structured/ESLAM]] |
 |---|---|---|---|
 | ScanNet++ | **1.2 cm** | 343.8 cm | — |
 | Replica | **0.36 cm** | 0.52 cm | 0.63 cm |
@@ -143,9 +141,9 @@ Replica/Room0:
 
 ---
 
-## 13. 与 Gaussian-SLAM 区别
+## 13. 与 [[gs-slam/monocular/Gaussian-SLAM]] 区别
 
-| | SplaTAM | Gaussian-SLAM |
+| | SplaTAM | [[gs-slam/monocular/Gaussian-SLAM]] |
 |---|---|---|
 | Map | single global Gaussian map | active/inactive sub-maps |
 | Gaussian | isotropic | anisotropic |
@@ -166,8 +164,8 @@ Replica/Room0:
 
 ### 合理架构
 ```
-RGB → DPVO/DROID (temporal tracking)
-     → MASt3R/depth-normal (geometry proposal)
+RGB → [[slam-frontends/patch-based/DPVO]]/DROID (temporal tracking)
+     → [[geometry-priors/feed-forward/MASt3R]]/depth-normal (geometry proposal)
      → CertifiedGeometryPacket (certification)
      → CertifiedAnchor (local support)
      → SplaTAM-like GS backend (render + alpha-gated feedback)
@@ -190,4 +188,16 @@ SplaTAM = GS backend / silhouette-gated tracking / densification reference
 - [[RGB-D-Densification-Mask]] — silhouette + depth discrepancy for online Gaussian densification
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: SplaTAM 分析结论]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[[[gs-slam/monocular/Splat-SLAM]]]]
+- [[[[gs-slam/monocular/GS-SLAM]]]]
+- [[[[gs-slam/rgbd/MCGS-SLAM]]]]
+
+## 方法继承
+
+- **前作**：[[DROID]]（RGB-D GS-SLAM 起点）
+- **后继**：[[gs-slam/monocular/MonoGS]], [[gs-slam/monocular/GS-SLAM]]

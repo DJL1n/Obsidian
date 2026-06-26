@@ -19,6 +19,6 @@ GPS-SLAM 证明 geometry-first 路线可达 150+ FPS 且高保真。GS 对错误
 
 ## Related notes
 
-- [[GPS-SLAM]]
+- [[mapping/sdf-based/GPS-SLAM]]
 - [[Residual-GS-Layer]]
 - [[Certified-GS-Residual]]

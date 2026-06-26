@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[MCGS-SLAM]]
+- [[gs-slam/rgbd/MCGS-SLAM]]
 - [[MCBA-Cross-View-Constraint]]
 - [[JDSA-Scale-Alignment-for-CertifiedPacket]]

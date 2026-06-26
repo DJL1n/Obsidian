@@ -1,9 +1,7 @@
 # MASt3R-SfM: a Fully-Integrated Solution for Unconstrained Structure-from-Motion
 
 > 3DV 2025. 论文整理笔记。
-> 📄 [[MASt3R-SfM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 MASt3R-SfM 是基于 MASt3R pair prior 的完整离线 SfM pipeline。核心：MASt3R encoder 做 retrieval → sparse scene graph → MASt3R decoder 生成 local pointmaps/sparse matches → coarse 3D alignment → fine 2D reprojection refinement（含 pseudo-track anchor depth）。不是 online SLAM / dynamic / real-time frontend。
 
@@ -76,7 +74,7 @@ Sparse reciprocal matches 上的 3D matching loss（confidence-weighted, Adam）
 COLMAP 49.0/47.8 → VGGSfM 65.4/58.9 → DF-SfM 74.2/70.7 → **MASt3R-SfM 81.2/79.7**
 
 ### FlowMap splits
-MASt3R-SfM ≈ FlowMap，略弱于 DROID-SLAM（但 DROID 只支持 video setting）。
+MASt3R-SfM ≈ FlowMap，略弱于 [[slam-frontends/neural-correspondence/DROID-SLAM]]（但 DROID 只支持 video setting）。
 
 ### CO3Dv2 / RealEstate10K
 MASt3R-SfM mAA(30) = 88.0 / 86.8 vs DUSt3R-GA 76.7 / 67.7。
@@ -124,7 +122,7 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 不是只靠时间邻域，也不是全连接。Keyframe core + NN edges + retrieval edges。
 
 ### 不能解决的核心痛点
-不是 online SLAM / 缺乏 DPVO/DROID temporal residual / 不是 geometry certification。
+不是 online SLAM / 缺乏 [[slam-frontends/patch-based/DPVO]]/DROID temporal residual / 不是 geometry certification。
 
 ---
 
@@ -135,7 +133,7 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 | **DUSt3R** | pairwise pointmap foundation prior |
 | **MASt3R** | DUSt3R + matching head |
 | **MASt3R-SfM** | offline global SfM pipeline |
-| **MASt3R-SLAM** | online monocular dense SLAM |
+| **[[slam-frontends/large-scale/MASt3R-SLAM]]** | online monocular dense SLAM |
 
 ---
 
@@ -150,4 +148,17 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 - [[Offline-SfM-to-Online-Anchor]] — translating SfM concepts to online anchor skeleton
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: MASt3R-SfM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[geometry-priors/grounded/VGGT]]
+- [[geometry-priors/feed-forward/Spann3R]]
+- [[geometry-priors/feed-forward/CUT3R]]
+
+- [[geometry-priors/feed-forward/DUSt3R]]
+## 方法继承
+
+- **前作**：[[geometry-priors/feed-forward/MASt3R]]（MASt3R 的 offline SfM pipeline）
+- **后继**：无

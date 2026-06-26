@@ -20,5 +20,5 @@ Vanilla 3DGS 的 anisotropic covariance + SH color 参数多，优化需要大�
 
 ## Related notes
 
-- [[SplaTAM]]
+- [[gs-slam/rgbd/SplaTAM]]
 - [[Silhouette-Map-Coverage]]

@@ -2,13 +2,12 @@
 tags:
   - 3DGS
   - Anchor-Structured
+  - anchor-gs-chain
 ---
 # Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering
 
 > CVPR 2024 Highlight. 论文整理笔记。
-> 📄 [[Scaffold-GS.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 Scaffold-GS 是一个面向 novel view synthesis 的结构化 3D Gaussian 表示。不是 SLAM 系统。核心是用 sparse anchors 作为 scaffold/骨架，每个 anchor 局部生成 k 个 neural Gaussians，Gaussian 属性由 anchor feature + 当前视角方向 + 距离动态预测，渲染时只处理当前视锥内且 opacity 有意义的 Gaussians。
 
@@ -220,10 +219,10 @@ Certified geometric anchor
 
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
-| DROID/DPVO | temporal optimization | tracking / temporal anchor support |
-| MASt3R-SLAM | dense two-view geometry | robust geometry proposal |
-| S3LAM | semantic cluster + structure | structural grouping |
-| ESLAM | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
+| DROID/[[slam-frontends/patch-based/DPVO]] | temporal optimization | tracking / temporal anchor support |
+| [[geometry-priors/feed-forward/MASt3R]]-SLAM | dense two-view geometry | robust geometry proposal |
+| [[mapping/structured/S3LAM]] | semantic cluster + structure | structural grouping |
+| [[mapping/structured/ESLAM]] | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
 | LightGlue | fast sparse matching | pair verification / loop / reloc |
 | **Scaffold-GS** | **structured GS backend** | **anchor-conditioned GS birth / ChildGS** |
 
@@ -240,4 +239,9 @@ Certified geometric anchor
 - [[ChildGS-Local-Derivation]] — parent anchor → child Gaussian structured birth
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: Scaffold-GS 分析结论]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[matching-representation/LightGlue]]

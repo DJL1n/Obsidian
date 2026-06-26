@@ -36,5 +36,5 @@ GS 不应该直接吃 raw two-view output，而应该吃经过 temporal/multivie
 
 ## Related notes
 
-- [[MASt3R-SLAM]]
+- [[slam-frontends/large-scale/MASt3R-SLAM]]
 - [[Ray-Camera-Model]]

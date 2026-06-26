@@ -10,6 +10,6 @@ Reliability 不应是外部 mask / post-hoc filter，而应是 primitive 的内�
 
 ## Related notes
 
-- [[VarSplat]]
+- [[gs-slam/structured/VarSplat]]
 - [[Appearance-vs-Geometry-Uncertainty]]
 - [[AnchorReliability-Admission-Gate]]

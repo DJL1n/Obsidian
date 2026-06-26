@@ -55,8 +55,7 @@ HermesBrain/
 │   │   ├── semantic/         语义方法
 │   │   ├── survey/           综述
 │   │   └── INDEX.md
-│   └── ExternalNotes/   外部知识库
-│       └── PaperNotes-org/    zhaoyang97/Paper-Notes 同步
+│   └── INDEX.md
 ├── 50_Diary/            ← 日记 / 个人记录
 ├── 60_WorkingStyle/    ← 工作风格 & 元认知
 ├── 90_Archive/         ← 归档

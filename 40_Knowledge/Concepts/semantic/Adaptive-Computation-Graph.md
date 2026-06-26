@@ -26,5 +26,5 @@
 
 ## Related notes
 
-- [[LightGlue]]
+- [[matching-representation/LightGlue]]
 - [[Sparse-Learned-Matcher]]

@@ -26,5 +26,5 @@ Vanilla 3DGS 的 view-dependent effects 被"烘焙"进固定的 SH color 和大�
 
 ## Related notes
 
-- [[Scaffold-GS]]
+- [[gs-slam/structured/Scaffold-GS]]
 - [[Anchor-Scaffold-Representation]]

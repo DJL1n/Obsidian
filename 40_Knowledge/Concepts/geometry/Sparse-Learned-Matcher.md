@@ -27,6 +27,6 @@
 
 ## Related notes
 
-- [[LightGlue]]
+- [[matching-representation/LightGlue]]
 - [[Adaptive-Computation-Graph]]
 - [[Matchability-Assignment]]

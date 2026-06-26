@@ -10,6 +10,6 @@ Pairwise pointmap（DUSt3R）只看到两帧，multi-view window 可从多个 su
 
 ## Related notes
 
-- [[SLAM3R]]
+- [[geometry-priors/feed-forward/SLAM3R]]
 - [[L2W-Global-Registration]]
 - [[Retrieval-Guided-Registration]]

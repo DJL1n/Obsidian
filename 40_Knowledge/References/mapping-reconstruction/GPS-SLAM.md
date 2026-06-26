@@ -10,9 +10,7 @@ tags:
 # GPS-SLAM: Gaussian-Plus-SDF SLAM — High-fidelity 3D Reconstruction at 150+ fps
 
 > CVPR 2025. 论文整理笔记。
-> 📄 [[GPS-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 GPS-SLAM 是一个 RGB-D 超高速重建系统。核心拆成两层：SDF 负责主体几何、基础颜色和 tracking；3D Gaussians 只负责 SDF 表达不足的高频外观残差。不是全场景 Gaussian SLAM；Gaussian = residual appearance overlay。150+ FPS。
 
@@ -26,7 +24,7 @@ RGB-D dense reconstruction/mapping + SDF fusion + residual Gaussian appearance r
 
 ## 2. 核心问题
 
-Gaussian-based RGB-D SLAM（SplaTAM/GS-SLAM）<20 FPS，需要大量 Gaussians + iterations。SDF fusion 极快（~0.1ms/frame）但颜色 blur/holes/artifacts。GPS-SLAM 折中：SDF 做主体几何和基础颜色，Gaussian 只修颜色残差。
+Gaussian-based RGB-D SLAM（[[gs-slam/rgbd/SplaTAM]]/[[gs-slam/monocular/GS-SLAM]]）<20 FPS，需要大量 Gaussians + iterations。SDF fusion 极快（~0.1ms/frame）但颜色 blur/holes/artifacts。GPS-SLAM 折中：SDF 做主体几何和基础颜色，Gaussian 只修颜色残差。
 
 ---
 
@@ -89,7 +87,7 @@ RGB-D frame → SDF tracking (ICP)
 ### Replica office0 detail
 | Method | FPS | Gaussians | PSNR |
 |---|---|---|---|
-| RTG-SLAM | 17.15 | 268,779 | 38.62 |
+| [[gs-slam/monocular/RTG-SLAM]] | 17.15 | 268,779 | 38.62 |
 | GS-ICP SLAM | 174.20 | 1,679,211 | 37.33 |
 | **GPS-SLAM** | **380.72** | **137,200** | **41.15** |
 
@@ -125,7 +123,7 @@ GPS-SLAM 从系统层面支持你的"geometry first, GS after certification"。
 
 ### CertifiedGeometry-Plus-GS
 ```
-RGB → DPVO/MASt3R/SLAM3R proposals
+RGB → [[slam-frontends/patch-based/DPVO]]/[[geometry-priors/feed-forward/MASt3R]]/[[geometry-priors/feed-forward/SLAM3R]] proposals
 → CertifiedGeometryPacket / CertifiedAnchorField
 → Gaussian residual appearance layer only
 ```
@@ -149,10 +147,10 @@ if certified surface exists + color residual high + geometry stable + local GS d
 |---|---|---|
 | **GPS-SLAM** | **SDF + residual GS** | **geometry-first / GS-as-residual 设计参考** |
 | GS-SDF | LiDAR→NSDF→GS init+shape reg | geometry teacher |
-| ESLAM/GO-SLAM | SDF/neural field | surface/free-space |
-| SplaTAM/MonoGS/GS-SLAM | full Gaussian map | GS baseline |
-| MGS-SLAM | DPVO+MVS+GS | monocular scale closure |
-| VPGS/OG-Mapping/Scaffold-GS | anchor/voxel GS | ChildGS structure |
+| [[mapping/structured/ESLAM]]/[[slam-frontends/gpu-optimized/GO-SLAM]] | SDF/neural field | surface/free-space |
+| [[gs-slam/rgbd/SplaTAM]]/[[gs-slam/monocular/MonoGS]]/[[gs-slam/monocular/GS-SLAM]] | full Gaussian map | GS baseline |
+| [[gs-slam/rgbd/MGS-SLAM]] | [[slam-frontends/patch-based/DPVO]]+MVS+GS | monocular scale closure |
+| VPGS/[[mapping/structured/OG-Mapping]]/[[gs-slam/structured/Scaffold-GS]] | anchor/voxel GS | ChildGS structure |
 
 ---
 
@@ -167,4 +165,11 @@ if certified surface exists + color residual high + geometry stable + local GS d
 - [[Certified-GS-Residual]] — translating residual GS design to monocular setting
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: GPS-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[mapping/structured/GSFusion]]
+- [[gs-slam/structured/ContextGS]]
+- [[mapping/semantic/RGBDS-SLAM]]

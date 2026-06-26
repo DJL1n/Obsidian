@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[Flash-Mono]]
+- [[gs-slam/monocular/Flash-Mono]]
 - [[Predict-and-Refine-Gaussian]]
 - [[FeedForward-Gaussian-Candidate]]

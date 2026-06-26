@@ -25,5 +25,5 @@
 
 ## Related notes
 
-- [[ESLAM]]
+- [[mapping/structured/ESLAM]]
 - [[TSDF-Direct-Supervision]]

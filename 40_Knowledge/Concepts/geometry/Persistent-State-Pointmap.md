@@ -10,6 +10,6 @@ Pairwise pointmap（DUSt3R）缺少 persistent scene state，视频累积易 dri
 
 ## Related notes
 
-- [[CUT3R]]
+- [[geometry-priors/feed-forward/CUT3R]]
 - [[Certified-Geometry-Memory]]
 - [[CUT3R-Architecture]]

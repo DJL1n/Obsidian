@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[RGBDS-SLAM]]
+- [[mapping/semantic/RGBDS-SLAM]]
 - [[Multi-Level-Pyramid-GS]]
 - [[Joint-Multi-Feature-GS-Optimization]]

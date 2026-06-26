@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[UP-SLAM]]
+- [[gs-slam/dynamic/UP-SLAM]]
 - [[Probabilistic-Anchor-Update]]
 - [[Certified-Probabilistic-Anchor]]

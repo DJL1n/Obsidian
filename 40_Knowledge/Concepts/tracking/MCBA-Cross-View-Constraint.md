@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[MCGS-SLAM]]
+- [[gs-slam/rgbd/MCGS-SLAM]]
 - [[Pose-Depth-Co-Versioning]]
 - [[JDSA-Scale-Alignment-for-CertifiedPacket]]

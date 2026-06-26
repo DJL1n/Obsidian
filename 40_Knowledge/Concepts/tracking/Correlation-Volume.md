@@ -45,6 +45,6 @@ Correlation volume lookup 提供密集的 visual evidence，不需要 sparse fea
 
 ## Related notes
 
-- [[DROID-SLAM]]
+- [[slam-frontends/neural-correspondence/DROID-SLAM]]
 - [[Recurrent-Correction-Update]]
 - [[Dense-Bundle-Adjustment]]

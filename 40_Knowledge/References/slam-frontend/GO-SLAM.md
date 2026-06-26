@@ -11,8 +11,7 @@ tags:
 # GO-SLAM: Global Optimization for Consistent 3D Instant Reconstruction
 
 > ICCV 2023. 论文整理笔记。
-> 📄 [[GO-SLAM.pdf|PDF 原文]]
-> 作者：Youmin Zhang, Fabio Tosi, Stefano Mattoccia, Matteo Poggi.
+> > 作者：Youmin Zhang, Fabio Tosi, Stefano Mattoccia, Matteo Poggi.
 
 ## 0. 一句话结论
 
@@ -138,14 +137,14 @@ L = λc Lc + λdep Ldep + λeik Leik + λsdf Lsdf
 1. **真正 online global consistency** — loop closure + full BA 在线运行
 2. **DROID-style learned geometry 做 LC/BA** — learned dense flow/confidence，比 sparse ORB 更强
 3. **Mapping 随最新 global geometry 更新** — 选择 pose/depth 变化最大的 keyframes 更新
-4. **支持 monocular/stereo/RGB-D** — 比 ESLAM/Gaussian-SLAM 更泛化
+4. **支持 monocular/stereo/RGB-D** — 比 [[mapping/structured/ESLAM]]/[[gs-slam/monocular/Gaussian-SLAM]] 更泛化
 5. **SDF/free-space 约束强于纯 photometric mapping** — ablation 明确
 
 ---
 
 ## 12. 局限
 
-1. **不是 GS-SLAM** — implicit SDF，非 Gaussian map
+1. **不是 [[gs-slam/monocular/GS-SLAM]]** — implicit SDF，非 Gaussian map
 2. **计算和显存重** — ~8 FPS, ~18 GB GPU
 3. **依赖 DROID 前端** — pretrained DROID weights
 4. **Monocular scale 仍需谨慎** — 不天然给 metric scale
@@ -173,9 +172,9 @@ DPVO/DROID candidate geometry
 ### 定位
 GO-SLAM = global geometry correction architecture reference
 DPVO = temporal tracking signal source
-MASt3R = dense geometry proposal
-ESLAM = SDF/free-space discipline
-Gaussian-SLAM/Scaffold-GS = GS backend
+[[geometry-priors/feed-forward/MASt3R]] = dense geometry proposal
+[[mapping/structured/ESLAM]] = SDF/free-space discipline
+[[gs-slam/monocular/Gaussian-SLAM]]/[[gs-slam/structured/Scaffold-GS]] = GS backend
 CertifiedGeometryPacket/anchor skeleton = 核心研究层
 
 ---
@@ -191,4 +190,16 @@ CertifiedGeometryPacket/anchor skeleton = 核心研究层
 - [[Global-Correction-Mapping]] — geometry-version-aware mapping refresh
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: GO-SLAM 分析结论]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[slam-frontends/gpu-optimized/FlashSLAM]]
+- [[slam-frontends/neural-correspondence/DROID-SLAM]]
+- [[slam-frontends/patch-based/DPVO]]
+
+## 方法继承
+
+- **前作**：无（独立方向）（GPU-optimized SLAM）
+- **后继**：[[slam-frontends/gpu-optimized/FlashSLAM]]

@@ -10,6 +10,6 @@ Uncertainty 不等于 geometry certificate。高 uncertainty 可能是动态物�
 
 ## Related notes
 
-- [[WildGS-SLAM]]
+- [[gs-slam/dynamic/WildGS-SLAM]]
 - [[Uncertainty-Dynamic-Filtering]]
 - [[Certified-Dynamic-Gate]]

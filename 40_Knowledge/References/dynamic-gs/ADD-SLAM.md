@@ -1,9 +1,7 @@
 # CAD-SLAM / ADD-SLAM: Consistency-Aware Dynamic SLAM with Dynamic-Static Decoupled Mapping
 
 > arXiv 2025 → v2 改名为 CAD-SLAM. 论文整理笔记。
-> 📄 [[ADD-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 ADD-SLAM 是一个 RGB-D 动态 dense SLAM 系统。核心：不用语义类别判断动态，而是用历史 Gaussian map 渲染与当前 RGB-D 观测的 color/depth 一致性检查发现动态区域，再用 MobileSAM 精细化 mask。Tracking 时排除动态区域，建图时把静态背景和动态物体分别建 Gaussian 表示。
 
@@ -48,15 +46,15 @@ Frame-to-model on static regions only (dynamic mask applied)。Keyframe DBA (DRO
 | Method | ATE RMSE |
 |---|---|
 | ADD-SLAM | **2.77 cm** |
-| WildGS-SLAM RGB-D | 2.88 cm |
+| [[gs-slam/dynamic/WildGS-SLAM]] RGB-D | 2.88 cm |
 | DG-SLAM | 5.45 cm |
 
 ### Rendering (Bonn)
 | Method | PSNR | SSIM |
 |---|---|---|
 | ADD-SLAM | 22.41 | **0.89** |
-| MonoGS | 20.64 | 0.77 |
-| SplaTAM | 17.95 | 0.72 |
+| [[gs-slam/monocular/MonoGS]] | 20.64 | 0.77 |
+| [[gs-slam/rgbd/SplaTAM]] | 17.95 | 0.72 |
 
 ### Ablation (mask方法对比)
 - 无动态检测: 52.5 cm
@@ -88,7 +86,7 @@ Frame-to-model on static regions only (dynamic mask applied)。Keyframe DBA (DRO
 ## 7. 对 SkelGS-SLAM 的启发
 
 ### ★ 最值借鉴：跨时间一致性破坏作为动态证据
-改为 pre-GS consistency oracle：DPVO/DROID window depth-pose + stable anchor + certified static candidate + temporal repeatability，非 GS map render residual。
+改为 pre-GS consistency oracle：[[slam-frontends/patch-based/DPVO]]/DROID window depth-pose + stable anchor + certified static candidate + temporal repeatability，非 GS map render residual。
 
 ### 区分新遮挡 vs 暴露背景
 Observed depth < historical → 不适合生成静态 anchor
@@ -107,7 +105,19 @@ Observed depth > historical → 等待多帧确认后补静态 anchor
 
 ### Methods
 - [[Dynamic-Static-Composite-Mapping]] — separate GS maps for static and dynamic
-- [[Pre-GS-Consistency-Oracle]] — consistency from DPVO/anchor, not GS render
+- [[Pre-GS-Consistency-Oracle]] — consistency from [[slam-frontends/patch-based/DPVO]]/anchor, not GS render
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: ADD-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[gs-slam/dynamic/MonST3R]]
+- [[gs-slam/dynamic/UP-SLAM]]
+- [[gs-slam/dynamic/DGS-SLAM]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/dynamic/DGS-SLAM]]（adaptive dynamic SLAM）
+- **后继**：[[gs-slam/dynamic/CAD-SLAM]]

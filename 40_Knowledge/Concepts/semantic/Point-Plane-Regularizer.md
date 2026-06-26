@@ -40,6 +40,6 @@ min Σ reprojection_error + Σ distance(X_j, π_k)
 
 ## Related notes
 
-- [[S3LAM]]
+- [[mapping/structured/S3LAM]]
 - [[Semantic-Cluster-Structure-Prior]]
 - [[Structured-Anchor-Group]]

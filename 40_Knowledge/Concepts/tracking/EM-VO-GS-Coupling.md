@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[GSO-SLAM]]
+- [[slam-frontends/gpu-optimized/GSO-SLAM]]
 - [[Frontend-Gaussian-Initialization]]
 - [[Certified-EM-Coupling]]

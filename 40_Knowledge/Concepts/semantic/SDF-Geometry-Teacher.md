@@ -19,6 +19,6 @@ Render-derived constraints 在复杂场景中不够（GS-SDF ablation 证明会�
 
 ## Related notes
 
-- [[GS-SDF]]
+- [[mapping/sdf-based/GS-SDF]]
 - [[Shape-Regularization]]
 - [[Certified-Geometry-Field]]

@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[CoGS-SLAM-Survey]]
+- [[survey/CoGS-SLAM-Survey]]
 - [[Submap-Level-Provenance]]
 - [[Intra-Agent-Submap-Loop]]

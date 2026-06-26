@@ -8,11 +8,9 @@ tags:
 # CUT3R: Continuous 3D Perception Model with Persistent State
 
 > CVPR 2025 Oral. 论文整理笔记。
-> 📄 [[CUT3R.pdf|PDF 原文]]
+> ## 0. 一句话结论
 
-## 0. 一句话结论
-
-CUT3R 是一个带持久状态的连续 3D 感知模型。核心是 stateful recurrent Transformer：每帧更新内部 state，在线输出 metric-scale pointmaps 到共同坐标系。不是 SLAM pose graph / DROID recurrent BA / GS-SLAM backend / SDF mapper。
+CUT3R 是一个带持久状态的连续 3D 感知模型。核心是 stateful recurrent Transformer：每帧更新内部 state，在线输出 metric-scale pointmaps 到共同坐标系。不是 SLAM pose graph / DROID recurrent BA / [[gs-slam/monocular/GS-SLAM]] backend / SDF mapper。
 
 定位：continuous recurrent pointmap predictor。
 
@@ -58,7 +56,7 @@ vs Spann3R: external spatial memory → CUT3R 是 recurrent state
 | Spann3R | external spatial memory | memory proposal |
 | SLAM3R | I2P+L2W registration | window proposal |
 | **CUT3R** | **persistent recurrent state** | **continuous stateful proposal** |
-| DPVO/DROID | BA recurrent | temporal backbone |
+| [[slam-frontends/patch-based/DPVO]]/DROID | BA recurrent | temporal backbone |
 
 ---
 
@@ -77,14 +75,14 @@ vs Spann3R: external spatial memory → CUT3R 是 recurrent state
 2. **无显式 BA / pose graph / loop closure** — 长序列 drift
 3. **Metric-scale 仍需验证** — 不能直接当 GS truth
 4. **Dynamic content 支持 ≠ static map certification**
-5. **不能直接提供 anchor lifecycle** — 无 DPVO-style trace
+5. **不能直接提供 anchor lifecycle** — 无 [[slam-frontends/patch-based/DPVO]]-style trace
 
 ---
 
 ## 8. 对 SkelGS-SLAM 的启发
 
 ### 可作为 recurrent dense geometry proposal
-CUT3R 补 DPVO 稀疏、MASt3R pairwise、SLAM3R window-local。但仍应进入 CandidateGeometryPacket，不是直接 CertifiedPacket / GS birth。
+CUT3R 补 [[slam-frontends/patch-based/DPVO]] 稀疏、MASt3R pairwise、SLAM3R window-local。但仍应进入 CandidateGeometryPacket，不是直接 CertifiedPacket / GS birth。
 
 ### Persistent state → 你的 anchor memory 概念
 CUT3R latent state 的思想可显式化为 CertifiedGeometryMemory:
@@ -100,10 +98,10 @@ CUT3R latent state 的思想可显式化为 CertifiedGeometryMemory:
 CUT3R 推断的区域应标记为 HypothesizedGeometry，只用于 weak rendering completion，不强约束 pose。
 
 ### CUT3R state 可作为 failure detector
-- DPVO stable + CUT3R inconsistent → candidate risk ↑
-- DPVO stable + MASt3R agrees + CUT3R agrees → strong support
+- [[slam-frontends/patch-based/DPVO]] stable + CUT3R inconsistent → candidate risk ↑
+- [[slam-frontends/patch-based/DPVO]] stable + MASt3R agrees + CUT3R agrees → strong support
 
-### 不建议替代 DPVO
+### 不建议替代 [[slam-frontends/patch-based/DPVO]]
 你之前 CUT3R all-frames PSNR 13.93 说明直接当 GS input 危险。合理位置：candidate witness，不是 direct GS source。
 
 ---
@@ -111,7 +109,7 @@ CUT3R 推断的区域应标记为 HypothesizedGeometry，只用于 weak renderin
 ## 9. 建议系统位置
 
 ```
-RGB → DPVO/DROID (temporal backbone)
+RGB → [[slam-frontends/patch-based/DPVO]]/DROID (temporal backbone)
      → CUT3R (recurrent dense proposal)
      → MASt3R (pairwise witness)
      → SLAM3R/Spann3R (window/memory proposal)
@@ -134,8 +132,8 @@ CUT3R 角色：persistent-state geometry proposal，不是 system truth。
 | MASt3R | + matching | pairwise witness |
 | Spann3R | memory pointmap | memory proposal |
 | SLAM3R | window+registration | window proposal |
-| DPVO/DROID | BA temporal | backbone |
-| GS-SLAM methods | GS backend | map reference |
+| [[slam-frontends/patch-based/DPVO]]/DROID | BA temporal | backbone |
+| [[gs-slam/monocular/GS-SLAM]] methods | GS backend | map reference |
 
 ---
 
@@ -150,4 +148,16 @@ CUT3R 角色：persistent-state geometry proposal，不是 system truth。
 - [[Recurrent-Dense-Proposal]] — CUT3R as recurrent geometry witness
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: CUT3R 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[geometry-priors/grounded/VGGT]]
+- [[geometry-priors/feed-forward/Spann3R]]
+- [[geometry-priors/feed-forward/DUSt3R]]
+
+## 方法继承
+
+- **前作**：[[geometry-priors/feed-forward/DUSt3R]], [[geometry-priors/feed-forward/MASt3R]], [[geometry-priors/feed-forward/Spann3R]]（连续 3D 感知 + 持续状态）
+- **后继**：[[geometry-priors/feed-forward/SLAM3R]]

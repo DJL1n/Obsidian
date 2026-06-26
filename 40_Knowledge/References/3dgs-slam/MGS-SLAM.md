@@ -9,9 +9,7 @@ tags:
 # MGS-SLAM: Monocular Sparse Tracking and Gaussian Mapping with Depth Smooth Regularization
 
 > IEEE RA-L 2024. 论文整理笔记。
-> 📄 [[MGS-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 MGS-SLAM 是一个 RGB-only monocular Gaussian SLAM 系统。核心是把 DPVO 稀疏 VO 前端 + MVS depth estimation + 3DGS dense mapping 后端接起来，通过 SDAR (Sparse-Dense Adjustment Ring) 保持尺度一致。最接近"DPVO + monocular Gaussian mapping"的参考系统之一。
 
@@ -173,7 +171,7 @@ SDAR 是 MGS-SLAM 最有价值的机制：sparse VO ↔ MVS depth ↔ GS map 形
 | **MGS-SLAM** | **monocular DPVO + MVS + GS** | **最接近你路线的参考系统** |
 | DPVO | temporal tracking backbone | 前端 |
 | MonoGS | monocular-first GS | map-centric 对比 |
-| SplaTAM/GS-SLAM | RGB-D GS-SLAM | sensor depth baseline |
+| [[gs-slam/rgbd/SplaTAM]]/GS-SLAM | RGB-D GS-SLAM | sensor depth baseline |
 | GO-SLAM | global correction | global consistency |
 
 MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。但它还不够安全：SDAR 是 sparse-dense scale correction，你需要的是 CertifiedGeometryPacket / CertifiedAnchor。
@@ -191,4 +189,15 @@ MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。
 - [[Predicted-Depth-GS-Supervision]] — depth smooth loss + sparse correction for GS supervision
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: MGS-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[gs-slam/monocular/HI-SLAM2]]
+- [[[[gs-slam/monocular/Splat-SLAM]]]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/monocular/Splat-SLAM]], [[slam-frontends/gpu-optimized/GO-SLAM]], [[gs-slam/monocular/MonoGS]], [[DROID]], [[slam-frontends/patch-based/DPVO]]（multi-camera GS）
+- **后继**：无

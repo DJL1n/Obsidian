@@ -6,39 +6,17 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "path:40_Knowledge/References  ",
-      "color": {
-        "a": 1,
-        "rgb": 14048348
-      }
-    },
-    {
-      "query": "path:40_Knowledge/Methods  ",
-      "color": {
-        "a": 1,
-        "rgb": 6062550
-      }
-    },
-    {
-      "query": "path:40_Knowledge/Concepts  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1.23865451388889,
+  "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.245442708333333,
-  "repelStrength": 13.2586805555556,
+  "centerStrength": 0.294791666666667,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 175,
-  "scale": 0.1559302923166843,
-  "close": true
+  "linkDistance": 500,
+  "scale": 0.07853129873920095,
+  "close": false
 }

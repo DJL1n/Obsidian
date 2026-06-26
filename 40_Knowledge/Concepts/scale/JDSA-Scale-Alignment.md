@@ -10,6 +10,6 @@ Monocular depth prior 的问题不是简单全局 scale 不准，而是不同区
 
 ## Related notes
 
-- [[HI-SLAM2]]
+- [[gs-slam/monocular/HI-SLAM2]]
 - [[Gaussian-Map-Deformation]]
 - [[Certified-JDSA]]

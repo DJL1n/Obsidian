@@ -11,9 +11,7 @@ tags:
 # VPGS-SLAM: Voxel-based Progressive 3D Gaussian SLAM in Large-Scale Scenes
 
 > arXiv 2025. 论文整理笔记。
-> 📄 [[VPGS-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 VPGS-SLAM 是一个面向大规模室内/室外场景的 RGB-D / point-cloud 3DGS-SLAM 框架。核心：multi-submap + voxel-based progressive Gaussian representation + anchor-conditioned neural Gaussians + 2D-3D fusion tracking + BEV loop detection + voxel ICP / rendering-loss loop correction + online distillation submap fusion。
 
@@ -58,7 +56,7 @@ RGB + 3D points → tracking (2D coarse + 3D ICP fine + adaptive)
 Point cloud → voxelization → voxel centers → anchors。每个 anchor: position + feature + scaling factor + learnable offsets。Gaussian 属性由 anchor feature + viewing distance + direction 通过 MLP decoder 预测。
 
 ### Multi-resolution voxel size
-近处 fine voxel（细节），远处 coarse voxel（效率）。与 OG-Mapping / Scaffold-GS 思想一致但用于 online large-scale SLAM。
+近处 fine voxel（细节），远处 coarse voxel（效率）。与 [[mapping/structured/OG-Mapping]] / [[gs-slam/structured/Scaffold-GS]] 思想一致但用于 online large-scale SLAM。
 
 ---
 
@@ -111,7 +109,7 @@ Loop closure 后重叠 submaps → overlapping image pairs → 分别渲染 RGB/
 | ScanNet | **7.6 cm** | — | — |
 | KITTI | — | **21.37** | — |
 
-Replica ATE 0.21 优于 SplaTAM 0.41 / MonoGS 0.34 / Gaussian-SLAM 0.32。KITTI PSNR 21.37 远超早期 GS-SLAM（~14–15）。Memory 70.81 MB vs SplaTAM 273 MB。
+Replica ATE 0.21 优于 [[gs-slam/rgbd/SplaTAM]] 0.41 / [[gs-slam/monocular/MonoGS]] 0.34 / [[gs-slam/monocular/Gaussian-SLAM]] 0.32。KITTI PSNR 21.37 远超早期 GS-SLAM（~14–15）。Memory 70.81 MB vs [[gs-slam/rgbd/SplaTAM]] 273 MB。
 
 ---
 
@@ -153,10 +151,10 @@ Replica ATE 0.21 优于 SplaTAM 0.41 / MonoGS 0.34 / Gaussian-SLAM 0.32。KITTI 
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **VPGS-SLAM** | **large-scale 3DGS-SLAM** | **submap/voxel-anchor/loop-fusion** |
-| MGS-SLAM | monocular DPVO+MVS+GS | 最接近的系统参考 |
-| OG-Mapping | octree anchor GS mapping | LOD growth |
-| Scaffold-GS | anchor-conditioned GS | ChildGS 表示 |
-| DPVO | temporal tracking | backbone |
+| [[gs-slam/rgbd/MGS-SLAM]] | monocular [[slam-frontends/patch-based/DPVO]]+MVS+GS | 最接近的系统参考 |
+| [[mapping/structured/OG-Mapping]] | octree anchor GS mapping | LOD growth |
+| [[gs-slam/structured/Scaffold-GS]] | anchor-conditioned GS | ChildGS 表示 |
+| [[slam-frontends/patch-based/DPVO]] | temporal tracking | backbone |
 
 ---
 
@@ -171,4 +169,16 @@ Replica ATE 0.21 优于 SplaTAM 0.41 / MonoGS 0.34 / Gaussian-SLAM 0.32。KITTI 
 - [[Submap-Fusion-Distillation]] — online distillation for GS submap merge
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: VPGS-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[slam-frontends/gpu-optimized/GO-SLAM]]
+- [[slam-frontends/gpu-optimized/FlashSLAM]]
+- [[slam-frontends/neural-correspondence/DROID-SLAM]]
+
+## 方法继承
+
+- **前作**：无（独立方向）（large-scale）
+- **后继**：无

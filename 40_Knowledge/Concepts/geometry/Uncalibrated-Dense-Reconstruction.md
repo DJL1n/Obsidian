@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[DUSt3R]]
+- [[geometry-priors/feed-forward/DUSt3R]]
 - [[Pointmap-Regression]]
 - [[DUSt3R-Global-Alignment]]

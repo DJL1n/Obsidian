@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[MASt3R]]
+- [[geometry-priors/feed-forward/MASt3R]]
 - [[Two-View-Pointmap-Prior]]
 - [[Fast-Reciprocal-Matching]]

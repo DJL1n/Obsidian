@@ -14,6 +14,6 @@ Image gradients → 2D covariance Σ2D。Multiple co-visible keyframes → conso
 
 ## Related notes
 
-- [[GSO-SLAM]]
+- [[slam-frontends/gpu-optimized/GSO-SLAM]]
 - [[EM-VO-GS-Coupling]]
 - [[Certified-EM-Coupling]]

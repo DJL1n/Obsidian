@@ -22,6 +22,6 @@
 
 ## Related notes
 
-- [[GS-SLAM]]
+- [[gs-slam/monocular/GS-SLAM]]
 - [[Coarse-to-Fine-GS-Tracking]]
 - [[GS-Birth-Gate]]

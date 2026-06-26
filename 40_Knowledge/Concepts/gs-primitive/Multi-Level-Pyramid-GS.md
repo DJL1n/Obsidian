@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[RGBDS-SLAM]]
+- [[mapping/semantic/RGBDS-SLAM]]
 - [[Multi-Channel-Gaussian-Attributes]]
 - [[Pyramid-Anchor-Admission]]

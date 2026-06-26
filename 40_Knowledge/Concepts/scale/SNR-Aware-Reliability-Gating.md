@@ -10,6 +10,6 @@ RGB 在低光/过曝/模糊区域不可靠。如果不做 reliability gating，a
 
 ## Related notes
 
-- [[EAG3R]]
+- [[gs-slam/dynamic/EAG3R]]
 - [[Motion-Geometry-Coherence-Loss]]
 - [[Event-Augmented-Geometry-Candidate]]

@@ -20,6 +20,6 @@
 
 ## Related notes
 
-- [[VPGS-SLAM]]
+- [[slam-frontends/large-scale/VPGS-SLAM]]
 - [[2D-3D-Fusion-Tracking]]
 - [[Large-Scale-GS-SLAM-Architecture]]

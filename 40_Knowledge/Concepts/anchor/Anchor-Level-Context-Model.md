@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[ContextGS]]
+- [[gs-slam/structured/ContextGS]]
 - [[Hierarchical-Anchor-Partition]]
 - [[Anchor-Compression-for-SLAM]]

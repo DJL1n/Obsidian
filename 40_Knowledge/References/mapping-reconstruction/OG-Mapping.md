@@ -9,13 +9,11 @@ tags:
 # OG-Mapping: Octree-based Structured 3D Gaussians for Online Dense Mapping
 
 > arXiv 2024. 论文整理笔记。
-> 📄 [[OG-Mapping.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 OG-Mapping 是一个 RGB-D online dense mapping 系统（非完整 SLAM）。用 sparse octree + structured 3D Gaussians 做在线高保真建图。核心：RGB-D + pose → sparse octree → octree voxel center as anchor → anchor generates structured 3D Gaussians → coarse-to-fine progressive anchor growth → dynamic keyframe window。
 
-不是 monocular SLAM / tracking frontend / DPVO/DROID 替代品。
+不是 monocular SLAM / tracking frontend / [[slam-frontends/patch-based/DPVO]]/DROID 替代品。
 
 ---
 
@@ -79,7 +77,7 @@ Visible anchors → generate 3D Gaussians。Gaussian position = anchor + offset 
 
 Coarse anchor 快速覆盖场景结构 → coarse Gaussian scale 大，难以拟合高频细节 → under-optimized areas → 添加更细层级 anchor。
 
-与 Scaffold-GS 区别：Scaffold-GS 用 error/gradient-based growth。OG-Mapping 认为 online 场景 fine-level Gaussians 没有足够 iterations 稳定 gradient → 改用 level-aware growth: gradient high + current anchor level + level hierarchy → 决定是否添加更细层级 anchor。
+与 [[gs-slam/structured/Scaffold-GS]] 区别：[[gs-slam/structured/Scaffold-GS]] 用 error/gradient-based growth。OG-Mapping 认为 online 场景 fine-level Gaussians 没有足够 iterations 稳定 gradient → 改用 level-aware growth: gradient high + current anchor level + level hierarchy → 决定是否添加更细层级 anchor。
 
 ---
 
@@ -104,27 +102,27 @@ L = color reconstruction + depth rendering + SSIM + Gaussian scale regularizatio
 ### Replica
 | Method | PSNR | SSIM | LPIPS | Size |
 |---|---|---|---|---|
-| MonoGS | 35.68 | 0.946 | 0.118 | — |
-| SplaTAM | 35.78 | 0.976 | 0.068 | 275.1 MB |
+| [[gs-slam/monocular/MonoGS]] | 35.68 | 0.946 | 0.118 | — |
+| [[gs-slam/rgbd/SplaTAM]] | 35.78 | 0.976 | 0.068 | 275.1 MB |
 | **OG-Mapping** | **38.56** | **0.976** | **0.048** | **34.6 MB** |
 
 ### ScanNet
 | Method | PSNR | Size |
 |---|---|---|
-| MonoGS | 16.72 | — |
-| SplaTAM | 20.15 | — |
+| [[gs-slam/monocular/MonoGS]] | 16.72 | — |
+| [[gs-slam/rgbd/SplaTAM]] | 20.15 | — |
 | **OG-Mapping** | **25.61** | **36.1 MB** |
 
 ### Compactness (Replica)
 - Ours: PSNR 38.56, FPS 5.6, Model 34.6 MB
 - Ours-sparse: PSNR 37.00, FPS 8.5, Model 8.8 MB
-- SplaTAM: PSNR 35.78, FPS 0.4, Model 275.1 MB
+- [[gs-slam/rgbd/SplaTAM]]: PSNR 35.78, FPS 0.4, Model 275.1 MB
 
 ---
 
 ## 10. 强项
 
-1. **把 Scaffold-GS 的 anchor-Gaussian 表示在线化** — sparse octree + RGB-D
+1. **把 [[gs-slam/structured/Scaffold-GS]] 的 anchor-Gaussian 表示在线化** — sparse octree + RGB-D
 2. **对 depth noise 更稳** — octree/structured 比 pixel-level projection 更鲁棒
 3. **模型更紧凑** — anchor feature + MLP 替代显式存储 Gaussian 参数
 4. **Dynamic window 改进在线 mapping** — 新区域优化 + 旧区域不忘
@@ -168,4 +166,11 @@ L = color reconstruction + depth rendering + SSIM + Gaussian scale regularizatio
 - [[Anchor-Octree-for-SLAM]] — translating OG-Mapping's octree anchor to anchor skeleton
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: OG-Mapping 分析结论]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[mapping/structured/GSFusion]]
+- [[mapping/sdf-based/GPS-SLAM]]
+- [[gs-slam/structured/ContextGS]]

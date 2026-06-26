@@ -31,5 +31,5 @@ Occupancy / density 需要通过 volume rendering 间接学习 surface，收敛�
 
 ## Related notes
 
-- [[ESLAM]]
+- [[mapping/structured/ESLAM]]
 - [[Free-Space-Surface-Band-Gating]]

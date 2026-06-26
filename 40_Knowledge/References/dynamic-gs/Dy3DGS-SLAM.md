@@ -1,9 +1,7 @@
 # Dy3DGS-SLAM: Monocular 3D Gaussian Splatting SLAM for Dynamic Environments
 
 > arXiv 2025-06. 论文整理笔记。
-> 📄 [[Dy3DGS-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 Dy3DGS-SLAM 的核心不是动态 4D Gaussian 建模，而是单目 RGB 条件下，用光流 + 单目深度估计得到更可靠的动态 mask，把动态区域从 tracking 和 3DGS mapping 中压低/剔除，从而重建干净静态场景。
 
@@ -82,7 +80,7 @@ Depth alone 不可靠，fusion 是核心贡献。
 | **Dy3DGS** | **4.5 cm** |
 | DynaSLAM | 4.8 cm |
 | DytanVO | 5.6 cm |
-| SplaTAM | 96.1 cm |
+| [[gs-slam/rgbd/SplaTAM]] | 96.1 cm |
 
 ### TUM RGB-D
 | Method | ATE |
@@ -90,7 +88,7 @@ Depth alone 不可靠，fusion 是核心贡献。
 | DynaSLAM | **2.7 cm** |
 | **Dy3DGS** | 4.7 cm |
 | DytanVO | 11.2 cm |
-| SplaTAM | 53.2 cm |
+| [[gs-slam/rgbd/SplaTAM]] | 53.2 cm |
 
 ### Runtime
 Tracking 17 FPS, mapping 430.5 ms, network update 10.3 ms。
@@ -117,7 +115,7 @@ Tracking 17 FPS, mapping 430.5 ms, network update 10.3 ms。
 
 ---
 
-## 7. 与 WildGS-SLAM 区别
+## 7. 与 [[gs-slam/dynamic/WildGS-SLAM]] 区别
 
 | | Dy3DGS | WildGS |
 |---|---|---|
@@ -143,7 +141,7 @@ per-anchor: static_log_odds, temporal_repeatability, depth_normal_stability, dyn
 - 高 + temporal high → anchor maturity evidence
 
 ### 不建议借
-- ResNet50 pose network（你要的是 DPVO/DROID/HI-SLAM2 在线几何信号，不是 supervised pose net）
+- ResNet50 pose network（你要的是 [[slam-frontends/patch-based/DPVO]]/DROID/HI-SLAM2 在线几何信号，不是 supervised pose net）
 - Bayesian independent assumption（你的 fusion 应基于 anchor evidence，不是单帧概率）
 
 ---
@@ -165,4 +163,16 @@ Dy3DGS 对你是 dynamic/uncertainty evidence 模块参考，不是 packet coher
 - [[DynamicEvidencePacket]] — per-pixel/per-anchor dynamic probability for anchor system
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: Dy3DGS-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[gs-slam/dynamic/MonST3R]]
+- [[gs-slam/dynamic/UP-SLAM]]
+- [[gs-slam/dynamic/DGS-SLAM]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/dynamic/DGS-SLAM]]（monocular dynamic GS）
+- **后继**：无

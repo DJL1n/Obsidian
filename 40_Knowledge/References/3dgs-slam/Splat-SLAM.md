@@ -1,9 +1,7 @@
 # Splat-SLAM: Globally Optimized RGB-only SLAM with 3D Gaussians
 
 > CVPR Workshops 2025, VOCVALC. 论文整理笔记。
-> 📄 [[Splat-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 Splat-SLAM 是一个 RGB-only dense SLAM + 3DGS system。核心：dense optical flow + DSPO (pose/disparity/scale joint opt) + local BA / loop BA / online global BA + proxy depth + deformable 3D Gaussian map (source keyframe anchoring + active deformation when pose/depth updates)。
 
@@ -95,10 +93,10 @@ With: PSNR 41.20, Depth L1 2.40
 ## 7. 对 SkelGS-SLAM 的启发
 
 ### ★ Geometry authority 应该在 GS 之前
-Splat-SLAM 支持你：GS 不应成为 pose/depth/scale authority。前端 DSPO/DROID/DPVO 先做 joint optimization → GS 消费 + deformation。
+Splat-SLAM 支持你：GS 不应成为 pose/depth/scale authority。前端 DSPO/DROID/[[slam-frontends/patch-based/DPVO]] 先做 joint optimization → GS 消费 + deformation。
 
-### ★ DSPO 对你比 MASt3R raw pointmap 更像答案
-Dense correspondence → factor graph → pose + disparity joint optimization → monocular depth 只作为 aligned prior。对应你的系统：DPVO/DROID/HI-SLAM2 window = pose-depth authority；depth predictor = prior/regularizer。
+### ★ DSPO 对你比 [[geometry-priors/feed-forward/MASt3R]] raw pointmap 更像答案
+Dense correspondence → factor graph → pose + disparity joint optimization → monocular depth 只作为 aligned prior。对应你的系统：[[slam-frontends/patch-based/DPVO]]/DROID/HI-SLAM2 window = pose-depth authority；depth predictor = prior/regularizer。
 
 ### ★ Gaussian anchoring = 你的 anchor provenance
 Gaussian 绑定 source keyframe / pose version。可迁移：anchor 记录 birth frame/packet/pose version/depth estimate → 当 geometry packet 更新时，知道哪些 anchor 受哪些 packet 影响。
@@ -128,4 +126,16 @@ Splat-SLAM 是你这批论文里最值得重点吸收的单目 GS-SLAM 机制之
 - [[Proxy-Depth-Packet]] — reliable multi-view + aligned monocular prior as depth packet
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: Splat-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[[[gs-slam/monocular/MonoGS]]]]
+- [[[[gs-slam/rgbd/SplaTAM]]]]
+- [[[[gs-slam/monocular/GS-SLAM]]]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/monocular/MonoGS]], [[gs-slam/rgbd/SplaTAM]]（keyframe-level GS-SLAM）
+- **后继**：[[gs-slam/monocular/HI-SLAM2]]

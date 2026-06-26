@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[CoGS-SLAM-Survey]]
+- [[survey/CoGS-SLAM-Survey]]
 - [[Geometry-vs-Visual-Consistency]]
 - [[Intra-Agent-Submap-Loop]]

@@ -1,24 +1,22 @@
 # MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
 
-> arXiv 2025. Motion DUSt3R: dynamic video geometry via per-timestep pointmap.
-> 📄 [[MonST3R.pdf|PDF 原文]]
+> arXiv 2025. Motion [[geometry-priors/feed-forward/DUSt3R]]: dynamic video geometry via per-timestep pointmap.
+> ## 0. 一句话结论
 
-## 0. 一句话结论
-
-MonST3R 把 DUSt3R 的 pointmap 表示扩展到动态视频：不先估计 motion，而是直接为每个时刻预测 per-timestep pointmap。动态物体在不同时刻出现在不同空间位置，自然形成 time-varying point cloud。不是实时 SLAM / 不是 GS backend / 但为动态场景的 geometry-first 处理提供了干净思路。
+MonST3R 把 [[geometry-priors/feed-forward/DUSt3R]] 的 pointmap 表示扩展到动态视频：不先估计 motion，而是直接为每个时刻预测 per-timestep pointmap。动态物体在不同时刻出现在不同空间位置，自然形成 time-varying point cloud。不是实时 SLAM / 不是 GS backend / 但为动态场景的 geometry-first 处理提供了干净思路。
 
 ---
 
-## 1. 和 DUSt3R 的关系
+## 1. 和 [[geometry-priors/feed-forward/DUSt3R]] 的关系
 
-| | DUSt3R | MonST3R |
+| | [[geometry-priors/feed-forward/DUSt3R]] | MonST3R |
 |---|---|---|
 | 输入 | 两张图 (pairwise) | 动态视频 (pairwise within window) |
 | pointmap | 静态场景，对齐到第一帧 | per-timestep，允许动态物体位置变化 |
 | 训练 | 静态场景数据 | 动态视频 fine-tune (PointOdyssey / TartanAir / Spring / Waymo) |
 | 动态问题 | 前景物体会错误对齐 | 每个时间点有自己的几何 |
 
-DUSt3R 在动态场景的两个问题：moving foreground 错误对齐、前景深度被背景污染。MonST3R 直接用 per-timestep pointmap 绕开。
+[[geometry-priors/feed-forward/DUSt3R]] 在动态场景的两个问题：moving foreground 错误对齐、前景深度被背景污染。MonST3R 直接用 per-timestep pointmap 绕开。
 
 ---
 
@@ -70,10 +68,10 @@ Sliding temporal window（非全连接）。L = L_DUSt3R_alignment + λ_smooth L
 ### Camera pose
 | Method | Sintel ATE | TUM-dyn ATE | ScanNet ATE |
 |---|---|---|---|
-| DPVO | 0.115 | — | — |
+| [[slam-frontends/patch-based/DPVO]] | 0.115 | — | — |
 | LEAP-VO | **0.089** | **0.046** | 0.070 |
 | CasualSAM | 0.141 | 0.045 | 0.158 |
-| DUSt3R w/ mask | 0.417 | 0.127 | 0.081 |
+| [[geometry-priors/feed-forward/DUSt3R]] w/ mask | 0.417 | 0.127 | 0.081 |
 | **MonST3R** | 0.108 | 0.074 | **0.068** |
 
 MonST3R 不是绝对 pose SOTA，但 joint depth+pose+dynamic geometry 统一输出，且不依赖 GT intrinsics。
@@ -99,17 +97,17 @@ MonST3R 不是绝对 pose SOTA，但 joint depth+pose+dynamic geometry 统一输
 
 ### ★ Geometry-first dynamic region discovery
 MonST3R 的 confident static region = optical flow ≈ camera-induced flow。可改写为你的 anchor admission evidence：
-- DPVO flow ≈ depth-induced flow → mature static support
+- [[slam-frontends/patch-based/DPVO]] flow ≈ depth-induced flow → mature static support
 - 不一致 → dynamic / unreliable / no GS birth
 
 ### ★ Per-timestep geometry 不强迫持久化
 动态物体只应作为 per-timestep observation，不进入 persistent anchor / GS map。与你的 "anchor maturity / explicit admission" 一致。
 
 ### ★ 离线诊断工具
-MonST3R → per-frame depth + pose + static/dynamic mask for evaluating your DPVO/DROID packet quality。
+MonST3R → per-frame depth + pose + static/dynamic mask for evaluating your [[slam-frontends/patch-based/DPVO]]/DROID packet quality。
 
-### ★ 不支持 MASt3R 作为动态 SLAM 底座
-MonST3R 明确指出 DUSt3R 在动态场景中会错误对齐 moving foreground 或无法估计前景深度。支持你：原始 pointmap foundation model 不适合直接作为动态 SLAM 几何底座。
+### ★ 不支持 [[geometry-priors/feed-forward/MASt3R]] 作为动态 SLAM 底座
+MonST3R 明确指出 [[geometry-priors/feed-forward/DUSt3R]] 在动态场景中会错误对齐 moving foreground 或无法估计前景深度。支持你：原始 pointmap foundation model 不适合直接作为动态 SLAM 几何底座。
 
 ---
 
@@ -129,8 +127,20 @@ MonST3R 对你最有价值的不是接入主线，而是：
 - [[Geometry-First-Dynamic-Detection]] — flow consistency 定义 static region
 
 ### Methods
-- [[MonST3R-Architecture]] — DUSt3R + dynamic fine-tune + video-specific losses
+- [[MonST3R-Architecture]] — [[geometry-priors/feed-forward/DUSt3R]] + dynamic fine-tune + video-specific losses
 - [[Dynamic-Region-as-Packet-Evidence]] — 动态区域作为 anchor admission 负证据
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: MonST3R 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[gs-slam/dynamic/UP-SLAM]]
+- [[gs-slam/dynamic/DGS-SLAM]]
+- [[gs-slam/dynamic/ADD-SLAM]]
+
+## 方法继承
+
+- **前作**：无（独立方向）（dynamic video geometry）
+- **后继**：无

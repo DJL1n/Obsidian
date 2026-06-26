@@ -20,6 +20,6 @@
 
 ## Related notes
 
-- [[GPS-SLAM]]
+- [[mapping/sdf-based/GPS-SLAM]]
 - [[Geometry-First-GS-Pipeline]]
 - [[Certified-GS-Residual]]

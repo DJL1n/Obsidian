@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[MonoGS]]
+- [[gs-slam/monocular/MonoGS]]
 - [[GS-Tracking-Representation]]
 - [[Isotropic-Regularization]]

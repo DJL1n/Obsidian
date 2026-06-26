@@ -1,16 +1,1 @@
-# 📥 00_Inbox — 收件箱
-
-**规则：所有新笔记先进这里。**
-
-- 快速记录碎片想法、待处理信息、临时备忘
-- 定期（每周/每日）清空：归类 → 处理 → 归档
-- 处理后的笔记移入对应目录，清理后的移入 `90_Archive/Inbox`
-
-### 处理流程
-1. 想法 → `50_Writing/` 或 `40_Knowledge/Concepts`
-2. 任务/项目 → `10_Projects/`
-3. 长期领域 → `20_Areas/`
-4. 方法论 → `40_Knowledge/Methods/`
-5. 无价值 → 删除
-
-> 收件箱不是永久存储，是临时缓冲区。
+AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend

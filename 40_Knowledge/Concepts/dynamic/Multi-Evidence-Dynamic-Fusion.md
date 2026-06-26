@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[Dy3DGS-SLAM]]
+- [[gs-slam/dynamic/Dy3DGS-SLAM]]
 - [[Dynamic-Suppression-Both-Sides]]
 - [[DynamicEvidencePacket]]

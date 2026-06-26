@@ -21,6 +21,6 @@
 
 ## Related notes
 
-- [[GO-SLAM]]
+- [[slam-frontends/gpu-optimized/GO-SLAM]]
 - [[Online-Global-Pose-Graph]]
 - [[Global-Correction-Mapping]]

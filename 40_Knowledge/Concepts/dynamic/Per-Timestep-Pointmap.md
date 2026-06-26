@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[MonST3R]]
+- [[gs-slam/dynamic/MonST3R]]
 - [[Geometry-First-Dynamic-Detection]]
 - [[Dynamic-Region-as-Packet-Evidence]]

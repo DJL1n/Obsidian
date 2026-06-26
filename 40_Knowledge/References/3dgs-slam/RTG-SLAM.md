@@ -1,13 +1,11 @@
 # RTG-SLAM: Real-time 3D Reconstruction at Scale using Gaussian Splatting
 
 > SIGGRAPH 2024. 论文整理笔记。
-> 📄 [[RTG-SLAM.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 RTG-SLAM 是一个面向大场景的 RGB-D 实时 Gaussian SLAM 系统。核心：compact opaque/transparent Gaussian 表示 + depth rendering ≠ color blending + stable/unstable state management + 显式 birth 事件。
 
-不是单目 / dynamic / 最高渲染上限 / DROID/DPVO frontend。
+不是单目 / dynamic / 最高渲染上限 / DROID/[[slam-frontends/patch-based/DPVO]] frontend。
 
 ---
 
@@ -48,7 +46,7 @@ Keyframe selection (rot/trans threshold)。只优化 top color-error pixels。On
 ## 3. 实验
 
 ### Speed / Memory
-| Scene | RTG-SLAM | SplaTAM |
+| Scene | RTG-SLAM | [[gs-slam/rgbd/SplaTAM]] |
 |---|---|---|
 | Replica FPS | **17.24** | — |
 | Azure Home FPS | **17.90** | 0.31 (OOM) |
@@ -60,16 +58,16 @@ Keyframe selection (rot/trans threshold)。只优化 top color-error pixels。On
 |---|---|
 | RTG-SLAM | **1.06 cm** |
 | Co-SLAM | 2.74 |
-| ESLAM | 2.11 |
+| [[mapping/structured/ESLAM]] | 2.11 |
 | Point-SLAM | 2.38 |
-| SplaTAM | 3.39 |
+| [[gs-slam/rgbd/SplaTAM]] | 3.39 |
 | ORB-SLAM2 | 1.00 |
 
 ### Geometry (ScanNet++)
 | Method | Acc | Acc Ratio |
 |---|---|---|
 | RTG-SLAM | **0.95** | **96.41** |
-| SplaTAM | 1.32 | 95.31 |
+| [[gs-slam/rgbd/SplaTAM]] | 1.32 | 95.31 |
 
 ---
 
@@ -117,10 +115,10 @@ RGB-D ICP 不适合 monocular predicted depth。
 | 系统 | 定位 | 对你价值 |
 |---|---|---|
 | RTG-SLAM | RGB-D 大场景实时 GS | **primitive lifecycle / birth / state mgmt** |
-| DGS-SLAM | RGB-D 动态去动态 | dynamic gate / provenance |
+| [[gs-slam/dynamic/DGS-SLAM]] | RGB-D 动态去动态 | dynamic gate / provenance |
 | ADD-SLAM | RGB-D 动态+ consistency | dynamic-risk / occlusion |
-| RGBDS-SLAM | RGB-D 语义 pyramid | pyramid / multi-channel |
-| MASt3R-SfM | 离线 SfM | constrained pointmap / anchor depth |
+| [[mapping/semantic/RGBDS-SLAM]] | RGB-D 语义 pyramid | pyramid / multi-channel |
+| [[geometry-priors/feed-forward/MASt3R]]-SfM | 离线 SfM | constrained pointmap / anchor depth |
 
 ---
 
@@ -135,4 +133,15 @@ RGB-D ICP 不适合 monocular predicted depth。
 - [[Stable-Unstable-Anchor-Maturity]] — translating RTG state to anchor maturity
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: RTG-SLAM 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[[[gs-slam/monocular/GS-SLAM]]]]
+- [[[[gs-slam/rgbd/GauS-SLAM]]]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/rgbd/GauS-SLAM]], [[gs-slam/dynamic/ADD-SLAM]]（compact lifecycle）
+- **后继**：无

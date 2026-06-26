@@ -24,5 +24,5 @@
 
 ## Related notes
 
-- [[MASt3R-SLAM]]
+- [[slam-frontends/large-scale/MASt3R-SLAM]]
 - [[Ray-Residual]]

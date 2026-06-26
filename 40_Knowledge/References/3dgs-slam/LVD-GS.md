@@ -151,4 +151,15 @@ LVD-GS 适合作为 multi-evidence geometry admission / dynamic uncertainty / re
 - [[Multi-Evidence-Anchor-Admission]] — translating Sem-Geo-DINO to anchor gate
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: LVD-GS 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[[[gs-slam/monocular/GS-SLAM]]]]
+- [[[[gs-slam/multi-sensor/Gaussian-LIC-Series]]-Series]]
+
+## 方法继承
+
+- **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/dynamic/DGS-SLAM]], [[gs-slam/rgbd/SplaTAM]], [[gs-slam/monocular/MonoGS]]（LiDAR-Visual GS-SLAM）
+- **后继**：无

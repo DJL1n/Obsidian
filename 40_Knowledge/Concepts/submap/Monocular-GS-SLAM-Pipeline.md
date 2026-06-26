@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[MGS-SLAM]]
+- [[gs-slam/rgbd/MGS-SLAM]]
 - [[Sparse-Dense-Scale-Alignment]]
 - [[SDAR-Mechanism]]

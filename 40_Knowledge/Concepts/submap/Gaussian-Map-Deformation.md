@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[HI-SLAM2]]
+- [[gs-slam/monocular/HI-SLAM2]]
 - [[JDSA-Scale-Alignment]]
 - [[Certified-JDSA]]

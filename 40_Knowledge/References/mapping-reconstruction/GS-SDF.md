@@ -8,9 +8,7 @@ tags:
 # GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction
 
 > arXiv 2025. 论文整理笔记。
-> 📄 [[GS-SDF.pdf|PDF 原文]]
-
-## 0. 一句话结论
+> ## 0. 一句话结论
 
 GS-SDF 是一个 LiDAR-visual reconstruction/rendering 系统。核心：LiDAR point clouds → neural SDF (continuous geometry field) → SDF zero-level initializes 2D Gaussians → SDF shape regularization constrains Gaussian geometry → high-fidelity rendering + geometrically consistent surface。不是 monocular SLAM / GS tracking frontend / online mapping。
 
@@ -111,10 +109,10 @@ Ablation: center reg 改善但仍 blur；shape reg 保留砖块细节。
 ## 11. 对 SkelGS-SLAM 的启发
 
 ### ★ 最重要：GS 几何需要外部连续几何场监督
-Render-derived constraints 不足以保证 Gaussian geometry。你的系统需要：DPVO temporal + MASt3R pair + depth-normal + free-space + CertifiedGeometryPacket。
+Render-derived constraints 不足以保证 Gaussian geometry。你的系统需要：[[slam-frontends/patch-based/DPVO]] temporal + [[geometry-priors/feed-forward/MASt3R]] pair + depth-normal + free-space + CertifiedGeometryPacket。
 
 ### CertifiedGeometryPacket ≈ 你的 NSDF teacher
-Monocular 无 LiDAR NSDF，但可以构造 weak geometry teacher：DPVO + MASt3R + depth-normal + scale + free-space → CertifiedAnchorField。
+Monocular 无 LiDAR NSDF，但可以构造 weak geometry teacher：[[slam-frontends/patch-based/DPVO]] + [[geometry-priors/feed-forward/MASt3R]] + depth-normal + scale + free-space → CertifiedAnchorField。
 
 ### Shape regularization > center regularization
 ChildGS 应约束整个 tangent plane，不只约束 center。
@@ -135,10 +133,10 @@ Unbounded/low-confidence background 不要强行 birth Gaussians。
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **GS-SDF** | **LiDAR→NSDF→GS init+shape reg** | **geometry teacher / shape regularization** |
-| GS-SLAM/SplaTAM | RGB-D GS-SLAM | sensor depth baseline |
-| MGS-SLAM | monocular DPVO+MVS+GS | scale closure |
-| VPGS-SLAM | large-scale submap GS | submap/anchor/loop |
-| OG-Mapping | octree anchor GS | LOD growth |
+| [[gs-slam/monocular/GS-SLAM]]/[[gs-slam/rgbd/SplaTAM]] | RGB-D [[gs-slam/monocular/GS-SLAM]] | sensor depth baseline |
+| [[gs-slam/rgbd/MGS-SLAM]] | monocular [[slam-frontends/patch-based/DPVO]]+MVS+GS | scale closure |
+| [[slam-frontends/large-scale/VPGS-SLAM]] | large-scale submap GS | submap/anchor/loop |
+| [[mapping/structured/OG-Mapping]] | octree anchor GS | LOD growth |
 
 GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几何场 → 从这个场初始化 Gaussian → 用 shape-level regularization 约束 Gaussian → 不指望 RGB render loss 自己保证几何一致。
 
@@ -155,4 +153,11 @@ GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几
 - [[Certified-Geometry-Field]] — translating GS-SDF's NSDF teacher to monocular setting
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: GS-SDF 分析]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[mapping/structured/GSFusion]]
+- [[mapping/sdf-based/GPS-SLAM]]
+- [[gs-slam/structured/ContextGS]]

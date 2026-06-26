@@ -10,6 +10,6 @@ Gradient densification（原始 3DGS）不可控，不适合在线 SLAM。显式
 
 ## Related notes
 
-- [[RTG-SLAM]]
+- [[gs-slam/monocular/RTG-SLAM]]
 - [[Primitive-Lifecycle-State]]
 - [[Stable-Unstable-Anchor-Maturity]]

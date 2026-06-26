@@ -19,6 +19,6 @@ Observed certified geometry vs hypothesized inferred geometry 必须分开。补
 
 ## Related notes
 
-- [[MG-SLAM]]
+- [[gs-slam/structured/MG-SLAM]]
 - [[Manhattan-Structure-Prior]]
 - [[Observed-vs-Hypothesized-Geometry]]

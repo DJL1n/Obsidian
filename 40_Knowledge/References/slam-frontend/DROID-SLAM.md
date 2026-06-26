@@ -9,7 +9,7 @@ tags:
 # DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D
 
 > NeurIPS 2021. 论文整理笔记。
-> 📄 [[DROID-SLAM.pdf|PDF 原文]] (10 MB)
+> 📄 (10 MB)
 
 ## 0. 一句话结论
 
@@ -31,7 +31,7 @@ DROID-SLAM 是一个 learned dense SLAM 系统，核心是用 RAFT-style recurre
 
 ### 输入
 - Monocular RGB video / Stereo / RGB-D
-- **需要相机内参**（与 MASt3R-SLAM 的 uncalibrated 不同）
+- **需要相机内参**（与 [[geometry-priors/feed-forward/MASt3R]]-SLAM 的 uncalibrated 不同）
 - 只用 monocular 训练，测试时可直接用 stereo 或 RGB-D
 
 ### 输出
@@ -256,9 +256,9 @@ EuRoC monocular: 相比 ORB-SLAM3 降低 43% error
 
 ---
 
-## 19. 与 MASt3R-SLAM 核心区别
+## 19. 与 [[geometry-priors/feed-forward/MASt3R]]-SLAM 核心区别
 
-| | MASt3R-SLAM | DROID-SLAM |
+| | [[geometry-priors/feed-forward/MASt3R]]-SLAM | DROID-SLAM |
 |---|---|---|
 | 信息来源 | two-view 3D prior | dense visual correlation + recurrent flow |
 | 匹配方式 | ray-based iterative projective | correlation volume lookup + revision |
@@ -303,15 +303,15 @@ DROID-SLAM = temporal optimisation backbone，不是 final geometry oracle。
 
 ## 22. 最终判断
 
-DROID/DPVO 比 MASt3R 更适合作为 anchor/packet coherence 的主时间骨架。
+DROID/DPVO 比 [[geometry-priors/feed-forward/MASt3R]] 更适合作为 anchor/packet coherence 的主时间骨架。
 
 **最合理的研究定位：**
 - DROID/DPVO: 时序优化骨架和 trust signal
-- MASt3R: 强 two-view / loop / wide-baseline geometry proposal
+- [[geometry-priors/feed-forward/MASt3R]]: 强 two-view / loop / wide-baseline geometry proposal
 - Depth-normal predictor: 更平滑 metric-like dense geometry
 - CertifiedGeometryPacket / Anchor skeleton: 负责把这些信号变成 GS 可消费的稳定结构
 
-一句话：MASt3R-SLAM 强在单对/宽基线 learned 3D prior；DROID-SLAM 强在 dense recurrent pose-depth optimisation；DPVO 强在轻量 temporal patch optimisation。Anchor/packet coherence 更需要 DROID/DPVO 的 temporal signal，但最终 GS geometry 仍须 certification。
+一句话：[[geometry-priors/feed-forward/MASt3R]]-SLAM 强在单对/宽基线 learned 3D prior；DROID-SLAM 强在 dense recurrent pose-depth optimisation；DPVO 强在轻量 temporal patch optimisation。Anchor/packet coherence 更需要 DROID/DPVO 的 temporal signal，但最终 GS geometry 仍须 certification。
 
 ---
 
@@ -327,4 +327,16 @@ DROID/DPVO 比 MASt3R 更适合作为 anchor/packet coherence 的主时间骨架
 - [[DROID-Training-Gauge]] — 显式 fix pose gauge 训练方法
 
 ### Project
-- [[10_Projects/SkelGS-SLAM/decision-log|SkelGS-SLAM: DROID-SLAM 分析结论]]
+- [[SkelGS-SLAM]]
+
+
+## 相关笔记
+
+- [[slam-frontends/gpu-optimized/GO-SLAM]]
+- [[slam-frontends/gpu-optimized/FlashSLAM]]
+- [[slam-frontends/patch-based/DPVO]]
+
+## 方法继承
+
+- **前作**：无（独立方向）（neural correspondence SLAM）
+- **后继**：无
