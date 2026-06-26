@@ -195,7 +195,7 @@ MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。
 ## 相关笔记
 
 - [[3dgs-slam/HI-SLAM2]]
-- [[[[3dgs-slam/Splat-SLAM]]]]
+- [[3dgs-slam/Splat-SLAM]]
 
 ## 方法继承
 

@@ -156,8 +156,8 @@ LVD-GS 适合作为 multi-evidence geometry admission / dynamic uncertainty / re
 
 ## 相关笔记
 
-- [[[[3dgs-slam/GS-SLAM]]]]
-- [[[[3dgs-slam/Gaussian-LIC-Series]]-Series]]
+- [[3dgs-slam/GS-SLAM]]
+- [[3dgs-slam/Gaussian-LIC-Series]]-Series]]
 
 ## 方法继承
 

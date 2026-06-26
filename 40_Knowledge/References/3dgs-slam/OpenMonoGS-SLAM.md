@@ -161,9 +161,9 @@ OpenMonoGS-SLAM 不适合作为你的几何主线，适合作为 semantic Gaussi
 
 ## 相关笔记
 
-- [[[[3dgs-slam/Splat-SLAM]]]]
+- [[3dgs-slam/Splat-SLAM]]
 - [[3dgs-slam/HI-SLAM2]]
-- [[[[3dgs-slam/GS-SLAM]]]]
+- [[3dgs-slam/GS-SLAM]]
 
 ## 方法继承
 

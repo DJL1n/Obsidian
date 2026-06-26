@@ -48,8 +48,8 @@ CAD-SLAM 提出 **一致性感知（Consistency-Aware） + 动静解耦映射（
 - **融合方向**：SkelGS-SLAM 的 anchor 可以引入 consistency score——每个 anchor 维护一个基于多帧几何一致性的评分，低于阈值的 anchor 被标记为 dynamic 或 uncertain，不参与 CertifiedGeometryPacket 生成。这将 CAD-SLAM 的 mask-based 方法升级为 confidence-based 的软解耦。
 
 ## 相关笔记
-- [[[[3dgs-slam/4DGS-SLAM]]]] — 4D GS SLAM 动态场景处理
-- [[[[3dgs-slam/SplaTAM]]]] — RGB-D SLAM with silhouette gate
+- [[3dgs-slam/4DGS-SLAM]] — 4D GS SLAM 动态场景处理
+- [[3dgs-slam/SplaTAM]] — RGB-D SLAM with silhouette gate
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略对比
 - [[CertifiedGeometryPacket]] — 几何数据包一致性机制
 

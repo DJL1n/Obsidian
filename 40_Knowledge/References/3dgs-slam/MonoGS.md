@@ -120,7 +120,7 @@ Keyframes: W = W_k (current window) ∪ W_r (2 random historical keyframes)。
 - DSO: 4.72, DROID-VO: 5.14, DepthCov-VO: 5.43
 
 ### TUM RGB-D RGB-D ATE RMSE
-- MonoGS: **1.47 cm** (优于 iMAP, NICE-SLAM, [[mapping-reconstruction/ESLAM]], Point-SLAM 等)
+- MonoGS: **1.47 cm** (优于 iMAP, NICE-SLAM, ESLAM, Point-SLAM 等)
 
 ### Replica RGB-D rendering
 - MonoGS: PSNR **38.94**, SSIM 0.968, LPIPS 0.070, FPS **769**

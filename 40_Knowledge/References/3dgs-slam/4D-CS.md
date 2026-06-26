@@ -44,9 +44,9 @@ tags:
 - **融合方向**：SkelGS-SLAM 的 anchor 可以加入 cluster-level motion prior——不是纯几何结构约束，而是从相邻帧的 anchor 关联中学习运动先验，辅助 CertifiedGeometryPacket 的生成和置信度评分。
 
 ## 相关笔记
-- [[[[3dgs-slam/4DGS-SLAM]]]] — 4D GS SLAM
+- [[3dgs-slam/4DGS-SLAM]] — 4D GS SLAM
 - [[Semantic-SLAM]] — 语义 SLAM 方法
-- [[[[3dgs-slam/AnchorSplat]]]] — anchor-structured Gaussian
+- [[3dgs-slam/AnchorSplat]] — anchor-structured Gaussian
 - [[Cluster-Level-Feature-Aggregation]] — 聚类级特征聚合方法
 
 ## 所属分类

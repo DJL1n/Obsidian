@@ -138,8 +138,8 @@ RGB-D ICP 不适合 monocular predicted depth。
 
 ## 相关笔记
 
-- [[[[3dgs-slam/GS-SLAM]]]]
-- [[[[3dgs-slam/GauS-SLAM]]]]
+- [[3dgs-slam/GS-SLAM]]
+- [[3dgs-slam/GauS-SLAM]]
 
 ## 方法继承
 

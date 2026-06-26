@@ -17,7 +17,7 @@ tags:
 用 feed-forward 基础模型做初始 3D 重建，再经后端优化提升至 metric-scale 精度，平衡速度与精度。
 
 ## 1. 核心问题
-现有 feed-forward 3D 基础模型（如 VGGT、MASt3R、[[geometry-model/DUSt3R]]）可快速生成 3D 结构，但精度通常不达 metric-scale；传统 SLAM/BA 方法精度高但速度慢，难以兼顾效率与精度。
+现有 feed-forward 3D 基础模型（如 VGGT、MASt3R、DUSt3R）可快速生成 3D 结构，但精度通常不达 metric-scale；传统 SLAM/BA 方法精度高但速度慢，难以兼顾效率与精度。
 
 ## 2. 核心方法
 该论文提出 **AMB3R** 两阶段框架：
@@ -47,9 +47,9 @@ tags:
 - **融合方向**：SkelGS-SLAM 可以考虑在 anchor level 引入 mini-backend——每个 anchor 的 Gaussian 集合在创建后进行轻量 BA-like refinement，而非完全依赖前端 DPVO 的 pose 和几何。这相当于 per-submap 的 AMB3R 式优化。
 
 ## 相关笔记
-- [[[[geometry-model/VGGT]]-SLAM]] — [[geometry-model/VGGT]] 基础模型用于 SLAM
-- [[[[geometry-model/MASt3R]]]] — 3D 匹配基础模型
-- [[[[slam-frontend/DROID-SLAM]]]] — learned correspondence + BA
+- [[geometry-model/VGGT]]-SLAM]] — [[geometry-model/VGGT]] 基础模型用于 SLAM
+- [[geometry-model/MASt3R]] — 3D 匹配基础模型
+- [[slam-frontend/DROID-SLAM]] — learned correspondence + BA
 - [[CertifiedGeometryPacket]] — 几何数据包一致性机制
 
 ## 所属分类

@@ -211,7 +211,7 @@ CertifiedGeometryPacket = monocular geometry certification layer
 
 ## 相关笔记
 
-- [[[[3dgs-slam/GS-SLAM]]]]
+- [[3dgs-slam/GS-SLAM]]
 - [[mapping-reconstruction/S3LAM]]
 - [[mapping-reconstruction/ESLAM]]
 

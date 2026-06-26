@@ -90,7 +90,7 @@ Post-keyframe insertion (coverage gaps) + full BA (all overlapping pairs) + join
 | ScanNet | **7.07 cm** | [[slam-frontend/GO-SLAM]] 8.10, Splat-SLAM 7.58 |
 
 ### Geometry (Replica)
-Accuracy **1.57 cm**, Completeness 3.49 cm, Completion ratio 85.25% — 明显优于 HI-SLAM / [[slam-frontend/GO-SLAM]] / Splat-SLAM。
+Accuracy **1.57 cm**, Completeness 3.49 cm, Completion ratio 85.25% — 明显优于 HI-SLAM / GO-SLAM / Splat-SLAM。
 
 ### JDSA ablation
 - One-scale prior: Abs Diff 0.147
@@ -174,10 +174,10 @@ HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry 
 
 ## 相关笔记
 
-- [[[[3dgs-slam/Splat-SLAM]]]]
-- [[[[3dgs-slam/MonoGS]]]]
-- [[[[3dgs-slam/GauS-SLAM]]]]
-- [[[[3dgs-slam/MGS-SLAM]]]]
+- [[3dgs-slam/Splat-SLAM]]
+- [[3dgs-slam/MonoGS]]
+- [[3dgs-slam/GauS-SLAM]]
+- [[3dgs-slam/MGS-SLAM]]
 
 ## 所属分类
 

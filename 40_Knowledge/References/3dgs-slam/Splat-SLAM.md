@@ -131,9 +131,9 @@ Splat-SLAM 是你这批论文里最值得重点吸收的单目 GS-SLAM 机制之
 
 ## 相关笔记
 
-- [[[[3dgs-slam/MonoGS]]]]
-- [[[[3dgs-slam/SplaTAM]]]]
-- [[[[3dgs-slam/GS-SLAM]]]]
+- [[3dgs-slam/MonoGS]]
+- [[3dgs-slam/SplaTAM]]
+- [[3dgs-slam/GS-SLAM]]
 
 ## 方法继承
 

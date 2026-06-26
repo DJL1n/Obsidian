@@ -286,7 +286,7 @@ S3LAM 的价值不在于比 DROID/MASt3R 更强，而在于提出清楚思路：
 
 **四篇论文的定位：**
 - MASt3R-SLAM: strong two-view dense geometry prior
-- [[slam-frontend/DROID-SLAM]]: dense recurrent temporal optimization signal
+- DROID-SLAM: dense recurrent temporal optimization signal
 - DPVO: lightweight sparse temporal optimization signal
 - S3LAM: semantic cluster + structural primitive prior
 

@@ -208,7 +208,7 @@ LightGlue: sparse correspondence proposal
 
 ## 17. 与 [[mapping-reconstruction/S3LAM]] 关系
 
-LightGlue 可替换 [[mapping-reconstruction/S3LAM]]/ORB-SLAM2 中的部分匹配模块（SuperPoint + LightGlue → triangulated points → semantic cluster → plane BA），但不提供语义或结构本身。
+LightGlue 可替换 S3LAM/ORB-SLAM2 中的部分匹配模块（SuperPoint + LightGlue → triangulated points → semantic cluster → plane BA），但不提供语义或结构本身。
 
 ---
 
@@ -250,8 +250,8 @@ Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 
 对 SkelGS-SLAM 的价值排序：
 - dense two-view geometry: **MASt3R**
-- semantic/structural grouping: **[[mapping-reconstruction/S3LAM]]**
-- surface/free-space regularization: **[[mapping-reconstruction/ESLAM]]**
+- semantic/structural grouping: **S3LAM**
+- surface/free-space regularization: **ESLAM**
 - sparse pair verification / loop / reloc: **LightGlue**
 
 ---

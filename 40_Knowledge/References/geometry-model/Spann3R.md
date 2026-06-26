@@ -140,7 +140,7 @@ Spann3R pointmap → directly overwrite VideoBuffer depth/pose → directly birt
 ### Memory 还不够
 Spann3R 自己承认没有 BA 会 drift。你的系统需要：
 - Spann3R-style memory (proposal)
-- [[slam-frontend/GO-SLAM]]-style correction (global BA)
+- GO-SLAM-style correction (global BA)
 - GS-SLAM-style alpha feedback (gating)
 
 ---

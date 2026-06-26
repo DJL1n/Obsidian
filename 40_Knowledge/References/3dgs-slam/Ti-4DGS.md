@@ -39,8 +39,8 @@ tags:
 - **融合方向**：SkelGS-SLAM 的 anchor-structured GS 可以借鉴时间初始化策略——当 CertifiedGeometryPacket 到达时，渐进式展开 anchor 下的 Gaussian 集合，而非一次性创建所有 Gaussians，从而减少不必要的渲染开销和内存占用。
 
 ## 相关笔记
-- [[[[3dgs-slam/4DGS-SLAM]]]] — 4D Gaussian Splatting SLAM 系统
-- [[[[3dgs-slam/Gaussian-SLAM]]]] — RGB-D 下的 4D GS SLAM
+- [[3dgs-slam/4DGS-SLAM]] — 4D Gaussian Splatting SLAM 系统
+- [[3dgs-slam/Gaussian-SLAM]] — RGB-D 下的 4D GS SLAM
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略对比
 
 ## 所属分类

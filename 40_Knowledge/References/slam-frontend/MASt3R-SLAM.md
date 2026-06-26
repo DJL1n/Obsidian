@@ -30,7 +30,7 @@ tracking → local pointmap fusion → keyframe graph construction → loop clos
 - pose / depth / camera model / matching 强耦合
 - 稠密几何更难保持多视角一致
 
-MASt3R-SLAM 的不同点：把 two-view 3D reconstruction prior 当作统一几何来源。MASt3R / [[geometry-model/DUSt3R]] 直接从两张图预测在共同坐标系下的 dense pointmap，相当于把匹配、深度、相对几何都压进了一个 learned two-view prior。
+MASt3R-SLAM 的不同点：把 two-view 3D reconstruction prior 当作统一几何来源。MASt3R / DUSt3R 直接从两张图预测在共同坐标系下的 dense pointmap，相当于把匹配、深度、相对几何都压进了一个 learned two-view prior。
 
 本质：
 - 不是：image → depth → pose → map

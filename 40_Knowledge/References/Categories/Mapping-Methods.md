@@ -8,8 +8,8 @@
 
 - [[mapping-reconstruction/GS-SDF]]
 - [[mapping-reconstruction/GPS-SLAM]]
-- [[mapping-reconstruction/OG-Mapping]]
+- OG-Mapping
 - [[mapping-reconstruction/GSFusion]]
-- [[mapping-reconstruction/ESLAM]]
-- [[mapping-reconstruction/S3LAM]]
+- ESLAM
+- S3LAM
 - [[mapping-reconstruction/RGBDS-SLAM]]

@@ -148,7 +148,7 @@ Phase 2: optimize Gaussians + keyframe poses
 1. **Gaussian birth 必须有 geometry gate** — GS-SLAM 用 sensor depth；你的系统用 CertifiedGeometryPacket
 2. **GS feedback 必须只用 reliable Gaussians** — coarse-to-fine + alpha/confidence mask
 3. **Adaptive deletion → anchor-level quarantine** — 错误反映到 anchor 可信度
-4. **BA-like random keyframe → dynamic packet window** — 结合 [[slam-frontend/GO-SLAM]]/[[mapping-reconstruction/OG-Mapping]]
+4. **BA-like random keyframe → dynamic packet window** — 结合 GO-SLAM/OG-Mapping
 5. **GS map 不能默认可信** — 支持"GS 不直接参与 CertifiedPacket"原则
 
 ### 不建议照搬
@@ -191,7 +191,7 @@ Phase 2: optimize Gaussians + keyframe poses
 
 ## 相关笔记
 
-- [[[[3dgs-slam/Gaussian-SLAM]]]]
+- [[3dgs-slam/Gaussian-SLAM]]
 - [[mapping-reconstruction/RGBDS-SLAM]]
 - [[mapping-reconstruction/GPS-SLAM]]
 

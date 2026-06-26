@@ -95,7 +95,7 @@ Appearance embedding allowed to explain color/exposure/view residual。Not allow
 
 ### 合理系统位置
 ```
-MASt3R/[[geometry-model/DUSt3R]]/[[geometry-model/SLAM3R]]/[[geometry-model/CUT3R]] → proposal
+MASt3R/DUSt3R/[[geometry-model/SLAM3R]]/CUT3R → proposal
 CertifiedGeometryPacket → gate
 CertifiedAnchor → geometry owner
 SEGS-like backend → structured ChildGS + AfME + frequency pyramid

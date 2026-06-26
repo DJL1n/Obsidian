@@ -7,7 +7,7 @@
 ## 论文列表
 
 - [[dynamic-gs/WildGS-SLAM]]
-- [[dynamic-gs/DGS-SLAM]]
+- DGS-SLAM
 - [[dynamic-gs/ADD-SLAM]]
 - [[dynamic-gs/Dy3DGS-SLAM]]
 - [[dynamic-gs/UP-SLAM]]

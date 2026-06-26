@@ -216,10 +216,10 @@ Outlier 定义：|measured depth - rendered depth| > 10 × median rendered depth
 
 ## 17. 与 [[mapping-reconstruction/S3LAM]] 区别
 
-[[mapping-reconstruction/S3LAM]]: ORB-SLAM2 + semantic clusters + planar BA
+S3LAM: ORB-SLAM2 + semantic clusters + planar BA
 ESLAM: neural implicit TSDF field + dense RGB-D mapping
 
-[[mapping-reconstruction/S3LAM]] 关注 semantic/object/structure prior；ESLAM 关注 dense continuous SDF representation。
+S3LAM 关注 semantic/object/structure prior；ESLAM 关注 dense continuous SDF representation。
 
 ---
 
@@ -267,7 +267,7 @@ CertifiedGeometryPacket 可加以下 gate：
 
 对 SkelGS-SLAM 的价值：
 - two-view robust geometry: **MASt3R**
-- semantic/structure grouping: **[[mapping-reconstruction/S3LAM]]**
+- semantic/structure grouping: **S3LAM**
 - surface-band/free-space/implicit dense geometry regularization: **ESLAM**
 
 ---

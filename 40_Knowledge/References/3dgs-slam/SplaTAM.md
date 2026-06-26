@@ -78,7 +78,7 @@ Densification mask：
 1. Silhouette low: S(p) < 0.5（map 没覆盖）
 2. Depth 前方有新几何: D_GT(p) < D_render(p) 且 depth error > λ median（λ=50）
 
-与 [[3dgs-slam/Gaussian-SLAM]] 区别：SplaTAM 基于 silhouette/depth mask，更直接；[[3dgs-slam/Gaussian-SLAM]] 更强调 alpha + NN sparsity。
+与 Gaussian-SLAM 区别：SplaTAM 基于 silhouette/depth mask，更直接；Gaussian-SLAM 更强调 alpha + NN sparsity。
 
 ---
 
@@ -193,9 +193,9 @@ SplaTAM = GS backend / silhouette-gated tracking / densification reference
 
 ## 相关笔记
 
-- [[[[3dgs-slam/Splat-SLAM]]]]
-- [[[[3dgs-slam/GS-SLAM]]]]
-- [[[[3dgs-slam/MCGS-SLAM]]]]
+- [[3dgs-slam/Splat-SLAM]]
+- [[3dgs-slam/GS-SLAM]]
+- [[3dgs-slam/MCGS-SLAM]]
 
 ## 方法继承
 

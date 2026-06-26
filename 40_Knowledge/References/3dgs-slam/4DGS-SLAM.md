@@ -45,8 +45,8 @@ tags:
 
 ## 相关笔记
 - [[3dgs-slam/Ti-4DGS]] — 时间初始化策略
-- [[[[3dgs-slam/GS-SLAM]]]] — RGB-D 3DGS SLAM baseline
-- [[[[dynamic-gs/CAD-SLAM]]]] — 动静解耦 SLAM
+- [[3dgs-slam/GS-SLAM]] — RGB-D 3DGS SLAM baseline
+- [[dynamic-gs/CAD-SLAM]] — 动静解耦 SLAM
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略
 
 ## 所属分类

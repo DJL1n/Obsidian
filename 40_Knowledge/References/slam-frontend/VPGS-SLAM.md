@@ -56,7 +56,7 @@ RGB + 3D points → tracking (2D coarse + 3D ICP fine + adaptive)
 Point cloud → voxelization → voxel centers → anchors。每个 anchor: position + feature + scaling factor + learnable offsets。Gaussian 属性由 anchor feature + viewing distance + direction 通过 MLP decoder 预测。
 
 ### Multi-resolution voxel size
-近处 fine voxel（细节），远处 coarse voxel（效率）。与 [[mapping-reconstruction/OG-Mapping]] / Scaffold-GS 思想一致但用于 online large-scale SLAM。
+近处 fine voxel（细节），远处 coarse voxel（效率）。与 OG-Mapping / Scaffold-GS 思想一致但用于 online large-scale SLAM。
 
 ---
 
@@ -109,7 +109,7 @@ Loop closure 后重叠 submaps → overlapping image pairs → 分别渲染 RGB/
 | ScanNet | **7.6 cm** | — | — |
 | KITTI | — | **21.37** | — |
 
-Replica ATE 0.21 优于 SplaTAM 0.41 / MonoGS 0.34 / [[3dgs-slam/Gaussian-SLAM]] 0.32。KITTI PSNR 21.37 远超早期 GS-SLAM（~14–15）。Memory 70.81 MB vs SplaTAM 273 MB。
+Replica ATE 0.21 优于 SplaTAM 0.41 / MonoGS 0.34 / Gaussian-SLAM 0.32。KITTI PSNR 21.37 远超早期 GS-SLAM（~14–15）。Memory 70.81 MB vs SplaTAM 273 MB。
 
 ---
 

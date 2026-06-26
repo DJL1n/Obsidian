@@ -15,6 +15,6 @@
 - [[3dgs-slam/RTG-SLAM]]
 - [[3dgs-slam/Flash-Mono]]
 - [[3dgs-slam/HI-SLAM2]]
-- [[3dgs-slam/Gaussian-SLAM]]
+- Gaussian-SLAM
 - [[3dgs-slam/DPV-SLAM]]
 - [[3dgs-slam/MAGiC-SLAM]]

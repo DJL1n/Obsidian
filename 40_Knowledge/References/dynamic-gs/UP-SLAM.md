@@ -62,7 +62,7 @@ Anchor 不是固定体素中心，而包含概率属性表示 motion degree / dy
 
 ## 7. Structured Gaussian decoding
 
-Scaffold-GS style: anchor feature + relative direction/distance → MLP → Gaussian attributes (color, opacity, rotation, scale)。与 [[mapping-reconstruction/OG-Mapping]] / VPGS / [[semantic/SEGS-SLAM]] 同类。
+Scaffold-GS style: anchor feature + relative direction/distance → MLP → Gaussian attributes (color, opacity, rotation, scale)。与 OG-Mapping / VPGS / [[semantic/SEGS-SLAM]] 同类。
 
 ---
 

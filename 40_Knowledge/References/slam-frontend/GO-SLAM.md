@@ -137,7 +137,7 @@ L = λc Lc + λdep Ldep + λeik Leik + λsdf Lsdf
 1. **真正 online global consistency** — loop closure + full BA 在线运行
 2. **DROID-style learned geometry 做 LC/BA** — learned dense flow/confidence，比 sparse ORB 更强
 3. **Mapping 随最新 global geometry 更新** — 选择 pose/depth 变化最大的 keyframes 更新
-4. **支持 monocular/stereo/RGB-D** — 比 [[mapping-reconstruction/ESLAM]]/[[3dgs-slam/Gaussian-SLAM]] 更泛化
+4. **支持 monocular/stereo/RGB-D** — 比 ESLAM/Gaussian-SLAM 更泛化
 5. **SDF/free-space 约束强于纯 photometric mapping** — ablation 明确
 
 ---
@@ -173,8 +173,8 @@ DPVO/DROID candidate geometry
 GO-SLAM = global geometry correction architecture reference
 DPVO = temporal tracking signal source
 MASt3R = dense geometry proposal
-[[mapping-reconstruction/ESLAM]] = SDF/free-space discipline
-[[3dgs-slam/Gaussian-SLAM]]/Scaffold-GS = GS backend
+ESLAM = SDF/free-space discipline
+Gaussian-SLAM/Scaffold-GS = GS backend
 CertifiedGeometryPacket/anchor skeleton = 核心研究层
 
 ---

@@ -1,6 +1,6 @@
 # Dynamic Visual SLAM using a General 3D Prior
 
-> arXiv:2406.xxxx ([[dynamic-gs/DGS-SLAM]] / Dynamic GS-SLAM using General 3D Prior) | 2024
+> arXiv:2406.xxxx (DGS-SLAM / Dynamic GS-SLAM using General 3D Prior) | 2024
 > 代码：有（具体仓库需确认，CVPR 2024 相关）
 
 ## 0. 一句话结论

@@ -6,9 +6,9 @@
 
 ## 论文列表
 
-- [[geometry-model/DUSt3R]]
+- DUSt3R
 - MASt3R
-- [[geometry-model/Spann3R]]
-- [[geometry-model/CUT3R]]
+- Spann3R
+- CUT3R
 - [[geometry-model/SLAM3R]]
 - [[geometry-model/MASt3R-SfM]]

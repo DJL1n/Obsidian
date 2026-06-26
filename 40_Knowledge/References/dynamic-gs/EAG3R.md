@@ -11,7 +11,7 @@ EAG3R = MonST3R + event stream：Retinex-inspired LightUp/SNR map + lightweight 
 
 ## 1. 解决什么问题
 
-RGB-only pointmap ([[geometry-model/DUSt3R]]/MonST3R) 在低光照、过曝、快速运动、运动模糊条件下退化。Event camera 在这些条件下仍能提供高频运动和边缘结构。EAG3R：把 event 加入 MonST3R pointmap 框架，在低光动态场景中提升 depth / pose / dynamic reconstruction。
+RGB-only pointmap (DUSt3R/MonST3R) 在低光照、过曝、快速运动、运动模糊条件下退化。Event camera 在这些条件下仍能提供高频运动和边缘结构。EAG3R：把 event 加入 MonST3R pointmap 框架，在低光动态场景中提升 depth / pose / dynamic reconstruction。
 
 ---
 

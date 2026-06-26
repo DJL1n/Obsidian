@@ -74,7 +74,7 @@ Sparse reciprocal matches 上的 3D matching loss（confidence-weighted, Adam）
 COLMAP 49.0/47.8 → VGGSfM 65.4/58.9 → DF-SfM 74.2/70.7 → **MASt3R-SfM 81.2/79.7**
 
 ### FlowMap splits
-MASt3R-SfM ≈ FlowMap，略弱于 [[slam-frontend/DROID-SLAM]]（但 DROID 只支持 video setting）。
+MASt3R-SfM ≈ FlowMap，略弱于 DROID-SLAM（但 DROID 只支持 video setting）。
 
 ### CO3Dv2 / RealEstate10K
 MASt3R-SfM mAA(30) = 88.0 / 86.8 vs DUSt3R-GA 76.7 / 67.7。

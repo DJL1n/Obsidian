@@ -152,8 +152,8 @@ MCGS-SLAM 从另一个方向说明：GS-SLAM 的真正瓶颈仍然是进入 Gaus
 
 ## 相关笔记
 
-- [[[[3dgs-slam/GS-SLAM]]]]
-- [[[[3dgs-slam/GauS-SLAM]]]]
+- [[3dgs-slam/GS-SLAM]]
+- [[3dgs-slam/GauS-SLAM]]
 
 ## 方法继承
 
