@@ -12,7 +12,7 @@ tags:
 > CVPR 2024. 论文整理笔记。
 > ## 0. 一句话结论
 
-GS-SLAM 是一个 RGB-D dense visual SLAM 系统，核心把 3DGS 作为场景地图表示，用可微 splatting 同时支持 RGB-D 渲染、camera tracking、mapping 优化和 Gaussian 增删。不是 monocular SLAM / [[slam-frontend/DPVO]]/DROID learned VO / offline NVS。
+GS-SLAM 是一个 RGB-D dense visual SLAM 系统，核心把 3DGS 作为场景地图表示，用可微 splatting 同时支持 RGB-D 渲染、camera tracking、mapping 优化和 Gaussian 增删。不是 monocular SLAM / DPVO/DROID learned VO / offline NVS。
 
 定位：RGB-D 条件下的 3DGS-SLAM early baseline / backend reference。
 
@@ -133,7 +133,7 @@ Phase 2: optimize Gaussians + keyframe poses
 
 ## 12. 对比
 
-| | GS-SLAM | [[3dgs-slam/SplaTAM]] | Gaussian-SLAM | MonoGS | [[mapping-reconstruction/OG-Mapping]] |
+| | GS-SLAM | SplaTAM | Gaussian-SLAM | MonoGS | [[mapping-reconstruction/OG-Mapping]] |
 |---|---|---|---|---|---|
 | Input | RGB-D | RGB-D | RGB-D | mono-first | RGB-D+pose |
 | Gaussian | anisotropic+SH | isotropic | anisotropic | anisotropic | anchor-structured |
@@ -163,15 +163,15 @@ Phase 2: optimize Gaussians + keyframe poses
 | 系统 | 定位 |
 |---|---|
 | **GS-SLAM** | **RGB-D 3DGS SLAM early baseline** |
-| [[3dgs-slam/SplaTAM]] | RGB-D + silhouette gate |
+| SplaTAM | RGB-D + silhouette gate |
 | Gaussian-SLAM | RGB-D + submap |
 | MonoGS | monocular-first + covisibility |
 | [[mapping-reconstruction/OG-Mapping]] | octree anchor + LOD |
-| [[matching-representation/Scaffold-GS]] | anchor-conditioned offline GS |
+| Scaffold-GS | anchor-conditioned offline GS |
 | [[mapping-reconstruction/ContextGS]] | anchor-level compression |
-| [[slam-frontend/DPVO]]/DROID | temporal tracking |
+| DPVO/DROID | temporal tracking |
 | [[slam-frontend/GO-SLAM]] | global correction |
-| [[geometry-model/MASt3R]]/[[geometry-model/DUSt3R]]/[[geometry-model/Spann3R]] | geometry proposal |
+| MASt3R/[[geometry-model/DUSt3R]]/[[geometry-model/Spann3R]] | geometry proposal |
 
 ---
 

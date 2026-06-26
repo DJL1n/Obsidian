@@ -24,7 +24,7 @@ RGB-D dense reconstruction/mapping + SDF fusion + residual Gaussian appearance r
 
 ## 2. 核心问题
 
-Gaussian-based RGB-D SLAM（[[3dgs-slam/SplaTAM]]/[[3dgs-slam/GS-SLAM]]）<20 FPS，需要大量 Gaussians + iterations。SDF fusion 极快（~0.1ms/frame）但颜色 blur/holes/artifacts。GPS-SLAM 折中：SDF 做主体几何和基础颜色，Gaussian 只修颜色残差。
+Gaussian-based RGB-D SLAM（SplaTAM/GS-SLAM）<20 FPS，需要大量 Gaussians + iterations。SDF fusion 极快（~0.1ms/frame）但颜色 blur/holes/artifacts。GPS-SLAM 折中：SDF 做主体几何和基础颜色，Gaussian 只修颜色残差。
 
 ---
 
@@ -123,7 +123,7 @@ GPS-SLAM 从系统层面支持你的"geometry first, GS after certification"。
 
 ### CertifiedGeometry-Plus-GS
 ```
-RGB → [[slam-frontend/DPVO]]/[[geometry-model/MASt3R]]/[[geometry-model/SLAM3R]] proposals
+RGB → DPVO/MASt3R/[[geometry-model/SLAM3R]] proposals
 → CertifiedGeometryPacket / CertifiedAnchorField
 → Gaussian residual appearance layer only
 ```
@@ -148,9 +148,9 @@ if certified surface exists + color residual high + geometry stable + local GS d
 | **GPS-SLAM** | **SDF + residual GS** | **geometry-first / GS-as-residual 设计参考** |
 | GS-SDF | LiDAR→NSDF→GS init+shape reg | geometry teacher |
 | [[mapping-reconstruction/ESLAM]]/[[slam-frontend/GO-SLAM]] | SDF/neural field | surface/free-space |
-| [[3dgs-slam/SplaTAM]]/[[3dgs-slam/MonoGS]]/[[3dgs-slam/GS-SLAM]] | full Gaussian map | GS baseline |
-| [[3dgs-slam/MGS-SLAM]] | [[slam-frontend/DPVO]]+MVS+GS | monocular scale closure |
-| VPGS/[[mapping-reconstruction/OG-Mapping]]/[[matching-representation/Scaffold-GS]] | anchor/voxel GS | ChildGS structure |
+| SplaTAM/MonoGS/GS-SLAM | full Gaussian map | GS baseline |
+| [[3dgs-slam/MGS-SLAM]] | DPVO+MVS+GS | monocular scale closure |
+| VPGS/[[mapping-reconstruction/OG-Mapping]]/Scaffold-GS | anchor/voxel GS | ChildGS structure |
 
 ---
 

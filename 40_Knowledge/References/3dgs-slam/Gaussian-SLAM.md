@@ -14,7 +14,7 @@ tags:
 
 ## 0. 一句话结论
 
-Gaussian-SLAM 是一个 RGB-D dense SLAM 系统，用 3D Gaussian Splatting 作为地图表示，同时做 tracking、mapping 和 photo-realistic rendering。不是单目 SLAM，不是 DROID/DPVO 那种 learned VO 前端，也不是 [[matching-representation/Scaffold-GS]] 那种离线 novel view synthesis。
+Gaussian-SLAM 是一个 RGB-D dense SLAM 系统，用 3D Gaussian Splatting 作为地图表示，同时做 tracking、mapping 和 photo-realistic rendering。不是单目 SLAM，不是 DROID/DPVO 那种 learned VO 前端，也不是 Scaffold-GS 那种离线 novel view synthesis。
 
 核心：RGB-D SLAM + 3D Gaussian map + submap-based online optimization + depth/color rendering loss + alpha/error-masked frame-to-model tracking。
 
@@ -165,7 +165,7 @@ Ablation：不用 mask ATE=12.77cm → 用 mask ATE=2.50cm (TUM fr1/desk)。
 
 ## 13. 与相关工作的关系
 
-| | vs 3DGS | vs ESLAM | vs SplaTAM | vs [[matching-representation/Scaffold-GS]] |
+| | vs 3DGS | vs ESLAM | vs SplaTAM | vs Scaffold-GS |
 |---|---|---|---|---|
 | 核心 | 离线→在线 | implicit→explicit | concurrent GS-SLAM | offline→online GS |
 | Tracking | 无→frame-to-model | render-based | similar | N/A |

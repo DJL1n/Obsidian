@@ -53,8 +53,8 @@ Frame-to-model on static regions only (dynamic mask applied)。Keyframe DBA (DRO
 | Method | PSNR | SSIM |
 |---|---|---|
 | ADD-SLAM | 22.41 | **0.89** |
-| [[3dgs-slam/MonoGS]] | 20.64 | 0.77 |
-| [[3dgs-slam/SplaTAM]] | 17.95 | 0.72 |
+| MonoGS | 20.64 | 0.77 |
+| SplaTAM | 17.95 | 0.72 |
 
 ### Ablation (mask方法对比)
 - 无动态检测: 52.5 cm
@@ -86,7 +86,7 @@ Frame-to-model on static regions only (dynamic mask applied)。Keyframe DBA (DRO
 ## 7. 对 SkelGS-SLAM 的启发
 
 ### ★ 最值借鉴：跨时间一致性破坏作为动态证据
-改为 pre-GS consistency oracle：[[slam-frontend/DPVO]]/DROID window depth-pose + stable anchor + certified static candidate + temporal repeatability，非 GS map render residual。
+改为 pre-GS consistency oracle：DPVO/DROID window depth-pose + stable anchor + certified static candidate + temporal repeatability，非 GS map render residual。
 
 ### 区分新遮挡 vs 暴露背景
 Observed depth < historical → 不适合生成静态 anchor

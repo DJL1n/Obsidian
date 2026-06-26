@@ -171,8 +171,8 @@ Keyframes: W = W_k (current window) ∪ W_r (2 random historical keyframes)。
 
 ### 合理组合
 ```
-[[slam-frontend/DPVO]]/DROID → temporal tracking
-[[geometry-model/MASt3R]] → wide-baseline geometry
+DPVO/DROID → temporal tracking
+MASt3R → wide-baseline geometry
 CertifiedGeometryPacket → certification gate
 MonoGS-like GS backend → render + covisibility + regularisation
 GS feedback → gated weak evidence only

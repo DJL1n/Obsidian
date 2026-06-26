@@ -5,7 +5,7 @@
 
 ## 0. 一句话结论
 
-EAG3R = MonST3R + event stream：Retinex-inspired LightUp/SNR map + lightweight event adapter + cross-attention + SNR-aware fusion + event-based photometric consistency loss。不是 [[3dgs-slam/GS-SLAM]] / 不是在线前端 / 但观测可靠性建模和 SNR-aware fusion 思想对你的 geometry packet certification 很有启发。
+EAG3R = MonST3R + event stream：Retinex-inspired LightUp/SNR map + lightweight event adapter + cross-attention + SNR-aware fusion + event-based photometric consistency loss。不是 GS-SLAM / 不是在线前端 / 但观测可靠性建模和 SNR-aware fusion 思想对你的 geometry packet certification 很有启发。
 
 ---
 
@@ -98,7 +98,7 @@ Train: MVSEC outdoor_day2 (normal daylight)。Test: MVSEC outdoor_night1-3 (zero
 
 1. **依赖 event camera** — 不能直接迁移到普通 RGB
 2. **真实 RGB-event-depth-pose 数据稀缺** — synthetic events 不稳定
-3. **不是实时 SLAM / 不是 [[3dgs-slam/GS-SLAM]]** — 偏离线 pointmap geometry
+3. **不是实时 SLAM / 不是 GS-SLAM** — 偏离线 pointmap geometry
 4. **没有解决 persistent map / loop / GS birth / GS feedback safety**
 
 ---
@@ -114,14 +114,14 @@ EAG3R 证明不应假设 RGB 处处可靠。对应你：每个 candidate anchor 
 ### ★ 动态去除应嵌入几何一致性，不是语义模块
 EAG3R 没有语义分割动态物体。通过 event 和 motion consistency 发现动态。支持你：流与相机运动不一致 / depth-normal 不稳定 / track repeatability 低 → 不应进入 persistent anchor/GS map。
 
-### 不能直接替代 [[slam-frontend/DPVO]]/DROID
+### 不能直接替代 DPVO/DROID
 Not real-time / no GS safety boundary。
 
 ---
 
 ## 8. 61 → 62 篇
 
-EAG3R 支持你"GS birth 必须经过几何认证，而不是直接消费前端输出"的方向。但它本身是 event-camera geometry frontend，不是 monocular [[3dgs-slam/GS-SLAM]]。
+EAG3R 支持你"GS birth 必须经过几何认证，而不是直接消费前端输出"的方向。但它本身是 event-camera geometry frontend，不是 monocular GS-SLAM。
 
 ---
 

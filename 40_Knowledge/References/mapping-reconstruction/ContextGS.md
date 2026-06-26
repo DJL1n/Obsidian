@@ -10,26 +10,26 @@ tags:
 > NeurIPS 2024. 论文整理笔记。
 > ## 0. 一句话结论
 
-ContextGS 是一个 3D Gaussian Splatting 压缩方法。构建在 [[matching-representation/Scaffold-GS]] 上，在 anchor level 做自回归上下文建模：先编码 coarse anchors，再用已编码的 coarse anchors 预测 finer anchors 的概率分布，然后做 entropy coding。不是 SLAM / tracking / geometry certification / online mapping。
+ContextGS 是一个 3D Gaussian Splatting 压缩方法。构建在 Scaffold-GS 上，在 anchor level 做自回归上下文建模：先编码 coarse anchors，再用已编码的 coarse anchors 预测 finer anchors 的概率分布，然后做 entropy coding。不是 SLAM / tracking / geometry certification / online mapping。
 
-定位：[[matching-representation/Scaffold-GS]] 表示上的压缩层。
+定位：Scaffold-GS 表示上的压缩层。
 
 ---
 
 ## 1. 核心问题
 
-3DGS 高质量实时渲染，但模型巨大（BungeeNeRF 平均 ~1.6 GB）。[[matching-representation/Scaffold-GS]] 通过 anchor 减少 Gaussian-level 冗余，但 anchor 之间仍有空间冗余。ContextGS：如何进一步压缩 anchor-level redundancy？
+3DGS 高质量实时渲染，但模型巨大（BungeeNeRF 平均 ~1.6 GB）。Scaffold-GS 通过 anchor 减少 Gaussian-level 冗余，但 anchor 之间仍有空间冗余。ContextGS：如何进一步压缩 anchor-level redundancy？
 
 方案：hierarchical anchor levels + autoregressive context model + hyperprior feature + entropy coding。
 
 ---
 
-## 2. 与 [[matching-representation/Scaffold-GS]] 关系
+## 2. 与 Scaffold-GS 关系
 
-[[matching-representation/Scaffold-GS]]: anchor → Gaussian（解决 Gaussian-level 冗余）
+Scaffold-GS: anchor → Gaussian（解决 Gaussian-level 冗余）
 ContextGS: anchors 编码压缩（解决 anchor-level 冗余）
 
-[[matching-representation/Scaffold-GS]] 是结构化渲染表示；ContextGS 是该表示的压缩编码器。解码后渲染与 [[matching-representation/Scaffold-GS]] 一致，无额外开销。
+Scaffold-GS 是结构化渲染表示；ContextGS 是该表示的压缩编码器。解码后渲染与 Scaffold-GS 一致，无额外开销。
 
 ---
 
@@ -54,14 +54,14 @@ L = rendering loss + entropy coding loss + masking/regularization。Rate-distort
 
 ## 4. 测试/解码流程
 
-Bitstream → decode hyperprior → decode L0 anchors → context → decode L1 → context → decode L2 → full anchor features → [[matching-representation/Scaffold-GS]] render。渲染零额外开销。
+Bitstream → decode hyperprior → decode L0 anchors → context → decode L1 → context → decode L2 → full anchor features → Scaffold-GS render。渲染零额外开销。
 
 ---
 
 ## 5. 实验表现
 
 ### 压缩比
-| Dataset | 3DGS | [[matching-representation/Scaffold-GS]] | ContextGS low | ContextGS high |
+| Dataset | 3DGS | Scaffold-GS | ContextGS low | ContextGS high |
 |---|---|---|---|---|
 | Mip-NeRF360 | 744.7 MB | 253.9 MB | **12.68 MB** | 18.41 MB |
 | T&T | 431.0 MB | 86.5 MB | **7.05 MB** | 11.80 MB |
@@ -71,7 +71,7 @@ Bitstream → decode hyperprior → decode L0 anchors → context → decode L1 
 PSNR 相当或略高（压缩约束可能减少 overfitting）。
 
 ### 消融 (BungeeNeRF)
-- [[matching-representation/Scaffold-GS]]: 183.0 MB, 26.62 PSNR
+- Scaffold-GS: 183.0 MB, 26.62 PSNR
 - w/o hyperprior+context: 18.67 MB, 26.93 PSNR
 - Full: **14.00 MB, 26.90 PSNR**
 
@@ -80,8 +80,8 @@ PSNR 相当或略高（压缩约束可能减少 overfitting）。
 ## 6. 强项
 
 1. **真正利用 anchor 之间空间依赖** — context model 捕捉邻域相关性
-2. **压缩比极高** — >100× vs 3DGS, ~15× vs [[matching-representation/Scaffold-GS]]
-3. **渲染零额外负担** — 解码后与 [[matching-representation/Scaffold-GS]] 相同
+2. **压缩比极高** — >100× vs 3DGS, ~15× vs Scaffold-GS
+3. **渲染零额外负担** — 解码后与 Scaffold-GS 相同
 4. **约束还可能提升渲染质量** — 减少冗余/过拟合
 
 ---
@@ -89,7 +89,7 @@ PSNR 相当或略高（压缩约束可能减少 overfitting）。
 ## 7. 局限
 
 1. **不是在线方法** — 不处理 tracking/pose/depth/loop/birth
-2. **依赖 [[matching-representation/Scaffold-GS]] anchor 表示** — 非通用
+2. **依赖 Scaffold-GS anchor 表示** — 非通用
 3. **解决 storage 冗余，非 geometry correctness**
 4. **自回归解码有编码/解压复杂度** — 适合存储分发，不适用于每帧实时
 
@@ -122,11 +122,11 @@ Your CertifiedAnchor: geometry certification unit
 | 系统 | 定位 |
 |---|---|
 | ContextGS | mature/frozen anchor-GS map compression |
-| [[matching-representation/Scaffold-GS]] | anchor → child Gaussian representation |
+| Scaffold-GS | anchor → child Gaussian representation |
 | [[mapping-reconstruction/OG-Mapping]] | octree anchor + online growth |
-| [[3dgs-slam/MonoGS]]/[[3dgs-slam/SplaTAM]]/[[3dgs-slam/Gaussian-SLAM]] | [[3dgs-slam/GS-SLAM]] tracking/mapping |
-| [[slam-frontend/DPVO]]/DROID | temporal tracking evidence |
-| [[geometry-model/MASt3R]]/[[geometry-model/DUSt3R]]/[[geometry-model/Spann3R]] | geometry proposal |
+| MonoGS/SplaTAM/[[3dgs-slam/Gaussian-SLAM]] | GS-SLAM tracking/mapping |
+| DPVO/DROID | temporal tracking evidence |
+| MASt3R/[[geometry-model/DUSt3R]]/[[geometry-model/Spann3R]] | geometry proposal |
 | **CertifiedGeometryPacket** | **your core safety layer** |
 
 ContextGS 最值得借鉴的不是"怎么生成 anchor"，而是"anchor 成熟以后如何利用邻域上下文分层压缩"。它提示：未来的 SkelGS-SLAM 不应只有 active anchors，还应有 frozen/mature/compressed anchors。但这些 anchors 在被 ContextGS-style 压缩前，必须先经过你自己的 geometry certification。

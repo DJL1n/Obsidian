@@ -50,7 +50,7 @@ tags:
   2. **Incremental update 范式**：新帧到来时不重建，只更新。这与 SkelGS-SLAM 的设计哲学完全一致——CertifiedGeometryPacket 是增量更新单元。
   3. **State retrieval as context**：从持久状态中检索相关上下文进行当前帧处理，可以类比 SkelGS-SLAM 中从 submap 检索相关 anchors 作为 geometry proposal 的先验。
   4. **Temporal consistency 正则化**：persistent state 对漂移的自然抑制，验证了 SkelGS-SLAM 中 submap-level 一致性校验的重要性。
-- **差异**：该模型是通用 3D 感知系统，非 SLAM；无显式位姿估计回路。SkelGS-SLAM 需要 [[slam-frontend/DPVO]] 前端提供实时 pose。
+- **差异**：该模型是通用 3D 感知系统，非 SLAM；无显式位姿估计回路。SkelGS-SLAM 需要 DPVO 前端提供实时 pose。
 - **融合方向**：SkelGS-SLAM 的 persistent state（submap）可以扩展为 multimodal state——不仅存储几何（anchor positions, Gaussian attributes），还存储 semantic priors（来自基础模型的 scene understanding）。这将 SkelGS-SLAM 从纯几何 SLAM 推向 perception-level 系统。具体实现上，可以用 MASt3R 或类似基础模型作为 persistent state 的 semantic update module，在 CertifiedGeometryPacket 中附加语义标签。
 
 ## 相关笔记

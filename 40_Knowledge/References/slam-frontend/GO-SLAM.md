@@ -144,7 +144,7 @@ L = λc Lc + λdep Ldep + λeik Leik + λsdf Lsdf
 
 ## 12. 局限
 
-1. **不是 [[3dgs-slam/GS-SLAM]]** — implicit SDF，非 Gaussian map
+1. **不是 GS-SLAM** — implicit SDF，非 Gaussian map
 2. **计算和显存重** — ~8 FPS, ~18 GB GPU
 3. **依赖 DROID 前端** — pretrained DROID weights
 4. **Monocular scale 仍需谨慎** — 不天然给 metric scale
@@ -172,9 +172,9 @@ DPVO/DROID candidate geometry
 ### 定位
 GO-SLAM = global geometry correction architecture reference
 DPVO = temporal tracking signal source
-[[geometry-model/MASt3R]] = dense geometry proposal
+MASt3R = dense geometry proposal
 [[mapping-reconstruction/ESLAM]] = SDF/free-space discipline
-[[3dgs-slam/Gaussian-SLAM]]/[[matching-representation/Scaffold-GS]] = GS backend
+[[3dgs-slam/Gaussian-SLAM]]/Scaffold-GS = GS backend
 CertifiedGeometryPacket/anchor skeleton = 核心研究层
 
 ---

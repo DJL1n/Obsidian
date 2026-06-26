@@ -6,7 +6,7 @@
 
 ## 论文列表
 
-- [[slam-frontend/DPVO]]
+- DPVO
 - [[slam-frontend/DROID-SLAM]]
 - [[slam-frontend/GO-SLAM]]
 - [[slam-frontend/FlashSLAM]]

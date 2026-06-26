@@ -5,7 +5,7 @@
 
 RTG-SLAM 是一个面向大场景的 RGB-D 实时 Gaussian SLAM 系统。核心：compact opaque/transparent Gaussian 表示 + depth rendering ≠ color blending + stable/unstable state management + 显式 birth 事件。
 
-不是单目 / dynamic / 最高渲染上限 / DROID/[[slam-frontend/DPVO]] frontend。
+不是单目 / dynamic / 最高渲染上限 / DROID/DPVO frontend。
 
 ---
 
@@ -46,7 +46,7 @@ Keyframe selection (rot/trans threshold)。只优化 top color-error pixels。On
 ## 3. 实验
 
 ### Speed / Memory
-| Scene | RTG-SLAM | [[3dgs-slam/SplaTAM]] |
+| Scene | RTG-SLAM | SplaTAM |
 |---|---|---|
 | Replica FPS | **17.24** | — |
 | Azure Home FPS | **17.90** | 0.31 (OOM) |
@@ -60,14 +60,14 @@ Keyframe selection (rot/trans threshold)。只优化 top color-error pixels。On
 | Co-SLAM | 2.74 |
 | [[mapping-reconstruction/ESLAM]] | 2.11 |
 | Point-SLAM | 2.38 |
-| [[3dgs-slam/SplaTAM]] | 3.39 |
+| SplaTAM | 3.39 |
 | ORB-SLAM2 | 1.00 |
 
 ### Geometry (ScanNet++)
 | Method | Acc | Acc Ratio |
 |---|---|---|
 | RTG-SLAM | **0.95** | **96.41** |
-| [[3dgs-slam/SplaTAM]] | 1.32 | 95.31 |
+| SplaTAM | 1.32 | 95.31 |
 
 ---
 
@@ -118,7 +118,7 @@ RGB-D ICP 不适合 monocular predicted depth。
 | [[dynamic-gs/DGS-SLAM]] | RGB-D 动态去动态 | dynamic gate / provenance |
 | ADD-SLAM | RGB-D 动态+ consistency | dynamic-risk / occlusion |
 | [[mapping-reconstruction/RGBDS-SLAM]] | RGB-D 语义 pyramid | pyramid / multi-channel |
-| [[geometry-model/MASt3R]]-SfM | 离线 SfM | constrained pointmap / anchor depth |
+| MASt3R-SfM | 离线 SfM | constrained pointmap / anchor depth |
 
 ---
 

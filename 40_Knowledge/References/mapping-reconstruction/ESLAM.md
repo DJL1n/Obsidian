@@ -12,7 +12,7 @@ tags:
 > CVPR 2023 Highlight. 论文整理笔记。
 > ## 0. 一句话结论
 
-ESLAM 是一个 RGB-D neural implicit dense SLAM 系统。核心不是 DROID 那种 learned dense BA，也不是 [[geometry-model/MASt3R]] 那种 two-view pointmap prior，而是用多尺度 tri-plane 特征 + shallow MLP decoder + TSDF 直接监督的高效 hybrid implicit representation，替代 iMAP/NICE-SLAM 中较重的 MLP 或 voxel-grid。
+ESLAM 是一个 RGB-D neural implicit dense SLAM 系统。核心不是 DROID 那种 learned dense BA，也不是 MASt3R 那种 two-view pointmap prior，而是用多尺度 tri-plane 特征 + shallow MLP decoder + TSDF 直接监督的高效 hybrid implicit representation，替代 iMAP/NICE-SLAM 中较重的 MLP 或 voxel-grid。
 
 压缩：RGB-D sequence → initialize pose + neural implicit TSDF map → tracking (Adam optimize pose by rendering loss) → mapping (optimize feature planes + shallow decoders + selected poses) → SDF volume rendering → marching cubes mesh。
 
@@ -203,9 +203,9 @@ Outlier 定义：|measured depth - rendered depth| > 10 × median rendered depth
 
 ---
 
-## 16. 与 [[geometry-model/MASt3R]]-SLAM 区别
+## 16. 与 MASt3R-SLAM 区别
 
-| | [[geometry-model/MASt3R]]-SLAM | ESLAM |
+| | MASt3R-SLAM | ESLAM |
 |---|---|---|
 | 输入 | monocular RGB | RGB-D |
 | 核心 | two-view pointmap prior | TSDF neural implicit field |
@@ -223,7 +223,7 @@ ESLAM: neural implicit TSDF field + dense RGB-D mapping
 
 ---
 
-## 18. 与 [[3dgs-slam/GS-SLAM]] / 3DGS 的关系
+## 18. 与 GS-SLAM / 3DGS 的关系
 
 ### 可借鉴点
 
@@ -237,7 +237,7 @@ ESLAM: neural implicit TSDF field + dense RGB-D mapping
 ## 19. 对 SkelGS-SLAM 的启发
 
 ### 不适合作为主基座
-ESLAM 是 RGB-D neural implicit dense SLAM，不解决 monocular scale，不提供 DROID/[[slam-frontend/DPVO]] 的 temporal tracking signal。
+ESLAM 是 RGB-D neural implicit dense SLAM，不解决 monocular scale，不提供 DROID/DPVO 的 temporal tracking signal。
 
 ### 适合作为 geometry certification 思想来源
 
@@ -259,15 +259,14 @@ CertifiedGeometryPacket 可加以下 gate：
 
 | 系统 | 定位 |
 |---|---|
-| [[geometry-model/MASt3R]]-SLAM | strong monocular two-view pointmap prior |
+| MASt3R-SLAM | strong monocular two-view pointmap prior |
 | [[slam-frontend/DROID-SLAM]] | dense recurrent pose-depth optimization |
-| [[slam-frontend/DPVO]] | lightweight sparse patch recurrent VO |
+| DPVO | lightweight sparse patch recurrent VO |
 | [[mapping-reconstruction/S3LAM]] | semantic cluster + structural plane prior |
 | **ESLAM** | **RGB-D TSDF neural implicit dense mapping** |
 
 对 SkelGS-SLAM 的价值：
-- tracking/temporal anchor support: **DROID/[[slam-frontend/DPVO]]**
-- two-view robust geometry: **[[geometry-model/MASt3R]]**
+- two-view robust geometry: **MASt3R**
 - semantic/structure grouping: **[[mapping-reconstruction/S3LAM]]**
 - surface-band/free-space/implicit dense geometry regularization: **ESLAM**
 

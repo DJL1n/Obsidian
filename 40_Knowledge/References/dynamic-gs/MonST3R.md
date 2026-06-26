@@ -68,7 +68,7 @@ Sliding temporal window（非全连接）。L = L_DUSt3R_alignment + λ_smooth L
 ### Camera pose
 | Method | Sintel ATE | TUM-dyn ATE | ScanNet ATE |
 |---|---|---|---|
-| [[slam-frontend/DPVO]] | 0.115 | — | — |
+| DPVO | 0.115 | — | — |
 | LEAP-VO | **0.089** | **0.046** | 0.070 |
 | CasualSAM | 0.141 | 0.045 | 0.158 |
 | [[geometry-model/DUSt3R]] w/ mask | 0.417 | 0.127 | 0.081 |
@@ -97,16 +97,15 @@ MonST3R 不是绝对 pose SOTA，但 joint depth+pose+dynamic geometry 统一输
 
 ### ★ Geometry-first dynamic region discovery
 MonST3R 的 confident static region = optical flow ≈ camera-induced flow。可改写为你的 anchor admission evidence：
-- [[slam-frontend/DPVO]] flow ≈ depth-induced flow → mature static support
+- DPVO flow ≈ depth-induced flow → mature static support
 - 不一致 → dynamic / unreliable / no GS birth
 
 ### ★ Per-timestep geometry 不强迫持久化
 动态物体只应作为 per-timestep observation，不进入 persistent anchor / GS map。与你的 "anchor maturity / explicit admission" 一致。
 
 ### ★ 离线诊断工具
-MonST3R → per-frame depth + pose + static/dynamic mask for evaluating your [[slam-frontend/DPVO]]/DROID packet quality。
 
-### ★ 不支持 [[geometry-model/MASt3R]] 作为动态 SLAM 底座
+### ★ 不支持 MASt3R 作为动态 SLAM 底座
 MonST3R 明确指出 [[geometry-model/DUSt3R]] 在动态场景中会错误对齐 moving foreground 或无法估计前景深度。支持你：原始 pointmap foundation model 不适合直接作为动态 SLAM 几何底座。
 
 ---

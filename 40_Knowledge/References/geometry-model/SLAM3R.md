@@ -12,7 +12,7 @@ tags:
 > CVPR 2025 Highlight. 论文整理笔记。
 > ## 0. 一句话结论
 
-SLAM3R 是一个 RGB-only monocular dense reconstruction / dense SLAM 系统。核心：sliding-window I2P local pointmap reconstruction + L2W learned local-to-world registration + no explicit camera parameter solving + 20+ FPS。不是 3DGS-SLAM / [[slam-frontend/DPVO]]/DROID recurrent BA / explicit pose graph system。
+SLAM3R 是一个 RGB-only monocular dense reconstruction / dense SLAM 系统。核心：sliding-window I2P local pointmap reconstruction + L2W learned local-to-world registration + no explicit camera parameter solving + 20+ FPS。不是 3DGS-SLAM / DPVO/DROID recurrent BA / explicit pose graph system。
 
 ---
 
@@ -126,19 +126,15 @@ No canonical normalization — output scale must align with existing scene frame
 
 1. **无显式 BA / pose graph** — large-scale 仍 drift
 2. **不是 tracking-first SLAM** — 无 explicit pose tracking / loop
-3. **无 [[slam-frontend/DPVO]]/DROID temporal residual trace** — 无 patch lifecycle / BA signal
+3. **无 DPVO/DROID temporal residual trace** — 无 patch lifecycle / BA signal
 4. **Pointmap 仍不是 GS-ready geometry** — 需 certification
-5. **不能替代 [[slam-frontend/DPVO]]/DROID temporal backbone**
 
 ---
 
 ## 10. 对 SkelGS-SLAM 的启发
 
 ### 强 geometry proposal source
-SLAM3R pointmaps → CandidateGeometry → compare with [[slam-frontend/DPVO]]/MASt3R/depth-normal → coherence check。
 
-### 不能替代 [[slam-frontend/DPVO]] temporal backbone
-SLAM3R 无 patch residual/confidence/lifecycle。主 tracking backbone 仍应是 [[slam-frontend/DPVO]]/DROID。
 
 ### I2P window design → packet 启发
 Multi-frame local evidence → candidate packet。但 packet 还需 certification。
@@ -157,7 +153,6 @@ SLAM3R 自己承认无 BA 会 drift → proposal 不能直接当 truth。
 ## 11. 建议系统位置
 
 ```
-RGB → [[slam-frontend/DPVO]]/DROID (temporal)
      → MASt3R (pairwise witness)
      → SLAM3R (multi-frame dense proposal)
      → depth-normal predictor (metric surface)
@@ -175,9 +170,8 @@ RGB → [[slam-frontend/DPVO]]/DROID (temporal)
 | **SLAM3R** | **RGB-only dense reconstruction** | **dense proposal / learned reg / retrieval** |
 | DUSt3R | pairwise pointmap prior | foundation |
 | Spann3R | spatial memory | memory proposal |
-| [[slam-frontend/DPVO]]/DROID | temporal optimization | temporal backbone |
 | [[slam-frontend/GO-SLAM]] | global correction | global consistency |
-| [[3dgs-slam/GS-SLAM]] variants | GS backend | map reference |
+| GS-SLAM variants | GS backend | map reference |
 
 ---
 

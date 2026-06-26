@@ -122,7 +122,7 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 不是只靠时间邻域，也不是全连接。Keyframe core + NN edges + retrieval edges。
 
 ### 不能解决的核心痛点
-不是 online SLAM / 缺乏 [[slam-frontend/DPVO]]/DROID temporal residual / 不是 geometry certification。
+不是 online SLAM / 缺乏 DPVO/DROID temporal residual / 不是 geometry certification。
 
 ---
 

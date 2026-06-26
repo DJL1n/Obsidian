@@ -6,8 +6,8 @@
 
 ## 论文列表
 
-- [[3dgs-slam/MonoGS]]
-- [[3dgs-slam/GS-SLAM]]
+- MonoGS
+- GS-SLAM
 - [[3dgs-slam/Splat-SLAM]]
 - [[3dgs-slam/GigaSLAM]]
 - [[3dgs-slam/SING3R-SLAM]]

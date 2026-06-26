@@ -11,7 +11,7 @@ DGS-SLAM 是一个 RGB-D 动态环境下的 Gaussian Splatting SLAM 系统。核
 
 ## 1. 解决什么问题
 
-普通 GS-SLAM ([[3dgs-slam/SplaTAM]]/[[3dgs-slam/MonoGS]]) 默认静态场景，动态物体会：
+普通 GS-SLAM (SplaTAM/MonoGS) 默认静态场景，动态物体会：
 1. tracking 误导：动态物体 residual 拉偏 pose
 2. mapping 污染：动态物体写入 Gaussian map → ghosting/拖影/重影
 
@@ -29,7 +29,7 @@ Frame-to-model: render RGB/depth → dynamic mask (Track Anything) + opacity mas
 - Robust: rendered vs input photometric residual → histogram/perecentile outlier → smoothed。补漏 shadow/边界/artifact。
 
 ### Gaussian Insertion & Pruning
-First frame: depth unprojection, exclude dynamic regions, fill depth holes。New keyframe: insert Gaussians 时排除动态区域和 invalid depth。沿用 3DGS/[[3dgs-slam/MonoGS]] densification/pruning。
+First frame: depth unprojection, exclude dynamic regions, fill depth holes。New keyframe: insert Gaussians 时排除动态区域和 invalid depth。沿用 3DGS/MonoGS densification/pruning。
 
 ### Loop-aware Keyframe Management
 每个 Gaussian 记录 source keyframe ID。当前帧可见 Gaussians 中若某历史 keyframe ID 占比高 → loop/re-visit → 将该 keyframe 重新加入优化 window。
@@ -44,22 +44,22 @@ Gaussian map params + selected keyframe poses。RGB+depth residual + isotropic r
 ### NVS (TUM dynamic)
 | Method | PSNR | SSIM | LPIPS |
 |---|---|---|---|
-| [[3dgs-slam/SplaTAM]] | 15.55 | 0.633 | 0.413 |
-| [[3dgs-slam/MonoGS]] | 15.89 | 0.621 | 0.358 |
+| SplaTAM | 15.55 | 0.633 | 0.413 |
+| MonoGS | 15.89 | 0.621 | 0.358 |
 | **DGS-SLAM** | **20.63** | **0.807** | **0.186** |
 
 ### Tracking (TUM dynamic)
 | Method | Avg ATE |
 |---|---|
-| [[3dgs-slam/SplaTAM]] | 166.0 cm |
-| [[3dgs-slam/MonoGS]] | 37.7 cm |
+| SplaTAM | 166.0 cm |
+| MonoGS | 37.7 cm |
 | **DGS-SLAM** | **3.0 cm** |
 
 ### Tracking (Bonn dynamic)
 | Method | Avg ATE |
 |---|---|
 | ORB-SLAM3 | 29.8 cm |
-| [[3dgs-slam/MonoGS]] | 32.9 cm |
+| MonoGS | 32.9 cm |
 | **DGS-SLAM** | **7.3 cm** |
 | DynaSLAM | 4.8 cm |
 
@@ -72,7 +72,7 @@ Gaussian map params + selected keyframe poses。RGB+depth residual + isotropic r
 | Full | **7.32 cm** |
 
 ### Runtime
-~1.6 FPS (不含 segmentation)，[[3dgs-slam/MonoGS]] ~1.07 FPS。
+~1.6 FPS (不含 segmentation)，MonoGS ~1.07 FPS。
 
 ---
 
@@ -103,10 +103,10 @@ Dynamic-risk 高 / temporal repeatability 低 / depth-normal 差 → 不允许 a
 每个 anchor 记录 birth frame id / packet id / supporting observations / maturity。用于 loop-aware reobservation、maturity、submap overlap。
 
 ### Robust mask 的"后验补漏"思想
-Segmentation 不是最终结论 → 必须被几何一致性验证。你的版本：[[slam-frontend/DPVO]]/DROID/HI-SLAM2 prediction + [[geometry-model/MASt3R]] consistency + read-only anchor support，不是 GS render。
+Segmentation 不是最终结论 → 必须被几何一致性验证。你的版本：DPVO/DROID/HI-SLAM2 prediction + MASt3R consistency + read-only anchor support，不是 GS render。
 
 ### 不建议借：GS residual 直接影响前端
-DGS-SLAM 的核心闭环（GS render → residual mask → tracking/mapping）在你的 pre-certification 阶段危险。你的边界：frontend authority = [[slam-frontend/DPVO]]/DROID/anchor；backend evaluator = GS rendering only evaluates, 不反向改 pose/depth/anchor。
+DGS-SLAM 的核心闭环（GS render → residual mask → tracking/mapping）在你的 pre-certification 阶段危险。你的边界：frontend authority = DPVO/DROID/anchor；backend evaluator = GS rendering only evaluates, 不反向改 pose/depth/anchor。
 
 ---
 

@@ -78,7 +78,7 @@ Local map → opacity reset 0.01 → merge into global → NetVLAD co-visible su
 | Method | Avg ATE |
 |---|---|
 | SplaTAM | 89.41 cm |
-| [[3dgs-slam/MonoGS]] | 12.88 cm |
+| MonoGS | 12.88 cm |
 | LoopSplat | 2.05 cm |
 | **GauS-SLAM** | **0.31 cm** |
 

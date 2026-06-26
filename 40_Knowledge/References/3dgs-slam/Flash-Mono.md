@@ -1,11 +1,11 @@
 # Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM
 
-> ICLR 2026 Poster. Predict-and-Refine monocular [[3dgs-slam/GS-SLAM]] via recurrent feed-forward 2DGS.
+> ICLR 2026 Poster. Predict-and-Refine monocular GS-SLAM via recurrent feed-forward 2DGS.
 > 📄 论文全文：arXiv 2604.03092
 
 ## 0. 一句话结论
 
-Flash-Mono 把 monocular [[3dgs-slam/GS-SLAM]] 从 每帧从零 Train-from-Scratch Gaussian optimization 推到 recurrent feed-forward 直接预测 pose + per-pixel 2DGS surfel + 轻量 backend refine。795.7M param Transformer + hidden state + submap + 2DGS + hidden-state loop closure。不是可解释几何 BA 路线 / 但 Predict-and-Refine 范式对你的 GS birth 设计很有启发。
+Flash-Mono 把 monocular GS-SLAM 从 每帧从零 Train-from-Scratch Gaussian optimization 推到 recurrent feed-forward 直接预测 pose + per-pixel 2DGS surfel + 轻量 backend refine。795.7M param Transformer + hidden state + submap + 2DGS + hidden-state loop closure。不是可解释几何 BA 路线 / 但 Predict-and-Refine 范式对你的 GS birth 设计很有启发。
 
 ---
 
@@ -102,7 +102,7 @@ Frontend 65 ms/frame, Backend 77.5 ms/frame。~10× 加速。
 1. **Predict-and-Refine 范式** — Gaussian 从零优化 → feed-forward 预测
 2. **2DGS surfel** — 比 3D ellipsoid 更适合 SLAM 几何
 3. **Hidden-state loop closure** — 非传统特征匹配，一次前向得 relocalization
-4. **~10× speedup** vs monocular [[3dgs-slam/GS-SLAM]]
+4. **~10× speedup** vs monocular GS-SLAM
 5. **Adaptive voxelization** — 有效压缩 per-pixel 预测
 6. **ScanNet/BundleFusion tracking+rendering 强于 [[slam-frontend/MASt3R-SLAM]]**
 

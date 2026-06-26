@@ -128,7 +128,7 @@ DUSt3R: input pair → directly regress pointmaps → optional global alignment
 ### 最适合作为 dense geometry proposal source
 - Selected keyframe pair → DUSt3R pointmaps
 - Depth candidate, point cloud candidate, wide-baseline edge
-- [[slam-frontend/DPVO]] drift 的外部对照
+- DPVO drift 的外部对照
 - Anchor candidate 的 pairwise support
 
 ### 不适合
@@ -137,7 +137,7 @@ DUSt3R: input pair → directly regress pointmaps → optional global alignment
 ### DUSt3R → CandidatePacket, 非 CertifiedPacket
 ```
 DUSt3R output → CandidateGeometryPacket
-→ [[slam-frontend/DPVO]] temporal support
+→ DPVO temporal support
 → depth-normal consistency
 → scale/gauge check
 → free-space check
@@ -147,8 +147,6 @@ DUSt3R output → CandidateGeometryPacket
 ```
 
 ### 作为 failure detector
-[[slam-frontend/DPVO]] stable + DUSt3R inconsistent → candidate risk ↑
-DUSt3R strong + [[slam-frontend/DPVO]] stable → anchor support ↑
 
 ### 对 anchor skeleton 的启发
 Pointmap 可快速给出 dense local surface proposal，但 anchor 长期稳定仍需要 temporal + surface + pairwise + global + GS evidence。
@@ -162,11 +160,10 @@ Pointmap 可快速给出 dense local surface proposal，但 anchor 长期稳定�
 | **DUSt3R** | **pairwise dense 3D foundation prior** | **foundational geometry proposal** |
 | MASt3R | DUSt3R + better matching | wide-baseline witness |
 | Spann3R | DUSt3R + spatial memory | sequence proposal |
-| [[slam-frontend/DPVO]] | temporal optimization | temporal backbone |
 | [[slam-frontend/GO-SLAM]] | global correction | global consistency |
 | GS methods | GS backend | map reference |
 
-DUSt3R 真正价值：把几何视觉从"先求相机再三角化"改成"直接回归 pointmap"。但对 [[3dgs-slam/GS-SLAM]] 来说，DUSt3R pointmap 只能是强 geometry proposal，不能是最终 geometry truth；必须经过 temporal/scale/normal/free-space/global consistency 认证。
+DUSt3R 真正价值：把几何视觉从"先求相机再三角化"改成"直接回归 pointmap"。但对 GS-SLAM 来说，DUSt3R pointmap 只能是强 geometry proposal，不能是最终 geometry truth；必须经过 temporal/scale/normal/free-space/global consistency 认证。
 
 ---
 

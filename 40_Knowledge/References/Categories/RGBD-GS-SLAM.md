@@ -6,7 +6,7 @@
 
 ## 论文列表
 
-- [[3dgs-slam/SplaTAM]]
+- SplaTAM
 - [[3dgs-slam/GauS-SLAM]]
 - [[3dgs-slam/MCGS-SLAM]]
 - [[3dgs-slam/MGS-SLAM]]

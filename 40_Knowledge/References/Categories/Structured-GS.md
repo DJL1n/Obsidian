@@ -6,7 +6,7 @@
 
 ## 论文列表
 
-- [[matching-representation/Scaffold-GS]]
+- Scaffold-GS
 - [[mapping-reconstruction/ContextGS]]
 - [[semantic/SEGS-SLAM]]
 - [[semantic/MG-SLAM]]

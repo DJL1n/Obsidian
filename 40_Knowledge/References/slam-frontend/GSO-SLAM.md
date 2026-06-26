@@ -67,12 +67,12 @@ DSO two-frame direct image alignment → pose。Keyframe selection: FoV change /
 ### Tracking
 | Dataset | GSO-SLAM | Best mono baseline |
 |---|---|---|
-| Replica | **0.46 cm** | Photo-SLAM 1.03, [[3dgs-slam/MonoGS]] 17.03 |
-| INS Corridor | **0.64 m** | Photo-SLAM w/LC 3.12, [[3dgs-slam/MonoGS]] 9.48 |
+| Replica | **0.46 cm** | Photo-SLAM 1.03, MonoGS 17.03 |
+| INS Corridor | **0.64 m** | Photo-SLAM w/LC 3.12, MonoGS 9.48 |
 
 ### Mapping (Replica)
 PSNR **34.48**, SSIM 0.943, Depth L1 8.12 cm, **30 FPS**。
-[[3dgs-slam/MonoGS]]: 0.84 FPS, [[3dgs-slam/SplaTAM]]: 0.21 FPS。GSO-SLAM 比 [[3dgs-slam/MonoGS]] 快 36×。
+MonoGS: 0.84 FPS, SplaTAM: 0.21 FPS。GSO-SLAM 比 MonoGS 快 36×。
 
 ### Joint opt ablation
 w/o: PSNR 34.10, ATE 0.688, Depth L1 9.744
@@ -112,8 +112,8 @@ GSO-SLAM 的 EM 不是 simple VO→GS。你的版本：E-step update GS only fro
 ### Semi-dense 局限支持你的 anchor skeleton
 DSO 在 textureless 区域 coverage 不足 → 你需要更广覆盖的多源 certification。
 
-### 不可替代 [[slam-frontend/DPVO]]
-DSO 受 motion blur/noise/exposure/dynamic 影响，[[slam-frontend/DPVO]]/DROID 更适合主 temporal backbone。
+### 不可替代 DPVO
+DSO 受 motion blur/noise/exposure/dynamic 影响，DPVO/DROID 更适合主 temporal backbone。
 
 ---
 
@@ -122,9 +122,8 @@ DSO 受 motion blur/noise/exposure/dynamic 影响，[[slam-frontend/DPVO]]/DROID
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **GSO-SLAM** | **DSO+2DGS EM coupling** | **bidirectional coupling / GS init reference** |
-| [[3dgs-slam/MGS-SLAM]] | [[slam-frontend/DPVO]]+MVS+GS | [[slam-frontend/DPVO]] 路线参考 |
 | HI-SLAM2 | dense+priors+GS | geometry alignment |
-| [[3dgs-slam/MonoGS]] | GS map-centric | mono GS baseline |
+| MonoGS | GS map-centric | mono GS baseline |
 | GS-SDF/[[mapping-reconstruction/GPS-SLAM]] | geometry-first | teacher/residual |
 
 ---

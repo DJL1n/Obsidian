@@ -117,7 +117,7 @@ Office-09: strong specular reflection → prediction drift（无 BA，可能 dri
 1. **没有 BA / global correction** — early error → memory 污染 → drift
 2. **Loop closing 仍然困难** — accumulated errors / outliers
 3. **Memory 会被 outliers 污染** — attention clipping 说明 learned memory ≠ reliable
-4. **不输出显式 pose-depth optimization trace** — 无 [[slam-frontend/DPVO]]/DROID 式 BA residual/confidence/lifecycle
+4. **不输出显式 pose-depth optimization trace** — 无 DPVO/DROID 式 BA residual/confidence/lifecycle
 5. **训练依赖大量 posed RGB-D 数据**
 
 ---
@@ -132,7 +132,7 @@ Office-09: strong specular reflection → prediction drift（无 BA，可能 dri
 - Memory sparsification → only keep geometry-stable, high-support anchors
 
 ### 合理位置
-Spann3R output → CandidateGeometryPacket → cross-check with [[slam-frontend/DPVO]] + depth-normal + free-space → global correction → CertifiedGeometryPacket → GS
+Spann3R output → CandidateGeometryPacket → cross-check with DPVO + depth-normal + free-space → global correction → CertifiedGeometryPacket → GS
 
 ### 不合理位置
 Spann3R pointmap → directly overwrite VideoBuffer depth/pose → directly birth Gaussian
@@ -141,8 +141,7 @@ Spann3R pointmap → directly overwrite VideoBuffer depth/pose → directly birt
 Spann3R 自己承认没有 BA 会 drift。你的系统需要：
 - Spann3R-style memory (proposal)
 - [[slam-frontend/GO-SLAM]]-style correction (global BA)
-- [[slam-frontend/DPVO]]-style temporal evidence (lifecycle)
-- [[3dgs-slam/GS-SLAM]]-style alpha feedback (gating)
+- GS-SLAM-style alpha feedback (gating)
 
 ---
 
@@ -150,11 +149,10 @@ Spann3R 自己承认没有 BA 会 drift。你的系统需要：
 
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
-| [[slam-frontend/DPVO]] | temporal tracking | temporal backbone |
 | MASt3R | pairwise 3D geometry | wide-baseline witness |
 | **Spann3R** | **learned spatial memory reconstruction** | **memory abstraction / global pointmap proposal** |
 | [[slam-frontend/GO-SLAM]] | online global LC/BA | global correction |
-| [[matching-representation/Scaffold-GS]] | structured GS backend | anchor-conditioned ChildGS |
+| Scaffold-GS | structured GS backend | anchor-conditioned ChildGS |
 
 Spann3R 最值得借鉴的不是"直接拿它做前端"，而是它的 memory 设计。但它没有 BA、loop correction 和 GS birth certification，只能作为 geometry proposal / memory abstraction，不能作为最终 geometry truth。
 

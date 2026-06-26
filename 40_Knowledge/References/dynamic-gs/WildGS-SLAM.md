@@ -82,7 +82,7 @@ Keyframe poses 全局优化。去除 disparity regularization（multiview 足够
 ### Tracking
 | Dataset | WildGS-SLAM | Best baseline |
 |---|---|---|
-| Wild-SLAM MoCap | **0.46 cm** | [[slam-frontend/DROID-SLAM]] 16.17, [[3dgs-slam/MonoGS]] 47.99 |
+| Wild-SLAM MoCap | **0.46 cm** | [[slam-frontend/DROID-SLAM]] 16.17, MonoGS 47.99 |
 | Bonn Dynamic | **2.31 cm** | [[slam-frontend/DROID-SLAM]] 4.91 |
 | TUM Dynamic | **1.51 cm** | [[slam-frontend/DROID-SLAM]] 1.62 |
 
@@ -132,7 +132,7 @@ WildGS-SLAM uncertainty > MonST3R mask > YOLOv8+SAM mask in ATE。
 
 ### ★ Uncertainty 进入 CandidatePacket 作为 dynamic risk
 WildGS-SLAM 把 uncertainty 作为 tracking/mapping 权重。你的系统可以改成：
-[[slam-frontend/DPVO]] residual + [[geometry-model/MASt3R]] disagreement + depth-normal inconsistency + GS residual + DINOv2 → per-packet uncertainty / dynamic risk。
+DPVO residual + MASt3R disagreement + depth-normal inconsistency + GS residual + DINOv2 → per-packet uncertainty / dynamic risk。
 
 ### 动态区域不入 CertifiedAnchor
 High uncertainty/high dynamic risk → no certificate, no GS birth, quarantine。
@@ -153,9 +153,9 @@ Online 有用，final global BA 应 remove disparity reg。
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **WildGS-SLAM** | **mono dynamic GS-SLAM** | **uncertainty / dynamic removal reference** |
-| [[3dgs-slam/MGS-SLAM]] | [[slam-frontend/DPVO]]+MVS+GS | scale closure |
+| [[3dgs-slam/MGS-SLAM]] | DPVO+MVS+GS | scale closure |
 | HI-SLAM2 | dense+priors+JDSA+GS | geometry alignment |
-| [[3dgs-slam/MonoGS]]/[[3dgs-slam/Splat-SLAM]] | monocular GS | static baseline |
+| MonoGS/[[3dgs-slam/Splat-SLAM]] | monocular GS | static baseline |
 
 ---
 

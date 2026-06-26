@@ -164,8 +164,8 @@ Replica/Room0:
 
 ### 合理架构
 ```
-RGB → [[slam-frontend/DPVO]]/DROID (temporal tracking)
-     → [[geometry-model/MASt3R]]/depth-normal (geometry proposal)
+RGB → DPVO/DROID (temporal tracking)
+     → MASt3R/depth-normal (geometry proposal)
      → CertifiedGeometryPacket (certification)
      → CertifiedAnchor (local support)
      → SplaTAM-like GS backend (render + alpha-gated feedback)

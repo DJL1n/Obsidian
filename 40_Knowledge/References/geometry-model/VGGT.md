@@ -128,7 +128,7 @@ VGGT backbone → CoTracker2 → TAP-Vid δ_vis_avg 78.9→84.0。
 VGGT 一次输出 camera/depth/pointmap/track/confidence = unified geometry packet。和你的 CertifiedGeometryPacket 方向一致，但 VGGT 是 neural prediction，不是 online-certified。
 
 ### ★ 可用作离线 teacher / verifier
-- 与 [[slam-frontend/DPVO]]/DROID/HI-SLAM2 输出做一致性检查 (shadow evidence，不写回)
+- 与 DPVO/DROID/HI-SLAM2 输出做一致性检查 (shadow evidence，不写回)
 - 作为 pre-GS depth-pose-point coherence verifier
 - 作为 MASt3R 路线的强对照实验
 
@@ -139,7 +139,7 @@ VGGT 一次输出 camera/depth/pointmap/track/confidence = unified geometry pack
 跨视图 track consistency / pointmap repeatability / depth-camera consistency → anchor static_score / repeatability / depth_stability / view_support。
 
 ### 不建议：直接作为实时 SLAM 前端
-缺在线状态 / 非逐帧低延迟 / 无动态场景建模。主前端保留 [[slam-frontend/DPVO]]/DROID/HI-SLAM2。
+缺在线状态 / 非逐帧低延迟 / 无动态场景建模。主前端保留 DPVO/DROID/HI-SLAM2。
 
 ---
 

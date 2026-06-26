@@ -229,9 +229,9 @@ Tracking lost 时触发：查询 retrieval database → 找到 candidate keyfram
 
 ---
 
-## 17. 与 DROID-SLAM / [[slam-frontend/DPVO]] 的关键区别
+## 17. 与 DROID-SLAM / DPVO 的关键区别
 
-| | MASt3R-SLAM | DROID-SLAM | [[slam-frontend/DPVO]] |
+| | MASt3R-SLAM | DROID-SLAM | DPVO |
 |---|---|---|---|
 | 核心信号 | two-view pointmap prior | dense correlation + recurrent update | sparse patch-level recurrent VO |
 | 匹配 | ray-based iterative projective | correlation volume + dense BA | patch graph + differentiable BA |
@@ -274,8 +274,6 @@ MASt3R-SLAM 的最大价值：证明 MASt3R two-view pointmap prior 可以被系
 
 最准确的定位：
 - 强 two-view geometric prior SLAM: **MASt3R-SLAM**
-- 强 temporal optimisation signal VO/SLAM: **DROID/[[slam-frontend/DPVO]]**
-- anchor/packet coherence 方向：吸收 MASt3R-SLAM 的 ray-consistency 和 canonical fusion，但 temporal trust/lifecycle/uncertainty 更可能来自 [[slam-frontend/DPVO]]/DROID-style signals
 
 ---
 

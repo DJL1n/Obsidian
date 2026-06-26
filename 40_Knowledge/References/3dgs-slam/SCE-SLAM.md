@@ -27,7 +27,7 @@ Pipeline：输入帧 → SCE 网络（每像素 3D 坐标）→ PnP 位姿估计
 ## 4. 与 SkelGS-SLAM 的关联
 - **可借鉴点**：SCE 网络提供的前端尺度锚定可直接替代 SkelGS-SLAM 中的尺度初始化模块。SCE 输出的 3D 坐标还可以直接用于 anchor 的初始位置估计——不再需要从 SFM 推断
 - **差异**：SCE 依赖训练数据，SkelGS-SLAM 的 anchor 结构是 unsupervised 从几何自生成的；SCE 不做 GS mapping，只做位姿
-- **融合方向**：将 SCE 作为 SkelGS-SLAM 的尺度模块——用 SCE 输出的世界坐标做 anchor 的初始定位，用 [[slam-frontend/DPVO]]/DSO 做帧间追踪 refinement。SCE + [[slam-frontend/DPVO]] 联合前端可同时解决尺度模糊和纹理缺失问题，是 SkelGS-SLAM 单目模式的理想前端
+- **融合方向**：将 SCE 作为 SkelGS-SLAM 的尺度模块——用 SCE 输出的世界坐标做 anchor 的初始定位，用 DPVO/DSO 做帧间追踪 refinement。SCE + DPVO 联合前端可同时解决尺度模糊和纹理缺失问题，是 SkelGS-SLAM 单目模式的理想前端
 
 ## 相关笔记
 - [[3dgs-slam/SCE-SLAM]] 是"学习型 SLAM"的代表作，将监督学习的尺度先验引入单目 SLAM

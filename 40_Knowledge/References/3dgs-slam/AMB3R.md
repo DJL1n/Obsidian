@@ -40,11 +40,11 @@ tags:
 
 ## 4. 与 SkelGS-SLAM 的关联
 - **可借鉴点**：
-  1. **Feed-forward + Backend 范式**：SkelGS-SLAM 本质上也是这种结构——MASt3R/DROID 作为 geometry proposal（feed-forward），[[slam-frontend/DPVO]] 作为前端 tracking，GS mapping 作为后端。AMB3R 的两阶段思路验证了该范式。
+  1. **Feed-forward + Backend 范式**：SkelGS-SLAM 本质上也是这种结构——MASt3R/DROID 作为 geometry proposal（feed-forward），DPVO 作为前端 tracking，GS mapping 作为后端。AMB3R 的两阶段思路验证了该范式。
   2. **Outlier rejection 机制**：feed-forward 基础模型的输出必须有严格的置信度过滤。SkelGS-SLAM 的 CertifiedGeometryPacket 就是这种过滤的显式实现——只有通过一致性校验的 geometry 才被认证。
   3. **Scale recovery 策略**：单目 SLAM 的核心挑战之一是尺度恢复。AMB3R 的后端优化方式（reprojection-based refinement）可作为 SkelGS-SLAM 的 submap-level scale alignment 参考。
 - **差异**：AMB3R 是离线重建 pipeline，非在线 SLAM；不处理动态场景。SkelGS-SLAM 需要在线处理连续帧。
-- **融合方向**：SkelGS-SLAM 可以考虑在 anchor level 引入 mini-backend——每个 anchor 的 Gaussian 集合在创建后进行轻量 BA-like refinement，而非完全依赖前端 [[slam-frontend/DPVO]] 的 pose 和几何。这相当于 per-submap 的 AMB3R 式优化。
+- **融合方向**：SkelGS-SLAM 可以考虑在 anchor level 引入 mini-backend——每个 anchor 的 Gaussian 集合在创建后进行轻量 BA-like refinement，而非完全依赖前端 DPVO 的 pose 和几何。这相当于 per-submap 的 AMB3R 式优化。
 
 ## 相关笔记
 - [[[[geometry-model/VGGT]]-SLAM]] — [[geometry-model/VGGT]] 基础模型用于 SLAM

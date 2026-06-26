@@ -31,7 +31,7 @@ DROID-SLAM 是一个 learned dense SLAM 系统，核心是用 RAFT-style recurre
 
 ### 输入
 - Monocular RGB video / Stereo / RGB-D
-- **需要相机内参**（与 [[geometry-model/MASt3R]]-SLAM 的 uncalibrated 不同）
+- **需要相机内参**（与 MASt3R-SLAM 的 uncalibrated 不同）
 - 只用 monocular 训练，测试时可直接用 stereo 或 RGB-D
 
 ### 输出
@@ -256,9 +256,9 @@ EuRoC monocular: 相比 ORB-SLAM3 降低 43% error
 
 ---
 
-## 19. 与 [[geometry-model/MASt3R]]-SLAM 核心区别
+## 19. 与 MASt3R-SLAM 核心区别
 
-| | [[geometry-model/MASt3R]]-SLAM | DROID-SLAM |
+| | MASt3R-SLAM | DROID-SLAM |
 |---|---|---|
 | 信息来源 | two-view 3D prior | dense visual correlation + recurrent flow |
 | 匹配方式 | ray-based iterative projective | correlation volume lookup + revision |
@@ -303,15 +303,15 @@ DROID-SLAM = temporal optimisation backbone，不是 final geometry oracle。
 
 ## 22. 最终判断
 
-DROID/DPVO 比 [[geometry-model/MASt3R]] 更适合作为 anchor/packet coherence 的主时间骨架。
+DROID/DPVO 比 MASt3R 更适合作为 anchor/packet coherence 的主时间骨架。
 
 **最合理的研究定位：**
 - DROID/DPVO: 时序优化骨架和 trust signal
-- [[geometry-model/MASt3R]]: 强 two-view / loop / wide-baseline geometry proposal
+- MASt3R: 强 two-view / loop / wide-baseline geometry proposal
 - Depth-normal predictor: 更平滑 metric-like dense geometry
 - CertifiedGeometryPacket / Anchor skeleton: 负责把这些信号变成 GS 可消费的稳定结构
 
-一句话：[[geometry-model/MASt3R]]-SLAM 强在单对/宽基线 learned 3D prior；DROID-SLAM 强在 dense recurrent pose-depth optimisation；DPVO 强在轻量 temporal patch optimisation。Anchor/packet coherence 更需要 DROID/DPVO 的 temporal signal，但最终 GS geometry 仍须 certification。
+一句话：MASt3R-SLAM 强在单对/宽基线 learned 3D prior；DROID-SLAM 强在 dense recurrent pose-depth optimisation；DPVO 强在轻量 temporal patch optimisation。Anchor/packet coherence 更需要 DROID/DPVO 的 temporal signal，但最终 GS geometry 仍须 certification。
 
 ---
 

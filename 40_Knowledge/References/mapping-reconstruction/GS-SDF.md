@@ -109,10 +109,10 @@ Ablation: center reg 改善但仍 blur；shape reg 保留砖块细节。
 ## 11. 对 SkelGS-SLAM 的启发
 
 ### ★ 最重要：GS 几何需要外部连续几何场监督
-Render-derived constraints 不足以保证 Gaussian geometry。你的系统需要：[[slam-frontend/DPVO]] temporal + [[geometry-model/MASt3R]] pair + depth-normal + free-space + CertifiedGeometryPacket。
+Render-derived constraints 不足以保证 Gaussian geometry。你的系统需要：DPVO temporal + MASt3R pair + depth-normal + free-space + CertifiedGeometryPacket。
 
 ### CertifiedGeometryPacket ≈ 你的 NSDF teacher
-Monocular 无 LiDAR NSDF，但可以构造 weak geometry teacher：[[slam-frontend/DPVO]] + [[geometry-model/MASt3R]] + depth-normal + scale + free-space → CertifiedAnchorField。
+Monocular 无 LiDAR NSDF，但可以构造 weak geometry teacher：DPVO + MASt3R + depth-normal + scale + free-space → CertifiedAnchorField。
 
 ### Shape regularization > center regularization
 ChildGS 应约束整个 tangent plane，不只约束 center。
@@ -133,8 +133,7 @@ Unbounded/low-confidence background 不要强行 birth Gaussians。
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **GS-SDF** | **LiDAR→NSDF→GS init+shape reg** | **geometry teacher / shape regularization** |
-| [[3dgs-slam/GS-SLAM]]/[[3dgs-slam/SplaTAM]] | RGB-D [[3dgs-slam/GS-SLAM]] | sensor depth baseline |
-| [[3dgs-slam/MGS-SLAM]] | monocular [[slam-frontend/DPVO]]+MVS+GS | scale closure |
+| GS-SLAM/SplaTAM | RGB-D GS-SLAM | sensor depth baseline |
 | [[slam-frontend/VPGS-SLAM]] | large-scale submap GS | submap/anchor/loop |
 | [[mapping-reconstruction/OG-Mapping]] | octree anchor GS | LOD growth |
 

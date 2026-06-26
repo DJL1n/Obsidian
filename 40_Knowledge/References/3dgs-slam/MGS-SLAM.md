@@ -171,7 +171,7 @@ SDAR 是 MGS-SLAM 最有价值的机制：sparse VO ↔ MVS depth ↔ GS map 形
 | **MGS-SLAM** | **monocular DPVO + MVS + GS** | **最接近你路线的参考系统** |
 | DPVO | temporal tracking backbone | 前端 |
 | MonoGS | monocular-first GS | map-centric 对比 |
-| [[3dgs-slam/SplaTAM]]/GS-SLAM | RGB-D GS-SLAM | sensor depth baseline |
+| SplaTAM/GS-SLAM | RGB-D GS-SLAM | sensor depth baseline |
 | GO-SLAM | global correction | global consistency |
 
 MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。但它还不够安全：SDAR 是 sparse-dense scale correction，你需要的是 CertifiedGeometryPacket / CertifiedAnchor。

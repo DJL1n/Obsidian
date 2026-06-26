@@ -219,8 +219,8 @@ Certified geometric anchor
 
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
-| DROID/[[slam-frontend/DPVO]] | temporal optimization | tracking / temporal anchor support |
-| [[geometry-model/MASt3R]]-SLAM | dense two-view geometry | robust geometry proposal |
+| DROID/DPVO | temporal optimization | tracking / temporal anchor support |
+| MASt3R-SLAM | dense two-view geometry | robust geometry proposal |
 | [[mapping-reconstruction/S3LAM]] | semantic cluster + structure | structural grouping |
 | [[mapping-reconstruction/ESLAM]] | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
 | LightGlue | fast sparse matching | pair verification / loop / reloc |
