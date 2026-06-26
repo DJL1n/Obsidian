@@ -143,8 +143,8 @@ LVD-GS 适合作为 multi-evidence geometry admission / dynamic uncertainty / re
 ## Related extracted notes
 
 ### Concepts
-- [[Multi-Representation-Geometry-Admission]] — Sem-Geo-DINO layers for anchor maturity
-- [[Explicit-Implicit-Dynamic-Fusion]] — open-world seg + residual uncertainty
+- [[../Concepts/semantic/Multi-Representation-Geometry-Admission.md]] — Sem-Geo-DINO layers for anchor maturity
+- [[../Concepts/dynamic/Explicit-Implicit-Dynamic-Fusion.md]] — open-world seg + residual uncertainty
 
 ### Methods
 - [[LVD-GS-Architecture]] — LiDAR-Visual + Hierarchical Rep + Dynamic Modeling

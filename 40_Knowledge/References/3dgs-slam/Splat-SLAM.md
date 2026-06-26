@@ -118,8 +118,8 @@ Splat-SLAM 是你这批论文里最值得重点吸收的单目 GS-SLAM 机制之
 ## Related extracted notes
 
 ### Concepts
-- [[Geometry-Authority-Separation]] — DSPO/DBA authority, not GS render loss
-- [[Deformable-GS-Map]] — anchor keyframe GS with pose/depth update deformation
+- [[../Concepts/scale/Geometry-Authority-Separation.md]] — DSPO/DBA authority, not GS render loss
+- [[../Concepts/gs-primitive/Deformable-GS-Map.md]] — anchor keyframe GS with pose/depth update deformation
 
 ### Methods
 - [[Splat-SLAM-Architecture]] — DSPO + proxy depth + deformable 3DGS pipeline

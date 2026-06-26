@@ -141,8 +141,8 @@ CoGS-SLAM 的 inter-agent loop 可映射为你的 inter-submap loop：retrieval 
 ## Related extracted notes
 
 ### Concepts
-- [[Submap-Level-Provenance]] — versioned local geometry submap with source frames
-- [[Geometry-vs-Visual-Consistency]] — geometric align ≠ photometric seamless
+- [[../Concepts/anchor/Submap-Level-Provenance.md]] — versioned local geometry submap with source frames
+- [[../Concepts/submap/Geometry-vs-Visual-Consistency.md]] — geometric align ≠ photometric seamless
 
 ### Methods
 - [[CoGS-SLAM-Architecture]] — centralized vs distributed multi-agent GS-SLAM

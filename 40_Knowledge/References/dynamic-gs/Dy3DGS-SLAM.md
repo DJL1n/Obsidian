@@ -155,8 +155,8 @@ Dy3DGS 对你是 dynamic/uncertainty evidence 模块参考，不是 packet coher
 ## Related extracted notes
 
 ### Concepts
-- [[Multi-Evidence-Dynamic-Fusion]] — flow + depth + clustering → dynamic probability
-- [[Dynamic-Suppression-Both-Sides]] — dynamic evidence tracking + mapping
+- [[../Concepts/dynamic/Multi-Evidence-Dynamic-Fusion.md]] — flow + depth + clustering → dynamic probability
+- [[../Concepts/dynamic/Dynamic-Suppression-Both-Sides.md]] — dynamic evidence tracking + mapping
 
 ### Methods
 - [[Dy3DGS-SLAM-Architecture]] — flow + depth fusion + pose net + GS pipeline

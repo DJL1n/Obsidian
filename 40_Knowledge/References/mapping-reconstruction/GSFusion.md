@@ -121,8 +121,8 @@ Monocular scale / pose-depth coherence / dynamic / frontend tracking。
 ## Related extracted notes
 
 ### Concepts
-- [[Geometry-Gated-GS-Birth]] — TSDF voxel / anchor maturity → GS admission
-- [[Hybrid-TSDF-GS-Map]] — 双地图各司其职
+- [[../Concepts/anchor/Geometry-Gated-GS-Birth.md]] — TSDF voxel / anchor maturity → GS admission
+- [[../Concepts/gs-primitive/Hybrid-TSDF-GS-Map.md]] — 双地图各司其职
 
 ### Methods
 - [[GSFusion-Architecture]] — TSDF + quadtree + keyframe pipeline

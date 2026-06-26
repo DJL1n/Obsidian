@@ -140,8 +140,8 @@ CUT3R 角色：persistent-state geometry proposal，不是 system truth。
 ## Related extracted notes
 
 ### Concepts
-- [[Persistent-State-Pointmap]] — recurrent stateful pointmap prediction
-- [[Certified-Geometry-Memory]] — explicit auditable anchor memory
+- [[../Concepts/geometry/Persistent-State-Pointmap.md]] — recurrent stateful pointmap prediction
+- [[../Concepts/submap/Certified-Geometry-Memory.md]] — explicit auditable anchor memory
 
 ### Methods
 - [[CUT3R-Architecture]] — persistent state + continuous pointmap pipeline

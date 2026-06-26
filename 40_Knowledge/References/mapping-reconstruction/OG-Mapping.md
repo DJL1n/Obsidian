@@ -158,8 +158,8 @@ L = color reconstruction + depth rendering + SSIM + Gaussian scale regularizatio
 ## Related extracted notes
 
 ### Concepts
-- [[Octree-Anchor-Hierarchy]] — octree-organized anchor hierarchy for structured GS map
-- [[Progressive-LOD-Growth]] — coarse-to-fine level-aware anchor growth
+- [[../Concepts/anchor/Octree-Anchor-Hierarchy.md]] — octree-organized anchor hierarchy for structured GS map
+- [[../Concepts/anchor/Progressive-LOD-Growth.md]] — coarse-to-fine level-aware anchor growth
 
 ### Methods
 - [[Dynamic-Keyframe-Window]] — dynamic keyframe window for online mapping

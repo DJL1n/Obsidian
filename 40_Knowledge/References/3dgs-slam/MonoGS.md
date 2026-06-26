@@ -186,8 +186,8 @@ MonoGS = 3DGS map-centric SLAM reference / GS tracking convergence / covisibilit
 ## Related extracted notes
 
 ### Concepts
-- [[GS-Tracking-Representation]] — 3DGS map as tracking representation with large convergence basin
-- [[Gaussian-Covisibility]] — Gaussian covisibility for keyframe/overlap management
+- [[../Concepts/gs-primitive/GS-Tracking-Representation.md]] — 3DGS map as tracking representation with large convergence basin
+- [[../Concepts/gs-primitive/Gaussian-Covisibility.md]] — Gaussian covisibility for keyframe/overlap management
 
 ### Methods
 - [[MonoGS-Monocular-Insertion]] — monocular Gaussian insertion with rendered depth + visibility pruning

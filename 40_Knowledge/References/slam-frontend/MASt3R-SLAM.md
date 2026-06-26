@@ -282,9 +282,9 @@ MASt3R-SLAM 的最大价值：证明 MASt3R two-view pointmap prior 可以被系
 ## Related extracted notes
 
 ### Concepts
-- [[Ray-Camera-Model]] — ray 作为隐式相机模型
-- [[Canonical-Pointmap-Fusion]] — 多视角 pointmap 加权融合
-- [[Ray-Residual]] — 用方向误差代替 3D 深度误差
+- [[../Concepts/geometry/Ray-Camera-Model.md]] — ray 作为隐式相机模型
+- [[../Concepts/geometry/Canonical-Pointmap-Fusion.md]] — 多视角 pointmap 加权融合
+- [[../Concepts/geometry/Ray-Residual.md]] — 用方向误差代替 3D 深度误差
 
 ### Methods
 - [[Iterative-Projective-Pointmap-Matching]] — 高效 ray-based 匹配算法

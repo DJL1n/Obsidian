@@ -182,8 +182,8 @@ CertifiedGeometryPacket/anchor skeleton = 核心研究层
 ## Related extracted notes
 
 ### Concepts
-- [[Online-Global-Pose-Graph]] — online loop closure + full BA for learned dense SLAM
-- [[Versioned-Geometry-Update]] — mapping must respond to global pose/depth corrections
+- [[../Concepts/submap/Online-Global-Pose-Graph.md]] — online loop closure + full BA for learned dense SLAM
+- [[../Concepts/submap/Versioned-Geometry-Update.md]] — mapping must respond to global pose/depth corrections
 
 ### Methods
 - [[GO-SLAM-Architecture]] — three parallel threads: front-end tracking, back-end tracking, instant mapping

@@ -178,8 +178,8 @@ Phase 2: optimize Gaussians + keyframe poses
 ## Related extracted notes
 
 ### Concepts
-- [[Adaptive-Gaussian-Expansion]] — adding + deletion for online GS mapping
-- [[Coarse-to-Fine-GS-Tracking]] — coarse-to-fine pose tracking with reliable Gaussian selection
+- [[../Concepts/gs-primitive/Adaptive-Gaussian-Expansion.md]] — adding + deletion for online GS mapping
+- [[../Concepts/gs-primitive/Coarse-to-Fine-GS-Tracking.md]] — coarse-to-fine pose tracking with reliable Gaussian selection
 
 ### Methods
 - [[GS-SLAM-RGBD-Pipeline]] — GS-SLAM's full RGB-D pipeline with expansion/tracking/BA

@@ -119,8 +119,8 @@ SEGS-like backend → structured ChildGS + AfME + frequency pyramid
 ## Related extracted notes
 
 ### Concepts
-- [[Structured-GS-for-SLAM]] — anchor-conditioned Gaussian representation in SLAM
-- [[Appearance-Geometry-Decoupling]] — AfME separates appearance from geometry
+- [[../Concepts/gs-primitive/Structured-GS-for-SLAM.md]] — anchor-conditioned Gaussian representation in SLAM
+- [[../Concepts/gs-primitive/Appearance-Geometry-Decoupling.md]] — AfME separates appearance from geometry
 
 ### Methods
 - [[AfME-Appearance-Embedding]] — appearance-from-motion embedding design

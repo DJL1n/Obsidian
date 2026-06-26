@@ -180,8 +180,8 @@ SplaTAM = GS backend / silhouette-gated tracking / densification reference
 ## Related extracted notes
 
 ### Concepts
-- [[Silhouette-Map-Coverage]] — silhouette as map coverage / epistemic uncertainty signal for GS-SLAM
-- [[Isotropic-GS-SLAM]] — simplified isotropic Gaussian for online SLAM
+- [[../Concepts/submap/Silhouette-Map-Coverage.md]] — silhouette as map coverage / epistemic uncertainty signal for GS-SLAM
+- [[../Concepts/submap/Isotropic-GS-SLAM.md]] — simplified isotropic Gaussian for online SLAM
 
 ### Methods
 - [[Silhouette-Gated-Tracking]] — tracking with strict silhouette mask for map-based feedback

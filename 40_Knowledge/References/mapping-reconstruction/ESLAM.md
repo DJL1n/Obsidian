@@ -276,8 +276,8 @@ CertifiedGeometryPacket 可加以下 gate：
 ## Related extracted notes
 
 ### Concepts
-- [[Tri-Plane-Feature]] — axis-aligned tri-plane feature representation
-- [[TSDF-Direct-Supervision]] — TSDF 直接几何监督
+- [[../Concepts/semantic/Tri-Plane-Feature.md]] — axis-aligned tri-plane feature representation
+- [[../Concepts/semantic/TSDF-Direct-Supervision.md]] — TSDF 直接几何监督
 
 ### Methods
 - [[Free-Space-Surface-Band-Gating]] — free-space + truncation-band + occlusion gate 设计

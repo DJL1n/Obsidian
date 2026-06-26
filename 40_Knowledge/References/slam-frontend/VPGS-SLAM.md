@@ -161,8 +161,8 @@ Replica ATE 0.21 优于 [[3dgs-slam/SplaTAM]] 0.41 / [[3dgs-slam/MonoGS]] 0.34 /
 ## Related extracted notes
 
 ### Concepts
-- [[Submap-Geometry-Unit]] — submap as local geometry unit with voxel anchors
-- [[2D-3D-Fusion-Tracking]] — evidence-quality adaptive tracking
+- [[../Concepts/submap/Submap-Geometry-Unit.md]] — submap as local geometry unit with voxel anchors
+- [[../Concepts/submap/2D-3D-Fusion-Tracking.md]] — evidence-quality adaptive tracking
 
 ### Methods
 - [[Large-Scale-GS-SLAM-Architecture]] — VPGS large-scale pipeline

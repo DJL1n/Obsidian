@@ -184,8 +184,8 @@ RGB → [[slam-frontend/DPVO]]/DROID (temporal)
 ## Related extracted notes
 
 ### Concepts
-- [[I2P-Local-Reconstruction]] — sliding-window multi-frame pointmap reconstruction
-- [[L2W-Global-Registration]] — learned local-to-world pointmap registration
+- [[../Concepts/semantic/I2P-Local-Reconstruction.md]] — sliding-window multi-frame pointmap reconstruction
+- [[../Concepts/semantic/L2W-Global-Registration.md]] — learned local-to-world pointmap registration
 
 ### Methods
 - [[SLAM3R-Architecture]] — I2P + L2W + retrieval + reservoir pipeline

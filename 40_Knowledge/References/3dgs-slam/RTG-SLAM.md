@@ -125,8 +125,8 @@ RGB-D ICP 不适合 monocular predicted depth。
 ## Related extracted notes
 
 ### Concepts
-- [[Primitive-Lifecycle-State]] — stable/unstable/outlier state for anchor
-- [[Explicit-Birth-Event]] — geometry-triggered anchor birth, not gradient
+- [[../Concepts/anchor/Primitive-Lifecycle-State.md]] — stable/unstable/outlier state for anchor
+- [[../Concepts/tracking/Explicit-Birth-Event.md]] — geometry-triggered anchor birth, not gradient
 
 ### Methods
 - [[RTG-SLAM-Architecture]] — compact GS + ICP + state mgmt pipeline

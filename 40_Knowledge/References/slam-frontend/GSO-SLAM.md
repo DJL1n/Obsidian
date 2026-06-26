@@ -132,8 +132,8 @@ DSO 受 motion blur/noise/exposure/dynamic 影响，[[slam-frontend/DPVO]]/DROID
 ## Related extracted notes
 
 ### Concepts
-- [[EM-VO-GS-Coupling]] — bidirectional VO-GS information exchange under EM
-- [[Frontend-Gaussian-Initialization]] — using VO gradients/associations for GS shape init
+- [[../Concepts/tracking/EM-VO-GS-Coupling.md]] — bidirectional VO-GS information exchange under EM
+- [[../Concepts/tracking/Frontend-Gaussian-Initialization.md]] — using VO gradients/associations for GS shape init
 
 ### Methods
 - [[GSO-SLAM-Architecture]] — DSO + 2DGS + EM pipeline

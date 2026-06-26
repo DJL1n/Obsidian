@@ -261,8 +261,8 @@ Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 ## Related extracted notes
 
 ### Concepts
-- [[Sparse-Learned-Matcher]] — learned sparse matching with matchability + no Sinkhorn
-- [[Adaptive-Computation-Graph]] — adaptive depth/width for efficient inference
+- [[../Concepts/geometry/Sparse-Learned-Matcher.md]] — learned sparse matching with matchability + no Sinkhorn
+- [[../Concepts/semantic/Adaptive-Computation-Graph.md]] — adaptive depth/width for efficient inference
 
 ### Methods
 - [[Matchability-Assignment]] — similarity + matchability assignment head

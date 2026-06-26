@@ -219,8 +219,8 @@ MASt3R 最强的是"把匹配落到 3D pointmap 上"，不是"给你可直接写
 ## Related extracted notes
 
 ### Concepts
-- [[3D-Grounded-Matching]] — matching as 3D correspondence problem
-- [[Two-View-Pointmap-Prior]] — DUSt3R-style shared-coordinate pointmap
+- [[../Concepts/geometry/3D-Grounded-Matching.md]] — matching as 3D correspondence problem
+- [[../Concepts/geometry/Two-View-Pointmap-Prior.md]] — DUSt3R-style shared-coordinate pointmap
 
 ### Methods
 - [[Fast-Reciprocal-Matching]] — iterative reciprocal cycle finding for dense matching

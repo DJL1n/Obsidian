@@ -168,8 +168,8 @@ Flatten Gaussians toward surface + SDF/depth alignment + Manhattan normal regula
 ## Related extracted notes
 
 ### Concepts
-- [[Manhattan-Structure-Prior]] — line/plane structural prior for GS completion
-- [[Structure-Guided-GS-Completion]] — unobserved planar surface completion via structure
+- [[../Concepts/semantic/Manhattan-Structure-Prior.md]] — line/plane structural prior for GS completion
+- [[../Concepts/semantic/Structure-Guided-GS-Completion.md]] — unobserved planar surface completion via structure
 
 ### Methods
 - [[MG-SLAM-Line-Tracking]] — point + line feature tracking with line fusion/BA

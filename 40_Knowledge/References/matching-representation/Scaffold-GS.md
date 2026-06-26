@@ -231,8 +231,8 @@ Certified geometric anchor
 ## Related extracted notes
 
 ### Concepts
-- [[Anchor-Scaffold-Representation]] — anchor-conditioned Gaussian representation
-- [[View-Adaptive-Rendering]] — view-dependent dynamic attribute prediction
+- [[../Concepts/gs-primitive/Anchor-Scaffold-Representation.md]] — anchor-conditioned Gaussian representation
+- [[../Concepts/gs-primitive/View-Adaptive-Rendering.md]] — view-dependent dynamic attribute prediction
 
 ### Methods
 - [[Anchor-Growing-Pruning]] — evidence-gated anchor lifecycle

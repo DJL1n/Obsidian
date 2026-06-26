@@ -151,8 +151,8 @@ UP-SLAM 核心：probabilistic anchor + multi-modal uncertainty + parallel decou
 ## Related extracted notes
 
 ### Concepts
-- [[Probabilistic-Anchor-Update]] — Bayesian anchor probability for dynamic environments
-- [[Multi-Modal-Uncertainty]] — color/depth/DINO/transmittance residual fusion
+- [[../Concepts/anchor/Probabilistic-Anchor-Update.md]] — Bayesian anchor probability for dynamic environments
+- [[../Concepts/dynamic/Multi-Modal-Uncertainty.md]] — color/depth/DINO/transmittance residual fusion
 
 ### Methods
 - [[UP-SLAM-Architecture]] — parallel ORB-SLAM3 + probabilistic GS mapping

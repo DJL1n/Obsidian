@@ -123,8 +123,8 @@ MonST3R 对你最有价值的不是接入主线，而是：
 ## Related extracted notes
 
 ### Concepts
-- [[Per-Timestep-Pointmap]] — 动态场景中每个时刻独立估计 geometry
-- [[Geometry-First-Dynamic-Detection]] — flow consistency 定义 static region
+- [[../Concepts/dynamic/Per-Timestep-Pointmap.md]] — 动态场景中每个时刻独立估计 geometry
+- [[../Concepts/dynamic/Geometry-First-Dynamic-Detection.md]] — flow consistency 定义 static region
 
 ### Methods
 - [[MonST3R-Architecture]] — [[geometry-model/DUSt3R]] + dynamic fine-tune + video-specific losses

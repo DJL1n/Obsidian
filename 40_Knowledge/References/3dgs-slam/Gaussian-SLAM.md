@@ -198,8 +198,8 @@ CertifiedGeometryPacket = monocular geometry certification layer
 ## Related extracted notes
 
 ### Concepts
-- [[Submap-Gaussian-Organization]] — submap-based Gaussian map for scalable SLAM
-- [[GS-Birth-Gate]] — controlled Gaussian seeding with alpha mask + NN check
+- [[../Concepts/gs-primitive/Submap-Gaussian-Organization.md]] — submap-based Gaussian map for scalable SLAM
+- [[../Concepts/gs-primitive/GS-Birth-Gate.md]] — controlled Gaussian seeding with alpha mask + NN check
 
 ### Methods
 - [[Render-and-Optimize-Tracking]] — frame-to-model tracking with alpha/error masks

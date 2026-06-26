@@ -161,8 +161,8 @@ HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry 
 ## Related extracted notes
 
 ### Concepts
-- [[JDSA-Scale-Alignment]] — spatially varying scale grid for monocular depth
-- [[Gaussian-Map-Deformation]] — Gaussian mean/orientation/scale update after pose correction
+- [[../Concepts/scale/JDSA-Scale-Alignment.md]] — spatially varying scale grid for monocular depth
+- [[../Concepts/submap/Gaussian-Map-Deformation.md]] — Gaussian mean/orientation/scale update after pose correction
 
 ### Methods
 - [[HI-SLAM2-Architecture]] — hybrid online/offline monocular [[3dgs-slam/GS-SLAM]] pipeline

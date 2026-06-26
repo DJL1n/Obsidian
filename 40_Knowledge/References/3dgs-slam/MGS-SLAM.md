@@ -181,8 +181,8 @@ MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。
 ## Related extracted notes
 
 ### Concepts
-- [[Sparse-Dense-Scale-Alignment]] — SDAR: sparse VO ↔ dense depth ↔ GS map scale closure
-- [[Monocular-GS-SLAM-Pipeline]] — DPVO + MVS depth + GS mapping system architecture
+- [[../Concepts/scale/Sparse-Dense-Scale-Alignment.md]] — SDAR: sparse VO ↔ dense depth ↔ GS map scale closure
+- [[../Concepts/submap/Monocular-GS-SLAM-Pipeline.md]] — DPVO + MVS depth + GS mapping system architecture
 
 ### Methods
 - [[SDAR-Mechanism]] — SDAR three-step scale correction

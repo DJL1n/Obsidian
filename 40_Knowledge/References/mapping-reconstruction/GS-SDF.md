@@ -145,8 +145,8 @@ GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几
 ## Related extracted notes
 
 ### Concepts
-- [[SDF-Geometry-Teacher]] — external continuous geometry field supervising GS
-- [[Shape-Regularization]] — disk-level shape alignment vs center-only
+- [[../Concepts/semantic/SDF-Geometry-Teacher.md]] — external continuous geometry field supervising GS
+- [[../Concepts/semantic/Shape-Regularization.md]] — disk-level shape alignment vs center-only
 
 ### Methods
 - [[NSDF-to-GS-Initialization]] — NSDF → Gaussian center/orientation/opacity

@@ -318,9 +318,9 @@ DROID/DPVO 比 [[geometry-model/MASt3R]] 更适合作为 anchor/packet coherence
 ## Related extracted notes
 
 ### Concepts
-- [[Dense-Bundle-Adjustment]] — 可微 dense BA layer
-- [[Recurrent-Correction-Update]] — RAFT-style recurrent revision
-- [[Correlation-Volume]] — 4D all-pairs correlation volume
+- [[../Concepts/tracking/Dense-Bundle-Adjustment.md]] — 可微 dense BA layer
+- [[../Concepts/tracking/Recurrent-Correction-Update.md]] — RAFT-style recurrent revision
+- [[../Concepts/tracking/Correlation-Volume.md]] — 4D all-pairs correlation volume
 
 ### Methods
 - [[DROID-Frontend-Backend]] — frontend local BA + backend global BA 系统结构

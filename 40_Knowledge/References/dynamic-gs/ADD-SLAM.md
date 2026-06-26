@@ -100,8 +100,8 @@ Observed depth > historical → 等待多帧确认后补静态 anchor
 ## Related extracted notes
 
 ### Concepts
-- [[Consistency-Dynamic-Detection]] — cross-temporal consistency for dynamic detection
-- [[Occlusion-vs-Exposure-Cue]] — distinguishing new occlusion from revealed background
+- [[../Concepts/dynamic/Consistency-Dynamic-Detection.md]] — cross-temporal consistency for dynamic detection
+- [[../Concepts/dynamic/Occlusion-vs-Exposure-Cue.md]] — distinguishing new occlusion from revealed background
 
 ### Methods
 - [[Dynamic-Static-Composite-Mapping]] — separate GS maps for static and dynamic

@@ -131,8 +131,8 @@ FlashSLAM 的"前端不应 GS render loss"判断 + "显式匹配 > render optimi
 ## Related extracted notes
 
 ### Concepts
-- [[Explicit-Tracking-vs-Render-Tracking]] — feature matching + registration > render-loss pose opt for sparse/large-motion
-- [[Alignment-Check-Before-Birth]] — new anchor/Gaussian must align with existing support
+- [[../Concepts/tracking/Explicit-Tracking-vs-Render-Tracking.md]] — feature matching + registration > render-loss pose opt for sparse/large-motion
+- [[../Concepts/anchor/Alignment-Check-Before-Birth.md]] — new anchor/Gaussian must align with existing support
 
 ### Methods
 - [[FlashSLAM-Architecture]] — SuperPoint+[[matching-representation/LightGlue]]+SVD+GS pipeline

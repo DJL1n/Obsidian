@@ -139,8 +139,8 @@ MCGS-SLAM 从另一个方向说明：GS-SLAM 的真正瓶颈仍然是进入 Gaus
 ## Related extracted notes
 
 ### Concepts
-- [[MCBA-Cross-View-Constraint]] — temporal + cross-view dense BA
-- [[Pose-Depth-Co-Versioning]] — pose 和 depth 必须 co-refined，不可分开
+- [[../Concepts/tracking/MCBA-Cross-View-Constraint.md]] — temporal + cross-view dense BA
+- [[../Concepts/scale/Pose-Depth-Co-Versioning.md]] — pose 和 depth 必须 co-refined，不可分开
 
 ### Methods
 - [[MCGS-SLAM-Architecture]] — MCBA + JDSA + multi-camera GS mapping

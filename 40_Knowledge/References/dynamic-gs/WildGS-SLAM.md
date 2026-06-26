@@ -162,8 +162,8 @@ Online 有用，final global BA 应 remove disparity reg。
 ## Related extracted notes
 
 ### Concepts
-- [[Uncertainty-Dynamic-Filtering]] — per-sequence uncertainty for dynamic distractor removal
-- [[Static-Dynamic-Side-Channel]] — uncertainty as side-channel, not main geometry
+- [[../Concepts/dynamic/Uncertainty-Dynamic-Filtering.md]] — per-sequence uncertainty for dynamic distractor removal
+- [[../Concepts/dynamic/Static-Dynamic-Side-Channel.md]] — uncertainty as side-channel, not main geometry
 
 ### Methods
 - [[WildGS-SLAM-Architecture]] — DROID + uncertainty + GS dynamic pipeline

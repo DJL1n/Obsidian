@@ -157,8 +157,8 @@ if certified surface exists + color residual high + geometry stable + local GS d
 ## Related extracted notes
 
 ### Concepts
-- [[Residual-GS-Layer]] — Gaussian as appearance residual on certified geometry
-- [[Geometry-First-GS-Pipeline]] — geometry teacher before GS layer
+- [[../Concepts/semantic/Residual-GS-Layer.md]] — Gaussian as appearance residual on certified geometry
+- [[../Concepts/semantic/Geometry-First-GS-Pipeline.md]] — geometry teacher before GS layer
 
 ### Methods
 - [[GPS-SLAM-Architecture]] — SDF + residual GS pipeline

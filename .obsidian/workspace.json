@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "27a61ce5e03bea7f",
+        "id": "500499dc257ad574",
         "type": "tabs",
         "children": [
           {
-            "id": "b4e7532291abd6e5",
+            "id": "1be672007ccdf269",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -179,8 +179,9 @@
       "bases:新建数据库": false
     }
   },
-  "active": "b4e7532291abd6e5",
+  "active": "1be672007ccdf269",
   "lastOpenFiles": [
+    "40_Knowledge/Methods/INDEX.md",
     "slam-frontends/patch-based/DPVO.md",
     "slam-frontends/patch-based",
     "slam-frontends",
@@ -209,7 +210,6 @@
     "40_Knowledge/References/geometry-model/VGGT.md",
     "40_Knowledge/References/geometry-model/SLAM3R.md",
     "40_Knowledge/References/geometry-model/MASt3R.md",
-    "40_Knowledge/References/geometry-model/MASt3R-SfM.md",
     "40_Knowledge/References/geometry-model",
     "40_Knowledge/References/slam-frontend",
     "40_Knowledge/References/semantic",

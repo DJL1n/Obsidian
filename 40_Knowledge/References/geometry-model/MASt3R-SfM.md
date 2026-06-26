@@ -140,8 +140,8 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 ## Related extracted notes
 
 ### Concepts
-- [[Constrained-Pointmap]] — raw pointmap → camera-model-constrained geometry
-- [[Anchor-Depth-Parameterization]] — pseudo-track anchor depth reduction
+- [[../Concepts/geometry/Constrained-Pointmap.md]] — raw pointmap → camera-model-constrained geometry
+- [[../Concepts/geometry/Anchor-Depth-Parameterization.md]] — pseudo-track anchor depth reduction
 
 ### Methods
 - [[Gradient-Based-SfM-Pipeline]] — MASt3R-SfM full pipeline

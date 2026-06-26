@@ -148,8 +148,8 @@ OpenMonoGS-SLAM 不适合作为你的几何主线，适合作为 semantic Gaussi
 ## Related extracted notes
 
 ### Concepts
-- [[Compact-Semantic-Memory]] — low-dim feature + high-dim prototype bank
-- [[Multi-Scale-Anchor-Admission]] — coarse/fine multi-level anchor maturity
+- [[../Concepts/semantic/Compact-Semantic-Memory.md]] — low-dim feature + high-dim prototype bank
+- [[../Concepts/anchor/Multi-Scale-Anchor-Admission.md]] — coarse/fine multi-level anchor maturity
 
 ### Methods
 - [[OpenMonoGS-SLAM-Architecture]] — [[geometry-model/MASt3R]] + SAM + CLIP + memory bank
