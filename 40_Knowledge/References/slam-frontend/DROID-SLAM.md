@@ -340,3 +340,7 @@ DROID/DPVO 比 [[geometry-priors/feed-forward/MASt3R]] 更适合作为 anchor/pa
 
 - **前作**：无（独立方向）（neural correspondence SLAM）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/SLAM-Frontends]]

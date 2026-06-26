@@ -152,3 +152,7 @@ FlashSLAM 的"前端不应 GS render loss"判断 + "显式匹配 > render optimi
 
 - **前作**：[[slam-frontends/gpu-optimized/GO-SLAM]]（fast GPU SLAM）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/SLAM-Frontends]]

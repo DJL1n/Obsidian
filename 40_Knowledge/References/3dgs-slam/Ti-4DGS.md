@@ -42,3 +42,7 @@ tags:
 - [[[[gs-slam/dynamic/4DGS-SLAM]]]] — 4D Gaussian Splatting SLAM 系统
 - [[[[gs-slam/monocular/Gaussian-SLAM]]]] — RGB-D 下的 4D GS SLAM
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略对比
+
+## 所属分类
+
+[[Categories/4D-Gaussian]]

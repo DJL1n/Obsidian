@@ -205,3 +205,7 @@ RGB → [[slam-frontends/patch-based/DPVO]]/DROID (temporal)
 
 - **前作**：[[geometry-priors/feed-forward/DUSt3R]], [[geometry-priors/feed-forward/MASt3R]], [[geometry-priors/feed-forward/CUT3R]]（retrieval-guided 3D SLAM）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Feed-Forward-3D]]

@@ -201,3 +201,7 @@ MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。
 
 - **前作**：[[gs-slam/monocular/Splat-SLAM]], [[slam-frontends/gpu-optimized/GO-SLAM]], [[gs-slam/monocular/MonoGS]], [[DROID]], [[slam-frontends/patch-based/DPVO]]（multi-camera GS）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/RGBD-GS-SLAM]]

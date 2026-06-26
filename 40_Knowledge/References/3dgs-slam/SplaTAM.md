@@ -201,3 +201,7 @@ SplaTAM = GS backend / silhouette-gated tracking / densification reference
 
 - **前作**：[[DROID]]（RGB-D GS-SLAM 起点）
 - **后继**：[[gs-slam/monocular/MonoGS]], [[gs-slam/monocular/GS-SLAM]]
+
+## 所属分类
+
+[[Categories/RGBD-GS-SLAM]]

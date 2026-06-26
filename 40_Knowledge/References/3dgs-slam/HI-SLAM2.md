@@ -178,3 +178,7 @@ HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry 
 - [[[[gs-slam/monocular/MonoGS]]]]
 - [[[[gs-slam/rgbd/GauS-SLAM]]]]
 - [[[[gs-slam/rgbd/MGS-SLAM]]]]
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

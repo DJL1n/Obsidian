@@ -15,3 +15,7 @@ GAN彻底改变了生成模型领域，催生了DCGAN、WGAN、StyleGAN、CycleG
 - [[StyleGAN]]
 - [[Denoising-Diffusion-Probabilistic-Models-DDPM]]
 - [[Alias-Free-GAN]]
+
+## 所属分类
+
+[[Categories/Generative-Models]]

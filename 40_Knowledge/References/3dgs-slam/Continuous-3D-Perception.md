@@ -58,3 +58,7 @@ tags:
 - [[[[gs-slam/experimental/AMB3R]]]] — feed-forward + backend 重建
 - [[[[gs-slam/structured/AnchorSplat]]]] — anchor-structured Gaussian
 - [[Persistent-State-Design]] — 持续状态设计原则
+
+## 所属分类
+
+[[Categories/4D-Gaussian]]

@@ -153,3 +153,7 @@ DSO 受 motion blur/noise/exposure/dynamic 影响，[[slam-frontends/patch-based
 
 - **前作**：无（独立方向）（EM coupling SLAM）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/SLAM-Frontends]]

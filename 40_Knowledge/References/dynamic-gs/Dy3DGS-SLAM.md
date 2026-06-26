@@ -176,3 +176,7 @@ Dy3DGS 对你是 dynamic/uncertainty evidence 模块参考，不是 packet coher
 
 - **前作**：[[gs-slam/dynamic/DGS-SLAM]]（monocular dynamic GS）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Dynamic-GS-SLAM]]

@@ -240,3 +240,7 @@ MASt3R 最强的是"把匹配落到 3D pointmap 上"，不是"给你可直接写
 
 - **前作**：[[geometry-priors/feed-forward/DUSt3R]]（DUSt3R 的多视图扩展）
 - **后继**：[[geometry-priors/feed-forward/MASt3R-SfM]], [[slam-frontends/large-scale/MASt3R-SLAM]], [[geometry-priors/grounded/VGGT]]
+
+## 所属分类
+
+[[Categories/Feed-Forward-3D]]

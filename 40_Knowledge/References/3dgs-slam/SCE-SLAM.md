@@ -38,3 +38,7 @@ Pipeline：输入帧 → SCE 网络（每像素 3D 坐标）→ PnP 位姿估计
 
 - **前作**：[[geometry-priors/feed-forward/MASt3R]], [[DSO]]（scene coordinate embeddings）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Geometric-Foundation-Models]]

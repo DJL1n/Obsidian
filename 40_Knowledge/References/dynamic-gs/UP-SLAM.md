@@ -172,3 +172,7 @@ UP-SLAM 核心：probabilistic anchor + multi-modal uncertainty + parallel decou
 
 - **前作**：无（独立方向）（probabilistic dynamic）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Dynamic-GS-SLAM]]

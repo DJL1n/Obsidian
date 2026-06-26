@@ -48,3 +48,7 @@ tags:
 - [[[[gs-slam/monocular/GS-SLAM]]]] — RGB-D 3DGS SLAM baseline
 - [[[[gs-slam/dynamic/CAD-SLAM]]]] — 动静解耦 SLAM
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略
+
+## 所属分类
+
+[[Categories/4D-Gaussian]]

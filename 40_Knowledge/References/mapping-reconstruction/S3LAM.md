@@ -311,3 +311,7 @@ S3LAM 的价值不在于比 DROID/[[geometry-priors/feed-forward/MASt3R]] 更强
 - [[mapping/structured/GSFusion]]
 - [[mapping/sdf-based/GPS-SLAM]]
 - [[gs-slam/structured/ContextGS]]
+
+## 所属分类
+
+[[Categories/Mapping-Methods]]

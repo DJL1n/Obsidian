@@ -162,3 +162,7 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 
 - **前作**：[[geometry-priors/feed-forward/MASt3R]]（MASt3R 的 offline SfM pipeline）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Feed-Forward-3D]]

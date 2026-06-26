@@ -14,3 +14,7 @@
 ## 相关笔记
 - [[VAE]]
 - [[VQ-VAE]]
+
+## 所属分类
+
+[[Categories/Generative-Models]]

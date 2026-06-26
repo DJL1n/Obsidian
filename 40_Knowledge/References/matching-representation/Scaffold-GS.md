@@ -245,3 +245,7 @@ Certified geometric anchor
 ## 相关笔记
 
 - [[matching-representation/LightGlue]]
+
+## 所属分类
+
+[[Categories/Structured-GS]]

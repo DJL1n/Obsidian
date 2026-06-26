@@ -9,3 +9,7 @@
 ## 方法
 
 建立三层互信息目标：1）模态-标签互信息最大化；2）模态间互信息最大化（互补性）；3）联合表示-标签互信息最大化。使用信息瓶颈（Information Bottleneck）原理，通过变分下界估计互信息，使用对比散度（contrastive divergence）优化。
+
+## 所属分类
+
+[[Categories/Multimodal-Sentiment]]

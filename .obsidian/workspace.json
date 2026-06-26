@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "99a38f21273dacdf",
+        "id": "27a61ce5e03bea7f",
         "type": "tabs",
         "children": [
           {
-            "id": "5442d8d6c1e2f1b4",
+            "id": "b4e7532291abd6e5",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -179,8 +179,30 @@
       "bases:新建数据库": false
     }
   },
-  "active": "5442d8d6c1e2f1b4",
+  "active": "b4e7532291abd6e5",
   "lastOpenFiles": [
+    "slam-frontends/patch-based/DPVO.md",
+    "slam-frontends/patch-based",
+    "slam-frontends",
+    "40_Knowledge/References/Categories/Vision-Transformers.md",
+    "40_Knowledge/References/Categories/Vision-Language.md",
+    "40_Knowledge/References/Categories/Survey.md",
+    "40_Knowledge/References/Categories/Structured-GS.md",
+    "40_Knowledge/References/Categories/SLAM-Frontends.md",
+    "40_Knowledge/References/Categories/RL-Foundations.md",
+    "40_Knowledge/References/Categories/RL-Alignment.md",
+    "40_Knowledge/References/Categories/RGBD-GS-SLAM.md",
+    "40_Knowledge/References/Categories/Multimodal-Sentiment.md",
+    "40_Knowledge/References/Categories/Multi-Sensor-GS.md",
+    "40_Knowledge/References/Categories/Monocular-GS-SLAM.md",
+    "40_Knowledge/References/Categories/Matching-Representation.md",
+    "40_Knowledge/References/Categories/Mapping-Methods.md",
+    "40_Knowledge/References/Categories/Geometric-Foundation-Models.md",
+    "40_Knowledge/References/Categories/Generative-Models.md",
+    "40_Knowledge/References/Categories/Feed-Forward-3D.md",
+    "40_Knowledge/References/Categories/Dynamic-GS-SLAM.md",
+    "40_Knowledge/References/Categories/4D-Gaussian.md",
+    "40_Knowledge/References/Categories",
     "40_Knowledge/References/3dgs-slam/SCE-SLAM.md",
     "40_Knowledge/References/3dgs-slam/VGGT-SLAM.md",
     "40_Knowledge/References/geometry-model/Spann3R.md",
@@ -188,34 +210,12 @@
     "40_Knowledge/References/geometry-model/SLAM3R.md",
     "40_Knowledge/References/geometry-model/MASt3R.md",
     "40_Knowledge/References/geometry-model/MASt3R-SfM.md",
-    "40_Knowledge/References/geometry-model/CUT3R.md",
-    "40_Knowledge/References/geometry-model/DUSt3R.md",
     "40_Knowledge/References/geometry-model",
-    "40_Knowledge/References/slam-frontend/VPGS-SLAM.md",
-    "40_Knowledge/References/slam-frontend/MASt3R-SLAM.md",
-    "40_Knowledge/References/slam-frontend/GSO-SLAM.md",
-    "40_Knowledge/References/slam-frontend/GO-SLAM.md",
-    "40_Knowledge/References/slam-frontend/FlashSLAM.md",
-    "40_Knowledge/References/slam-frontend/DROID-SLAM.md",
-    "40_Knowledge/References/slam-frontend/DPVO.md",
     "40_Knowledge/References/slam-frontend",
-    "40_Knowledge/References/semantic/SEGS-SLAM.md",
-    "40_Knowledge/References/semantic/MG-SLAM.md",
     "40_Knowledge/References/semantic",
-    "40_Knowledge/References/mapping-reconstruction/S3LAM.md",
-    "40_Knowledge/References/mapping-reconstruction/RGBDS-SLAM.md",
-    "40_Knowledge/References/mapping-reconstruction/OG-Mapping.md",
-    "40_Knowledge/References/mapping-reconstruction/GSFusion.md",
-    "40_Knowledge/References/mapping-reconstruction/GS-SDF.md",
-    "40_Knowledge/References/mapping-reconstruction/GPS-SLAM.md",
-    "40_Knowledge/References/mapping-reconstruction/ESLAM.md",
-    "40_Knowledge/References/mapping-reconstruction/ContextGS.md",
     "40_Knowledge/References/mapping-reconstruction",
     "40_Knowledge/References/dynamic-gs",
     "40_Knowledge/References/3dgs-slam",
-    "40_Knowledge/References/mapping/structured",
-    "40_Knowledge/References/mapping/semantic",
-    "40_Knowledge/References/mapping/sdf-based",
-    "40_Knowledge/References/mapping"
+    "40_Knowledge/References/mapping/structured"
   ]
 }

@@ -15,3 +15,7 @@ SAM 2是视频分割基础模型的重要突破，推动了视频编辑、自动
 - [[SAM]]
 - [[Memory-Transformers]]
 - [[Video-Understanding]]
+
+## 所属分类
+
+[[Categories/Vision-Language]]

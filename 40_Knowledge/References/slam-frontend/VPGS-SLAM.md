@@ -182,3 +182,7 @@ Replica ATE 0.21 优于 [[gs-slam/rgbd/SplaTAM]] 0.41 / [[gs-slam/monocular/Mono
 
 - **前作**：无（独立方向）（large-scale）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/SLAM-Frontends]]

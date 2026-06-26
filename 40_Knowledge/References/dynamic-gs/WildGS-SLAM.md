@@ -183,3 +183,7 @@ Online 有用，final global BA 应 remove disparity reg。
 
 - **前作**：[[gs-slam/dynamic/DGS-SLAM]]（DINOv2 动态过滤 GS-SLAM）
 - **后继**：[[gs-slam/dynamic/DGS-SLAM]], [[gs-slam/dynamic/ADD-SLAM]]
+
+## 所属分类
+
+[[Categories/Dynamic-GS-SLAM]]

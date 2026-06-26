@@ -161,3 +161,7 @@ GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几
 - [[mapping/structured/GSFusion]]
 - [[mapping/sdf-based/GPS-SLAM]]
 - [[gs-slam/structured/ContextGS]]
+
+## 所属分类
+
+[[Categories/Mapping-Methods]]

@@ -200,3 +200,7 @@ MonoGS = 3DGS map-centric SLAM reference / GS tracking convergence / covisibilit
 
 - **前作**：[[gs-slam/rgbd/SplaTAM]], [[DSO]]（首个 monocular GS-SLAM）
 - **后继**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/monocular/Splat-SLAM]], [[gs-slam/monocular/HI-SLAM2]]
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

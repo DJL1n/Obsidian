@@ -18,3 +18,7 @@ RLHF 训练流程分为三个步骤：
 ## 影响
 
 RLHF 是对齐领域的开创性工作，确立了"人类反馈 → 奖励模型 → RL 优化"的标准范式，被几乎所有后续 LLM 对齐方法（如 PPO、DPO、ORPO、KTO）所借鉴和进化。RLHF 直接推动了 ChatGPT 的诞生，开启了对话式 AI 时代。其局限性（昂贵的标注成本、reward hacking、单轮 vs 多轮偏好等）也催生了 DPO（Direct Preference Optimization）等更高效的替代方法。RLHF 是 AI 对齐领域最重要的工作之一。
+
+## 所属分类
+
+[[Categories/RL-Alignment]]

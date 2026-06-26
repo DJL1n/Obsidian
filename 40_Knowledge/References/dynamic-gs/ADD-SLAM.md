@@ -121,3 +121,7 @@ Observed depth > historical → 等待多帧确认后补静态 anchor
 
 - **前作**：[[gs-slam/dynamic/DGS-SLAM]]（adaptive dynamic SLAM）
 - **后继**：[[gs-slam/dynamic/CAD-SLAM]]
+
+## 所属分类
+
+[[Categories/Dynamic-GS-SLAM]]

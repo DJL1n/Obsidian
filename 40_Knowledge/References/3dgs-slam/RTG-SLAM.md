@@ -145,3 +145,7 @@ RGB-D ICP 不适合 monocular predicted depth。
 
 - **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/rgbd/GauS-SLAM]], [[gs-slam/dynamic/ADD-SLAM]]（compact lifecycle）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

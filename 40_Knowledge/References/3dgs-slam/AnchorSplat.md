@@ -152,3 +152,7 @@ Gaussian Splatting Render
 
 - **前作**：[[gs-slam/structured/Scaffold-GS]], [[gs-slam/structured/ContextGS]], [[gs-slam/structured/SEGS-SLAM]], [[geometry-priors/feed-forward/MASt3R]], [[slam-frontends/patch-based/DPVO]], [[gs-slam/monocular/DPV-SLAM]]（3D-first feed-forward anchor GS）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Structured-GS]]

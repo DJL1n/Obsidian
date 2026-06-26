@@ -171,3 +171,7 @@ Gaussian-LIC2 (2025, online SLAM + continuous-time + zero-shot depth, ✅ 代码
 
 - **前作**：[[slam-frontends/patch-based/DPVO]], [[gs-slam/monocular/GS-SLAM]]（LiDAR-IMU-Camera GS-SLAM）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Multi-Sensor-GS]]

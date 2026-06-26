@@ -139,3 +139,7 @@ Splat-SLAM 是你这批论文里最值得重点吸收的单目 GS-SLAM 机制之
 
 - **前作**：[[gs-slam/monocular/MonoGS]], [[gs-slam/rgbd/SplaTAM]]（keyframe-level GS-SLAM）
 - **后继**：[[gs-slam/monocular/HI-SLAM2]]
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

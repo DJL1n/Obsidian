@@ -9,3 +9,7 @@
 ## 方法
 
 设计统一的 Transformer 架构，通过模态特定 token 区分不同模态输入。在预训练阶段使用模态掩码重建（masked modality reconstruction）和跨模态对比学习两个自监督任务，使模型学会模态间互补和冗余信息建模。
+
+## 所属分类
+
+[[Categories/Multimodal-Sentiment]]

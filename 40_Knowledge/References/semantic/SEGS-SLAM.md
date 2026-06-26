@@ -133,3 +133,7 @@ SEGS-like backend → structured ChildGS + AfME + frequency pyramid
 ## 相关笔记
 
 - [[gs-slam/structured/MG-SLAM]]
+
+## 所属分类
+
+[[Categories/Structured-GS]]

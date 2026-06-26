@@ -203,3 +203,7 @@ CertifiedGeometryPacket/anchor skeleton = 核心研究层
 
 - **前作**：无（独立方向）（GPU-optimized SLAM）
 - **后继**：[[slam-frontends/gpu-optimized/FlashSLAM]]
+
+## 所属分类
+
+[[Categories/SLAM-Frontends]]

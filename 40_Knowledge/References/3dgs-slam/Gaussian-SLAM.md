@@ -219,3 +219,7 @@ CertifiedGeometryPacket = monocular geometry certification layer
 
 - **前作**：[[gs-slam/rgbd/SplaTAM]], [[mapping/structured/S3LAM]], [[mapping/structured/ESLAM]], [[geometry-priors/feed-forward/MASt3R]], [[slam-frontends/patch-based/DPVO]]（submap GS-SLAM with MASt3R prior）
 - **后继**：[[gs-slam/structured/VarSplat]]
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

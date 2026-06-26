@@ -159,3 +159,7 @@ MCGS-SLAM 从另一个方向说明：GS-SLAM 的真正瓶颈仍然是进入 Gaus
 
 - **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/rgbd/GauS-SLAM]], [[gs-slam/monocular/MonoGS]], [[gs-slam/dynamic/DGS-SLAM]], [[gs-slam/monocular/Splat-SLAM]], [[slam-frontends/patch-based/DPVO]]（multi-camera GS）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/RGBD-GS-SLAM]]

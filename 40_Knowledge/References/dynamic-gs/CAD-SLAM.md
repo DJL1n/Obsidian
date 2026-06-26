@@ -57,3 +57,7 @@ CAD-SLAM 提出 **一致性感知（Consistency-Aware） + 动静解耦映射（
 
 - **前作**：[[gs-slam/dynamic/DGS-SLAM]], [[slam-frontends/neural-correspondence/DROID-SLAM]], [[geometry-priors/feed-forward/MASt3R]]（consistency-aware dynamic SLAM）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Dynamic-GS-SLAM]]

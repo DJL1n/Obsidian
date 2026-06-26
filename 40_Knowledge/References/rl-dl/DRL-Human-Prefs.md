@@ -18,3 +18,7 @@
 ## 影响
 
 该工作将人类反馈引入 RL 领域，为 RLHF 的前身提供了理论基础。它展示了偏好学习（preference learning）在 RL 中的有效性，启发了后续的对齐研究（如 InstructGPT、RLAIF）。方法中的主动学习和 Bradley-Terry 偏好模型被广泛应用于后续的偏好优化算法。这项工作桥接了经典 RL 和 LLM 对齐，证明人类偏好作为奖励信号可以替代或增强传统奖励函数设计。
+
+## 所属分类
+
+[[Categories/RL-Alignment]]

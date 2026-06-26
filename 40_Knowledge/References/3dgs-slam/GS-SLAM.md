@@ -199,3 +199,7 @@ Phase 2: optimize Gaussians + keyframe poses
 
 - **前作**：[[gs-slam/monocular/MonoGS]]（monocular GS-SLAM 基线）
 - **后继**：[[gs-slam/monocular/GigaSLAM]], [[gs-slam/rgbd/GauS-SLAM]], [[gs-slam/monocular/Splat-SLAM]], [[gs-slam/monocular/SING3R-SLAM]], [[gs-slam/monocular/OpenMonoGS-SLAM]], [[gs-slam/monocular/RTG-SLAM]], [[gs-slam/multi-sensor/LVD-GS]], [[gs-slam/structured/VarSplat]], [[MAGiC-SLAM]]
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

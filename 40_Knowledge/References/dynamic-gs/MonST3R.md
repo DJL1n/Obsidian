@@ -144,3 +144,7 @@ MonST3R 对你最有价值的不是接入主线，而是：
 
 - **前作**：无（独立方向）（dynamic video geometry）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Dynamic-GS-SLAM]]

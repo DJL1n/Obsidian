@@ -18,3 +18,7 @@ A3C 的核心设计：
 ## 影响
 
 A3C 是第一个将并行化与 actor-critic 架构结合的 RL 算法，其设计简洁且实用。异步更新的思想深刻影响了后续工作：A2C（同步版）成为多环境 RL 的标准，A3C 的并行探索机制启发了 IMPALA、R2D2 等算法。A3C 也是 PPO 的前身——PPO 在 A3C 的 actor-critic 基础上引入了 clip 机制和优势估计的 GAE（Generalized Advantage Estimation）。A3C 在 3D Maze 上的零样本泛化能力首次展示了 RL 在复杂导航任务中的潜力，为后来的 AI 导航研究开辟了方向。
+
+## 所属分类
+
+[[Categories/RL-Foundations]]

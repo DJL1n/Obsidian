@@ -14,3 +14,7 @@ LDM/Stable Diffusion是AIGC革命的核心技术，直接催生了Midjourney、D
 ## 相关笔记
 - [[Denoising-Diffusion-Probabilistic-Models-DDPM]]
 - [[CLIP]]
+
+## 所属分类
+
+[[Categories/Generative-Models]]

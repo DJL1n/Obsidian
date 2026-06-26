@@ -182,3 +182,7 @@ Flatten Gaussians toward surface + SDF/depth alignment + Manhattan normal regula
 ## 相关笔记
 
 - [[gs-slam/structured/SEGS-SLAM]]
+
+## 所属分类
+
+[[Categories/Structured-GS]]

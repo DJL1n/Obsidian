@@ -304,3 +304,7 @@ MASt3R-SLAM 的最大价值：证明 MASt3R two-view pointmap prior 可以被系
 
 - **前作**：[[geometry-priors/feed-forward/MASt3R]]（MASt3R 的 SLAM 版本）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/SLAM-Frontends]]

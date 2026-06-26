@@ -275,3 +275,7 @@ Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 ## 相关笔记
 
 - [[gs-slam/structured/Scaffold-GS]]
+
+## 所属分类
+
+[[Categories/Matching-Representation]]

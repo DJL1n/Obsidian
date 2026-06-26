@@ -9,3 +9,7 @@
 ## 方法
 
 使用 ViT-BERT 架构，视觉编码器（ViT）和文本编码器（BERT）并行提取特征后通过交叉注意力层进行交互。引入视觉-文本对齐损失（vision-text alignment loss）约束跨模态语义一致性，并在社交媒体数据集（如 Twitter 图像帖文）上验证。
+
+## 所属分类
+
+[[Categories/Multimodal-Sentiment]]

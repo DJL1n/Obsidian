@@ -9,3 +9,7 @@
 ## 方法
 
 使用跨模态 Transformer 编码器-解码器，以强模态（如文本）为条件生成弱模态的补充表示。增强后的表示与原始表示拼接后送入融合模块。训练时采用模态随机丢弃（modal dropout）模拟模态缺失，提升鲁棒性。
+
+## 所属分类
+
+[[Categories/Multimodal-Sentiment]]

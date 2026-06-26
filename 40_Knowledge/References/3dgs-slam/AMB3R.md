@@ -51,3 +51,7 @@ tags:
 - [[[[geometry-priors/feed-forward/MASt3R]]]] — 3D 匹配基础模型
 - [[[[slam-frontends/neural-correspondence/DROID-SLAM]]]] — learned correspondence + BA
 - [[CertifiedGeometryPacket]] — 几何数据包一致性机制
+
+## 所属分类
+
+[[Categories/4D-Gaussian]]

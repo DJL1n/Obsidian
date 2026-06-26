@@ -154,3 +154,6 @@ CoGS-SLAM 的 inter-agent loop 可映射为你的 inter-submap loop：retrieval 
 
 ## 相关笔记
 
+## 所属分类
+
+[[Categories/Survey]]

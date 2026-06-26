@@ -173,3 +173,7 @@ if certified surface exists + color residual high + geometry stable + local GS d
 - [[mapping/structured/GSFusion]]
 - [[gs-slam/structured/ContextGS]]
 - [[mapping/semantic/RGBDS-SLAM]]
+
+## 所属分类
+
+[[Categories/Mapping-Methods]]

@@ -18,3 +18,7 @@
 ## 影响
 
 Dueling DQN 是 DQN 系列的重要改进之一，与 DDPG、PPO 等算法形成对比——它展示了通过**网络结构设计**而非改变优化目标或更新机制来提升强化学习性能的思路。其价值-优势分解的思想后来被广泛借鉴到策略梯度方法（如 A3C、PPO 中的 advantage estimation）以及各种多智能体 RL 架构中。Dueling 结构也是后来 DeepMind 的 Rainbow DQN 算法的五个核心改进之一，成为现代 DQN 变体的标准组件。
+
+## 所属分类
+
+[[Categories/RL-Foundations]]

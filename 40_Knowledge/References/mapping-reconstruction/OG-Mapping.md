@@ -174,3 +174,7 @@ L = color reconstruction + depth rendering + SSIM + Gaussian scale regularizatio
 - [[mapping/structured/GSFusion]]
 - [[mapping/sdf-based/GPS-SLAM]]
 - [[gs-slam/structured/ContextGS]]
+
+## 所属分类
+
+[[Categories/Mapping-Methods]]

@@ -17,3 +17,7 @@ Agent Lighting 提出了基于强化学习的 LLM 智能体训练框架，旨在
 ## 影响
 
 Agent Lighting 展示了 RL 在 LLM 智能体训练中的有效性，是 R1 之后又一个重要的 RL-for-agents 工作。其设计特别针对工具使用和规划任务，与 DeepMind 的 "Reinforcement Learning for Foundational Models" 和 Anthropic 的 "Process Reward Models" 方向相呼应。该工作推动了对智能体"思维-行动"联合优化方法的关注，为自主智能体的可靠部署提供了新的技术路径。
+
+## 所属分类
+
+[[Categories/RL-Alignment]]

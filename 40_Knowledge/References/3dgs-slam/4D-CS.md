@@ -48,3 +48,7 @@ tags:
 - [[Semantic-SLAM]] — 语义 SLAM 方法
 - [[[[gs-slam/structured/AnchorSplat]]]] — anchor-structured Gaussian
 - [[Cluster-Level-Feature-Aggregation]] — 聚类级特征聚合方法
+
+## 所属分类
+
+[[Categories/4D-Gaussian]]

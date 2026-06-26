@@ -15,3 +15,7 @@ ResNet是深度学习史上最被引用的论文之一（被引超过20万次）
 - [[Attention]]
 - [[Denoising-Diffusion-Probabilistic-Models-DDPM]]
 - [[Vision-Transformers]]
+
+## 所属分类
+
+[[Categories/Vision-Transformers]]

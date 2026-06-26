@@ -292,3 +292,7 @@ CertifiedGeometryPacket 可加以下 gate：
 - [[mapping/structured/GSFusion]]
 - [[mapping/sdf-based/GPS-SLAM]]
 - [[gs-slam/structured/ContextGS]]
+
+## 所属分类
+
+[[Categories/Mapping-Methods]]

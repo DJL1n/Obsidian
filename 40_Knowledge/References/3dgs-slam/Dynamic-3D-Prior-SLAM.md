@@ -32,3 +32,7 @@
 ## 相关笔记
 - "General 3D Prior" 的核心思想是用几何自洽性替代语义标签做动态检测
 - 与 SkelGS-SLAM 的 anchor 概念高度互补：anchor 本身就是结构化的 3D 先验
+
+## 所属分类
+
+[[Categories/4D-Gaussian]]

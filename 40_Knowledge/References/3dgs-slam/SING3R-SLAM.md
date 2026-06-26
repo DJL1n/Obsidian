@@ -39,3 +39,7 @@ Pipeline：新帧 → 分配到 submap → 局部 BA（GS + 位姿）→ submap 
 
 - **前作**：[[gs-slam/monocular/GS-SLAM]]（submap-based indoor）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

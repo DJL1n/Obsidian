@@ -137,3 +137,7 @@ Monocular scale / pose-depth coherence / dynamic / frontend tracking。
 - [[mapping/sdf-based/GPS-SLAM]]
 - [[gs-slam/structured/ContextGS]]
 - [[mapping/semantic/RGBDS-SLAM]]
+
+## 所属分类
+
+[[Categories/Mapping-Methods]]

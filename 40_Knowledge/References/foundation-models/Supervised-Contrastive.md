@@ -15,3 +15,7 @@
 - [[CLIP]]
 - [[SimCLR-Self-Supervised-Learning]]
 - [[Denoising-Diffusion-Probabilistic-Models-DDPM]]
+
+## 所属分类
+
+[[Categories/Vision-Language]]

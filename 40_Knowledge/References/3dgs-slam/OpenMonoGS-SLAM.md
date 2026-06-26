@@ -169,3 +169,7 @@ OpenMonoGS-SLAM 不适合作为你的几何主线，适合作为 semantic Gaussi
 
 - **前作**：[[gs-slam/monocular/MonoGS]], [[gs-slam/monocular/Splat-SLAM]], [[gs-slam/structured/SEGS-SLAM]]（open-set semantic）
 - **后继**：无
+
+## 所属分类
+
+[[Categories/Monocular-GS-SLAM]]

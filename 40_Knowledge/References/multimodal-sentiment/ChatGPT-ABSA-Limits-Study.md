@@ -9,3 +9,7 @@
 ## 方法
 
 在 SemEval 2014/2015/2016 ABSA 基准上评测 ChatGPT 的 zero-shot 和 few-shot 表现，与 BERT 基线、专用 ABSA 模型对比。分析失败案例，发现 ChatGPT 的主要局限包括：缺乏细粒度方面定位能力、对领域特定术语敏感度低、无法区分共现的多个方面词。
+
+## 所属分类
+
+[[Categories/Multimodal-Sentiment]]

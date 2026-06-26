@@ -161,3 +161,7 @@ CUT3R 角色：persistent-state geometry proposal，不是 system truth。
 
 - **前作**：[[geometry-priors/feed-forward/DUSt3R]], [[geometry-priors/feed-forward/MASt3R]], [[geometry-priors/feed-forward/Spann3R]]（连续 3D 感知 + 持续状态）
 - **后继**：[[geometry-priors/feed-forward/SLAM3R]]
+
+## 所属分类
+
+[[Categories/Feed-Forward-3D]]

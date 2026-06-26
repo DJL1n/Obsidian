@@ -15,3 +15,7 @@ VQ-VAE成为离散表示学习的基石，被VQGAN、DALL·E、Taming Transforme
 - [[VAE]]
 - [[beta-VAE]]
 - [[DALL-E]]
+
+## 所属分类
+
+[[Categories/Generative-Models]]
