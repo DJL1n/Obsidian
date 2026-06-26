@@ -27,6 +27,6 @@ Error/gradient-based growth（如 Scaffold-GS）在 offline 场景有效，但 o
 
 ## Related notes
 
-- [[mapping/structured/OG-Mapping]]
+- [[mapping-reconstruction/OG-Mapping]]
 - [[Octree-Anchor-Hierarchy]]
 - [[Dynamic-Keyframe-Window]]

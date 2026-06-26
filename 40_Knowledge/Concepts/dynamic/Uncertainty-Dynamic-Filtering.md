@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/WildGS-SLAM]]
+- [[dynamic-gs/WildGS-SLAM]]
 - [[Static-Dynamic-Side-Channel]]
 - [[Certified-Dynamic-Gate]]

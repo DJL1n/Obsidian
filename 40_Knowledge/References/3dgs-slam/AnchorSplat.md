@@ -141,16 +141,16 @@ Gaussian Splatting Render
 
 ## 相关笔记
 
-- [[[[gs-slam/structured/Scaffold-GS]]]] — anchor → Gaussian 表示的起点
-- [[[[gs-slam/structured/ContextGS]]]] — anchor 压缩
-- [[[[gs-slam/structured/SEGS-SLAM]]]] — SLAM 分支
+- [[[[matching-representation/Scaffold-GS]]]] — anchor → Gaussian 表示的起点
+- [[[[mapping-reconstruction/ContextGS]]]] — anchor 压缩
+- [[[[semantic/SEGS-SLAM]]]] — SLAM 分支
 - [[Anchor定义和anchor生成结构]] — 你的 anchor 设计
 - [[ChildGS]] — Gaussian 从 anchor 出生
-- [[[[gs-slam/monocular/DPV-SLAM]]]] — 你的前端 base
+- [[[[3dgs-slam/DPV-SLAM]]]] — 你的前端 base
 
 ## 方法继承
 
-- **前作**：[[gs-slam/structured/Scaffold-GS]], [[gs-slam/structured/ContextGS]], [[gs-slam/structured/SEGS-SLAM]], [[geometry-priors/feed-forward/MASt3R]], [[slam-frontends/patch-based/DPVO]], [[gs-slam/monocular/DPV-SLAM]]（3D-first feed-forward anchor GS）
+- **前作**：[[matching-representation/Scaffold-GS]], [[mapping-reconstruction/ContextGS]], [[semantic/SEGS-SLAM]], [[geometry-model/MASt3R]], [[slam-frontend/DPVO]], [[3dgs-slam/DPV-SLAM]]（3D-first feed-forward anchor GS）
 - **后继**：无
 
 ## 所属分类

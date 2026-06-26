@@ -219,10 +219,10 @@ Certified geometric anchor
 
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
-| DROID/[[slam-frontends/patch-based/DPVO]] | temporal optimization | tracking / temporal anchor support |
-| [[geometry-priors/feed-forward/MASt3R]]-SLAM | dense two-view geometry | robust geometry proposal |
-| [[mapping/structured/S3LAM]] | semantic cluster + structure | structural grouping |
-| [[mapping/structured/ESLAM]] | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
+| DROID/[[slam-frontend/DPVO]] | temporal optimization | tracking / temporal anchor support |
+| [[geometry-model/MASt3R]]-SLAM | dense two-view geometry | robust geometry proposal |
+| [[mapping-reconstruction/S3LAM]] | semantic cluster + structure | structural grouping |
+| [[mapping-reconstruction/ESLAM]] | RGB-D TSDF implicit mapping | surface-band / free-space regularization |
 | LightGlue | fast sparse matching | pair verification / loop / reloc |
 | **Scaffold-GS** | **structured GS backend** | **anchor-conditioned GS birth / ChildGS** |
 

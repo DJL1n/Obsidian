@@ -25,5 +25,5 @@ DUSt3R/MASt3R 类模型的共享坐标系两视图 pointmap 预测：输入两�
 
 ## Related notes
 
-- [[geometry-priors/feed-forward/MASt3R]]
+- [[geometry-model/MASt3R]]
 - [[3D-Grounded-Matching]]

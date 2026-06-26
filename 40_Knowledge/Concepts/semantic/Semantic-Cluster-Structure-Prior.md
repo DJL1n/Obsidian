@@ -27,6 +27,6 @@
 
 ## Related notes
 
-- [[mapping/structured/S3LAM]]
+- [[mapping-reconstruction/S3LAM]]
 - [[Point-Plane-Regularizer]]
 - [[Structured-Anchor-Group]]

@@ -10,6 +10,6 @@ VarSplat 的 per-splat variance 主要通过 photometric residual 学习，虽�
 
 ## Related notes
 
-- [[gs-slam/structured/VarSplat]]
+- [[3dgs-slam/VarSplat]]
 - [[Primitive-Level-Reliability]]
 - [[AnchorReliability-Admission-Gate]]

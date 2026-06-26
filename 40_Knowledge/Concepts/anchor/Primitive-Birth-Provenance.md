@@ -10,6 +10,6 @@ Primitive 不应只是一个 3D 几何点。它的出生来源信息本身就是
 
 ## Related notes
 
-- [[gs-slam/dynamic/DGS-SLAM]]
+- [[dynamic-gs/DGS-SLAM]]
 - [[Dynamic-Gate-Through-Pipeline]]
 - [[Robust-Mask-Residual]]

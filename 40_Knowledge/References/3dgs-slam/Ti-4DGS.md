@@ -34,13 +34,13 @@ tags:
 在动态场景数据集上，相比 4DGS，训练时间减少约 3-5 倍，渲染质量（PSNR/SSIM/LPIPS）接近或超越现有方法，支持实时或近实时渲染。
 
 ## 4. 与 SkelGS-SLAM 的关联
-- **可借鉴点**：时间维度初始化策略可以迁移到 SkelGS-SLAM 的 anchor 生命周期管理——新 anchor 不应一次性全量创建，而应按时间渐进引入。时间连续性约束可以类比 SkelGS-SLAM 中 [[slam-frontends/patch-based/DPVO]] 前端的光流/运动一致性。
+- **可借鉴点**：时间维度初始化策略可以迁移到 SkelGS-SLAM 的 anchor 生命周期管理——新 anchor 不应一次性全量创建，而应按时间渐进引入。时间连续性约束可以类比 SkelGS-SLAM 中 [[slam-frontend/DPVO]] 前端的光流/运动一致性。
 - **差异**：Ti-4DGS 是离线重建方法，非 SLAM 系统；无 pose estimation 回路。SkelGS-SLAM 需要在单目条件下在线完成 tracking + mapping。
 - **融合方向**：SkelGS-SLAM 的 anchor-structured GS 可以借鉴时间初始化策略——当 CertifiedGeometryPacket 到达时，渐进式展开 anchor 下的 Gaussian 集合，而非一次性创建所有 Gaussians，从而减少不必要的渲染开销和内存占用。
 
 ## 相关笔记
-- [[[[gs-slam/dynamic/4DGS-SLAM]]]] — 4D Gaussian Splatting SLAM 系统
-- [[[[gs-slam/monocular/Gaussian-SLAM]]]] — RGB-D 下的 4D GS SLAM
+- [[[[3dgs-slam/4DGS-SLAM]]]] — 4D Gaussian Splatting SLAM 系统
+- [[[[3dgs-slam/Gaussian-SLAM]]]] — RGB-D 下的 4D GS SLAM
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略对比
 
 ## 所属分类

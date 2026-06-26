@@ -26,6 +26,6 @@ Vanilla 3DGS 的 free Gaussian cloud 容易冗余、view-dependent 效果差、�
 
 ## Related notes
 
-- [[gs-slam/structured/Scaffold-GS]]
+- [[matching-representation/Scaffold-GS]]
 - [[ChildGS-Local-Derivation]]
 - [[Anchor-Growing-Pruning]]

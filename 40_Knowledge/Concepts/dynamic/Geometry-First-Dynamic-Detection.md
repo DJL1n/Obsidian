@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/MonST3R]]
+- [[dynamic-gs/MonST3R]]
 - [[Per-Timestep-Pointmap]]
 - [[Dynamic-Region-as-Packet-Evidence]]

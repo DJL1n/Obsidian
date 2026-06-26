@@ -48,6 +48,6 @@ ConvGRU 输出：
 
 ## Related notes
 
-- [[slam-frontends/neural-correspondence/DROID-SLAM]]
+- [[slam-frontend/DROID-SLAM]]
 - [[Dense-Bundle-Adjustment]]
 - [[Correlation-Volume]]

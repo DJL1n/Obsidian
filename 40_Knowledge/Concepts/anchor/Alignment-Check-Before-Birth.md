@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[slam-frontends/gpu-optimized/FlashSLAM]]
+- [[slam-frontend/FlashSLAM]]
 - [[Explicit-Tracking-vs-Render-Tracking]]
 - [[Loss-Weighted-Refinement]]

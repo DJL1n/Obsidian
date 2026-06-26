@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[mapping/structured/GSFusion]]
+- [[mapping-reconstruction/GSFusion]]
 - [[Geometry-Gated-GS-Birth]]
 - [[Quadtree-Image-Budget]]

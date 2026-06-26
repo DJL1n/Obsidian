@@ -17,7 +17,7 @@ tags:
 用 feed-forward 基础模型做初始 3D 重建，再经后端优化提升至 metric-scale 精度，平衡速度与精度。
 
 ## 1. 核心问题
-现有 feed-forward 3D 基础模型（如 VGGT、MASt3R、[[geometry-priors/feed-forward/DUSt3R]]）可快速生成 3D 结构，但精度通常不达 metric-scale；传统 SLAM/BA 方法精度高但速度慢，难以兼顾效率与精度。
+现有 feed-forward 3D 基础模型（如 VGGT、MASt3R、[[geometry-model/DUSt3R]]）可快速生成 3D 结构，但精度通常不达 metric-scale；传统 SLAM/BA 方法精度高但速度慢，难以兼顾效率与精度。
 
 ## 2. 核心方法
 该论文提出 **AMB3R** 两阶段框架：
@@ -40,16 +40,16 @@ tags:
 
 ## 4. 与 SkelGS-SLAM 的关联
 - **可借鉴点**：
-  1. **Feed-forward + Backend 范式**：SkelGS-SLAM 本质上也是这种结构——MASt3R/DROID 作为 geometry proposal（feed-forward），[[slam-frontends/patch-based/DPVO]] 作为前端 tracking，GS mapping 作为后端。AMB3R 的两阶段思路验证了该范式。
+  1. **Feed-forward + Backend 范式**：SkelGS-SLAM 本质上也是这种结构——MASt3R/DROID 作为 geometry proposal（feed-forward），[[slam-frontend/DPVO]] 作为前端 tracking，GS mapping 作为后端。AMB3R 的两阶段思路验证了该范式。
   2. **Outlier rejection 机制**：feed-forward 基础模型的输出必须有严格的置信度过滤。SkelGS-SLAM 的 CertifiedGeometryPacket 就是这种过滤的显式实现——只有通过一致性校验的 geometry 才被认证。
   3. **Scale recovery 策略**：单目 SLAM 的核心挑战之一是尺度恢复。AMB3R 的后端优化方式（reprojection-based refinement）可作为 SkelGS-SLAM 的 submap-level scale alignment 参考。
 - **差异**：AMB3R 是离线重建 pipeline，非在线 SLAM；不处理动态场景。SkelGS-SLAM 需要在线处理连续帧。
-- **融合方向**：SkelGS-SLAM 可以考虑在 anchor level 引入 mini-backend——每个 anchor 的 Gaussian 集合在创建后进行轻量 BA-like refinement，而非完全依赖前端 [[slam-frontends/patch-based/DPVO]] 的 pose 和几何。这相当于 per-submap 的 AMB3R 式优化。
+- **融合方向**：SkelGS-SLAM 可以考虑在 anchor level 引入 mini-backend——每个 anchor 的 Gaussian 集合在创建后进行轻量 BA-like refinement，而非完全依赖前端 [[slam-frontend/DPVO]] 的 pose 和几何。这相当于 per-submap 的 AMB3R 式优化。
 
 ## 相关笔记
-- [[[[geometry-priors/grounded/VGGT]]-SLAM]] — [[geometry-priors/grounded/VGGT]] 基础模型用于 SLAM
-- [[[[geometry-priors/feed-forward/MASt3R]]]] — 3D 匹配基础模型
-- [[[[slam-frontends/neural-correspondence/DROID-SLAM]]]] — learned correspondence + BA
+- [[[[geometry-model/VGGT]]-SLAM]] — [[geometry-model/VGGT]] 基础模型用于 SLAM
+- [[[[geometry-model/MASt3R]]]] — 3D 匹配基础模型
+- [[[[slam-frontend/DROID-SLAM]]]] — learned correspondence + BA
 - [[CertifiedGeometryPacket]] — 几何数据包一致性机制
 
 ## 所属分类

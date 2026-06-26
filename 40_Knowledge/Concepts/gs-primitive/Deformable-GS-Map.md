@@ -10,6 +10,6 @@ loop/global BA 会改旧 keyframe pose/depth，旧 geometry 下出生的 Gaussia
 
 ## Related notes
 
-- [[gs-slam/monocular/Splat-SLAM]]
+- [[3dgs-slam/Splat-SLAM]]
 - [[Geometry-Authority-Separation]]
 - [[Proxy-Depth-Packet]]

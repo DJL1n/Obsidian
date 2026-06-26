@@ -109,10 +109,10 @@ Ablation: center reg 改善但仍 blur；shape reg 保留砖块细节。
 ## 11. 对 SkelGS-SLAM 的启发
 
 ### ★ 最重要：GS 几何需要外部连续几何场监督
-Render-derived constraints 不足以保证 Gaussian geometry。你的系统需要：[[slam-frontends/patch-based/DPVO]] temporal + [[geometry-priors/feed-forward/MASt3R]] pair + depth-normal + free-space + CertifiedGeometryPacket。
+Render-derived constraints 不足以保证 Gaussian geometry。你的系统需要：[[slam-frontend/DPVO]] temporal + [[geometry-model/MASt3R]] pair + depth-normal + free-space + CertifiedGeometryPacket。
 
 ### CertifiedGeometryPacket ≈ 你的 NSDF teacher
-Monocular 无 LiDAR NSDF，但可以构造 weak geometry teacher：[[slam-frontends/patch-based/DPVO]] + [[geometry-priors/feed-forward/MASt3R]] + depth-normal + scale + free-space → CertifiedAnchorField。
+Monocular 无 LiDAR NSDF，但可以构造 weak geometry teacher：[[slam-frontend/DPVO]] + [[geometry-model/MASt3R]] + depth-normal + scale + free-space → CertifiedAnchorField。
 
 ### Shape regularization > center regularization
 ChildGS 应约束整个 tangent plane，不只约束 center。
@@ -133,10 +133,10 @@ Unbounded/low-confidence background 不要强行 birth Gaussians。
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **GS-SDF** | **LiDAR→NSDF→GS init+shape reg** | **geometry teacher / shape regularization** |
-| [[gs-slam/monocular/GS-SLAM]]/[[gs-slam/rgbd/SplaTAM]] | RGB-D [[gs-slam/monocular/GS-SLAM]] | sensor depth baseline |
-| [[gs-slam/rgbd/MGS-SLAM]] | monocular [[slam-frontends/patch-based/DPVO]]+MVS+GS | scale closure |
-| [[slam-frontends/large-scale/VPGS-SLAM]] | large-scale submap GS | submap/anchor/loop |
-| [[mapping/structured/OG-Mapping]] | octree anchor GS | LOD growth |
+| [[3dgs-slam/GS-SLAM]]/[[3dgs-slam/SplaTAM]] | RGB-D [[3dgs-slam/GS-SLAM]] | sensor depth baseline |
+| [[3dgs-slam/MGS-SLAM]] | monocular [[slam-frontend/DPVO]]+MVS+GS | scale closure |
+| [[slam-frontend/VPGS-SLAM]] | large-scale submap GS | submap/anchor/loop |
+| [[mapping-reconstruction/OG-Mapping]] | octree anchor GS | LOD growth |
 
 GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几何场 → 从这个场初始化 Gaussian → 用 shape-level regularization 约束 Gaussian → 不指望 RGB render loss 自己保证几何一致。
 
@@ -158,9 +158,9 @@ GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几
 
 ## 相关笔记
 
-- [[mapping/structured/GSFusion]]
-- [[mapping/sdf-based/GPS-SLAM]]
-- [[gs-slam/structured/ContextGS]]
+- [[mapping-reconstruction/GSFusion]]
+- [[mapping-reconstruction/GPS-SLAM]]
+- [[mapping-reconstruction/ContextGS]]
 
 ## 所属分类
 

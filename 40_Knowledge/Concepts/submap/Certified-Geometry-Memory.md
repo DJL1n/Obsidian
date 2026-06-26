@@ -32,6 +32,6 @@
 
 ## Related notes
 
-- [[geometry-priors/feed-forward/CUT3R]]
+- [[geometry-model/CUT3R]]
 - [[Persistent-State-Pointmap]]
 - [[Retrieval-Guided-Registration]]

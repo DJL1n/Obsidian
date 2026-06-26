@@ -24,7 +24,7 @@ RGB-D dense Gaussian SLAM + feature-based tracking (point + line) + line/plane s
 
 ## 2. 核心问题
 
-早期 [[gs-slam/monocular/GS-SLAM]] 两个短板：textureless 区域 tracking 不稳；floor/ceiling 等大平面被遮挡/视角不足，Gaussian map 出现 holes/gaps。MG-SLAM 用线段 tracking + Manhattan 结构面补全来解决。
+早期 [[3dgs-slam/GS-SLAM]] 两个短板：textureless 区域 tracking 不稳；floor/ceiling 等大平面被遮挡/视角不足，Gaussian map 出现 holes/gaps。MG-SLAM 用线段 tracking + Manhattan 结构面补全来解决。
 
 ---
 
@@ -140,7 +140,7 @@ Flatten Gaussians toward surface + SDF/depth alignment + Manhattan normal regula
 ## 11. 对 SkelGS-SLAM 的启发
 
 1. **结构先验可从"辅助语义"升级为"Gaussian birth 条件"** — CertifiedAnchorGroup + structure primitive → ChildGS completion
-2. **线段可作为 anchor group boundary** — [[slam-frontends/patch-based/DPVO]]/[[geometry-priors/feed-forward/MASt3R]] 不擅长的结构边界
+2. **线段可作为 anchor group boundary** — [[slam-frontend/DPVO]]/[[geometry-model/MASt3R]] 不擅长的结构边界
 3. **补全必须标记为 hypothesis** — observed certified vs hypothesized inferred
 4. **Manhattan 应是 weak prior** — evidence-gated，非 hard rule
 5. **支持 anchor group > isolated anchor** — surface/density/boundary/completion support
@@ -158,9 +158,9 @@ Flatten Gaussians toward surface + SDF/depth alignment + Manhattan normal regula
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **MG-SLAM** | **RGB-D GS + Manhattan structure** | **line/plane completion / structure prior** |
-| [[mapping/structured/S3LAM]] | sparse semantic-plane | structural clustering |
-| [[gs-slam/rgbd/MGS-SLAM]] | monocular [[slam-frontends/patch-based/DPVO]]+MVS+GS | scale closure |
-| [[slam-frontends/large-scale/VPGS-SLAM]] | large-scale GS | submap/anchor/loop |
+| [[mapping-reconstruction/S3LAM]] | sparse semantic-plane | structural clustering |
+| [[3dgs-slam/MGS-SLAM]] | monocular [[slam-frontend/DPVO]]+MVS+GS | scale closure |
+| [[slam-frontend/VPGS-SLAM]] | large-scale GS | submap/anchor/loop |
 | GS-SDF | SDF teacher + shape reg | geometry teacher |
 
 ---
@@ -181,7 +181,7 @@ Flatten Gaussians toward surface + SDF/depth alignment + Manhattan normal regula
 
 ## 相关笔记
 
-- [[gs-slam/structured/SEGS-SLAM]]
+- [[semantic/SEGS-SLAM]]
 
 ## 所属分类
 

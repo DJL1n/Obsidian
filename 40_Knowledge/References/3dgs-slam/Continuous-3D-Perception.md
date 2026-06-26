@@ -17,7 +17,7 @@ tags:
 用持续状态（persistent state）构建连续 3D 感知模型，实现跨帧/跨会话的增量式 3D 理解。
 
 ## 1. 核心问题
-现有 3D 视觉基础模型（如 MASt3R、[[geometry-priors/feed-forward/DUSt3R]]）以独立图像对或固定窗口处理场景，无法维持长期状态；SLAM 系统虽然维护状态但缺乏语义理解能力，两者之间缺少统一的 3D 感知范式。
+现有 3D 视觉基础模型（如 MASt3R、[[geometry-model/DUSt3R]]）以独立图像对或固定窗口处理场景，无法维持长期状态；SLAM 系统虽然维护状态但缺乏语义理解能力，两者之间缺少统一的 3D 感知范式。
 
 ## 2. 核心方法
 该论文提出一种 **Continuous 3D Perception 框架**，核心创新在于 persistent state 机制：
@@ -50,13 +50,13 @@ tags:
   2. **Incremental update 范式**：新帧到来时不重建，只更新。这与 SkelGS-SLAM 的设计哲学完全一致——CertifiedGeometryPacket 是增量更新单元。
   3. **State retrieval as context**：从持久状态中检索相关上下文进行当前帧处理，可以类比 SkelGS-SLAM 中从 submap 检索相关 anchors 作为 geometry proposal 的先验。
   4. **Temporal consistency 正则化**：persistent state 对漂移的自然抑制，验证了 SkelGS-SLAM 中 submap-level 一致性校验的重要性。
-- **差异**：该模型是通用 3D 感知系统，非 SLAM；无显式位姿估计回路。SkelGS-SLAM 需要 [[slam-frontends/patch-based/DPVO]] 前端提供实时 pose。
+- **差异**：该模型是通用 3D 感知系统，非 SLAM；无显式位姿估计回路。SkelGS-SLAM 需要 [[slam-frontend/DPVO]] 前端提供实时 pose。
 - **融合方向**：SkelGS-SLAM 的 persistent state（submap）可以扩展为 multimodal state——不仅存储几何（anchor positions, Gaussian attributes），还存储 semantic priors（来自基础模型的 scene understanding）。这将 SkelGS-SLAM 从纯几何 SLAM 推向 perception-level 系统。具体实现上，可以用 MASt3R 或类似基础模型作为 persistent state 的 semantic update module，在 CertifiedGeometryPacket 中附加语义标签。
 
 ## 相关笔记
-- [[[[geometry-priors/feed-forward/MASt3R]]]] — 3D 匹配基础模型
-- [[[[gs-slam/experimental/AMB3R]]]] — feed-forward + backend 重建
-- [[[[gs-slam/structured/AnchorSplat]]]] — anchor-structured Gaussian
+- [[[[geometry-model/MASt3R]]]] — 3D 匹配基础模型
+- [[[[3dgs-slam/AMB3R]]]] — feed-forward + backend 重建
+- [[[[3dgs-slam/AnchorSplat]]]] — anchor-structured Gaussian
 - [[Persistent-State-Design]] — 持续状态设计原则
 
 ## 所属分类

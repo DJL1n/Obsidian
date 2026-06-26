@@ -78,7 +78,7 @@ Densification mask：
 1. Silhouette low: S(p) < 0.5（map 没覆盖）
 2. Depth 前方有新几何: D_GT(p) < D_render(p) 且 depth error > λ median（λ=50）
 
-与 [[gs-slam/monocular/Gaussian-SLAM]] 区别：SplaTAM 基于 silhouette/depth mask，更直接；[[gs-slam/monocular/Gaussian-SLAM]] 更强调 alpha + NN sparsity。
+与 [[3dgs-slam/Gaussian-SLAM]] 区别：SplaTAM 基于 silhouette/depth mask，更直接；[[3dgs-slam/Gaussian-SLAM]] 更强调 alpha + NN sparsity。
 
 ---
 
@@ -104,7 +104,7 @@ Replica/Room0:
 ## 10. 实验表现
 
 ### Tracking ATE RMSE
-| Dataset | SplaTAM | Point-SLAM | [[mapping/structured/ESLAM]] |
+| Dataset | SplaTAM | Point-SLAM | [[mapping-reconstruction/ESLAM]] |
 |---|---|---|---|
 | ScanNet++ | **1.2 cm** | 343.8 cm | — |
 | Replica | **0.36 cm** | 0.52 cm | 0.63 cm |
@@ -141,9 +141,9 @@ Replica/Room0:
 
 ---
 
-## 13. 与 [[gs-slam/monocular/Gaussian-SLAM]] 区别
+## 13. 与 [[3dgs-slam/Gaussian-SLAM]] 区别
 
-| | SplaTAM | [[gs-slam/monocular/Gaussian-SLAM]] |
+| | SplaTAM | [[3dgs-slam/Gaussian-SLAM]] |
 |---|---|---|
 | Map | single global Gaussian map | active/inactive sub-maps |
 | Gaussian | isotropic | anisotropic |
@@ -164,8 +164,8 @@ Replica/Room0:
 
 ### 合理架构
 ```
-RGB → [[slam-frontends/patch-based/DPVO]]/DROID (temporal tracking)
-     → [[geometry-priors/feed-forward/MASt3R]]/depth-normal (geometry proposal)
+RGB → [[slam-frontend/DPVO]]/DROID (temporal tracking)
+     → [[geometry-model/MASt3R]]/depth-normal (geometry proposal)
      → CertifiedGeometryPacket (certification)
      → CertifiedAnchor (local support)
      → SplaTAM-like GS backend (render + alpha-gated feedback)
@@ -193,14 +193,14 @@ SplaTAM = GS backend / silhouette-gated tracking / densification reference
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/Splat-SLAM]]]]
-- [[[[gs-slam/monocular/GS-SLAM]]]]
-- [[[[gs-slam/rgbd/MCGS-SLAM]]]]
+- [[[[3dgs-slam/Splat-SLAM]]]]
+- [[[[3dgs-slam/GS-SLAM]]]]
+- [[[[3dgs-slam/MCGS-SLAM]]]]
 
 ## 方法继承
 
 - **前作**：[[DROID]]（RGB-D GS-SLAM 起点）
-- **后继**：[[gs-slam/monocular/MonoGS]], [[gs-slam/monocular/GS-SLAM]]
+- **后继**：[[3dgs-slam/MonoGS]], [[3dgs-slam/GS-SLAM]]
 
 ## 所属分类
 

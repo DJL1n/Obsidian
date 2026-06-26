@@ -9,7 +9,7 @@ FlashSLAM 是一个 RGB-D Gaussian SLAM 系统，核心是把 GS tracking 从 re
 
 ## 1. 解决什么问题
 
-现有 [[gs-slam/monocular/GS-SLAM]] ([[gs-slam/rgbd/SplaTAM]]/[[gs-slam/monocular/MonoGS]]) tracking 依赖 constant velocity init + render-loss 梯度下降 pose optimization，在以下情况失败：
+现有 [[3dgs-slam/GS-SLAM]] ([[3dgs-slam/SplaTAM]]/[[3dgs-slam/MonoGS]]) tracking 依赖 constant velocity init + render-loss 梯度下降 pose optimization，在以下情况失败：
 1. Sparse-view / 帧间间隔大
 2. Rapid camera movement
 3. Consumer RGB-D depth noise
@@ -50,30 +50,30 @@ FlashSLAM：superpoint+[[matching-representation/LightGlue]] matching → 3D-3D 
 ### Replica Tracking (dense)
 | Method | ATE |
 |---|---|
-| [[gs-slam/rgbd/SplaTAM]] | **0.36 cm** |
+| [[3dgs-slam/SplaTAM]] | **0.36 cm** |
 | FlashSLAM | 0.55 cm |
-| [[gs-slam/monocular/MonoGS]] | 0.58 cm |
+| [[3dgs-slam/MonoGS]] | 0.58 cm |
 
 ### Sparse Tracking (Replica stride=40)
 | Method | ATE |
 |---|---|
-| [[gs-slam/rgbd/SplaTAM]] | 542.6 cm |
-| [[gs-slam/monocular/MonoGS]] | 93.22 cm |
+| [[3dgs-slam/SplaTAM]] | 542.6 cm |
+| [[3dgs-slam/MonoGS]] | 93.22 cm |
 | **FlashSLAM** | **6.14 cm** |
 
 ### TUM Tracking
 | Method | ATE |
 |---|---|
 | ORB-SLAM2 | 1.98 cm |
-| [[gs-slam/monocular/MonoGS]] | 2.70 cm |
+| [[3dgs-slam/MonoGS]] | 2.70 cm |
 | **FlashSLAM** | 4.17 cm |
-| [[gs-slam/rgbd/SplaTAM]] | 5.48 cm |
+| [[3dgs-slam/SplaTAM]] | 5.48 cm |
 
 ### iPhone Self-captured (sparse photo)
 | Method | ATE | PSNR |
 |---|---|---|
-| [[gs-slam/rgbd/SplaTAM]] | 1207 cm ✗ | 16.15 |
-| [[gs-slam/monocular/MonoGS]] | 1970 cm ✗ | 13.61 |
+| [[3dgs-slam/SplaTAM]] | 1207 cm ✗ | 16.15 |
+| [[3dgs-slam/MonoGS]] | 1970 cm ✗ | 13.61 |
 | **FlashSLAM** | **19.59 cm ✓** | **23.73** |
 
 ### Tracking Time
@@ -81,15 +81,15 @@ FlashSLAM：superpoint+[[matching-representation/LightGlue]] matching → 3D-3D 
 |---|---|
 | No refinement | **78 ms** |
 | Full (50 iters) | 485 ms |
-| [[gs-slam/rgbd/SplaTAM]] | 1.88 s |
-| [[gs-slam/monocular/MonoGS]] | 1.08 s |
+| [[3dgs-slam/SplaTAM]] | 1.88 s |
+| [[3dgs-slam/MonoGS]] | 1.08 s |
 
 ---
 
 ## 4. 强项
 
 1. **Tracking 不依赖 GS render loss** — 适合大位移/稀疏帧
-2. **Sparse setting 明显优于 render-only [[gs-slam/monocular/GS-SLAM]]** — stride=40 仍保持 cm 级
+2. **Sparse setting 明显优于 render-only [[3dgs-slam/GS-SLAM]]** — stride=40 仍保持 cm 级
 3. **消费级 depth 友好** — depth truncation + ICP correction
 4. **保留 3DGS mapping** — Replica PSNR 39.21
 5. **Loss-weighted refinement** — 优化预算按残差分配
@@ -109,10 +109,10 @@ FlashSLAM：superpoint+[[matching-representation/LightGlue]] matching → 3D-3D 
 ## 6. 对 SkelGS-SLAM 的启发
 
 ### ★ 前端 tracking authority 不应来自 GS render loss
-FlashSLAM 支持你：pose/depth/anchor 的 authority 应来自 DPVO/DROID/[[geometry-priors/feed-forward/MASt3R]]/depth-normal，不是 GS rendered residual。
+FlashSLAM 支持你：pose/depth/anchor 的 authority 应来自 DPVO/DROID/[[geometry-model/MASt3R]]/depth-normal，不是 GS rendered residual。
 
 ### [[matching-representation/LightGlue]]-like sparse long-range constraint
-高频：DPVO/DROID window。低频：[[geometry-priors/feed-forward/MASt3R]]/[[matching-representation/LightGlue]] retrieval → long-range correspondence evidence。Anchor admission：只有被高频 window + 低频 reobservation 同时支持的点才进入 mature。
+高频：DPVO/DROID window。低频：[[geometry-model/MASt3R]]/[[matching-representation/LightGlue]] retrieval → long-range correspondence evidence。Anchor admission：只有被高频 window + 低频 reobservation 同时支持的点才进入 mature。
 
 ### 新增 anchor 前 alignment check
 FlashSLAM 在插入新 Gaussian 前做 ICP alignment。可改造：candidate anchor birth 必须能和已有 mature support 对齐，否则只保留为 weak candidate。
@@ -144,13 +144,13 @@ FlashSLAM 的"前端不应 GS render loss"判断 + "显式匹配 > render optimi
 
 ## 相关笔记
 
-- [[slam-frontends/gpu-optimized/GO-SLAM]]
-- [[slam-frontends/neural-correspondence/DROID-SLAM]]
-- [[slam-frontends/patch-based/DPVO]]
+- [[slam-frontend/GO-SLAM]]
+- [[slam-frontend/DROID-SLAM]]
+- [[slam-frontend/DPVO]]
 
 ## 方法继承
 
-- **前作**：[[slam-frontends/gpu-optimized/GO-SLAM]]（fast GPU SLAM）
+- **前作**：[[slam-frontend/GO-SLAM]]（fast GPU SLAM）
 - **后继**：无
 
 ## 所属分类

@@ -13,6 +13,6 @@ GS render loss 适合 refine，不适合作为 primary pose solver。支持你�
 
 ## Related notes
 
-- [[slam-frontends/gpu-optimized/FlashSLAM]]
+- [[slam-frontend/FlashSLAM]]
 - [[Alignment-Check-Before-Birth]]
 - [[Loss-Weighted-Refinement]]

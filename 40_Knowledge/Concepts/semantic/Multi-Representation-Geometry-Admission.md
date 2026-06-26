@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/multi-sensor/LVD-GS]]
+- [[3dgs-slam/LVD-GS]]
 - [[Explicit-Implicit-Dynamic-Fusion]]
 - [[Multi-Evidence-Anchor-Admission]]

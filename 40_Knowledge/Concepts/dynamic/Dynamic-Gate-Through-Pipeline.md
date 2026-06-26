@@ -14,6 +14,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/DGS-SLAM]]
+- [[dynamic-gs/DGS-SLAM]]
 - [[Primitive-Birth-Provenance]]
 - [[Robust-Mask-Residual]]

@@ -17,7 +17,7 @@ tags:
 首个将 4D Gaussian Splatting 与 RGB-D SLAM 结合的系统，实现动态场景下的实时建图与位姿估计。
 
 ## 1. 核心问题
-现有 3DGS-SLAM（如 GS-SLAM、[[gs-slam/rgbd/SplaTAM]]）假设场景是静态的，无法处理动态物体；而 4DGS 方法（如 4DGS）缺乏 SLAM 能力，无法在线估计相机位姿。
+现有 3DGS-SLAM（如 GS-SLAM、[[3dgs-slam/SplaTAM]]）假设场景是静态的，无法处理动态物体；而 4DGS 方法（如 4DGS）缺乏 SLAM 能力，无法在线估计相机位姿。
 
 ## 2. 核心方法
 该论文构建了端到端的 **4DGS-SLAM** 系统，核心 pipeline 如下：
@@ -38,15 +38,15 @@ tags:
 ## 4. 与 SkelGS-SLAM 的关联
 - **可借鉴点**：
   1. 变形场思路可以转化为 SkelGS-SLAM 的 anchor motion model——anchor 本身不动，但 Gaussian 通过相对位移建模局部运动。
-  2. Tracking-Mapping 循环中的可微 splatting tracking 是核心范式，SkelGS-SLAM 可以用类似机制做 map-based feedback，但 [[slam-frontends/patch-based/DPVO]] 仍为主前端。
+  2. Tracking-Mapping 循环中的可微 splatting tracking 是核心范式，SkelGS-SLAM 可以用类似机制做 map-based feedback，但 [[slam-frontend/DPVO]] 仍为主前端。
   3. 动态-静态解判据（基于位移幅度）可用于 SkelGS-SLAM 的 geometry packet confidence 评分。
 - **差异**：4DGS-SLAM 依赖 RGB-D depth，SkelGS-SLAM 是单目；4DGS-SLAM 的变形场 MLP 是隐式表示，SkelGS-SLAM 的 anchor 是显式结构化。
 - **融合方向**：SkelGS-SLAM 可以考虑将 anchor-level deformation 作为轻量级动态建模模块，在 CertifiedGeometryPacket 中附加运动先验。不引入完整 MLP 变形场，而是用 per-anchor 的 affine motion model（6 参数），保持计算轻量化。
 
 ## 相关笔记
-- [[gs-slam/dynamic/Ti-4DGS]] — 时间初始化策略
-- [[[[gs-slam/monocular/GS-SLAM]]]] — RGB-D 3DGS SLAM baseline
-- [[[[gs-slam/dynamic/CAD-SLAM]]]] — 动静解耦 SLAM
+- [[3dgs-slam/Ti-4DGS]] — 时间初始化策略
+- [[[[3dgs-slam/GS-SLAM]]]] — RGB-D 3DGS SLAM baseline
+- [[[[dynamic-gs/CAD-SLAM]]]] — 动静解耦 SLAM
 - [[Dynamic-Scene-Handling]] — 动态场景处理策略
 
 ## 所属分类

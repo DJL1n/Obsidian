@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[gs-slam/structured/MG-SLAM]]
+- [[semantic/MG-SLAM]]
 - [[Structure-Guided-GS-Completion]]
 - [[Observed-vs-Hypothesized-Geometry]]

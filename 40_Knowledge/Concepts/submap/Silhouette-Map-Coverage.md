@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[gs-slam/rgbd/SplaTAM]]
+- [[3dgs-slam/SplaTAM]]
 - [[Silhouette-Gated-Tracking]]
 - [[RGB-D-Densification-Mask]]

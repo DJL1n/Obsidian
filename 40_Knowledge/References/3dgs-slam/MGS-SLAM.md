@@ -171,7 +171,7 @@ SDAR 是 MGS-SLAM 最有价值的机制：sparse VO ↔ MVS depth ↔ GS map 形
 | **MGS-SLAM** | **monocular DPVO + MVS + GS** | **最接近你路线的参考系统** |
 | DPVO | temporal tracking backbone | 前端 |
 | MonoGS | monocular-first GS | map-centric 对比 |
-| [[gs-slam/rgbd/SplaTAM]]/GS-SLAM | RGB-D GS-SLAM | sensor depth baseline |
+| [[3dgs-slam/SplaTAM]]/GS-SLAM | RGB-D GS-SLAM | sensor depth baseline |
 | GO-SLAM | global correction | global consistency |
 
 MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。但它还不够安全：SDAR 是 sparse-dense scale correction，你需要的是 CertifiedGeometryPacket / CertifiedAnchor。
@@ -194,12 +194,12 @@ MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。
 
 ## 相关笔记
 
-- [[gs-slam/monocular/HI-SLAM2]]
-- [[[[gs-slam/monocular/Splat-SLAM]]]]
+- [[3dgs-slam/HI-SLAM2]]
+- [[[[3dgs-slam/Splat-SLAM]]]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/monocular/Splat-SLAM]], [[slam-frontends/gpu-optimized/GO-SLAM]], [[gs-slam/monocular/MonoGS]], [[DROID]], [[slam-frontends/patch-based/DPVO]]（multi-camera GS）
+- **前作**：[[3dgs-slam/Splat-SLAM]], [[slam-frontend/GO-SLAM]], [[3dgs-slam/MonoGS]], [[DROID]], [[slam-frontend/DPVO]]（multi-camera GS）
 - **后继**：无
 
 ## 所属分类

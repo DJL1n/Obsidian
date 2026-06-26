@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[geometry-priors/feed-forward/SLAM3R]]
+- [[geometry-model/SLAM3R]]
 - [[I2P-Local-Reconstruction]]
 - [[Retrieval-Guided-Registration]]

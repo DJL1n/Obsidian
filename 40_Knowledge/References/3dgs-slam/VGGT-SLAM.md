@@ -54,22 +54,22 @@ Submap = node。Relative SL(4) = edge。LM over Lie algebra tangent space。
 | Method | ATE |
 |---|---|
 | DROID-SLAM (uncal) | 0.078 m |
-| [[slam-frontends/large-scale/MASt3R-SLAM]] (uncal) | 0.066 m |
+| [[slam-frontend/MASt3R-SLAM]] (uncal) | 0.066 m |
 | **VGGT-SLAM SL(4)** | **0.067 m** |
 | DROID-SLAM (cal) | 0.049 m |
-| [[slam-frontends/large-scale/MASt3R-SLAM]] (cal) | 0.047 m |
+| [[slam-frontend/MASt3R-SLAM]] (cal) | 0.047 m |
 
 ### TUM RGB-D (uncalibrated)
 | Method | ATE |
 |---|---|
 | DROID-SLAM (uncal) | 0.158 m |
-| [[slam-frontends/large-scale/MASt3R-SLAM]] (uncal) | 0.060 m |
+| [[slam-frontend/MASt3R-SLAM]] (uncal) | 0.060 m |
 | **VGGT-SLAM SL(4)** | **0.053 m** |
 
 ### Dense reconstruction (7-Scenes)
 | Method | Acc | Comp | Chamfer |
 |---|---|---|---|
-| [[slam-frontends/large-scale/MASt3R-SLAM]] (uncal) | 0.068 | **0.045** | 0.056 |
+| [[slam-frontend/MASt3R-SLAM]] (uncal) | 0.068 | **0.045** | 0.056 |
 | **VGGT-SLAM SL(4)** | **0.052** | 0.058 | **0.055** |
 
 ---
@@ -131,13 +131,13 @@ VGGT-SLAM 不适合作为主前端，但值得作为"foundation model 几何歧�
 
 ## 相关笔记
 
-- [[[[geometry-priors/feed-forward/DUSt3R]]]]
-- [[[[geometry-priors/feed-forward/MASt3R]]]]
-- [[[[geometry-priors/grounded/VGGT]]]]
+- [[[[geometry-model/DUSt3R]]]]
+- [[[[geometry-model/MASt3R]]]]
+- [[[[geometry-model/VGGT]]]]
 
 ## 方法继承
 
-- **前作**：[[slam-frontends/neural-correspondence/DROID-SLAM]], [[gs-slam/monocular/GS-SLAM]], [[geometry-priors/grounded/VGGT]], [[geometry-priors/feed-forward/DUSt3R]], [[geometry-priors/feed-forward/MASt3R]]（VGGT prior SLAM）
+- **前作**：[[slam-frontend/DROID-SLAM]], [[3dgs-slam/GS-SLAM]], [[geometry-model/VGGT]], [[geometry-model/DUSt3R]], [[geometry-model/MASt3R]]（VGGT prior SLAM）
 - **后继**：无
 
 ## 所属分类

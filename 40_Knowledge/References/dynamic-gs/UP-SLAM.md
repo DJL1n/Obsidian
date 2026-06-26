@@ -13,7 +13,7 @@ tags:
 > ICRA 2026. 论文整理笔记。
 > ## 0. 一句话结论
 
-UP-SLAM 是一个面向动态环境的 RGB-D Gaussian SLAM 系统。核心：ORB-SLAM3 tracking + training-free uncertainty estimator + probabilistic octree anchors + DINO feature-enriched GS map + temporal encoding + parallel tracking-mapping。不是 monocular / DROID/[[slam-frontends/patch-based/DPVO]] VO / pointmap prior / offline GS。
+UP-SLAM 是一个面向动态环境的 RGB-D Gaussian SLAM 系统。核心：ORB-SLAM3 tracking + training-free uncertainty estimator + probabilistic octree anchors + DINO feature-enriched GS map + temporal encoding + parallel tracking-mapping。不是 monocular / DROID/[[slam-frontend/DPVO]] VO / pointmap prior / offline GS。
 
 ---
 
@@ -62,7 +62,7 @@ Anchor 不是固定体素中心，而包含概率属性表示 motion degree / dy
 
 ## 7. Structured Gaussian decoding
 
-[[gs-slam/structured/Scaffold-GS]] style: anchor feature + relative direction/distance → MLP → Gaussian attributes (color, opacity, rotation, scale)。与 [[mapping/structured/OG-Mapping]] / VPGS / [[gs-slam/structured/SEGS-SLAM]] 同类。
+[[matching-representation/Scaffold-GS]] style: anchor feature + relative direction/distance → MLP → Gaussian attributes (color, opacity, rotation, scale)。与 [[mapping-reconstruction/OG-Mapping]] / VPGS / [[semantic/SEGS-SLAM]] 同类。
 
 ---
 
@@ -81,17 +81,17 @@ Sinusoidal positional encoding → temporal embedding → condition all MLPs。�
 ## 10. 实验表现
 
 ### Tracking (ATE RMSE)
-- Bonn: **3.2 cm** vs Photo-SLAM 33.91, [[gs-slam/monocular/GS-SLAM]] 33.03
+- Bonn: **3.2 cm** vs Photo-SLAM 33.91, [[3dgs-slam/GS-SLAM]] 33.03
 - MoCap: **1.08 cm** vs DG-SLAM 7.06
 - TUM dynamic: **1.42 cm** vs DynaSLAM 1.52
 
 ### Rendering (Bonn)
 - PSNR **28.0**, SSIM 0.904, LPIPS 0.117
-- [[gs-slam/dynamic/WildGS-SLAM]] RGB: 23.43 PSNR
-- [[gs-slam/rgbd/SplaTAM]]: 19.30 PSNR
+- [[dynamic-gs/WildGS-SLAM]] RGB: 23.43 PSNR
+- [[3dgs-slam/SplaTAM]]: 19.30 PSNR
 
 ### Runtime
-- Avg 78 ms/frame, Model size **7.01 MB** ([[gs-slam/rgbd/SplaTAM]] 29.9 MB)
+- Avg 78 ms/frame, Model size **7.01 MB** ([[3dgs-slam/SplaTAM]] 29.9 MB)
 
 ---
 
@@ -108,7 +108,7 @@ Sinusoidal positional encoding → temporal embedding → condition all MLPs。�
 ## 12. 局限
 
 1. **RGB-D，非 monocular**
-2. **ORB-SLAM3 feature tracking** — 不提供 [[slam-frontends/patch-based/DPVO]] patch lifecycle / DROID BA residual
+2. **ORB-SLAM3 feature tracking** — 不提供 [[slam-frontend/DPVO]] patch lifecycle / DROID BA residual
 3. **部分依赖 YOLOv8-seg** — 不是纯 open-set
 4. **不显式建模动态物体运动**
 5. **不是 geometry certification 框架**
@@ -127,7 +127,7 @@ UP-SLAM 批评手工阈值不可靠。你的 monocular 系统更应避免: depth
 Low-dim anchor feature + shallow MLP → high-dim semantic feature。可以扩展你的 anchor skeleton。
 
 ### tracking/mapping 解耦 → 支持 no-writeback
-Frontend [[slam-frontends/patch-based/DPVO]] truth candidate。GS backend consumes only certified packets。Render residual = side-channel evaluator。
+Frontend [[slam-frontend/DPVO]] truth candidate。GS backend consumes only certified packets。Render residual = side-channel evaluator。
 
 ### Training-free estimator for early gate
 WildGS MLP 在线早期可能不稳。UP-SLAM training-free alternative: early use residual-based uncertainty, later train feature-based MLP。
@@ -138,11 +138,11 @@ WildGS MLP 在线早期可能不稳。UP-SLAM training-free alternative: early u
 
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
-| **UP-SLAM** | **RGB-D dynamic [[gs-slam/monocular/GS-SLAM]]** | **probabilistic anchor / uncertainty / feature map** |
-| [[gs-slam/dynamic/WildGS-SLAM]] | mono dynamic [[gs-slam/monocular/GS-SLAM]] | uncertainty for mono |
+| **UP-SLAM** | **RGB-D dynamic [[3dgs-slam/GS-SLAM]]** | **probabilistic anchor / uncertainty / feature map** |
+| [[dynamic-gs/WildGS-SLAM]] | mono dynamic [[3dgs-slam/GS-SLAM]] | uncertainty for mono |
 | HI-SLAM2 | mono dense+priors+GS | scale/geom alignment |
-| [[gs-slam/rgbd/MGS-SLAM]] | [[slam-frontends/patch-based/DPVO]]+MVS+GS | [[slam-frontends/patch-based/DPVO]] 路线参考 |
-| VPGS/[[mapping/structured/OG-Mapping]] | structured GS map | anchor structure |
+| [[3dgs-slam/MGS-SLAM]] | [[slam-frontend/DPVO]]+MVS+GS | [[slam-frontend/DPVO]] 路线参考 |
+| VPGS/[[mapping-reconstruction/OG-Mapping]] | structured GS map | anchor structure |
 
 UP-SLAM 核心：probabilistic anchor + multi-modal uncertainty + parallel decoupling + DINO feature map。
 
@@ -164,9 +164,9 @@ UP-SLAM 核心：probabilistic anchor + multi-modal uncertainty + parallel decou
 
 ## 相关笔记
 
-- [[gs-slam/dynamic/MonST3R]]
-- [[gs-slam/dynamic/DGS-SLAM]]
-- [[gs-slam/dynamic/ADD-SLAM]]
+- [[dynamic-gs/MonST3R]]
+- [[dynamic-gs/DGS-SLAM]]
+- [[dynamic-gs/ADD-SLAM]]
 
 ## 方法继承
 

@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/EAG3R]]
+- [[dynamic-gs/EAG3R]]
 - [[SNR-Aware-Reliability-Gating]]
 - [[Event-Augmented-Geometry-Candidate]]

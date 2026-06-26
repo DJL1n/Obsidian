@@ -19,6 +19,6 @@ MonoGS 证明 3DGS map 对 camera pose optimization 的 convergence basin 比 ha
 
 ## Related notes
 
-- [[gs-slam/monocular/MonoGS]]
+- [[3dgs-slam/MonoGS]]
 - [[Gaussian-Covisibility]]
 - [[Silhouette-Map-Coverage]]

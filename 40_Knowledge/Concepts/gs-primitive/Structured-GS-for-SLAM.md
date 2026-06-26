@@ -10,6 +10,6 @@ Free Gaussian 在 SLAM 中易冗余增长、几何漂浮、过拟合、跨输入
 
 ## Related notes
 
-- [[gs-slam/structured/SEGS-SLAM]]
+- [[semantic/SEGS-SLAM]]
 - [[Appearance-Geometry-Decoupling]]
 - [[Frequency-Pyramid-Growth]]

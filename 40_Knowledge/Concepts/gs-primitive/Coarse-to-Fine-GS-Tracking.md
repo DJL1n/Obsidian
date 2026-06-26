@@ -26,6 +26,6 @@ GS map feedback 必须被 gating；不能让坏 Gaussian / 未建图区域污染
 
 ## Related notes
 
-- [[gs-slam/monocular/GS-SLAM]]
+- [[3dgs-slam/GS-SLAM]]
 - [[Adaptive-Gaussian-Expansion]]
 - [[Silhouette-Gated-Tracking]]

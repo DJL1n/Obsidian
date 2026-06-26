@@ -18,6 +18,6 @@ Monocular SLAM 中 tracking scale、depth scale、GS map scale 天然不一致�
 
 ## Related notes
 
-- [[gs-slam/rgbd/MGS-SLAM]]
+- [[3dgs-slam/MGS-SLAM]]
 - [[SDAR-Mechanism]]
 - [[Predicted-Depth-GS-Supervision]]

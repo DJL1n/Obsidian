@@ -187,7 +187,7 @@ Easy samples 平均停止更早，adaptive depth 可带来 1.86× speedup。
 
 ---
 
-## 15. 与 [[slam-frontends/neural-correspondence/DROID-SLAM]] / [[slam-frontends/patch-based/DPVO]] 区别
+## 15. 与 [[slam-frontend/DROID-SLAM]] / [[slam-frontend/DPVO]] 区别
 
 LightGlue: sparse pairwise matcher, 无 temporal, 无 depth, 无 BA, 无 recurrent state
 DROID: dense correlation + recurrent + dense BA, pose-depth joint
@@ -196,9 +196,9 @@ LightGlue 不适合作为主 tracking backbone，但可补强：loop verificatio
 
 ---
 
-## 16. 与 [[geometry-priors/feed-forward/MASt3R]] 区别
+## 16. 与 [[geometry-model/MASt3R]] 区别
 
-[[geometry-priors/feed-forward/MASt3R]]: two-view dense pointmap prior
+[[geometry-model/MASt3R]]: two-view dense pointmap prior
 LightGlue: sparse correspondence proposal
 
 如果需要 robust sparse edge → LightGlue useful
@@ -206,9 +206,9 @@ LightGlue: sparse correspondence proposal
 
 ---
 
-## 17. 与 [[mapping/structured/S3LAM]] 关系
+## 17. 与 [[mapping-reconstruction/S3LAM]] 关系
 
-LightGlue 可替换 [[mapping/structured/S3LAM]]/ORB-SLAM2 中的部分匹配模块（SuperPoint + LightGlue → triangulated points → semantic cluster → plane BA），但不提供语义或结构本身。
+LightGlue 可替换 [[mapping-reconstruction/S3LAM]]/ORB-SLAM2 中的部分匹配模块（SuperPoint + LightGlue → triangulated points → semantic cluster → plane BA），但不提供语义或结构本身。
 
 ---
 
@@ -223,9 +223,9 @@ LightGlue 可替换 [[mapping/structured/S3LAM]]/ORB-SLAM2 中的部分匹配模
 
 ### 模块位置
 ```
-[[slam-frontends/patch-based/DPVO]]/DROID: temporal tracking, pose
+[[slam-frontend/DPVO]]/DROID: temporal tracking, pose
 Depth-normal predictor: dense geometry prior
-[[geometry-priors/feed-forward/MASt3R]]: wide-baseline geometry proposal
+[[geometry-model/MASt3R]]: wide-baseline geometry proposal
 LightGlue: sparse pair verification / loop / reloc support  ← 这里
 Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 ```
@@ -242,18 +242,18 @@ Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 
 | 系统 | 定位 |
 |---|---|
-| [[geometry-priors/feed-forward/MASt3R]]-SLAM | strong two-view dense pointmap prior |
-| [[slam-frontends/neural-correspondence/DROID-SLAM]] | dense recurrent pose-depth optimization |
-| [[slam-frontends/patch-based/DPVO]] | lightweight sparse patch recurrent VO |
-| [[mapping/structured/S3LAM]] | semantic cluster + structural primitive prior |
-| [[mapping/structured/ESLAM]] | RGB-D TSDF neural implicit dense mapping |
+| [[geometry-model/MASt3R]]-SLAM | strong two-view dense pointmap prior |
+| [[slam-frontend/DROID-SLAM]] | dense recurrent pose-depth optimization |
+| [[slam-frontend/DPVO]] | lightweight sparse patch recurrent VO |
+| [[mapping-reconstruction/S3LAM]] | semantic cluster + structural primitive prior |
+| [[mapping-reconstruction/ESLAM]] | RGB-D TSDF neural implicit dense mapping |
 | **LightGlue** | **fast sparse local feature matching** |
 
 对 SkelGS-SLAM 的价值排序：
-- tracking/temporal trust: **DROID/[[slam-frontends/patch-based/DPVO]]**
-- dense two-view geometry: **[[geometry-priors/feed-forward/MASt3R]]**
-- semantic/structural grouping: **[[mapping/structured/S3LAM]]**
-- surface/free-space regularization: **[[mapping/structured/ESLAM]]**
+- tracking/temporal trust: **DROID/[[slam-frontend/DPVO]]**
+- dense two-view geometry: **[[geometry-model/MASt3R]]**
+- semantic/structural grouping: **[[mapping-reconstruction/S3LAM]]**
+- surface/free-space regularization: **[[mapping-reconstruction/ESLAM]]**
 - sparse pair verification / loop / reloc: **LightGlue**
 
 ---
@@ -274,7 +274,7 @@ Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 
 ## 相关笔记
 
-- [[gs-slam/structured/Scaffold-GS]]
+- [[matching-representation/Scaffold-GS]]
 
 ## 所属分类
 

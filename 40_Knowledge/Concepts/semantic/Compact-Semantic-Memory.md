@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/monocular/OpenMonoGS-SLAM]]
+- [[3dgs-slam/OpenMonoGS-SLAM]]
 - [[Multi-Scale-Anchor-Admission]]
 - [[Semantic-Backend-Regularizer]]

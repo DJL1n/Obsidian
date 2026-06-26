@@ -10,6 +10,6 @@ Pairwise（MASt3R）局部性强，multi-frame feedforward 能利用全局 atten
 
 ## Related notes
 
-- [[geometry-priors/grounded/VGGT-SLAM]]
+- [[geometry-model/VGGT-SLAM]]
 - [[Projective-Ambiguity-Awareness]]
 - [[SL4-Submap-Alignment]]

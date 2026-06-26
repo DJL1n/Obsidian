@@ -12,15 +12,15 @@ WildGS-SLAM → DGS-SLAM → ADD-SLAM/CAD-SLAM → Dy3DGS-SLAM
 ## 论文群
 
 ### 动态 GS SLAM
-- [[gs-slam/dynamic/WildGS-SLAM]] — DINOv2 features 过滤动态
-- [[gs-slam/dynamic/DGS-SLAM]] — dynamic Gaussian SLAM
-- [[gs-slam/dynamic/ADD-SLAM]] — adaptive dynamic dense SLAM
-- [[gs-slam/dynamic/Dy3DGS-SLAM]] — monocular dynamic SLAM
+- [[dynamic-gs/WildGS-SLAM]] — DINOv2 features 过滤动态
+- [[dynamic-gs/DGS-SLAM]] — dynamic Gaussian SLAM
+- [[dynamic-gs/ADD-SLAM]] — adaptive dynamic dense SLAM
+- [[dynamic-gs/Dy3DGS-SLAM]] — monocular dynamic SLAM
 
 ### 动态检测
-- [[gs-slam/dynamic/UP-SLAM]] — probabilistic approach
-- [[gs-slam/dynamic/EAG3R]] — event-augmented dynamic handling
-- [[gs-slam/dynamic/MonST3R]] — dynamic video geometry
+- [[dynamic-gs/UP-SLAM]] — probabilistic approach
+- [[dynamic-gs/EAG3R]] — event-augmented dynamic handling
+- [[dynamic-gs/MonST3R]] — dynamic video geometry
 
 ### 你的设计
 - [[Anchor定义和anchor生成结构]] — dynamic risk 作为 anchor state 的一部分

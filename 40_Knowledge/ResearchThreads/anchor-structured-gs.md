@@ -14,16 +14,16 @@ Scaffold-GS (2024) → ContextGS (2024) → SEGS-SLAM (2025) → AnchorSplat (20
 ## 论文群
 
 ### 起点
-- [[gs-slam/structured/Scaffold-GS]] — anchor → Gaussian 表示的开创性工作
-- [[gs-slam/structured/ContextGS]] — anchor 压缩，子图级别管理
+- [[matching-representation/Scaffold-GS]] — anchor → Gaussian 表示的开创性工作
+- [[mapping-reconstruction/ContextGS]] — anchor 压缩，子图级别管理
 
 ### SLAM 分支
-- [[gs-slam/structured/SEGS-SLAM]] — 语义 + anchor GS SLAM
-- [[gs-slam/rgbd/GauS-SLAM]] — 2D Gaussian Surfel（类似思路）
-- [[gs-slam/monocular/GS-SLAM]] — RGB-D GS-SLAM（free cloud）
+- [[semantic/SEGS-SLAM]] — 语义 + anchor GS SLAM
+- [[3dgs-slam/GauS-SLAM]] — 2D Gaussian Surfel（类似思路）
+- [[3dgs-slam/GS-SLAM]] — RGB-D GS-SLAM（free cloud）
 
 ### 最新进展
-- [[gs-slam/structured/AnchorSplat]] — 3D-first feed-forward，Gaussian 从 anchor 出生
+- [[3dgs-slam/AnchorSplat]] — 3D-first feed-forward，Gaussian 从 anchor 出生
 
 ## 与你的项目关联
 

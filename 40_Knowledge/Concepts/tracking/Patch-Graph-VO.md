@@ -23,6 +23,6 @@ DPVO patch graph 天然提供 anchor-like 信号：patch lifetime, edge confiden
 
 ## Related notes
 
-- [[slam-frontends/patch-based/DPVO]]
+- [[slam-frontend/DPVO]]
 - [[Patch-Lifecycle]]
 - [[DPVO-Temporal-Frontend]]

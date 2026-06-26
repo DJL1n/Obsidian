@@ -17,7 +17,7 @@ VarSplat = RGB-D submap GS-SLAM (LoopSplat/Gaussian-SLAM style) + 每个 Gaussia
 
 | 方法 | uncertainty 来源 | 用途 |
 |---|---|---|
-| [[gs-slam/dynamic/WildGS-SLAM]] | DINOv2 / pretrained features | 动态过滤 |
+| [[dynamic-gs/WildGS-SLAM]] | DINOv2 / pretrained features | 动态过滤 |
 | CG-SLAM | depth-driven geometric uncertainty | tracking / Gaussian selection |
 | **VarSplat** | **per-splat learned appearance variance** | **tracking + loop + registration** |
 
@@ -118,11 +118,11 @@ VarSplat 主要收益在 tracking/alignment robustness，rendering 小幅提升�
 VarSplat 的 anchor = position + normal + scale + confidence + dynamic-risk + appearance variance + support count + error count + birth packet id。anchor 不只是几何点，是带 uncertainty 的长期 primitive。
 
 ### ★ 分层使用 uncertainty
-Pre-GS uncertainty: [[slam-frontends/patch-based/DPVO]]/DROID residual + depth-normal consistency + [[geometry-priors/feed-forward/MASt3R]] pairwise + anchor repeatability + dynamic-risk。
+Pre-GS uncertainty: [[slam-frontend/DPVO]]/DROID residual + depth-normal consistency + [[geometry-model/MASt3R]] pairwise + anchor repeatability + dynamic-risk。
 Post-GS uncertainty: VarSplat-style appearance variance，只用于 GS backend，不反向改 pose/depth/anchor。
 
 ### ★ 三级 uncertainty 使用
-Short-range: [[slam-frontends/patch-based/DPVO]]/DROID window residual weighting。
+Short-range: [[slam-frontend/DPVO]]/DROID window residual weighting。
 Mid-range: submap overlap / anchor registration。
 Long-range: retrieval/loop verification。
 
@@ -158,11 +158,11 @@ VarSplat 很值得作为 "anchor primitive 必须携带 uncertainty state" 的�
 ## 相关笔记
 
 - [[CG-SLAM]]
-- [[[[gs-slam/monocular/GS-SLAM]]]]
+- [[[[3dgs-slam/GS-SLAM]]]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/monocular/Gaussian-SLAM]]（uncertainty-aware GS-SLAM）
+- **前作**：[[3dgs-slam/GS-SLAM]], [[3dgs-slam/Gaussian-SLAM]]（uncertainty-aware GS-SLAM）
 - **后继**：无
 
 ## 所属分类

@@ -135,12 +135,12 @@ Map-free test: VCRE AUC 相比 LoFTR+KBR 提升 30% absolute, median translation
 
 ---
 
-## 13. 与 DROID/[[slam-frontends/patch-based/DPVO]] 区别
+## 13. 与 DROID/[[slam-frontend/DPVO]] 区别
 
-DROID/[[slam-frontends/patch-based/DPVO]]: time-domain optimizer, temporal tracking signal
+DROID/[[slam-frontend/DPVO]]: time-domain optimizer, temporal tracking signal
 MASt3R: pair-domain geometry prior, two-view 3D correspondence
 
-[[slam-frontends/patch-based/DPVO]]: 这个结构时间上是否稳定？
+[[slam-frontend/DPVO]]: 这个结构时间上是否稳定？
 MASt3R: 这两个视角间是否存在强 3D 几何对应？
 
 非替代关系。
@@ -169,30 +169,30 @@ MASt3R = 模型/prior；MASt3R-SLAM = 系统/pipeline。不能将 MASt3R 能力�
 ### MASt3R pointmap → CandidatePacket, 非 VideoBuffer truth
 ```
 MASt3R output → CandidateGeometryPacket
-→ cross-check with [[slam-frontends/patch-based/DPVO]] temporal evidence
+→ cross-check with [[slam-frontend/DPVO]] temporal evidence
 → depth-normal agreement
 → free-space/surface-band check
 → CertifiedGeometryPacket
 → GS
 ```
 
-### 补 [[slam-frontends/patch-based/DPVO]] 的 wide-baseline 弱点
-[[slam-frontends/patch-based/DPVO]]: local temporal consistency, high FPS, patch lifecycle
+### 补 [[slam-frontend/DPVO]] 的 wide-baseline 弱点
+[[slam-frontend/DPVO]]: local temporal consistency, high FPS, patch lifecycle
 MASt3R: wide-baseline pair geometry, single-ref relocalization, large viewpoint matching
 
 ### Confidence 不能直接当 anchor maturity
 MASt3R confidence 高 → 当前 pair 下 reliable；但 anchor maturity 需 multi-frame survival, pose-depth consistency, normal consistency, scale consistency, static support。MASt3R confidence 最多是 pairwise evidence term。
 
 ### 作为 geometry disagreement detector
-[[slam-frontends/patch-based/DPVO]] stable + MASt3R inconsistent → candidate risk ↑
-MASt3R strong + [[slam-frontends/patch-based/DPVO]] stable → anchor support ↑
+[[slam-frontend/DPVO]] stable + MASt3R inconsistent → candidate risk ↑
+MASt3R strong + [[slam-frontend/DPVO]] stable → anchor support ↑
 
 ---
 
 ## 16. 建议系统位置
 
 ```
-RGB stream → [[slam-frontends/patch-based/DPVO]] (local temporal)
+RGB stream → [[slam-frontend/DPVO]] (local temporal)
            → MASt3R (selected keyframe-pair pointmap, dense matching)
            → [[matching-representation/LightGlue]] (cheap sparse verification)
            → depth-normal predictor (metric geometry)
@@ -208,11 +208,11 @@ RGB stream → [[slam-frontends/patch-based/DPVO]] (local temporal)
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **MASt3R** | **pairwise 3D geometry proposal** | **wide-baseline geometric witness** |
-| [[slam-frontends/patch-based/DPVO]] | temporal tracking | temporal witness |
+| [[slam-frontend/DPVO]] | temporal tracking | temporal witness |
 | MASt3R-SLAM | monocular dense SLAM | system reference |
-| [[slam-frontends/neural-correspondence/DROID-SLAM]] | dense recurrent pose-depth | richer temporal signal |
+| [[slam-frontend/DROID-SLAM]] | dense recurrent pose-depth | richer temporal signal |
 
-MASt3R 最强的是"把匹配落到 3D pointmap 上"，不是"给你可直接写入 GS 的长期几何真值"。应作为 wide-baseline pairwise geometry witness，与 [[slam-frontends/patch-based/DPVO]] temporal witness、depth-normal surface witness 一起进入 CertifiedGeometryPacket。
+MASt3R 最强的是"把匹配落到 3D pointmap 上"，不是"给你可直接写入 GS 的长期几何真值"。应作为 wide-baseline pairwise geometry witness，与 [[slam-frontend/DPVO]] temporal witness、depth-normal surface witness 一起进入 CertifiedGeometryPacket。
 
 ---
 
@@ -232,14 +232,14 @@ MASt3R 最强的是"把匹配落到 3D pointmap 上"，不是"给你可直接写
 
 ## 相关笔记
 
-- [[geometry-priors/grounded/VGGT]]
-- [[geometry-priors/feed-forward/Spann3R]]
-- [[geometry-priors/feed-forward/CUT3R]]
+- [[geometry-model/VGGT]]
+- [[geometry-model/Spann3R]]
+- [[geometry-model/CUT3R]]
 
 ## 方法继承
 
-- **前作**：[[geometry-priors/feed-forward/DUSt3R]]（DUSt3R 的多视图扩展）
-- **后继**：[[geometry-priors/feed-forward/MASt3R-SfM]], [[slam-frontends/large-scale/MASt3R-SLAM]], [[geometry-priors/grounded/VGGT]]
+- **前作**：[[geometry-model/DUSt3R]]（DUSt3R 的多视图扩展）
+- **后继**：[[geometry-model/MASt3R-SfM]], [[slam-frontend/MASt3R-SLAM]], [[geometry-model/VGGT]]
 
 ## 所属分类
 

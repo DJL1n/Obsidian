@@ -78,7 +78,7 @@ Local map → opacity reset 0.01 → merge into global → NetVLAD co-visible su
 | Method | Avg ATE |
 |---|---|
 | SplaTAM | 89.41 cm |
-| [[gs-slam/monocular/MonoGS]] | 12.88 cm |
+| [[3dgs-slam/MonoGS]] | 12.88 cm |
 | LoopSplat | 2.05 cm |
 | **GauS-SLAM** | **0.31 cm** |
 
@@ -134,7 +134,7 @@ GauS-SLAM 是 GS 直接参与 tracking（coupled），你的安全边界是 GS �
 
 | 系统 | 定位 |
 |---|---|
-| [[mapping/structured/GSFusion]] | TSDF + GS hybrid |
+| [[mapping-reconstruction/GSFusion]] | TSDF + GS hybrid |
 | **GauS-SLAM** | **2D surfel + surface-aware depth** |
 
 ---
@@ -155,14 +155,14 @@ GauS-SLAM 是 GS 直接参与 tracking（coupled），你的安全边界是 GS �
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/GS-SLAM]]]]
-- [[[[gs-slam/monocular/RTG-SLAM]]]]
-- [[[[gs-slam/rgbd/MCGS-SLAM]]]]
+- [[[[3dgs-slam/GS-SLAM]]]]
+- [[[[3dgs-slam/RTG-SLAM]]]]
+- [[[[3dgs-slam/MCGS-SLAM]]]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/rgbd/SplaTAM]]（2D Gaussian Surfel）
-- **后继**：[[gs-slam/monocular/HI-SLAM2]], [[gs-slam/monocular/RTG-SLAM]]
+- **前作**：[[3dgs-slam/GS-SLAM]], [[3dgs-slam/SplaTAM]]（2D Gaussian Surfel）
+- **后继**：[[3dgs-slam/HI-SLAM2]], [[3dgs-slam/RTG-SLAM]]
 
 ## 所属分类
 

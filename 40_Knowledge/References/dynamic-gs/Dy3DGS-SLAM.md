@@ -80,7 +80,7 @@ Depth alone 不可靠，fusion 是核心贡献。
 | **Dy3DGS** | **4.5 cm** |
 | DynaSLAM | 4.8 cm |
 | DytanVO | 5.6 cm |
-| [[gs-slam/rgbd/SplaTAM]] | 96.1 cm |
+| [[3dgs-slam/SplaTAM]] | 96.1 cm |
 
 ### TUM RGB-D
 | Method | ATE |
@@ -88,7 +88,7 @@ Depth alone 不可靠，fusion 是核心贡献。
 | DynaSLAM | **2.7 cm** |
 | **Dy3DGS** | 4.7 cm |
 | DytanVO | 11.2 cm |
-| [[gs-slam/rgbd/SplaTAM]] | 53.2 cm |
+| [[3dgs-slam/SplaTAM]] | 53.2 cm |
 
 ### Runtime
 Tracking 17 FPS, mapping 430.5 ms, network update 10.3 ms。
@@ -115,7 +115,7 @@ Tracking 17 FPS, mapping 430.5 ms, network update 10.3 ms。
 
 ---
 
-## 7. 与 [[gs-slam/dynamic/WildGS-SLAM]] 区别
+## 7. 与 [[dynamic-gs/WildGS-SLAM]] 区别
 
 | | Dy3DGS | WildGS |
 |---|---|---|
@@ -141,7 +141,7 @@ per-anchor: static_log_odds, temporal_repeatability, depth_normal_stability, dyn
 - 高 + temporal high → anchor maturity evidence
 
 ### 不建议借
-- ResNet50 pose network（你要的是 [[slam-frontends/patch-based/DPVO]]/DROID/HI-SLAM2 在线几何信号，不是 supervised pose net）
+- ResNet50 pose network（你要的是 [[slam-frontend/DPVO]]/DROID/HI-SLAM2 在线几何信号，不是 supervised pose net）
 - Bayesian independent assumption（你的 fusion 应基于 anchor evidence，不是单帧概率）
 
 ---
@@ -168,13 +168,13 @@ Dy3DGS 对你是 dynamic/uncertainty evidence 模块参考，不是 packet coher
 
 ## 相关笔记
 
-- [[gs-slam/dynamic/MonST3R]]
-- [[gs-slam/dynamic/UP-SLAM]]
-- [[gs-slam/dynamic/DGS-SLAM]]
+- [[dynamic-gs/MonST3R]]
+- [[dynamic-gs/UP-SLAM]]
+- [[dynamic-gs/DGS-SLAM]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/dynamic/DGS-SLAM]]（monocular dynamic GS）
+- **前作**：[[dynamic-gs/DGS-SLAM]]（monocular dynamic GS）
 - **后继**：无
 
 ## 所属分类

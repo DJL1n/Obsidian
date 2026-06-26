@@ -11,7 +11,7 @@ VarSplat (2026) → Primitive-Level Reliability → AnchorReliability Admission 
 
 ## 论文群
 
-- [[gs-slam/structured/VarSplat]] — per-splat appearance variance σ²，三级加权
+- [[3dgs-slam/VarSplat]] — per-splat appearance variance σ²，三级加权
 - [[CG-SLAM]] — depth-driven geometric uncertainty（如果有的话）
 
 ## 与你的项目关联

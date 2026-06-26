@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/monocular/OpenMonoGS-SLAM]]
+- [[3dgs-slam/OpenMonoGS-SLAM]]
 - [[Compact-Semantic-Memory]]
 - [[Semantic-Backend-Regularizer]]

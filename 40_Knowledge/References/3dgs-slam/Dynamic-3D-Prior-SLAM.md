@@ -1,6 +1,6 @@
 # Dynamic Visual SLAM using a General 3D Prior
 
-> arXiv:2406.xxxx ([[gs-slam/dynamic/DGS-SLAM]] / Dynamic [[gs-slam/monocular/GS-SLAM]] using General 3D Prior) | 2024
+> arXiv:2406.xxxx ([[dynamic-gs/DGS-SLAM]] / Dynamic [[3dgs-slam/GS-SLAM]] using General 3D Prior) | 2024
 > 代码：有（具体仓库需确认，CVPR 2024 相关）
 
 ## 0. 一句话结论
@@ -20,7 +20,7 @@
 
 ## 3. 实验结果
 - 在 Dynamic TUM 和 ScanNet 上动态场景位姿估计精度显著优于静态假设方法
-- 无需额外的语义分割或光流模块，推理开销与标准 [[gs-slam/monocular/GS-SLAM]] 相当
+- 无需额外的语义分割或光流模块，推理开销与标准 [[3dgs-slam/GS-SLAM]] 相当
 - 在物体运动剧烈的场景下，动态 mask 准确率超过 90%
 - 局限：对缓慢移动的物体（与相机运动混合时）检测率下降
 

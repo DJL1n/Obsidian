@@ -40,6 +40,6 @@ MASt3R pointmap 的 depth 预测经常不一致。直接最小化 3D point error
 
 ## Related notes
 
-- [[slam-frontends/large-scale/MASt3R-SLAM]]
+- [[slam-frontend/MASt3R-SLAM]]
 - [[Ray-Camera-Model]]
 - [[Canonical-Pointmap-Fusion]]

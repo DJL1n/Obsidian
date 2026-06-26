@@ -14,7 +14,7 @@ tags:
 
 ## 0. 一句话结论
 
-Gaussian-SLAM 是一个 RGB-D dense SLAM 系统，用 3D Gaussian Splatting 作为地图表示，同时做 tracking、mapping 和 photo-realistic rendering。不是单目 SLAM，不是 DROID/DPVO 那种 learned VO 前端，也不是 [[gs-slam/structured/Scaffold-GS]] 那种离线 novel view synthesis。
+Gaussian-SLAM 是一个 RGB-D dense SLAM 系统，用 3D Gaussian Splatting 作为地图表示，同时做 tracking、mapping 和 photo-realistic rendering。不是单目 SLAM，不是 DROID/DPVO 那种 learned VO 前端，也不是 [[matching-representation/Scaffold-GS]] 那种离线 novel view synthesis。
 
 核心：RGB-D SLAM + 3D Gaussian map + submap-based online optimization + depth/color rendering loss + alpha/error-masked frame-to-model tracking。
 
@@ -165,7 +165,7 @@ Ablation：不用 mask ATE=12.77cm → 用 mask ATE=2.50cm (TUM fr1/desk)。
 
 ## 13. 与相关工作的关系
 
-| | vs 3DGS | vs ESLAM | vs SplaTAM | vs [[gs-slam/structured/Scaffold-GS]] |
+| | vs 3DGS | vs ESLAM | vs SplaTAM | vs [[matching-representation/Scaffold-GS]] |
 |---|---|---|---|---|
 | 核心 | 离线→在线 | implicit→explicit | concurrent GS-SLAM | offline→online GS |
 | Tracking | 无→frame-to-model | render-based | similar | N/A |
@@ -211,14 +211,14 @@ CertifiedGeometryPacket = monocular geometry certification layer
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/GS-SLAM]]]]
-- [[mapping/structured/S3LAM]]
-- [[mapping/structured/ESLAM]]
+- [[[[3dgs-slam/GS-SLAM]]]]
+- [[mapping-reconstruction/S3LAM]]
+- [[mapping-reconstruction/ESLAM]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/rgbd/SplaTAM]], [[mapping/structured/S3LAM]], [[mapping/structured/ESLAM]], [[geometry-priors/feed-forward/MASt3R]], [[slam-frontends/patch-based/DPVO]]（submap GS-SLAM with MASt3R prior）
-- **后继**：[[gs-slam/structured/VarSplat]]
+- **前作**：[[3dgs-slam/SplaTAM]], [[mapping-reconstruction/S3LAM]], [[mapping-reconstruction/ESLAM]], [[geometry-model/MASt3R]], [[slam-frontend/DPVO]]（submap GS-SLAM with MASt3R prior）
+- **后继**：[[3dgs-slam/VarSplat]]
 
 ## 所属分类
 

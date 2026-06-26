@@ -20,6 +20,6 @@ Flat anchor list 长期增长时：查询慢、去重困难、密度不可控、
 
 ## Related notes
 
-- [[mapping/structured/OG-Mapping]]
+- [[mapping-reconstruction/OG-Mapping]]
 - [[Progressive-LOD-Growth]]
 - [[Dynamic-Keyframe-Window]]

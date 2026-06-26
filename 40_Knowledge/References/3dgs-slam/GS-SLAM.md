@@ -12,7 +12,7 @@ tags:
 > CVPR 2024. 论文整理笔记。
 > ## 0. 一句话结论
 
-GS-SLAM 是一个 RGB-D dense visual SLAM 系统，核心把 3DGS 作为场景地图表示，用可微 splatting 同时支持 RGB-D 渲染、camera tracking、mapping 优化和 Gaussian 增删。不是 monocular SLAM / [[slam-frontends/patch-based/DPVO]]/DROID learned VO / offline NVS。
+GS-SLAM 是一个 RGB-D dense visual SLAM 系统，核心把 3DGS 作为场景地图表示，用可微 splatting 同时支持 RGB-D 渲染、camera tracking、mapping 优化和 Gaussian 增删。不是 monocular SLAM / [[slam-frontend/DPVO]]/DROID learned VO / offline NVS。
 
 定位：RGB-D 条件下的 3DGS-SLAM early baseline / backend reference。
 
@@ -133,7 +133,7 @@ Phase 2: optimize Gaussians + keyframe poses
 
 ## 12. 对比
 
-| | GS-SLAM | [[gs-slam/rgbd/SplaTAM]] | Gaussian-SLAM | MonoGS | [[mapping/structured/OG-Mapping]] |
+| | GS-SLAM | [[3dgs-slam/SplaTAM]] | Gaussian-SLAM | MonoGS | [[mapping-reconstruction/OG-Mapping]] |
 |---|---|---|---|---|---|
 | Input | RGB-D | RGB-D | RGB-D | mono-first | RGB-D+pose |
 | Gaussian | anisotropic+SH | isotropic | anisotropic | anisotropic | anchor-structured |
@@ -148,7 +148,7 @@ Phase 2: optimize Gaussians + keyframe poses
 1. **Gaussian birth 必须有 geometry gate** — GS-SLAM 用 sensor depth；你的系统用 CertifiedGeometryPacket
 2. **GS feedback 必须只用 reliable Gaussians** — coarse-to-fine + alpha/confidence mask
 3. **Adaptive deletion → anchor-level quarantine** — 错误反映到 anchor 可信度
-4. **BA-like random keyframe → dynamic packet window** — 结合 [[slam-frontends/gpu-optimized/GO-SLAM]]/[[mapping/structured/OG-Mapping]]
+4. **BA-like random keyframe → dynamic packet window** — 结合 [[slam-frontend/GO-SLAM]]/[[mapping-reconstruction/OG-Mapping]]
 5. **GS map 不能默认可信** — 支持"GS 不直接参与 CertifiedPacket"原则
 
 ### 不建议照搬
@@ -163,15 +163,15 @@ Phase 2: optimize Gaussians + keyframe poses
 | 系统 | 定位 |
 |---|---|
 | **GS-SLAM** | **RGB-D 3DGS SLAM early baseline** |
-| [[gs-slam/rgbd/SplaTAM]] | RGB-D + silhouette gate |
+| [[3dgs-slam/SplaTAM]] | RGB-D + silhouette gate |
 | Gaussian-SLAM | RGB-D + submap |
 | MonoGS | monocular-first + covisibility |
-| [[mapping/structured/OG-Mapping]] | octree anchor + LOD |
-| [[gs-slam/structured/Scaffold-GS]] | anchor-conditioned offline GS |
-| [[gs-slam/structured/ContextGS]] | anchor-level compression |
-| [[slam-frontends/patch-based/DPVO]]/DROID | temporal tracking |
-| [[slam-frontends/gpu-optimized/GO-SLAM]] | global correction |
-| [[geometry-priors/feed-forward/MASt3R]]/[[geometry-priors/feed-forward/DUSt3R]]/[[geometry-priors/feed-forward/Spann3R]] | geometry proposal |
+| [[mapping-reconstruction/OG-Mapping]] | octree anchor + LOD |
+| [[matching-representation/Scaffold-GS]] | anchor-conditioned offline GS |
+| [[mapping-reconstruction/ContextGS]] | anchor-level compression |
+| [[slam-frontend/DPVO]]/DROID | temporal tracking |
+| [[slam-frontend/GO-SLAM]] | global correction |
+| [[geometry-model/MASt3R]]/[[geometry-model/DUSt3R]]/[[geometry-model/Spann3R]] | geometry proposal |
 
 ---
 
@@ -191,14 +191,14 @@ Phase 2: optimize Gaussians + keyframe poses
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/Gaussian-SLAM]]]]
-- [[mapping/semantic/RGBDS-SLAM]]
-- [[mapping/sdf-based/GPS-SLAM]]
+- [[[[3dgs-slam/Gaussian-SLAM]]]]
+- [[mapping-reconstruction/RGBDS-SLAM]]
+- [[mapping-reconstruction/GPS-SLAM]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/monocular/MonoGS]]（monocular GS-SLAM 基线）
-- **后继**：[[gs-slam/monocular/GigaSLAM]], [[gs-slam/rgbd/GauS-SLAM]], [[gs-slam/monocular/Splat-SLAM]], [[gs-slam/monocular/SING3R-SLAM]], [[gs-slam/monocular/OpenMonoGS-SLAM]], [[gs-slam/monocular/RTG-SLAM]], [[gs-slam/multi-sensor/LVD-GS]], [[gs-slam/structured/VarSplat]], [[MAGiC-SLAM]]
+- **前作**：[[3dgs-slam/MonoGS]]（monocular GS-SLAM 基线）
+- **后继**：[[3dgs-slam/GigaSLAM]], [[3dgs-slam/GauS-SLAM]], [[3dgs-slam/Splat-SLAM]], [[3dgs-slam/SING3R-SLAM]], [[3dgs-slam/OpenMonoGS-SLAM]], [[3dgs-slam/RTG-SLAM]], [[3dgs-slam/LVD-GS]], [[3dgs-slam/VarSplat]], [[MAGiC-SLAM]]
 
 ## 所属分类
 

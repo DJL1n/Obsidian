@@ -20,6 +20,6 @@
 
 ## Related notes
 
-- [[slam-frontends/gpu-optimized/GO-SLAM]]
+- [[slam-frontend/GO-SLAM]]
 - [[Versioned-Geometry-Update]]
 - [[GO-SLAM-Architecture]]

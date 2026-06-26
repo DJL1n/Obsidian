@@ -41,13 +41,13 @@ Gaussian 含 position / color / depth / semantics / opacity，三路 splatting�
 |---|---|---|---|
 | RGBDS-SLAM | **38.85** | 0.967 | **0.035** |
 | Photo-SLAM | 34.96 | 0.942 | 0.059 |
-| [[gs-slam/rgbd/SplaTAM]] | 34.11 | 0.970 | 0.100 |
+| [[3dgs-slam/SplaTAM]] | 34.11 | 0.970 | 0.100 |
 
 PSNR 和 LPIPS 强；SSIM 不是全表第一。
 
 ### Depth / ATE / FPS
-- Depth L1 **0.342 cm**（优于 [[gs-slam/rgbd/SplaTAM]] 0.490）
-- ATE RMSE 0.589 cm（不是最优：[[gs-slam/rgbd/SplaTAM]] 0.360）
+- Depth L1 **0.342 cm**（优于 [[3dgs-slam/SplaTAM]] 0.490）
+- ATE RMSE 0.589 cm（不是最优：[[3dgs-slam/SplaTAM]] 0.360）
 - Tracking 29.55 FPS, Mapping 32.22 FPS
 
 ### Semantic mIoU (Replica)
@@ -90,11 +90,11 @@ RGB-depth-semantic 联合优化有用，但必须放在"已认证几何之后"�
 
 ### 不建议直接借
 - GS render loss 反哺 frontend
-- ORB-SLAM3 tracking 替代 [[slam-frontends/patch-based/DPVO]]/DROID
+- ORB-SLAM3 tracking 替代 [[slam-frontend/DPVO]]/DROID
 - RGB-D depth assumption 直接迁移到 monocular
 
 ### 与其他论文对比
-| | RGBDS-SLAM | [[gs-slam/dynamic/ADD-SLAM]] |
+| | RGBDS-SLAM | [[dynamic-gs/ADD-SLAM]] |
 |---|---|---|
 | 场景 | 静态 RGB-D semantic | 动态 RGB-D |
 | 对你项目价值 | backend mapping 增强 | dynamic-risk / consistency evidence |
@@ -117,9 +117,9 @@ RGB-depth-semantic 联合优化有用，但必须放在"已认证几何之后"�
 
 ## 相关笔记
 
-- [[mapping/structured/GSFusion]]
-- [[mapping/sdf-based/GPS-SLAM]]
-- [[gs-slam/structured/ContextGS]]
+- [[mapping-reconstruction/GSFusion]]
+- [[mapping-reconstruction/GPS-SLAM]]
+- [[mapping-reconstruction/ContextGS]]
 
 ## 所属分类
 

@@ -12,23 +12,23 @@ DUSt3R (2024) → MASt3R (2024) → Spann3R → CUT3R → SLAM3R → VGGT
 ## 论文群
 
 ### Foundation Models
-- [[geometry-priors/feed-forward/DUSt3R]] — geometric 3D vision made easy
-- [[geometry-priors/feed-forward/MASt3R]] — multi-view extension
-- [[geometry-priors/feed-forward/MASt3R-SfM]] — structure-from-motion pipeline
-- [[geometry-priors/feed-forward/Spann3R]] — spatial reasoning
-- [[geometry-priors/feed-forward/CUT3R]] — continuous 3D perception
-- [[geometry-priors/feed-forward/SLAM3R]] — SLAM with foundation models
-- [[geometry-priors/grounded/VGGT]] — best paper, visual geometry generalization
+- [[geometry-model/DUSt3R]] — geometric 3D vision made easy
+- [[geometry-model/MASt3R]] — multi-view extension
+- [[geometry-model/MASt3R-SfM]] — structure-from-motion pipeline
+- [[geometry-model/Spann3R]] — spatial reasoning
+- [[geometry-model/CUT3R]] — continuous 3D perception
+- [[geometry-model/SLAM3R]] — SLAM with foundation models
+- [[geometry-model/VGGT]] — best paper, visual geometry generalization
 
 ### Feed-Forward Reconstruction
-- [[geometry-priors/grounded/VGGT-SLAM]] — SLAM with VGGT priors
-- [[gs-slam/monocular/GigaSLAM]] — large-scale monocular with hierarchical GS
-- [[gs-slam/experimental/Continuous-3D-Perception]] — persistent state model
+- [[geometry-model/VGGT-SLAM]] — SLAM with VGGT priors
+- [[3dgs-slam/GigaSLAM]] — large-scale monocular with hierarchical GS
+- [[3dgs-slam/Continuous-3D-Perception]] — persistent state model
 
 ### 3D Priors for SLAM
-- [[geometry-priors/slam-adapted/SCE-SLAM]] — scene coordinate embeddings
-- [[slam-frontends/patch-based/DPVO]] — patch visual odometry（几何 prior）
-- [[gs-slam/monocular/DPV-SLAM]] — DPVO + SLAM
+- [[3dgs-slam/SCE-SLAM]] — scene coordinate embeddings
+- [[slam-frontend/DPVO]] — patch visual odometry（几何 prior）
+- [[3dgs-slam/DPV-SLAM]] — DPVO + SLAM
 
 ## 与你的项目关联
 

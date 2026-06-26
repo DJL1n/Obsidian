@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/UP-SLAM]]
+- [[dynamic-gs/UP-SLAM]]
 - [[Multi-Modal-Uncertainty]]
 - [[Certified-Probabilistic-Anchor]]

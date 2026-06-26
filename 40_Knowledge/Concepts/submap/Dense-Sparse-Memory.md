@@ -24,6 +24,6 @@
 
 ## Related notes
 
-- [[geometry-priors/feed-forward/Spann3R]]
+- [[geometry-model/Spann3R]]
 - [[Spatial-Memory-Reconstruction]]
 - [[Spatial-Memory-for-Anchor]]

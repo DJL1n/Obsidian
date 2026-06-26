@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/Dy3DGS-SLAM]]
+- [[dynamic-gs/Dy3DGS-SLAM]]
 - [[Multi-Evidence-Dynamic-Fusion]]
 - [[DynamicEvidencePacket]]

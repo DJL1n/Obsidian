@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/rgbd/GauS-SLAM]]
+- [[3dgs-slam/GauS-SLAM]]
 - [[Local-Map-Tracking]]
 - [[Surfel-Anchor-Bridge]]

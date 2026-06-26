@@ -36,6 +36,6 @@
 
 ## Related notes
 
-- [[slam-frontends/neural-correspondence/DROID-SLAM]]
+- [[slam-frontend/DROID-SLAM]]
 - [[Recurrent-Correction-Update]]
 - [[Correlation-Volume]]

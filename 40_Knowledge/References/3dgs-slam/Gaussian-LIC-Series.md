@@ -163,13 +163,13 @@ Gaussian-LIC2 (2025, online SLAM + continuous-time + zero-shot depth, ✅ 代码
 
 ## 相关笔记
 
-- [[mapping/sdf-based/GS-SDF]] — LiDAR+SDF 的 offline 方法
+- [[mapping-reconstruction/GS-SDF]] — LiDAR+SDF 的 offline 方法
 - [[Anchor定义和anchor生成结构]] — 你的 anchor 设计
 - [[AnchorStructured-GS-Paper-Chain]] — anchor-GS 论文链
 
 ## 方法继承
 
-- **前作**：[[slam-frontends/patch-based/DPVO]], [[gs-slam/monocular/GS-SLAM]]（LiDAR-IMU-Camera GS-SLAM）
+- **前作**：[[slam-frontend/DPVO]], [[3dgs-slam/GS-SLAM]]（LiDAR-IMU-Camera GS-SLAM）
 - **后继**：无
 
 ## 所属分类

@@ -26,5 +26,5 @@ Vanilla 3DGS 的 gradient-based densification 在 SLAM 中容易导致 Gaussian 
 
 ## Related notes
 
-- [[gs-slam/monocular/Gaussian-SLAM]]
+- [[3dgs-slam/Gaussian-SLAM]]
 - [[Submap-Gaussian-Organization]]

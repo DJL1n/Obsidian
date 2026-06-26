@@ -156,12 +156,12 @@ LVD-GS 适合作为 multi-evidence geometry admission / dynamic uncertainty / re
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/GS-SLAM]]]]
-- [[[[gs-slam/multi-sensor/Gaussian-LIC-Series]]-Series]]
+- [[[[3dgs-slam/GS-SLAM]]]]
+- [[[[3dgs-slam/Gaussian-LIC-Series]]-Series]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/monocular/GS-SLAM]], [[gs-slam/dynamic/DGS-SLAM]], [[gs-slam/rgbd/SplaTAM]], [[gs-slam/monocular/MonoGS]]（LiDAR-Visual GS-SLAM）
+- **前作**：[[3dgs-slam/GS-SLAM]], [[dynamic-gs/DGS-SLAM]], [[3dgs-slam/SplaTAM]], [[3dgs-slam/MonoGS]]（LiDAR-Visual GS-SLAM）
 - **后继**：无
 
 ## 所属分类

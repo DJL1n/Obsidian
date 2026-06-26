@@ -13,6 +13,6 @@
 
 ## Related notes
 
-- [[gs-slam/dynamic/ADD-SLAM]]
+- [[dynamic-gs/ADD-SLAM]]
 - [[Occlusion-vs-Exposure-Cue]]
 - [[Pre-GS-Consistency-Oracle]]

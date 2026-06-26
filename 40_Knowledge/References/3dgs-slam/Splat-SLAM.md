@@ -93,10 +93,10 @@ With: PSNR 41.20, Depth L1 2.40
 ## 7. 对 SkelGS-SLAM 的启发
 
 ### ★ Geometry authority 应该在 GS 之前
-Splat-SLAM 支持你：GS 不应成为 pose/depth/scale authority。前端 DSPO/DROID/[[slam-frontends/patch-based/DPVO]] 先做 joint optimization → GS 消费 + deformation。
+Splat-SLAM 支持你：GS 不应成为 pose/depth/scale authority。前端 DSPO/DROID/[[slam-frontend/DPVO]] 先做 joint optimization → GS 消费 + deformation。
 
-### ★ DSPO 对你比 [[geometry-priors/feed-forward/MASt3R]] raw pointmap 更像答案
-Dense correspondence → factor graph → pose + disparity joint optimization → monocular depth 只作为 aligned prior。对应你的系统：[[slam-frontends/patch-based/DPVO]]/DROID/HI-SLAM2 window = pose-depth authority；depth predictor = prior/regularizer。
+### ★ DSPO 对你比 [[geometry-model/MASt3R]] raw pointmap 更像答案
+Dense correspondence → factor graph → pose + disparity joint optimization → monocular depth 只作为 aligned prior。对应你的系统：[[slam-frontend/DPVO]]/DROID/HI-SLAM2 window = pose-depth authority；depth predictor = prior/regularizer。
 
 ### ★ Gaussian anchoring = 你的 anchor provenance
 Gaussian 绑定 source keyframe / pose version。可迁移：anchor 记录 birth frame/packet/pose version/depth estimate → 当 geometry packet 更新时，知道哪些 anchor 受哪些 packet 影响。
@@ -131,14 +131,14 @@ Splat-SLAM 是你这批论文里最值得重点吸收的单目 GS-SLAM 机制之
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/MonoGS]]]]
-- [[[[gs-slam/rgbd/SplaTAM]]]]
-- [[[[gs-slam/monocular/GS-SLAM]]]]
+- [[[[3dgs-slam/MonoGS]]]]
+- [[[[3dgs-slam/SplaTAM]]]]
+- [[[[3dgs-slam/GS-SLAM]]]]
 
 ## 方法继承
 
-- **前作**：[[gs-slam/monocular/MonoGS]], [[gs-slam/rgbd/SplaTAM]]（keyframe-level GS-SLAM）
-- **后继**：[[gs-slam/monocular/HI-SLAM2]]
+- **前作**：[[3dgs-slam/MonoGS]], [[3dgs-slam/SplaTAM]]（keyframe-level GS-SLAM）
+- **后继**：[[3dgs-slam/HI-SLAM2]]
 
 ## 所属分类
 

@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[gs-slam/structured/ContextGS]]
+- [[mapping-reconstruction/ContextGS]]
 - [[Anchor-Level-Context-Model]]
 - [[Anchor-Compression-for-SLAM]]

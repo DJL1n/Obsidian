@@ -86,11 +86,11 @@ Post-keyframe insertion (coverage gaps) + full BA (all overlapping pairs) + join
 ### Tracking
 | Dataset | HI-SLAM2 | Comparison |
 |---|---|---|
-| Replica | **0.26 cm** | [[gs-slam/rgbd/SplaTAM]] 0.36, [[slam-frontends/neural-correspondence/DROID-SLAM]] 0.33, MGS-SLAM 0.32 |
-| ScanNet | **7.07 cm** | [[slam-frontends/gpu-optimized/GO-SLAM]] 8.10, Splat-SLAM 7.58 |
+| Replica | **0.26 cm** | [[3dgs-slam/SplaTAM]] 0.36, [[slam-frontend/DROID-SLAM]] 0.33, MGS-SLAM 0.32 |
+| ScanNet | **7.07 cm** | [[slam-frontend/GO-SLAM]] 8.10, Splat-SLAM 7.58 |
 
 ### Geometry (Replica)
-Accuracy **1.57 cm**, Completeness 3.49 cm, Completion ratio 85.25% — 明显优于 HI-SLAM / [[slam-frontends/gpu-optimized/GO-SLAM]] / Splat-SLAM。
+Accuracy **1.57 cm**, Completeness 3.49 cm, Completion ratio 85.25% — 明显优于 HI-SLAM / [[slam-frontend/GO-SLAM]] / Splat-SLAM。
 
 ### JDSA ablation
 - One-scale prior: Abs Diff 0.147
@@ -126,7 +126,7 @@ Accuracy **1.57 cm**, Completeness 3.49 cm, Completion ratio 85.25% — 明显�
 与你"monocular + dense/sparse tracking + predicted depth + GS + scale alignment + global correction"的路线高度重合。
 
 ### JDSA → 你的 scale/gauge certification
-扩展为 multi-evidence Certified Scale Alignment: depth prior + [[slam-frontends/patch-based/DPVO]] patch depth + [[geometry-priors/feed-forward/MASt3R]] pointmap + normal prior + GS rendered depth + anchor support。
+扩展为 multi-evidence Certified Scale Alignment: depth prior + [[slam-frontend/DPVO]] patch depth + [[geometry-model/MASt3R]] pointmap + normal prior + GS rendered depth + anchor support。
 
 ### Gaussian deformation → CoVersionedGeometryPacket
 Pose/depth version changed → child Gaussians inherit transform + stale Gaussians re-certified。
@@ -138,7 +138,7 @@ HI-SLAM2 的入口是 aligned estimated depth。你的入口应是 multi-source 
 HI-SLAM2 用 normal 提升 geometry。你应继续放在 packet certification 中。
 
 ### Loop detection 可改进
-[[geometry-priors/feed-forward/MASt3R]]/[[matching-representation/LightGlue]] wide-baseline verification + dense graph correction。
+[[geometry-model/MASt3R]]/[[matching-representation/LightGlue]] wide-baseline verification + dense graph correction。
 
 ---
 
@@ -147,10 +147,10 @@ HI-SLAM2 用 normal 提升 geometry。你应继续放在 packet certification �
 | 系统 | 定位 | 对 SkelGS-SLAM 价值 |
 |---|---|---|
 | **HI-SLAM2** | **mono dense SLAM + priors + 3DGS** | **最重要系统参考 / JDSA / deformation** |
-| MGS-SLAM | [[slam-frontends/patch-based/DPVO]] + MVS + GS | [[slam-frontends/patch-based/DPVO]] 路线参考 |
-| [[slam-frontends/gpu-optimized/GO-SLAM]] | dense + BA + SDF | global correction 参考 |
+| MGS-SLAM | [[slam-frontend/DPVO]] + MVS + GS | [[slam-frontend/DPVO]] 路线参考 |
+| [[slam-frontend/GO-SLAM]] | dense + BA + SDF | global correction 参考 |
 | MonoGS | monocular-first GS | map-centric 对比 |
-| [[gs-slam/rgbd/SplaTAM]]/[[gs-slam/monocular/GS-SLAM]] | RGB-D [[gs-slam/monocular/GS-SLAM]] | sensor depth baseline |
+| [[3dgs-slam/SplaTAM]]/[[3dgs-slam/GS-SLAM]] | RGB-D [[3dgs-slam/GS-SLAM]] | sensor depth baseline |
 
 HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry + 3DGS + global correction"的完整系统。
 
@@ -165,7 +165,7 @@ HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry 
 - [[Gaussian-Map-Deformation]] — Gaussian mean/orientation/scale update after pose correction
 
 ### Methods
-- [[HI-SLAM2-Architecture]] — hybrid online/offline monocular [[gs-slam/monocular/GS-SLAM]] pipeline
+- [[HI-SLAM2-Architecture]] — hybrid online/offline monocular [[3dgs-slam/GS-SLAM]] pipeline
 - [[Certified-JDSA]] — extending JDSA to multi-evidence scale/gauge certification
 
 ### Project
@@ -174,10 +174,10 @@ HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry 
 
 ## 相关笔记
 
-- [[[[gs-slam/monocular/Splat-SLAM]]]]
-- [[[[gs-slam/monocular/MonoGS]]]]
-- [[[[gs-slam/rgbd/GauS-SLAM]]]]
-- [[[[gs-slam/rgbd/MGS-SLAM]]]]
+- [[[[3dgs-slam/Splat-SLAM]]]]
+- [[[[3dgs-slam/MonoGS]]]]
+- [[[[3dgs-slam/GauS-SLAM]]]]
+- [[[[3dgs-slam/MGS-SLAM]]]]
 
 ## 所属分类
 

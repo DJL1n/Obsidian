@@ -33,10 +33,10 @@ AnchorSplat (CVPR 2026)
 
 | 论文 | 年份 | 场景 | anchor 来源 | Gaussian 生成 | 核心贡献 |
 |---|---|---|---|---|---|
-| [[gs-slam/structured/Scaffold-GS]] | CVPR 2024 | Offline NVS | SfM point cloud | MLP + view condition | 首次 anchor → neural Gaussian |
-| [[gs-slam/structured/ContextGS]] | NeurIPS 2024 | Compression | Scaffold-GS anchors | 同上 | 压缩 ~15×，autoregressive context |
-| [[gs-slam/structured/SEGS-SLAM]] | ICCV 2025 | SLAM | 在线 tracking | Scaffold-GS style + frequency pyramid | Structured GS 在 SLAM 中 |
-| [[gs-slam/structured/AnchorSplat]] | CVPR 2026 | Feed-forward NVS | 3D geometric priors | Feed-forward network + refiner | 3D-first，分辨率/视角解耦 |
+| [[matching-representation/Scaffold-GS]] | CVPR 2024 | Offline NVS | SfM point cloud | MLP + view condition | 首次 anchor → neural Gaussian |
+| [[mapping-reconstruction/ContextGS]] | NeurIPS 2024 | Compression | Scaffold-GS anchors | 同上 | 压缩 ~15×，autoregressive context |
+| [[semantic/SEGS-SLAM]] | ICCV 2025 | SLAM | 在线 tracking | Scaffold-GS style + frequency pyramid | Structured GS 在 SLAM 中 |
+| [[3dgs-slam/AnchorSplat]] | CVPR 2026 | Feed-forward NVS | 3D geometric priors | Feed-forward network + refiner | 3D-first，分辨率/视角解耦 |
 
 ---
 
@@ -103,10 +103,10 @@ Gaussian 怎么生成？ → 生成轴
 
 ## 相关笔记
 
-- [[gs-slam/structured/Scaffold-GS]] — 链的起点
-- [[gs-slam/structured/ContextGS]] — 压缩层
-- [[gs-slam/structured/SEGS-SLAM]] — SLAM 分支
-- [[gs-slam/structured/AnchorSplat]] — 3D-first feed-forward
+- [[matching-representation/Scaffold-GS]] — 链的起点
+- [[mapping-reconstruction/ContextGS]] — 压缩层
+- [[semantic/SEGS-SLAM]] — SLAM 分支
+- [[3dgs-slam/AnchorSplat]] — 3D-first feed-forward
 - [[Anchor定义和anchor生成结构]] — 你的 anchor 设计
 - [[Structured-GS-for-SLAM]] — 你的概念笔记
 - [[AnchorCompression-for-SLAM]] — ContextGS 到 SLAM 的迁移

@@ -19,6 +19,6 @@
 
 ## Related notes
 
-- [[geometry-priors/feed-forward/DUSt3R]]
+- [[geometry-model/DUSt3R]]
 - [[Uncalibrated-Dense-Reconstruction]]
 - [[Pointmap-to-Geometry]]

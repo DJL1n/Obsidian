@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[geometry-priors/feed-forward/MASt3R-SfM]]
+- [[geometry-model/MASt3R-SfM]]
 - [[Constrained-Pointmap]]
 - [[Offline-SfM-to-Online-Anchor]]

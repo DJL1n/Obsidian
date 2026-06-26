@@ -31,6 +31,6 @@ VO 中每个 patch 从诞生到退出优化窗口的完整生命周期，包含 
 
 ## Related notes
 
-- [[slam-frontends/patch-based/DPVO]]
+- [[slam-frontend/DPVO]]
 - [[Patch-Graph-VO]]
 - [[DPVO-Temporal-Frontend]]

@@ -10,6 +10,6 @@
 
 ## Related notes
 
-- [[geometry-priors/grounded/VGGT]]
+- [[geometry-model/VGGT]]
 - [[Feed-Forward-vs-Optimization]]
 - [[VGGT-as-Geometry-Candidate]]
