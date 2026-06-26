@@ -239,7 +239,7 @@ Certified geometric anchor
 - [[ChildGS-Local-Derivation]] — parent anchor → child Gaussian structured birth
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

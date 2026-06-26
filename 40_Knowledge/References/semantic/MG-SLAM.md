@@ -176,7 +176,7 @@ Flatten Gaussians toward surface + SDF/depth alignment + Manhattan normal regula
 - [[Observed-vs-Hypothesized-Geometry]] — separating certified from hypothesized geometry
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

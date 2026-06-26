@@ -291,7 +291,7 @@ MASt3R-SLAM 的最大价值：证明 MASt3R two-view pointmap prior 可以被系
 - [[Sim3-Pose-Representation]] — 显式处理 scale 的 pose 表示
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/SLAM-Frontends]]
 
 
 ## 相关笔记

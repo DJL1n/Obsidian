@@ -188,7 +188,7 @@ SplaTAM = GS backend / silhouette-gated tracking / densification reference
 - [[RGB-D-Densification-Mask]] — silhouette + depth discrepancy for online Gaussian densification
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

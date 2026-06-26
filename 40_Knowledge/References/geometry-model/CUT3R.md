@@ -148,7 +148,7 @@ CUT3R 角色：persistent-state geometry proposal，不是 system truth。
 - [[Recurrent-Dense-Proposal]] — CUT3R as recurrent geometry witness
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Feed-Forward-3D]]
 
 
 ## 相关笔记

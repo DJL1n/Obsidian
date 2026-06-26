@@ -139,7 +139,7 @@ FlashSLAM 的"前端不应 GS render loss"判断 + "显式匹配 > render optimi
 - [[Loss-Weighted-Refinement]] — optimization budget by residual
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/SLAM-Frontends]]
 
 
 ## 相关笔记

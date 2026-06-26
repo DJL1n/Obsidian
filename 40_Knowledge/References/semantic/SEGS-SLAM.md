@@ -127,7 +127,7 @@ SEGS-like backend → structured ChildGS + AfME + frequency pyramid
 - [[Frequency-Pyramid-Growth]] — frequency-aware Gaussian growth control
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

@@ -284,7 +284,7 @@ CertifiedGeometryPacket 可加以下 gate：
 - [[Geometry-Appearance-Decoupling]] — 几何与外观特征解耦
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

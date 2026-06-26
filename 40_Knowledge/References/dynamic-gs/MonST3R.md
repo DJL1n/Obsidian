@@ -131,7 +131,7 @@ MonST3R 对你最有价值的不是接入主线，而是：
 - [[Dynamic-Region-as-Packet-Evidence]] — 动态区域作为 anchor admission 负证据
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

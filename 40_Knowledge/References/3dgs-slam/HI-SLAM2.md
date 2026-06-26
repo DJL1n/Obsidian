@@ -169,7 +169,7 @@ HI-SLAM2 是目前最接近"monocular RGB + dense tracking + predicted geometry 
 - [[Certified-JDSA]] — extending JDSA to multi-evidence scale/gauge certification
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

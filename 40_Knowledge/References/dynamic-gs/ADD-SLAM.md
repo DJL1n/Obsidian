@@ -108,7 +108,7 @@ Observed depth > historical → 等待多帧确认后补静态 anchor
 - [[Pre-GS-Consistency-Oracle]] — consistency from [[slam-frontend/DPVO]]/anchor, not GS render
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

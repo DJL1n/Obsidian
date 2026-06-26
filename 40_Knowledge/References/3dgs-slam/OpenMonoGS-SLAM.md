@@ -156,7 +156,7 @@ OpenMonoGS-SLAM 不适合作为你的几何主线，适合作为 semantic Gaussi
 - [[Semantic-Backend-Regularizer]] — semantic consistency as GS backend regularizer
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

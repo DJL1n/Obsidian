@@ -153,7 +153,7 @@ GS-SDF 最值得借鉴的不是 LiDAR 本身，而是：先形成可信连续几
 - [[Certified-Geometry-Field]] — translating GS-SDF's NSDF teacher to monocular setting
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

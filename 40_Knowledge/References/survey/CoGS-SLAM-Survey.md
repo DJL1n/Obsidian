@@ -149,7 +149,7 @@ CoGS-SLAM 的 inter-agent loop 可映射为你的 inter-submap loop：retrieval 
 - [[Intra-Agent-Submap-Loop]] — retrieval + consistency + anchor reactivation
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

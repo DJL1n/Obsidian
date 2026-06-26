@@ -166,7 +166,7 @@ L = color reconstruction + depth rendering + SSIM + Gaussian scale regularizatio
 - [[Anchor-Octree-for-SLAM]] — translating OG-Mapping's octree anchor to anchor skeleton
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

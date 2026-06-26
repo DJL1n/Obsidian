@@ -159,7 +159,7 @@ UP-SLAM 核心：probabilistic anchor + multi-modal uncertainty + parallel decou
 - [[Certified-Probabilistic-Anchor]] — extending probabilistic anchor to CertifiedAnchor
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

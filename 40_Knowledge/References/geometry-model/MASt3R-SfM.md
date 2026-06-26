@@ -148,7 +148,7 @@ MASt3R raw pointmap → 投影到受约束的几何变量（camera + depth）。
 - [[Offline-SfM-to-Online-Anchor]] — translating SfM concepts to online anchor skeleton
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Feed-Forward-3D]]
 
 
 ## 相关笔记

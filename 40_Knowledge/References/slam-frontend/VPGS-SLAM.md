@@ -169,7 +169,7 @@ Replica ATE 0.21 优于 [[3dgs-slam/SplaTAM]] 0.41 / [[3dgs-slam/MonoGS]] 0.34 /
 - [[Submap-Fusion-Distillation]] — online distillation for GS submap merge
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/SLAM-Frontends]]
 
 
 ## 相关笔记

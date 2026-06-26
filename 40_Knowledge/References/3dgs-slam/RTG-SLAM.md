@@ -133,7 +133,7 @@ RGB-D ICP 不适合 monocular predicted depth。
 - [[Stable-Unstable-Anchor-Maturity]] — translating RTG state to anchor maturity
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

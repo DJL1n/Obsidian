@@ -269,7 +269,7 @@ Anchor/CertifiedGeometryPacket: fuse evidence, gate geometry
 - [[LightGlue-SLAM-Integration]] — LightGlue 作为 side verification 在 SLAM 中的集成
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

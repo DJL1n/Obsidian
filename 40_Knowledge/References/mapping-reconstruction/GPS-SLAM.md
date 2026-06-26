@@ -165,7 +165,7 @@ if certified surface exists + color residual high + geometry stable + local GS d
 - [[Certified-GS-Residual]] — translating residual GS design to monocular setting
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

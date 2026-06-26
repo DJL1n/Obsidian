@@ -190,7 +190,7 @@ CertifiedGeometryPacket/anchor skeleton = 核心研究层
 - [[Global-Correction-Mapping]] — geometry-version-aware mapping refresh
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/SLAM-Frontends]]
 
 
 ## 相关笔记

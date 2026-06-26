@@ -170,7 +170,7 @@ Online 有用，final global BA 应 remove disparity reg。
 - [[Certified-Dynamic-Gate]] — translating uncertainty to anchor admission
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

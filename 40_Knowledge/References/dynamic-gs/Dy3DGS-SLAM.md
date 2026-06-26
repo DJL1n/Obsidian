@@ -163,7 +163,7 @@ Dy3DGS 对你是 dynamic/uncertainty evidence 模块参考，不是 packet coher
 - [[DynamicEvidencePacket]] — per-pixel/per-anchor dynamic probability for anchor system
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

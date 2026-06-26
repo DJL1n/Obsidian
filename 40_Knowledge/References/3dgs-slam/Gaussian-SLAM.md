@@ -206,7 +206,7 @@ CertifiedGeometryPacket = monocular geometry certification layer
 - [[Online-GS-Seeding-Strategy]] — RGB-D driven controlled Gaussian seeding
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

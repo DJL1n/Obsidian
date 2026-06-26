@@ -192,7 +192,7 @@ RGB → [[slam-frontend/DPVO]]/DROID (temporal)
 - [[Retrieval-Guided-Registration]] — historical reference selection for global registration
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Feed-Forward-3D]]
 
 
 ## 相关笔记

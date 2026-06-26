@@ -194,7 +194,7 @@ MonoGS = 3DGS map-centric SLAM reference / GS tracking convergence / covisibilit
 - [[Isotropic-Regularization]] — isotropic regularization to prevent ray-aligned elongation
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 ## 方法继承
 

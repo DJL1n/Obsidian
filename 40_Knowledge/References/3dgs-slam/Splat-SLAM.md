@@ -126,7 +126,7 @@ Splat-SLAM 是你这批论文里最值得重点吸收的单目 GS-SLAM 机制之
 - [[Proxy-Depth-Packet]] — reliable multi-view + aligned monocular prior as depth packet
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

@@ -186,7 +186,7 @@ Phase 2: optimize Gaussians + keyframe poses
 - [[VideoBuffer-to-GS-Feedback]] — translating reliable Gaussian selection to feedback gate
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

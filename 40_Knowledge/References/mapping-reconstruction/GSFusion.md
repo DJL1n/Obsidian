@@ -129,7 +129,7 @@ Monocular scale / pose-depth coherence / dynamic / frontend tracking。
 - [[Quadtree-Image-Budget]] — contrast-based image-space GS allocation
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

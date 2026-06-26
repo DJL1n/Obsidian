@@ -147,7 +147,7 @@ MCGS-SLAM 从另一个方向说明：GS-SLAM 的真正瓶颈仍然是进入 Gaus
 - [[JDSA-Scale-Alignment-for-CertifiedPacket]] — 独立的 depth scale alignment 作为 packet 认证环节
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记

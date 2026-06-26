@@ -140,7 +140,7 @@ DSO 受 motion blur/noise/exposure/dynamic 影响，[[slam-frontend/DPVO]]/DROID
 - [[Certified-EM-Coupling]] — translating EM coupling to CertifiedGeometryPacket framework
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/SLAM-Frontends]]
 
 
 ## 相关笔记

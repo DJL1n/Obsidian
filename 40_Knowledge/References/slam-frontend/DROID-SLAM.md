@@ -327,7 +327,7 @@ DROID/DPVO 比 [[geometry-model/MASt3R]] 更适合作为 anchor/packet coherence
 - [[DROID-Training-Gauge]] — 显式 fix pose gauge 训练方法
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/SLAM-Frontends]]
 
 
 ## 相关笔记

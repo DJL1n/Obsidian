@@ -227,7 +227,7 @@ MASt3R 最强的是"把匹配落到 3D pointmap 上"，不是"给你可直接写
 - [[Coarse-to-Fine-Dense-Matching]] — hierarchical matching for high-res images
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Feed-Forward-3D]]
 
 
 ## 相关笔记

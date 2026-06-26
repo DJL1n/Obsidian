@@ -189,7 +189,7 @@ MGS-SLAM 是目前最接近"DPVO + monocular Gaussian mapping"的参考系统。
 - [[Predicted-Depth-GS-Supervision]] — depth smooth loss + sparse correction for GS supervision
 
 ### Project
-- [[SkelGS-SLAM]]
+- [[Categories/Monocular-GS-SLAM]]
 
 
 ## 相关笔记
