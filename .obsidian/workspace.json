@@ -181,6 +181,9 @@
   },
   "active": "b1a5518e23f7359b",
   "lastOpenFiles": [
+    "10_Projects/quant-trading/research/github-projects-survey.md",
+    "10_Projects/quant-trading/research/system-architecture.md",
+    "10_Projects/quant-trading/research",
     "10_Projects/quant-trading/INDEX.md",
     "10_Projects/quant-trading/SYSTEM_SPEC.md",
     "10_Projects/quant-trading",
@@ -209,13 +212,10 @@
     "40_Knowledge/References/Categories/SLAM-Frontends.md",
     "40_Knowledge/References/Categories/RL-Foundations.md",
     "40_Knowledge/References/Categories/RL-Alignment.md",
-    "40_Knowledge/References/Categories/RGBD-GS-SLAM.md",
-    "40_Knowledge/References/Categories/Multimodal-Sentiment.md",
     "40_Knowledge/References/Categories",
     "40_Knowledge/References/geometry-model",
     "40_Knowledge/References/slam-frontend",
     "40_Knowledge/References/semantic",
-    "40_Knowledge/References/mapping-reconstruction",
-    "40_Knowledge/References/dynamic-gs"
+    "40_Knowledge/References/mapping-reconstruction"
   ]
 }

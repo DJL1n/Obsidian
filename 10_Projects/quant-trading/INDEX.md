@@ -9,8 +9,14 @@
 
 ## 当前状态
 
-- 阶段：计划 v0.1
-- 下一步：建立仓库骨架
+- 阶段：调研中（Phase 0）
+- 仓库：`~/code/quant-research/` 已初始化
+
+## 文档
+
+- [[SYSTEM_SPEC|系统规格与职责分工]]（主文档，在 Obsidian）
+- [[research/system-architecture|系统架构]]
+- [[research/github-projects-survey|GitHub 项目调研]]（调研中）
 
 ## 相关笔记
 
