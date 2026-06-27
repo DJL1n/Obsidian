@@ -181,6 +181,8 @@
   },
   "active": "b1a5518e23f7359b",
   "lastOpenFiles": [
+    "20_Areas/Investing/factor-basics.md",
+    "20_Areas/Investing/backtest-pitfalls.md",
     "10_Projects/quant-trading/codex-jobs/job-log.md",
     "40_Knowledge/ResearchThreads/multimodal-sentiment-analysis.md",
     "10_Projects/quant-trading/codex-jobs/job-001-minimum-auditable-skeleton.md",
@@ -211,8 +213,6 @@
     "slam-frontends",
     "40_Knowledge/References/Categories/Vision-Transformers.md",
     "40_Knowledge/References/Categories/Vision-Language.md",
-    "40_Knowledge/References/Categories/Survey.md",
-    "40_Knowledge/References/Categories/Structured-GS.md",
     "40_Knowledge/References/Categories",
     "40_Knowledge/References/geometry-model",
     "40_Knowledge/References/slam-frontend",
