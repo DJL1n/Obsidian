@@ -36,7 +36,7 @@
 ### 2. Tushare
 - **仓库**: [waditu/tushare](https://github.com/waditu/tushare)
 - **Star**: 15.2k | Fork: 4.4k
-- **最后更新**: 6年前（基本停更）
+- **最后更新**: GitHub 仓库较旧，但 PyPI 上 tushare 最新版发布于 2026-03-24，仍维护中
 - **License**: MIT
 - **核心功能**:
   - A 股历史数据（日/周/月 K 线）
@@ -49,10 +49,11 @@
   - 函数式 API：`pro.query('daily', ts_code='000001.SZ', ...)`
 - **回测能力**: 无（纯数据获取库）
 - **文档质量**: ⭐⭐⭐ — 文档基本完整但已过期，Pro 版文档在官网 tushare.pro
-- **适合阶段**: 不推荐作为主要数据源
-- **推荐度**: **低**
+- **适合阶段**: A 股数据交叉验证/备用源
+- **推荐度**: **中**（作为 AKShare 的交叉验证源）
 - **理由**:
-  - GitHub 仓库已 6 年未更新，处于停更状态
+  - GitHub 仓库更新不频繁，但 PyPI 版本仍在更新（2026-03）
+  - Tushare Pro 需要积分和实名认证
   - 新版 Tushare Pro（tushare.pro）数据有积分限制，免费额度有限
   - Token 获取需要实名认证
   - AKShare 在功能覆盖和易用性上已超越 Tushare
@@ -415,3 +416,13 @@ pip install pandas numpy matplotlib scipy scikit-learn
 ---
 
 *调研完成，所有数据来自 GitHub 实时页面，截至 2026-06-27。*
+
+
+## 修正说明（Hermes 调研修正）
+
+> 以下修正基于 Codex 审查意见
+
+1. **Tushare**：不是"停更6年"，PyPI 最新版 2026-03-24 发布。保留为 AKShare 的交叉验证源，不建议完全排除。
+2. **Zipline**：原版停更，但 zipline-reloaded 仍有维护（2025 年发布）。可作为事件驱动架构参考。
+3. **backtrader**：不推荐的理由应改为"维护和生态风险"，而非简单"停更"。可作为学习参考。
+4. **核心原则**：第一阶段不是选最火的技术栈，而是建**可审计、可复现**的最小骨架。
