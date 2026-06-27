@@ -10,6 +10,14 @@
 
 使用领域自适应技术，通过对比源域和目标域的特征分布，采用最大均值差异（MMD）或对抗性训练对齐跨领域表示。核心是将情感分析建模为领域自适应分类问题，利用源域的大量标注数据和目标域的少量无标注数据联合训练。
 
-## 所属分类
+## 主题标签
+#domain-adaptation #mmd #adversarial #classic
 
+## 相关论文
+
+- [[Domain-Adaptation-Sentiment.md]] — 同一领域的经典域自适应研究
+- [[VAE-Adversarial-Domain.md]] — 对抗性域对齐的现代实现
+- [[ConFEDE-Contrastive-Federated-Domain-Adaptation.md]] — 在联邦框架下做域自适应
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

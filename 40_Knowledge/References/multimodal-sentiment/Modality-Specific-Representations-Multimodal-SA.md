@@ -10,6 +10,14 @@
 
 为每个模态设计独立的编码器分支，提取模态特定特征后使用解耦注意力（disentangled attention）进行选择性融合。引入模态不变性约束和模态特异性约束，确保共享表示中保留跨模态共性而独有信息不被丢失。
 
-## 所属分类
+## 主题标签
+#multimodal-fusion #modality-specific #disentangled #late-fusion
 
+## 相关论文
+
+- [[Dual-Perception-Fusion-Multimodal-SA.md]] — 同样强调保留模态独特信息
+- [[Hierarchical-Mutual-Information-Multimodal-SA.md]] — 都用信息论方法约束模态间关系
+- [[UniMSE-Unified-Multimodal-Sentiment-Encoder.md]] — 统一编码 vs 模态特定表示的对比视角
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

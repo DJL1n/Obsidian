@@ -10,6 +10,14 @@
 
 设计超网络（hypernetwork）生成主融合网络的权重，根据输入样本的模态特征分布动态调整融合策略。在超空间中对齐文本、音频、视觉模态的表示，使用自注意力机制捕捉模态间高阶关系，实现比静态融合更灵活的跨模态交互。
 
-## 所属分类
+## 主题标签
+#multimodal-fusion #hypernetwork #dynamic-weight
 
+## 相关论文
+
+- [[Condense-Attention-Fusion-Multimodal-SA.md]] — 都关注融合效率优化，前者动态加权、后者注意力蒸馏
+- [[Modality-Specific-Representations-Multimodal-SA.md]] — 都涉及模态重要性感知
+- [[Quantum-Inspired-Sentiment-Analysis.md]] — 都用数学结构建模高阶模态关联
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

@@ -10,6 +10,14 @@
 
 构建情感知识图谱作为先验，通过知识蒸馏将情感语义注入多模态编码器。设计自监督对比学习目标，正样本对为同情感类别的多模态样本，负样本对由知识图谱指导生成，确保语义有意义的负样本。
 
-## 所属分类
+## 主题标签
+#self-supervised #knowledge-enhanced #knowledge-graph
 
+## 相关论文
+
+- [[SKEAFN.md]] — 都利用 SenticNet 情感知识，但 SKEAFN 是注意力融合、本文是自监督预训练
+- [[Self-Supervised-MultiModal.md]] — 同样是多模态自监督框架，但本文加入知识先验
+- [[UniMSE-Unified-Multimodal-Sentiment-Encoder.md]] — 统一编码 + 知识增强的互补视角
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

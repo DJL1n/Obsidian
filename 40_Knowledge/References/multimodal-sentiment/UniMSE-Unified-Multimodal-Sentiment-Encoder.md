@@ -10,6 +10,14 @@
 
 设计统一的 Transformer 架构，通过模态特定 token 区分不同模态输入。在预训练阶段使用模态掩码重建（masked modality reconstruction）和跨模态对比学习两个自监督任务，使模型学会模态间互补和冗余信息建模。
 
-## 所属分类
+## 主题标签
+#architecture #unified-encoder #zero-shot #modal-masking #pretraining
 
+## 相关论文
+
+- [[Self-Supervised-MultiModal.md]] — 两者都是统一的多模态预训练框架
+- [[Cross-Modal-Enhancement-Multimodal-SA.md]] — 都处理模态缺失，UniMSE 靠预训练鲁棒性、后者靠生成式补全
+- [[TEASEL.md]] — 统一编码 vs prefix LM 架构对比
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

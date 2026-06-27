@@ -8,6 +8,14 @@
 ## 方法
 VAE 编码器将多模态输入映射到域不变潜在空间，域判别器通过对抗性梯度反转约束潜在表示无法区分源域和目标域。重构损失确保模态信息完整性，KL 散度约束潜在分布。在 Yelp→IMDb 和 MovieReview→Tweet 迁移场景上超越传统领域自适应方法。
 
-## 所属分类
+## 主题标签
+#domain-adaptation #vae #adversarial #zero-shot-transfer #video-sentiment
 
+## 相关论文
+
+- [[Domain-Adaptation-Sentiment.md]] — 经典域自适应的 VAE 演进版
+- [[Domain-Adaptation-Sentiment-Biographies-Bollywood.md]] — 同样的跨域迁移目标，用 VAE 替代特征重加权
+- [[Federated-Contrastive-Multimodal-SA.md]] — 都用对抗性/对比方法做域间对齐
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

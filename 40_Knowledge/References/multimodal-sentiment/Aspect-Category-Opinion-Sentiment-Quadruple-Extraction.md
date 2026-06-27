@@ -10,6 +10,14 @@
 
 将四元组抽取建模为关系分类任务，使用基于预训练语言模型（BERT/RoBERTa）的编码器提取上下文嵌入，通过注意力机制匹配方面词、类别、意见词三元组，最后分类情感极性。采用解码器设计将四元组生成转化为序列标注问题。
 
-## 所属分类
+## 主题标签
+#absa #quadruple-extraction #fine-grained
 
+## 相关论文
+
+- [[RGAT-ABSA-Relational-Graph-Attention.md]] — ABSA 的细粒度变体，RGAT 做方面情感分类、本文做四元组抽取
+- [[EASE-Efficient-ABSA.md]] — 都涉及 ABSA 抽取任务，EASE 强调效率
+- [[ABSA-Survey-and-Benchmark.md]] — 四元组抽取是 ABSA 的子任务之一
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

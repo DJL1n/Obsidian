@@ -10,6 +10,15 @@
 
 构建模态对比编码器，使用正样本对（同一情感标签的不同模态表示）和负样本对（不同情感标签的模态表示）进行对比学习。引入模态感知的负采样策略，选择语义相近但标签不同的样本作为难负例，提升对比学习的有效性。
 
-## 所属分类
+## 主题标签
+#contrastive-learning #cross-modal-alignment #hard-negative
 
+## 相关论文
+
+- [[Hybrid-Contrastive-Tri-Modal-SA.md]] — 同样用对比学习做多模态情感分析，但 Hybrid 是混合粒度
+- [[Hierarchical-Mutual-Information-Multimodal-SA.md]] — 对比学习是互信息估计的实践方式
+- [[Self-Supervised-MultiModal.md]] — 都包含跨模态对比作为预训练任务之一
+- [[Federated-Contrastive-Multimodal-SA.md]] — 同样用对比学习，但在联邦框架下
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

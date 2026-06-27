@@ -10,6 +10,14 @@
 
 使用跨模态 Transformer 编码器-解码器，以强模态（如文本）为条件生成弱模态的补充表示。增强后的表示与原始表示拼接后送入融合模块。训练时采用模态随机丢弃（modal dropout）模拟模态缺失，提升鲁棒性。
 
-## 所属分类
+## 主题标签
+#multimodal-fusion #cross-modal-generation #modal-dropout #robustness
 
+## 相关论文
+
+- [[UniMSE-Unified-Multimodal-Sentiment-Encoder.md]] — 同样处理模态缺失问题，但 UniMSE 用预训练而非生成式增强
+- [[Self-Supervised-MultiModal.md]] — 同样涉及模态掩码任务，但后者是自监督预训练框架
+- [[MOCOLNet-Modality-Contrastive-Learning.md]] — 都关注模态间互补性建模
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]

@@ -10,6 +10,13 @@
 
 将多模态特征映射为量子态，使用矩阵乘积态（MPS）和树状张量网络进行模态融合。量子启发的纠缠结构天然建模模态间非局部关联，变分量子回路（VQC）作为可训练的融合模块，经典-量子混合训练框架。
 
-## 所属分类
+## 主题标签
+#novel-approach #quantum-inspired #tensor-network
 
+## 相关论文
+
+- [[Hyper-modality-Fusion-Multimodal-Sentiment.md]] — 都用数学结构建模高阶模态关联
+- [[Hierarchical-Mutual-Information-Multimodal-SA.md]] — 理论驱动的多模态融合方法
+
+## 所属分类
 [[Categories/Multimodal-Sentiment]]
