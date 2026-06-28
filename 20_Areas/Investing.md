@@ -14,3 +14,4 @@
 - [[quant-skills|量化需要的数学与技能]]
 - [[backtest-pitfalls|回测陷阱]]
 - [[factor-basics|因子投资基础]]
+- [[sentiment-cycle|市场情绪周期]]
