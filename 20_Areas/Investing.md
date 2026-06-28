@@ -15,3 +15,4 @@
 - [[backtest-pitfalls|回测陷阱]]
 - [[factor-basics|因子投资基础]]
 - [[sentiment-cycle|市场情绪周期]]
+- [[retail-pitfalls|散户最容易踩的坑]]
