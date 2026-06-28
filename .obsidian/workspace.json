@@ -181,6 +181,7 @@
   },
   "active": "b1a5518e23f7359b",
   "lastOpenFiles": [
+    "10_Projects/quant-trading/completion-status.md",
     "20_Areas/Investing/retail-pitfalls.md",
     "20_Areas/Investing/sentiment-cycle.md",
     "20_Areas/Investing/factor-basics.md",
@@ -210,7 +211,6 @@
     "40_Knowledge/Concepts/INDEX.md",
     "40_Knowledge/Concepts/dynamic/Explicit-Implicit-Dynamic-Fusion.md",
     "40_Knowledge/Methods/INDEX.md",
-    "slam-frontends/patch-based/DPVO.md",
     "slam-frontends/patch-based",
     "slam-frontends",
     "40_Knowledge/References/Categories",
